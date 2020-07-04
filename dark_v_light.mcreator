@@ -273,13 +273,28 @@
   "variable_elements": [],
   "sound_elements": [
     {
-      "name": "dfloater1",
+      "name": "alarm",
+      "file": "alarm",
+      "category": "ambient"
+    },
+    {
+      "name": "ambient1",
+      "file": "ambient1",
+      "category": "ambient"
+    },
+    {
+      "name": "dfloaterh",
+      "file": "darkendfloaterhurt",
+      "category": "hostile"
+    },
+    {
+      "name": "dfloater",
       "file": "darkendfloater1",
       "category": "hostile"
     },
     {
-      "name": "dfloaterhurt",
-      "file": "darkendfloaterhurt",
+      "name": "mobtest",
+      "file": "mob",
       "category": "hostile"
     },
     {

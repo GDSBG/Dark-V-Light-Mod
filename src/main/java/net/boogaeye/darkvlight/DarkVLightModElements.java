@@ -45,10 +45,15 @@ public class DarkVLightModElements {
 	public final List<Supplier<EntityType<?>>> entities = new ArrayList<>();
 	public static Map<ResourceLocation, net.minecraft.util.SoundEvent> sounds = new HashMap<>();
 	public DarkVLightModElements() {
-		sounds.put(new ResourceLocation("dark_v_light", "dfloater1"),
-				new net.minecraft.util.SoundEvent(new ResourceLocation("dark_v_light", "dfloater1")));
-		sounds.put(new ResourceLocation("dark_v_light", "dfloaterhurt"),
-				new net.minecraft.util.SoundEvent(new ResourceLocation("dark_v_light", "dfloaterhurt")));
+		sounds.put(new ResourceLocation("dark_v_light", "alarm"), new net.minecraft.util.SoundEvent(new ResourceLocation("dark_v_light", "alarm")));
+		sounds.put(new ResourceLocation("dark_v_light", "ambient1"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("dark_v_light", "ambient1")));
+		sounds.put(new ResourceLocation("dark_v_light", "dfloaterh"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("dark_v_light", "dfloaterh")));
+		sounds.put(new ResourceLocation("dark_v_light", "dfloater"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("dark_v_light", "dfloater")));
+		sounds.put(new ResourceLocation("dark_v_light", "mobtest"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("dark_v_light", "mobtest")));
 		sounds.put(new ResourceLocation("dark_v_light", "dstoneb"),
 				new net.minecraft.util.SoundEvent(new ResourceLocation("dark_v_light", "dstoneb")));
 		try {

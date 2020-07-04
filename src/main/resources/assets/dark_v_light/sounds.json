@@ -1,5 +1,32 @@
 {
-  "dfloater1": {
+  "alarm": {
+    "category": "ambient",
+    "sounds": [
+      {
+        "name": "dark_v_light:alarm",
+        "stream": false
+      }
+    ]
+  },
+  "ambient1": {
+    "category": "ambient",
+    "sounds": [
+      {
+        "name": "dark_v_light:ambient1",
+        "stream": false
+      }
+    ]
+  },
+  "dfloaterh": {
+    "category": "hostile",
+    "sounds": [
+      {
+        "name": "dark_v_light:darkendfloaterhurt",
+        "stream": false
+      }
+    ]
+  },
+  "dfloater": {
     "category": "hostile",
     "sounds": [
       {
@@ -8,11 +35,11 @@
       }
     ]
   },
-  "dfloaterhurt": {
+  "mobtest": {
     "category": "hostile",
     "sounds": [
       {
-        "name": "dark_v_light:darkendfloaterhurt",
+        "name": "dark_v_light:mob",
         "stream": false
       }
     ]
