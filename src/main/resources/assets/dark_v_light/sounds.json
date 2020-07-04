@@ -1,0 +1,29 @@
+{
+  "dfloater1": {
+    "category": "hostile",
+    "sounds": [
+      {
+        "name": "dark_v_light:darkendfloater1",
+        "stream": false
+      }
+    ]
+  },
+  "dfloaterhurt": {
+    "category": "hostile",
+    "sounds": [
+      {
+        "name": "dark_v_light:darkendfloaterhurt",
+        "stream": false
+      }
+    ]
+  },
+  "dstoneb": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "dark_v_light:darkendstonebreak",
+        "stream": false
+      }
+    ]
+  }
+}

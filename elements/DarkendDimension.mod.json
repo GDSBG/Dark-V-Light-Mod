@@ -1,0 +1,47 @@
+{
+  "_fv": 10,
+  "_type": "dimension",
+  "definition": {
+    "portalFrame": {
+      "value": "CUSTOM:DarkStone"
+    },
+    "portalParticles": {
+      "value": "DRAGON_BREATH"
+    },
+    "portalLuminance": 0.0,
+    "portalSound": {
+      "value": "ambient.cave"
+    },
+    "igniterName": "Darkend Dimension Portal Igniter",
+    "igniterTab": {
+      "value": "CUSTOM:DVLtab"
+    },
+    "texture": "notextureitem",
+    "portalTexture": "smoothdstone",
+    "enablePortal": true,
+    "biomesInDimension": [
+      {
+        "value": "CUSTOM:BurnedGazeForest"
+      }
+    ],
+    "worldGenType": "Normal world gen",
+    "mainFillerBlock": {
+      "value": "CUSTOM:DarkStone"
+    },
+    "fluidBlock": {
+      "value": "Blocks.AIR"
+    },
+    "airColor": {
+      "value": -10092442,
+      "falpha": 0.0
+    },
+    "canRespawnHere": false,
+    "hasFog": true,
+    "hasWeather": true,
+    "isDark": true,
+    "doesWaterVaporize": true,
+    "sleepResult": "BED_EXPLODES",
+    "hasSkyLight": false,
+    "imitateOverworldBehaviour": false
+  }
+}

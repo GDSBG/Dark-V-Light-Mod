@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "dark_v_light:items/notextureitem"
+  }
+}

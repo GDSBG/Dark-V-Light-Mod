@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "dark_v_light:items/darkstonepickaxe"
+  }
+}

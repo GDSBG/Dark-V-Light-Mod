@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "dark_v_light:blocks/darkgrassside",
+    "up": "dark_v_light:blocks/darkgrassside",
+    "north": "dark_v_light:blocks/darkgrassside",
+    "east": "dark_v_light:blocks/darkgrassside",
+    "south": "dark_v_light:blocks/darkgrassside",
+    "west": "dark_v_light:blocks/darkgrassside",
+    "particle": "dark_v_light:blocks/darkgrassside"
+  }
+}

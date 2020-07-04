@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "dark_v_light:block/dark_dirt"
+    }
+  }
+}
