@@ -70,10 +70,10 @@
       "value": ""
     },
     "livingSound": {
-      "value": "CUSTOM:dfloater1"
+      "value": "CUSTOM:dfloater"
     },
     "hurtSound": {
-      "value": "CUSTOM:dfloaterhurt"
+      "value": "CUSTOM:dfloaterh"
     },
     "deathSound": {
       "value": "entity.generic.death"

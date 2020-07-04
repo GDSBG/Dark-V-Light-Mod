@@ -10,6 +10,7 @@ import net.minecraft.entity.Entity;
 import net.boogaeye.darkvlight.DarkVLightModElements;
 
 import java.util.function.Supplier;
+import java.util.Random;
 import java.util.Map;
 
 @DarkVLightModElements.ModElement.Tag
@@ -67,21 +68,27 @@ public class ItemUpgradeListProcedure extends DarkVLightModElements.ModElement {
 					}
 				}
 			}
-			((new Object() {
-				public ItemStack getItemStack(int sltid) {
-					Entity _ent = entity;
-					if (_ent instanceof ServerPlayerEntity) {
-						Container _current = ((ServerPlayerEntity) _ent).openContainer;
-						if (_current instanceof Supplier) {
-							Object invobj = ((Supplier) _current).get();
-							if (invobj instanceof Map) {
-								return ((Slot) ((Map) invobj).get(sltid)).getStack();
+			{
+				ItemStack _ist = (new Object() {
+					public ItemStack getItemStack(int sltid) {
+						Entity _ent = entity;
+						if (_ent instanceof ServerPlayerEntity) {
+							Container _current = ((ServerPlayerEntity) _ent).openContainer;
+							if (_current instanceof Supplier) {
+								Object invobj = ((Supplier) _current).get();
+								if (invobj instanceof Map) {
+									return ((Slot) ((Map) invobj).get(sltid)).getStack();
+								}
 							}
 						}
+						return ItemStack.EMPTY;
 					}
-					return ItemStack.EMPTY;
+				}.getItemStack((int) (1)));
+				if (_ist.attemptDamageItem((int) (-10000000), new Random(), null)) {
+					_ist.shrink(1);
+					_ist.setDamage(0);
 				}
-			}.getItemStack((int) (1)))).setDamage((int) (((ItemCopy)).getMaxDamage()));
+			}
 		}
 	}
 }
