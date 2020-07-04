@@ -1,0 +1,109 @@
+{
+  "_fv": 10,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 352,
+    "height": 332,
+    "renderBgLayer": true,
+    "components": [
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 0,
+          "disableStackInteraction": false,
+          "name": "Slot #0",
+          "x": 281,
+          "y": 134
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Upgrade Block",
+          "color": {
+            "value": -6711040,
+            "falpha": 0.0
+          },
+          "name": "Upgrade Block",
+          "x": 358,
+          "y": 76
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "color": {
+            "value": -13421824,
+            "falpha": 0.0
+          },
+          "id": 1,
+          "disableStackInteraction": false,
+          "name": "Slot #1",
+          "x": 523,
+          "y": 133
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Upgrade",
+          "width": 140,
+          "height": 40,
+          "name": "Upgrade",
+          "x": 355,
+          "y": 131
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<fluidlevel>",
+          "color": {
+            "value": -16777012,
+            "falpha": 0.0
+          },
+          "name": "<fluidlevel>",
+          "x": 373,
+          "y": 172
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "FluidLeft:",
+          "color": {
+            "value": -16777063,
+            "falpha": 0.0
+          },
+          "name": "FluidLeft:",
+          "x": 275,
+          "y": 171
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "Items.WATER_BUCKET"
+          },
+          "color": {
+            "value": -13408513,
+            "falpha": 0.0
+          },
+          "id": 2,
+          "disableStackInteraction": false,
+          "onSlotChanged": {
+            "name": "WaterLevel"
+          },
+          "name": "Slot #2",
+          "x": 277,
+          "y": 193
+        }
+      }
+    ]
+  }
+}
