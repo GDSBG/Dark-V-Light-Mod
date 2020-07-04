@@ -51,6 +51,9 @@
         "type": "button",
         "data": {
           "text": "Upgrade",
+          "onClick": {
+            "name": "UpgradeItem"
+          },
           "width": 140,
           "height": 40,
           "name": "Upgrade",
@@ -96,12 +99,23 @@
           },
           "id": 2,
           "disableStackInteraction": false,
-          "onSlotChanged": {
-            "name": "WaterLevel"
-          },
           "name": "Slot #2",
           "x": 277,
           "y": 193
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Fill",
+          "onClick": {
+            "name": "WaterLevel"
+          },
+          "width": 80,
+          "height": 40,
+          "name": "Fill",
+          "x": 313,
+          "y": 191
         }
       }
     ]

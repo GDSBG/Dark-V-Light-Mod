@@ -37,6 +37,7 @@ import net.minecraft.client.gui.ScreenManager;
 import net.minecraft.client.Minecraft;
 
 import net.boogaeye.darkvlight.procedures.WaterLevelProcedure;
+import net.boogaeye.darkvlight.procedures.UpgradeItemProcedure;
 import net.boogaeye.darkvlight.DarkVLightModElements;
 import net.boogaeye.darkvlight.DarkVLightMod;
 
@@ -124,12 +125,6 @@ public class UpgradeBlockGUIGui extends DarkVLightModElements.ModElement {
 				}
 			}));
 			this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 14, 60) {
-				@Override
-				public void onSlotChanged() {
-					super.onSlotChanged();
-					GuiContainerMod.this.slotChanged(2, 0, 0);
-				}
-
 				@Override
 				public boolean isItemValid(ItemStack stack) {
 					return (new ItemStack(Items.WATER_BUCKET, (int) (1)).getItem() == stack.getItem());
@@ -371,6 +366,10 @@ public class UpgradeBlockGUIGui extends DarkVLightModElements.ModElement {
 				DarkVLightMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(0, x, y, z));
 				handleButtonAction(entity, 0, x, y, z);
 			}));
+			this.addButton(new Button(this.guiLeft + 31, this.guiTop + 59, 40, 20, "Fill", e -> {
+				DarkVLightMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(1, x, y, z));
+				handleButtonAction(entity, 1, x, y, z);
+			}));
 		}
 	}
 
@@ -460,14 +459,18 @@ public class UpgradeBlockGUIGui extends DarkVLightModElements.ModElement {
 		// security measure to prevent arbitrary chunk generation
 		if (!world.isBlockLoaded(new BlockPos(x, y, z)))
 			return;
-	}
-
-	private static void handleSlotAction(PlayerEntity entity, int slotID, int changeType, int meta, int x, int y, int z) {
-		World world = entity.world;
-		// security measure to prevent arbitrary chunk generation
-		if (!world.isBlockLoaded(new BlockPos(x, y, z)))
-			return;
-		if (slotID == 2 && changeType == 0) {
+		if (buttonID == 0) {
+			{
+				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+				$_dependencies.put("entity", entity);
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				UpgradeItemProcedure.executeProcedure($_dependencies);
+			}
+		}
+		if (buttonID == 1) {
 			{
 				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
 				$_dependencies.put("entity", entity);
@@ -478,5 +481,12 @@ public class UpgradeBlockGUIGui extends DarkVLightModElements.ModElement {
 				WaterLevelProcedure.executeProcedure($_dependencies);
 			}
 		}
+	}
+
+	private static void handleSlotAction(PlayerEntity entity, int slotID, int changeType, int meta, int x, int y, int z) {
+		World world = entity.world;
+		// security measure to prevent arbitrary chunk generation
+		if (!world.isBlockLoaded(new BlockPos(x, y, z)))
+			return;
 	}
 }
