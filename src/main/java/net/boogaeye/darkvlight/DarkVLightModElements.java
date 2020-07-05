@@ -56,6 +56,10 @@ public class DarkVLightModElements {
 				new net.minecraft.util.SoundEvent(new ResourceLocation("dark_v_light", "mobtest")));
 		sounds.put(new ResourceLocation("dark_v_light", "dstoneb"),
 				new net.minecraft.util.SoundEvent(new ResourceLocation("dark_v_light", "dstoneb")));
+		sounds.put(new ResourceLocation("dark_v_light", "upgrade"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("dark_v_light", "upgrade")));
+		sounds.put(new ResourceLocation("dark_v_light", "pourwater"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("dark_v_light", "pourwater")));
 		try {
 			ModFileScanData modFileInfo = ModList.get().getModFileById("dark_v_light").getFile().getScanResult();
 			Set<ModFileScanData.AnnotationData> annotations = modFileInfo.getAnnotations();

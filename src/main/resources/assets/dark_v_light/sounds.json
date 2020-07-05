@@ -52,5 +52,23 @@
         "stream": false
       }
     ]
+  },
+  "upgrade": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "dark_v_light:upgrade",
+        "stream": false
+      }
+    ]
+  },
+  "pourwater": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "dark_v_light:waterpour",
+        "stream": false
+      }
+    ]
   }
 }

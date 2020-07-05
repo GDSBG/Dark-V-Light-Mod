@@ -301,6 +301,16 @@
       "name": "dstoneb",
       "file": "darkendstonebreak",
       "category": "block"
+    },
+    {
+      "name": "upgrade",
+      "file": "upgrade",
+      "category": "block"
+    },
+    {
+      "name": "pourwater",
+      "file": "waterpour",
+      "category": "block"
     }
   ],
   "language_map": {

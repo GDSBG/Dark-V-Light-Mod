@@ -1,11 +1,14 @@
 package net.boogaeye.darkvlight.procedures;
 
+import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.fluids.capability.IFluidHandler;
 import net.minecraftforge.fluids.capability.CapabilityFluidHandler;
 import net.minecraftforge.fluids.FluidStack;
 
 import net.minecraft.world.World;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.SoundCategory;
+import net.minecraft.util.ResourceLocation;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.item.Items;
 import net.minecraft.item.ItemStack;
@@ -87,6 +90,9 @@ public class WaterLevelProcedure extends DarkVLightModElements.ModElement {
 					}
 				}
 			}
+			world.playSound((PlayerEntity) null, x, y, z,
+					(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("dark_v_light:pourwater")),
+					SoundCategory.NEUTRAL, (float) 1, (float) 1);
 		}
 	}
 }

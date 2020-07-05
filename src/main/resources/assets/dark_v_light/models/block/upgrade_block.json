@@ -1,12 +1,7 @@
 {
-  "parent": "block/cube",
+  "parent": "block/cube_all",
   "textures": {
-    "down": "dark_v_light:blocks/notextureblock",
-    "up": "dark_v_light:blocks/notextureblock",
-    "north": "dark_v_light:blocks/notextureblock",
-    "east": "dark_v_light:blocks/notextureblock",
-    "south": "dark_v_light:blocks/notextureblock",
-    "west": "dark_v_light:blocks/notextureblock",
-    "particle": "dark_v_light:blocks/notextureblock"
+    "all": "dark_v_light:blocks/upgradeblock",
+    "particle": "dark_v_light:blocks/upgradeblock"
   }
 }
