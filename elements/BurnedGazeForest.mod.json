@@ -25,7 +25,6 @@
     "treeFruits": {
       "value": "Blocks.AIR"
     },
-    "customColors": true,
     "airColor": {
       "value": -10092493,
       "falpha": 0.0

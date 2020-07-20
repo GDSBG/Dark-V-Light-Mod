@@ -31,6 +31,7 @@ import net.minecraft.inventory.container.Container;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.Entity;
 import net.minecraft.client.gui.widget.button.Button;
 import net.minecraft.client.gui.screen.inventory.ContainerScreen;
 import net.minecraft.client.gui.ScreenManager;
@@ -106,6 +107,14 @@ public class UpgradeBlockGUIGui extends DarkVLightModElements.ModElement {
 						this.internal = capability;
 						this.bound = true;
 					});
+				} else if (extraData.readableBytes() > 1) {
+					extraData.readByte(); // drop padding
+					Entity entity = world.getEntityByID(extraData.readVarInt());
+					if (entity != null)
+						entity.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+							this.internal = capability;
+							this.bound = true;
+						});
 				} else { // might be bound to block
 					TileEntity ent = inv.player != null ? inv.player.world.getTileEntity(pos) : null;
 					if (ent != null) {
@@ -327,6 +336,7 @@ public class UpgradeBlockGUIGui extends DarkVLightModElements.ModElement {
 		public boolean keyPressed(int key, int b, int c) {
 			if (key == 256) {
 				this.minecraft.player.closeScreen();
+				return true;
 			}
 			return super.keyPressed(key, b, c);
 		}
@@ -461,7 +471,7 @@ public class UpgradeBlockGUIGui extends DarkVLightModElements.ModElement {
 			return;
 		if (buttonID == 0) {
 			{
-				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
 				$_dependencies.put("x", x);
 				$_dependencies.put("y", y);
@@ -472,7 +482,7 @@ public class UpgradeBlockGUIGui extends DarkVLightModElements.ModElement {
 		}
 		if (buttonID == 1) {
 			{
-				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
 				$_dependencies.put("x", x);
 				$_dependencies.put("y", y);

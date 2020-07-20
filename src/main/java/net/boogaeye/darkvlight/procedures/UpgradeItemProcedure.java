@@ -15,6 +15,8 @@ import net.minecraft.entity.Entity;
 import net.boogaeye.darkvlight.DarkVLightModElements;
 
 import java.util.concurrent.atomic.AtomicInteger;
+import java.util.Map;
+import java.util.HashMap;
 
 @DarkVLightModElements.ModElement.Tag
 public class UpgradeItemProcedure extends DarkVLightModElements.ModElement {
@@ -22,7 +24,7 @@ public class UpgradeItemProcedure extends DarkVLightModElements.ModElement {
 		super(instance, 15);
 	}
 
-	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {
+	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			System.err.println("Failed to load dependency entity for procedure UpgradeItem!");
 			return;
@@ -66,7 +68,7 @@ public class UpgradeItemProcedure extends DarkVLightModElements.ModElement {
 							.ifPresent(capability -> capability.drain(_amount, IFluidHandler.FluidAction.EXECUTE));
 			}
 			{
-				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
 				ItemUpgradeListProcedure.executeProcedure($_dependencies);
 			}

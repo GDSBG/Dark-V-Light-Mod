@@ -254,7 +254,7 @@ public class DarkendDimensionDimension extends DarkVLightModElements.ModElement 
 
 		@Override
 		public void onEntityCollision(BlockState state, World world, BlockPos pos, Entity entity) {
-			if (!entity.isPassenger() && !entity.isBeingRidden() && entity.isNonBoss() && !entity.world.isRemote) {
+			if (!entity.isPassenger() && !entity.isBeingRidden() && entity.isNonBoss() && !entity.world.isRemote && true) {
 				if (entity.timeUntilPortal > 0) {
 					entity.timeUntilPortal = entity.getPortalCooldown();
 				} else if (entity.dimension != type) {
@@ -733,7 +733,6 @@ public class DarkendDimensionDimension extends DarkVLightModElements.ModElement 
 	}
 
 	public static class ChunkProviderModded extends OverworldChunkGenerator {
-		private static final int SEALEVEL = 63;
 		public ChunkProviderModded(IWorld world, BiomeProvider provider) {
 			super(world, provider, new OverworldGenSettings() {
 				public BlockState getDefaultBlock() {
@@ -745,11 +744,6 @@ public class DarkendDimensionDimension extends DarkVLightModElements.ModElement 
 				}
 			});
 			this.randomSeed.skip(5349);
-		}
-
-		@Override
-		public int getSeaLevel() {
-			return SEALEVEL;
 		}
 
 		@Override
@@ -766,17 +760,21 @@ public class DarkendDimensionDimension extends DarkVLightModElements.ModElement 
 
 	public static class BiomeProviderCustom extends BiomeProvider {
 		private Layer genBiomes;
+		private static boolean biomesPatched = false;
 		public BiomeProviderCustom(World world) {
 			super(new HashSet<Biome>(Arrays.asList(dimensionBiomes)));
 			this.genBiomes = getBiomeLayer(world.getSeed());
-			for (Biome biome : this.biomes) {
-				biome.addCarver(GenerationStage.Carving.AIR, Biome.createCarver(new CaveWorldCarver(ProbabilityConfig::deserialize, 256) {
-					{
-						carvableBlocks = ImmutableSet.of(DarkStoneBlock.block.getDefaultState().getBlock(),
-								biome.getSurfaceBuilder().getConfig().getTop().getBlock(),
-								biome.getSurfaceBuilder().getConfig().getUnder().getBlock());
-					}
-				}, new ProbabilityConfig(0.14285715f)));
+			if (!biomesPatched) {
+				for (Biome biome : this.biomes) {
+					biome.addCarver(GenerationStage.Carving.AIR, Biome.createCarver(new CaveWorldCarver(ProbabilityConfig::deserialize, 256) {
+						{
+							carvableBlocks = ImmutableSet.of(DarkStoneBlock.block.getDefaultState().getBlock(),
+									biome.getSurfaceBuilder().getConfig().getTop().getBlock(),
+									biome.getSurfaceBuilder().getConfig().getUnder().getBlock());
+						}
+					}, new ProbabilityConfig(0.14285715f)));
+				}
+				biomesPatched = true;
 			}
 		}
 

@@ -24,7 +24,9 @@ import net.boogaeye.darkvlight.procedures.DarkStoneBlockDestroyedByPlayerProcedu
 import net.boogaeye.darkvlight.itemgroup.DVLtabItemGroup;
 import net.boogaeye.darkvlight.DarkVLightModElements;
 
+import java.util.Map;
 import java.util.List;
+import java.util.HashMap;
 import java.util.Collections;
 
 @DarkVLightModElements.ModElement.Tag
@@ -67,7 +69,7 @@ public class DarkStoneBlock extends DarkVLightModElements.ModElement {
 			int y = pos.getY();
 			int z = pos.getZ();
 			{
-				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("x", x);
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);

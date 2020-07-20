@@ -9,13 +9,15 @@ import net.minecraft.entity.player.PlayerEntity;
 
 import net.boogaeye.darkvlight.DarkVLightModElements;
 
+import java.util.Map;
+
 @DarkVLightModElements.ModElement.Tag
 public class DarkStoneBlockDestroyedByPlayerProcedure extends DarkVLightModElements.ModElement {
 	public DarkStoneBlockDestroyedByPlayerProcedure(DarkVLightModElements instance) {
 		super(instance, 4);
 	}
 
-	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {
+	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("x") == null) {
 			System.err.println("Failed to load dependency x for procedure DarkStoneBlockDestroyedByPlayer!");
 			return;

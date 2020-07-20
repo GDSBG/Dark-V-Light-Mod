@@ -268,6 +268,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "damage"
+    },
+    {
+      "name": "DarkendLoner",
+      "type": "mob",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "darkend_loner"
     }
   ],
   "variable_elements": [],
@@ -315,10 +324,12 @@
   ],
   "language_map": {
     "en_us": {
+      "item.dark_v_light.darkend_loner": "Darkend Loner Spawn Egg",
       "entity.dark_v_light.darkend_floater": "Darkend Floater",
       "block.dark_v_light.upgrade_block": "Upgrade Block",
       "advancements.darker_we_go.title": "Darker We Go",
       "block.dark_v_light.darkend_grass": "Darkend Grass",
+      "entity.dark_v_light.darkend_loner": "Darkend Loner",
       "block.dark_v_light.dark_dirt": "Darkend Grass",
       "advancements.darker_we_go.descr": "Visit the darkend Dimension",
       "item.dark_v_light.dark_stone_pickaxe": "Dark Stone Pickaxe",
@@ -345,5 +356,5 @@
     "modElementsPackage": "net.boogaeye.darkvlight",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202000425621
+  "mcreatorVersion": 202000428114
 }

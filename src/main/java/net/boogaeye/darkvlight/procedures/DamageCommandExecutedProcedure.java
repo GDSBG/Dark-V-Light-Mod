@@ -7,6 +7,7 @@ import net.minecraft.entity.Entity;
 import net.boogaeye.darkvlight.DarkVLightModElements;
 
 import java.util.Random;
+import java.util.Map;
 import java.util.HashMap;
 
 @DarkVLightModElements.ModElement.Tag
@@ -15,7 +16,7 @@ public class DamageCommandExecutedProcedure extends DarkVLightModElements.ModEle
 		super(instance, 18);
 	}
 
-	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {
+	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			System.err.println("Failed to load dependency entity for procedure DamageCommandExecuted!");
 			return;

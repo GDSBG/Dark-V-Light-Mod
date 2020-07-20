@@ -12,6 +12,7 @@ import net.minecraft.command.CommandSource;
 import net.boogaeye.darkvlight.procedures.DamageCommandExecutedProcedure;
 import net.boogaeye.darkvlight.DarkVLightModElements;
 
+import java.util.Map;
 import java.util.HashMap;
 import java.util.Arrays;
 
@@ -51,7 +52,7 @@ public class DamageCommand extends DarkVLightModElements.ModElement {
 			index[0]++;
 		});
 		{
-			java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+			Map<String, Object> $_dependencies = new HashMap<>();
 			$_dependencies.put("entity", entity);
 			$_dependencies.put("cmdparams", cmdparams);
 			DamageCommandExecutedProcedure.executeProcedure($_dependencies);

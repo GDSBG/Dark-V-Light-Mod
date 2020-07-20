@@ -2,6 +2,7 @@
 package net.boogaeye.darkvlight.entity;
 
 import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.fml.network.NetworkHooks;
 import net.minecraftforge.fml.network.FMLPlayMessages;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.fml.client.registry.RenderingRegistry;
@@ -16,11 +17,17 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.DamageSource;
 import net.minecraft.pathfinding.FlyingPathNavigator;
+import net.minecraft.network.IPacket;
 import net.minecraft.item.SpawnEggItem;
 import net.minecraft.item.Item;
+import net.minecraft.entity.player.ServerPlayerEntity;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.monster.MonsterEntity;
 import net.minecraft.entity.ai.goal.RandomWalkingGoal;
+import net.minecraft.entity.ai.goal.NearestAttackableTargetGoal;
+import net.minecraft.entity.ai.goal.LookAtGoal;
 import net.minecraft.entity.ai.goal.Goal;
+import net.minecraft.entity.ai.goal.FollowMobGoal;
 import net.minecraft.entity.ai.controller.FlyingMovementController;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.LivingEntity;
@@ -86,9 +93,20 @@ public class DarkendFloaterEntity extends DarkVLightModElements.ModElement {
 		}
 
 		@Override
+		public IPacket<?> createSpawnPacket() {
+			return NetworkHooks.getEntitySpawningPacket(this);
+		}
+
+		@Override
 		protected void registerGoals() {
 			super.registerGoals();
-			this.goalSelector.addGoal(1, new Goal() {
+			this.goalSelector.addGoal(1, new LookAtGoal(this, PlayerEntity.class, (float) 6));
+			this.goalSelector.addGoal(2, new LookAtGoal(this, ServerPlayerEntity.class, (float) 6));
+			this.goalSelector.addGoal(3, new FollowMobGoal(this, (float) 1, 15, 25));
+			this.targetSelector.addGoal(4, new NearestAttackableTargetGoal(this, DarkendLonerEntity.CustomEntity.class, true, true));
+			this.targetSelector.addGoal(5, new NearestAttackableTargetGoal(this, PlayerEntity.class, true, true));
+			this.targetSelector.addGoal(6, new NearestAttackableTargetGoal(this, ServerPlayerEntity.class, true, true));
+			this.goalSelector.addGoal(7, new Goal() {
 				{
 					this.setMutexFlags(EnumSet.of(Goal.Flag.MOVE));
 				}
@@ -127,7 +145,7 @@ public class DarkendFloaterEntity extends DarkVLightModElements.ModElement {
 					}
 				}
 			});
-			this.goalSelector.addGoal(2, new RandomWalkingGoal(this, 0.8, 20) {
+			this.goalSelector.addGoal(8, new RandomWalkingGoal(this, 0.8, 20) {
 				@Override
 				protected Vec3d getPosition() {
 					Random random = CustomEntity.this.getRNG();

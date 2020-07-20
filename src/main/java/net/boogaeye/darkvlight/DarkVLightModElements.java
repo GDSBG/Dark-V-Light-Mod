@@ -22,6 +22,7 @@ import net.minecraft.tags.Tag;
 import net.minecraft.network.PacketBuffer;
 import net.minecraft.item.Item;
 import net.minecraft.entity.EntityType;
+import net.minecraft.enchantment.Enchantment;
 import net.minecraft.block.Block;
 
 import java.util.function.Supplier;
@@ -43,6 +44,7 @@ public class DarkVLightModElements {
 	public final List<Supplier<Item>> items = new ArrayList<>();
 	public final List<Supplier<Biome>> biomes = new ArrayList<>();
 	public final List<Supplier<EntityType<?>>> entities = new ArrayList<>();
+	public final List<Supplier<Enchantment>> enchantments = new ArrayList<>();
 	public static Map<ResourceLocation, net.minecraft.util.SoundEvent> sounds = new HashMap<>();
 	public DarkVLightModElements() {
 		sounds.put(new ResourceLocation("dark_v_light", "alarm"), new net.minecraft.util.SoundEvent(new ResourceLocation("dark_v_light", "alarm")));
@@ -106,6 +108,10 @@ public class DarkVLightModElements {
 
 	public List<Supplier<EntityType<?>>> getEntities() {
 		return entities;
+	}
+
+	public List<Supplier<Enchantment>> getEnchantments() {
+		return enchantments;
 	}
 	public static class ModElement implements Comparable<ModElement> {
 		@Retention(RetentionPolicy.RUNTIME)
