@@ -1,0 +1,20 @@
+{
+  "_fv": 21,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smelting",
+    "xpReward": 1.0,
+    "cookingTime": 400,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "smeltingInputStack": {
+      "value": "CUSTOM:BurnOre"
+    },
+    "smeltingReturnStack": {
+      "value": "CUSTOM:BurnCrystal"
+    },
+    "name": "burn_ore_furnace",
+    "namespace": "mod"
+  }
+}

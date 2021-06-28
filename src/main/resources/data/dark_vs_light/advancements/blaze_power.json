@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:blaze_powder"
+    },
+    "title": {
+      "translate": "advancements.blaze_power.title"
+    },
+    "description": {
+      "translate": "advancements.blaze_power.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "blaze_power": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 1
+  },
+  "parent": "dark_vs_light:home_run"
+}

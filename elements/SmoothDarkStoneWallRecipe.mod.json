@@ -1,0 +1,20 @@
+{
+  "_fv": 21,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Stone cutting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 4,
+    "group": "",
+    "recipeShapeless": false,
+    "stoneCuttingInputStack": {
+      "value": "CUSTOM:DarkStone"
+    },
+    "stoneCuttingReturnStack": {
+      "value": "CUSTOM:DarkStoneWall"
+    },
+    "name": "smooth_dark_stone_wall_recipe",
+    "namespace": "mod"
+  }
+}

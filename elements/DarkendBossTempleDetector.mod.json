@@ -1,0 +1,47 @@
+{
+  "_fv": 21,
+  "_type": "item",
+  "definition": {
+    "renderType": 0,
+    "texture": "trackeranim",
+    "customModelName": "Normal",
+    "name": "Darkend Boss Temple Detector",
+    "rarity": "EPIC",
+    "creativeTab": {
+      "value": "CUSTOM:DVLtab"
+    },
+    "stackSize": 1,
+    "enchantability": 0,
+    "useDuration": 0,
+    "toolType": 1.0,
+    "damageCount": 100,
+    "recipeRemainder": {
+      "value": ""
+    },
+    "destroyAnyBlock": false,
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": true,
+    "damageOnCrafting": true,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "specialInfo": [
+      "Special Detecting Item"
+    ],
+    "hasGlow": true,
+    "glowCondition": {
+      "name": "DarkendBossTempleDetectorMakeItemGlow"
+    },
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "onRightClickedInAir": {
+      "name": "DarkendBossTempleDetectorRightClickedInAir"
+    },
+    "onCrafted": {
+      "name": "DarkendBossTempleDetectorItemIsCraftedsmelted"
+    },
+    "onDroppedByPlayer": {
+      "name": "DarkendBossTempleDetectorItemIsDroppedByPlayer"
+    }
+  }
+}

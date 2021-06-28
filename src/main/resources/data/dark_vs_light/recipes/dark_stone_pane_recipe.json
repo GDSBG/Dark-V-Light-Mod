@@ -1,0 +1,42 @@
+{
+  "group": "glass",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:glass"
+    },
+    "1": {
+      "item": "dark_vs_light:dark_stone"
+    },
+    "2": {
+      "item": "minecraft:glass"
+    },
+    "3": {
+      "item": "dark_vs_light:dark_stone"
+    },
+    "4": {
+      "item": "minecraft:glass"
+    },
+    "5": {
+      "item": "dark_vs_light:dark_stone"
+    },
+    "6": {
+      "item": "minecraft:glass"
+    },
+    "7": {
+      "item": "dark_vs_light:dark_stone"
+    },
+    "8": {
+      "item": "minecraft:glass"
+    }
+  },
+  "result": {
+    "item": "dark_vs_light:dark_stone_pane",
+    "count": 4
+  }
+}

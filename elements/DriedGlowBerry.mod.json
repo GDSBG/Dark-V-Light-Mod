@@ -1,0 +1,32 @@
+{
+  "_fv": 21,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "driedglowberry",
+    "customModelName": "Normal",
+    "name": "Dried Glow Berry",
+    "rarity": "COMMON",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:DVLFood"
+    },
+    "stackSize": 64,
+    "nutritionalValue": 4,
+    "saturation": 0.3,
+    "eatingSpeed": 12,
+    "resultItem": {
+      "value": ""
+    },
+    "forDogs": false,
+    "isAlwaysEdible": false,
+    "animation": "eat",
+    "hasGlow": true,
+    "glowCondition": {
+      "name": "DriedGlowBerryMakeItemGlow"
+    },
+    "onEaten": {
+      "name": "DriedGlowBerryFoodEaten"
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "display": {
+    "icon": {
+      "item": "dark_vs_light:burn_diamond"
+    },
+    "title": {
+      "translate": "advancements.this_diamond_is_on_fire.title"
+    },
+    "description": {
+      "translate": "advancements.this_diamond_is_on_fire.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "this_diamond_is_on_fire": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "dark_vs_light:burn_diamond",
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 1,
+    "recipes": [
+      "dark_vs_light:burn_diamond_armor_armor_helmet_recipe",
+      "dark_vs_light:burn_diamond_armor_armor_body_recipe",
+      "dark_vs_light:burn_diamond_armor_armor_leggings_recipe",
+      "dark_vs_light:burn_diamond_armor_armor_boots_recipe",
+      "dark_vs_light:burn_diamond_tool_pickaxe_recipe",
+      "dark_vs_light:burn_diamond_tool_axe_recipe",
+      "dark_vs_light:burn_diamond_tool_sword_recipe",
+      "dark_vs_light:burn_diamond_tool_shovel_recipe",
+      "dark_vs_light:burn_diamond_tool_hoe_recipe",
+      "dark_vs_light:obsidian_burn_diamond_recipe"
+    ]
+  },
+  "parent": "dark_vs_light:darker_we_go"
+}

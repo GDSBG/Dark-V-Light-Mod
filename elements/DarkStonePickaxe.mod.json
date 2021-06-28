@@ -1,5 +1,5 @@
 {
-  "_fv": 10,
+  "_fv": 21,
   "_type": "tool",
   "definition": {
     "renderType": 0,
@@ -15,7 +15,7 @@
     "efficiency": 4.0,
     "attackSpeed": 6.0,
     "enchantability": 35,
-    "damageVsEntity": 4.0,
+    "damageVsEntity": 2.0,
     "usageCount": 250,
     "blocksAffected": [],
     "hasGlow": false,
@@ -24,6 +24,7 @@
         "value": "CUSTOM:DarkStone"
       }
     ],
+    "immuneToFire": false,
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false
   }

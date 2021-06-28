@@ -1,0 +1,7 @@
+{
+  "parent": "block/door_bottom",
+  "textures": {
+    "bottom": "dark_vs_light:blocks/blindplanks",
+    "top": "dark_vs_light:blocks/blindplanks"
+  }
+}

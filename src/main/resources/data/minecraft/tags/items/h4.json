@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "dark_vs_light:blind_shard_pickaxe",
+    "dark_vs_light:startiles_pickaxe",
+    "dark_vs_light:burn_diamond_tool_pickaxe",
+    "dark_vs_light:burn_pickaxe",
+    "minecraft:netherite_pickaxe"
+  ]
+}

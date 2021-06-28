@@ -1,0 +1,26 @@
+{
+  "group": "blindstone",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "dark_vs_light:dark_shard"
+    },
+    "1": {
+      "item": "dark_vs_light:dark_shard"
+    },
+    "2": {
+      "item": "dark_vs_light:dark_shard"
+    },
+    "3": {
+      "item": "dark_vs_light:dark_shard"
+    }
+  },
+  "result": {
+    "item": "dark_vs_light:blind_stone",
+    "count": 1
+  }
+}

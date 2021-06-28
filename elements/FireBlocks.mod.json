@@ -1,0 +1,17 @@
+{
+  "_fv": 21,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:PurpleFire"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "name": "fire",
+    "namespace": "minecraft"
+  }
+}

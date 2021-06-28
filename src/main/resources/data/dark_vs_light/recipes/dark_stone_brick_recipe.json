@@ -1,0 +1,26 @@
+{
+  "group": "darkstone",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "dark_vs_light:dark_stone"
+    },
+    "1": {
+      "item": "dark_vs_light:pickles_dark_stone"
+    },
+    "2": {
+      "item": "dark_vs_light:pickles_dark_stone"
+    },
+    "3": {
+      "item": "dark_vs_light:dark_stone"
+    }
+  },
+  "result": {
+    "item": "dark_vs_light:dark_stone_brick",
+    "count": 4
+  }
+}

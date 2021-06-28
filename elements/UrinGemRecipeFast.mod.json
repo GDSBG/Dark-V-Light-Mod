@@ -1,0 +1,20 @@
+{
+  "_fv": 21,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Blasting",
+    "xpReward": 4.0,
+    "cookingTime": 20,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "blastingInputStack": {
+      "value": "CUSTOM:UrinOre"
+    },
+    "blastingReturnStack": {
+      "value": "CUSTOM:UrinGem"
+    },
+    "name": "urin_gem_recipe_fast",
+    "namespace": "mod"
+  }
+}

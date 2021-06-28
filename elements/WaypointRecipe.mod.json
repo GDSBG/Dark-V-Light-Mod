@@ -1,0 +1,46 @@
+{
+  "_fv": 21,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "tracker",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:BurnCrystal"
+      },
+      {
+        "value": "Items.ENDER_EYE"
+      },
+      {
+        "value": "CUSTOM:BurnCrystal"
+      },
+      {
+        "value": "Items.ENDER_EYE"
+      },
+      {
+        "value": "Items.COMPASS"
+      },
+      {
+        "value": "Items.ENDER_EYE"
+      },
+      {
+        "value": "CUSTOM:BurnCrystal"
+      },
+      {
+        "value": "Items.ENDER_EYE"
+      },
+      {
+        "value": "CUSTOM:BurnCrystal"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:WaypointDetector"
+    },
+    "name": "waypoint_recipe",
+    "namespace": "mod"
+  }
+}

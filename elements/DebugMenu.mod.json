@@ -1,0 +1,12 @@
+{
+  "_fv": 21,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "NUMPADEQUALS",
+    "keyBindingName": "Debug Menu",
+    "keyBindingCategoryKey": "dvl",
+    "onKeyPressed": {
+      "name": "DebugMenuOnKeyPressed"
+    }
+  }
+}

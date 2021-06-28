@@ -1,0 +1,146 @@
+{
+  "_fv": 21,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "Blocks.TORCH"
+      },
+      {
+        "value": "Blocks.WALL_TORCH"
+      },
+      {
+        "value": "Blocks.SOUL_TORCH"
+      },
+      {
+        "value": "Blocks.SOUL_WALL_TORCH"
+      },
+      {
+        "value": "Blocks.REDSTONE_TORCH"
+      },
+      {
+        "value": "Blocks.REDSTONE_WALL_TORCH"
+      },
+      {
+        "value": "Blocks.UNLIT_REDSTONE_TORCH"
+      },
+      {
+        "value": "CUSTOM:GlowingFruit"
+      },
+      {
+        "value": "CUSTOM:DarkendSugarCane"
+      },
+      {
+        "value": "CUSTOM:GlowBerryBush"
+      },
+      {
+        "value": "CUSTOM:DarkendFlower"
+      },
+      {
+        "value": "Blocks.WOOL#0"
+      },
+      {
+        "value": "Blocks.WOOL#1"
+      },
+      {
+        "value": "Blocks.WOOL#2"
+      },
+      {
+        "value": "Blocks.WOOL#3"
+      },
+      {
+        "value": "Blocks.WOOL#4"
+      },
+      {
+        "value": "Blocks.WOOL#5"
+      },
+      {
+        "value": "Blocks.WOOL#6"
+      },
+      {
+        "value": "Blocks.WOOL#7"
+      },
+      {
+        "value": "Blocks.WOOL#8"
+      },
+      {
+        "value": "Blocks.WOOL#9"
+      },
+      {
+        "value": "Blocks.WOOL#10"
+      },
+      {
+        "value": "Blocks.WOOL#11"
+      },
+      {
+        "value": "Blocks.WOOL#12"
+      },
+      {
+        "value": "Blocks.WOOL#13"
+      },
+      {
+        "value": "Blocks.WOOL#14"
+      },
+      {
+        "value": "Blocks.WOOL#15"
+      },
+      {
+        "value": "Blocks.BED"
+      },
+      {
+        "value": "Blocks.ORANGE_BED"
+      },
+      {
+        "value": "Blocks.MAGENTA_BED"
+      },
+      {
+        "value": "Blocks.LIGHT_BLUE_BED"
+      },
+      {
+        "value": "Blocks.YELLOW_BED"
+      },
+      {
+        "value": "Blocks.LIME_BED"
+      },
+      {
+        "value": "Blocks.PINK_BED"
+      },
+      {
+        "value": "Blocks.GRAY_BED"
+      },
+      {
+        "value": "Blocks.LIGHT_GRAY_BED"
+      },
+      {
+        "value": "Blocks.CYAN_BED"
+      },
+      {
+        "value": "Blocks.PURPLE_BED"
+      },
+      {
+        "value": "Blocks.BLUE_BED"
+      },
+      {
+        "value": "Blocks.BROWN_BED"
+      },
+      {
+        "value": "Blocks.GREEN_BED"
+      },
+      {
+        "value": "Blocks.RED_BED"
+      },
+      {
+        "value": "Blocks.BLACK_BED"
+      },
+      {
+        "value": "Items.BED"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "name": "breakable",
+    "namespace": "minecraft"
+  }
+}

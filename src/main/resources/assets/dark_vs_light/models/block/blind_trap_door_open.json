@@ -1,0 +1,7 @@
+{
+  "parent": "block/template_orientable_trapdoor_open",
+  "textures": {
+    "texture": "dark_vs_light:blocks/blindplanks",
+    "particle": "dark_vs_light:blocks/blindplanks"
+  }
+}

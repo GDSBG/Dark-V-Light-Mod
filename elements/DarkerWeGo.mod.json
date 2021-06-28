@@ -1,9 +1,9 @@
 {
-  "_fv": 10,
+  "_fv": 21,
   "_type": "achievement",
   "definition": {
     "achievementName": "Darker We Go",
-    "achievementDescription": "Visit the darkend Dimension",
+    "achievementDescription": "Visit the Darkend Dimension",
     "achievementIcon": {
       "value": "CUSTOM:DarkendDimension"
     },
@@ -13,13 +13,45 @@
     "announceToChat": true,
     "hideIfNotCompleted": true,
     "rewardLoot": [],
-    "rewardRecipes": [],
+    "rewardRecipes": [
+      "SmoothDarkStoneRecipe",
+      "BurnGazeWoodenPlanksRecipe",
+      "BurnGazeWoodenDoorRecipe",
+      "BurnOreFurnace",
+      "BurnOreBlast",
+      "DarkStoneSwordRecipe",
+      "BurnPaneRecipe1",
+      "BurnPaneRecipe2",
+      "DarkStonePickRecipe",
+      "SticksFromDarkWood",
+      "DarkendPortalIgnitorRecipe",
+      "DarkendHoeWhyRecipe",
+      "DarkStoneAxeRecipe",
+      "BurnArmorHelmetRecipe",
+      "BurnArmorBodyRecipe",
+      "BurnArmorLeggingsRecipe",
+      "BurnArmorBootsRecipe",
+      "BurnOreSurfaceFurnace",
+      "CraftingTableFromDarkWood",
+      "WoodenSwordRecipe",
+      "SmoothDarkStoneStairsRecipe",
+      "SmoothDarkStoneWallRecipe",
+      "DarkStoneStairsRecipe",
+      "DarkStoneWallRecipe",
+      "DarkStoneSlabRecipe",
+      "DarkStonePaneRecipe",
+      "DriedGlowBerryRecipe",
+      "GlowBerryToTorch",
+      "WaypointRecipe",
+      "DarkendBossTempleDetectorRecipe",
+      "GliphRecipe"
+    ],
     "rewardFunction": "No function",
     "rewardXP": 3,
     "achievementType": "task",
     "parent": {
-      "value": "No parent: root"
+      "value": "CUSTOM:TheStartOfSomethingDark"
     },
-    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"dimension_entered\" x=\"42\" y=\"53\"><field name=\"dimension\">CUSTOM:DarkendDimension</field><next><block type=\"advancement_trigger\" deletable=\"false\"/></next></block></xml>"
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"custom_trigger\" x=\"12\" y=\"95\"><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block></xml>"
   }
 }

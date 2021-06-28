@@ -1,0 +1,29 @@
+{
+  "_fv": 21,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "revivalberry",
+    "customModelName": "Normal",
+    "name": "Revival Berry",
+    "rarity": "UNCOMMON",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:DVLFood"
+    },
+    "stackSize": 64,
+    "nutritionalValue": 2,
+    "saturation": 0.1,
+    "eatingSpeed": 10,
+    "resultItem": {
+      "value": ""
+    },
+    "forDogs": false,
+    "isAlwaysEdible": true,
+    "animation": "eat",
+    "hasGlow": false,
+    "onEaten": {
+      "name": "RevivalBerryFoodEaten"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "_fv": 21,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "burn_diamond_tool_hoe",
+    "customModelName": "Normal",
+    "name": "Burn Diamond Hoe",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:DVLtab"
+    },
+    "toolType": "Hoe",
+    "harvestLevel": 5,
+    "efficiency": 14.0,
+    "attackSpeed": 4.0,
+    "enchantability": 56,
+    "damageVsEntity": 8.0,
+    "usageCount": 1741,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:BurnDiamond"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

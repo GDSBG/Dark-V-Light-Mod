@@ -1,0 +1,22 @@
+{
+  "_fv": 21,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:BurnGazeWoodenPlank"
+      },
+      {
+        "value": "CUSTOM:DarkendWoodenPlanks"
+      },
+      {
+        "value": "CUSTOM:BlindPlanks"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "name": "darkend_planks_tag",
+    "namespace": "minecraft"
+  }
+}

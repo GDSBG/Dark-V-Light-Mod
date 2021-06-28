@@ -1,0 +1,89 @@
+{
+  "_fv": 21,
+  "_type": "biome",
+  "definition": {
+    "name": "Dead",
+    "groundBlock": {
+      "value": "Blocks.GRASS"
+    },
+    "undergroundBlock": {
+      "value": "Blocks.DIRT#0"
+    },
+    "grassColor": {
+      "value": -16777216,
+      "falpha": 0.0
+    },
+    "foliageColor": {
+      "value": -16777216,
+      "falpha": 0.0
+    },
+    "waterColor": {
+      "value": -10066330,
+      "falpha": 0.0
+    },
+    "waterFogColor": {
+      "value": -6710887,
+      "falpha": 0.0
+    },
+    "moodSoundDelay": 0,
+    "spawnParticles": false,
+    "particlesProbability": 0.0,
+    "biomeCategory": "NONE",
+    "parent": {
+      "value": "No parent"
+    },
+    "rainingPossibility": 0.5,
+    "temperature": 0.5,
+    "baseHeight": 0.1,
+    "heightVariation": 0.2,
+    "biomeType": "WARM",
+    "spawnBiome": true,
+    "biomeWeight": 15,
+    "biomeDictionaryTypes": [],
+    "grassPerChunk": 4,
+    "seagrassPerChunk": 20,
+    "flowersPerChunk": 4,
+    "mushroomsPerChunk": 0,
+    "bigMushroomsChunk": 0,
+    "sandPatchesPerChunk": 0,
+    "gravelPatchesPerChunk": 0,
+    "reedsPerChunk": 0,
+    "cactiPerChunk": 0,
+    "treesPerChunk": 3,
+    "vanillaTreeType": "Default",
+    "treeType": 1,
+    "minHeight": 3,
+    "maxWaterDepth": 0,
+    "treeStem": {
+      "value": "Blocks.LOG#1"
+    },
+    "treeBranch": {
+      "value": "Blocks.AIR"
+    },
+    "treeVines": {
+      "value": "Blocks.AIR"
+    },
+    "treeFruits": {
+      "value": "Blocks.AIR"
+    },
+    "spawnStronghold": false,
+    "spawnMineshaft": false,
+    "spawnPillagerOutpost": false,
+    "villageType": "none",
+    "spawnWoodlandMansion": false,
+    "spawnJungleTemple": false,
+    "spawnDesertPyramid": false,
+    "spawnIgloo": false,
+    "spawnOceanMonument": false,
+    "spawnShipwreck": true,
+    "oceanRuinType": "WARM",
+    "defaultFeatures": [
+      "Caves",
+      "Structures",
+      "Ores",
+      "OceanCaves",
+      "FrozenTopLayer"
+    ],
+    "spawnEntries": []
+  }
+}

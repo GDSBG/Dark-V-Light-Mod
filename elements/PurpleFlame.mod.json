@@ -1,0 +1,22 @@
+{
+  "_fv": 21,
+  "_type": "potion",
+  "definition": {
+    "name": "Oof",
+    "effectName": "Purple Flame",
+    "icon": "notextureother.png",
+    "color": {
+      "value": -65281,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": true,
+    "isBenefitical": false,
+    "registerPotionType": false,
+    "renderStatusInInventory": false,
+    "renderStatusInHUD": false,
+    "onActiveTick": {
+      "name": "PurpleFlameOnPotionActiveTick"
+    }
+  }
+}

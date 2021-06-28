@@ -1,0 +1,29 @@
+{
+  "_fv": 21,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "sweetglowberry",
+    "customModelName": "Normal",
+    "name": "Sweet Glowing Fruit",
+    "rarity": "COMMON",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:DVLFood"
+    },
+    "stackSize": 64,
+    "nutritionalValue": 1,
+    "saturation": 0.1,
+    "eatingSpeed": 20,
+    "resultItem": {
+      "value": ""
+    },
+    "forDogs": false,
+    "isAlwaysEdible": true,
+    "animation": "eat",
+    "hasGlow": false,
+    "onEaten": {
+      "name": "SweetGlowBerryFoodEaten"
+    }
+  }
+}

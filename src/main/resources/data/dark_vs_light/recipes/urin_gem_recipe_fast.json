@@ -1,0 +1,12 @@
+{
+  "group": "dark_vs_light",
+  "type": "minecraft:blasting",
+  "experience": 4,
+  "cookingtime": 20,
+  "ingredient": {
+    "item": "dark_vs_light:urin_ore"
+  },
+  "result": {
+    "item": "dark_vs_light:urin_gem"
+  }
+}

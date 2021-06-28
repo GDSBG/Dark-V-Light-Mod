@@ -1,18 +1,23 @@
 modLoader="javafml"
-loaderVersion="[31,)"
+loaderVersion="[36,)"
+license="All Rights Reserved"
 
 [[mods]]
-modId="dark_v_light"
-version="0.0.1"
-displayName="Dark V Light"
-credits="Created using mod maker MCreator - https://mcreator.net/about"
-displayURL="https://mcreator.net"
+modId="dark_vs_light"
+version="0.3.6"
+displayName="Dark Vs Light"
+credits="Credits to Gaurdian for being my tester Thanks to myuu for the music  https://www.youtube.com/channel/UCiSKnkKCKAQVxMUWpZQobuQ"
+displayURL="https://www.curseforge.com/minecraft/mc-mods/dark-vs-light"
+logoFile="logo.png"
 authors="BoogaEye"
+description='''
+Darkness has taken over. watch out......
+'''
 
-[[dependencies.dark_v_light]]
+[[dependencies.dark_vs_light]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.15.2]"
+    versionRange="[1.16.5]"
     ordering="NONE"
     side="BOTH"
 

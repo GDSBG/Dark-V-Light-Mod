@@ -1,0 +1,31 @@
+{
+  "_fv": 21,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "urin_shovel",
+    "customModelName": "Normal",
+    "name": "Uren Shovel",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:DVLtab"
+    },
+    "toolType": "Spade",
+    "harvestLevel": 2,
+    "efficiency": 9.0,
+    "attackSpeed": 0.8,
+    "enchantability": 7,
+    "damageVsEntity": 4.0,
+    "usageCount": 400,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:UrinGem"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "_fv": 21,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "burn_diamond_tool_axe",
+    "customModelName": "Normal",
+    "name": "Burn Diamond Axe",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:DVLtab"
+    },
+    "toolType": "Axe",
+    "harvestLevel": 5,
+    "efficiency": 14.0,
+    "attackSpeed": 0.2,
+    "enchantability": 56,
+    "damageVsEntity": 36.0,
+    "usageCount": 1741,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:BurnDiamond"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

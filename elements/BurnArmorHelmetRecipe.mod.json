@@ -1,0 +1,46 @@
+{
+  "_fv": 21,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:BurnCrystal"
+      },
+      {
+        "value": "CUSTOM:BurnCrystal"
+      },
+      {
+        "value": "CUSTOM:BurnCrystal"
+      },
+      {
+        "value": "CUSTOM:BurnCrystal"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:BurnCrystal"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:BurnArmor.helmet"
+    },
+    "name": "burn_armor_helmet_recipe",
+    "namespace": "mod"
+  }
+}

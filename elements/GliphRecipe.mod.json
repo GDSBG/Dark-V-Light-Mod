@@ -1,0 +1,46 @@
+{
+  "_fv": 21,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "boss",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:BlindStone"
+      },
+      {
+        "value": "CUSTOM:DarkendOrb"
+      },
+      {
+        "value": "CUSTOM:BlindStone"
+      },
+      {
+        "value": "CUSTOM:DarkendOrb"
+      },
+      {
+        "value": "CUSTOM:XPFragment"
+      },
+      {
+        "value": "CUSTOM:DarkendOrb"
+      },
+      {
+        "value": "CUSTOM:BlindStone"
+      },
+      {
+        "value": "CUSTOM:DarkendOrb"
+      },
+      {
+        "value": "CUSTOM:BlindStone"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:GliphBlock"
+    },
+    "name": "gliph_recipe",
+    "namespace": "mod"
+  }
+}

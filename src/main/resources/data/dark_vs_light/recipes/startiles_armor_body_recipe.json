@@ -1,0 +1,39 @@
+{
+  "group": "dark_vs_light",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "dark_vs_light:startile"
+    },
+    "2": {
+      "item": "dark_vs_light:startile"
+    },
+    "3": {
+      "item": "dark_vs_light:startile"
+    },
+    "4": {
+      "item": "dark_vs_light:startile"
+    },
+    "5": {
+      "item": "dark_vs_light:startile"
+    },
+    "6": {
+      "item": "dark_vs_light:startile"
+    },
+    "7": {
+      "item": "dark_vs_light:startile"
+    },
+    "8": {
+      "item": "dark_vs_light:startile"
+    }
+  },
+  "result": {
+    "item": "dark_vs_light:startiles_armor_chestplate",
+    "count": 1
+  }
+}

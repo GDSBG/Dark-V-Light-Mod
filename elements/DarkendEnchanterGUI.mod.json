@@ -1,0 +1,129 @@
+{
+  "_fv": 21,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "color": {
+            "value": -154,
+            "falpha": 0.0
+          },
+          "id": 0,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #0",
+          "x": 151,
+          "y": 71
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "color": {
+            "value": -10092442,
+            "falpha": 0.0
+          },
+          "id": 1,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #1",
+          "x": 257,
+          "y": 71
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Dark Enchant",
+          "color": {
+            "value": -3407668,
+            "falpha": 0.0
+          },
+          "name": "Dark Enchant",
+          "x": 183,
+          "y": 47
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Dark Enchant",
+          "onClick": {
+            "name": "DarkEnchantObject"
+          },
+          "width": 85,
+          "height": 20,
+          "name": "Dark Enchant",
+          "x": 170,
+          "y": 71
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "CUSTOM:DarkendOrb"
+          },
+          "color": {
+            "value": -13434829,
+            "falpha": 0.0
+          },
+          "id": 2,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #2",
+          "x": 150,
+          "y": 52
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "color": {
+            "value": -39220,
+            "falpha": 0.0
+          },
+          "id": 3,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #3",
+          "x": 150,
+          "y": 89
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 4,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #4",
+          "x": 257,
+          "y": 89
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "group": "dark_vs_light",
+  "type": "minecraft:campfire_cooking",
+  "experience": 1,
+  "cookingtime": 100,
+  "ingredient": {
+    "item": "dark_vs_light:glowing_fruit_food"
+  },
+  "result": {
+    "item": "dark_vs_light:dried_glow_berry"
+  }
+}

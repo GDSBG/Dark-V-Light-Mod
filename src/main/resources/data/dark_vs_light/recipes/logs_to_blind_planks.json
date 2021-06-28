@@ -1,0 +1,16 @@
+{
+  "group": "darkendplanks",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0"
+  ],
+  "key": {
+    "0": {
+      "item": "dark_vs_light:blind_log"
+    }
+  },
+  "result": {
+    "item": "dark_vs_light:blind_planks",
+    "count": 4
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "_fv": 21,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:StonePlatedDarkStone"
+      },
+      {
+        "value": "CUSTOM:EnlightendStone"
+      },
+      {
+        "value": "CUSTOM:BurnBlock"
+      },
+      {
+        "value": "CUSTOM:CarbonatedDarkStone"
+      },
+      {
+        "value": "CUSTOM:Jelk"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "name": "horntame",
+    "namespace": "minecraft"
+  }
+}

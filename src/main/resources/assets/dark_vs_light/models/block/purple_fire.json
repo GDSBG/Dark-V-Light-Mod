@@ -1,0 +1,7 @@
+{
+  "parent": "block/crop",
+  "textures": {
+    "crop": "dark_vs_light:blocks/purpfire",
+    "particle": "dark_vs_light:blocks/purpfire"
+  }
+}

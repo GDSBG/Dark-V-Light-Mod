@@ -1,0 +1,89 @@
+{
+  "_fv": 21,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 112,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "123",
+          "width": 120,
+          "height": 20,
+          "name": "hptoxp",
+          "x": 156,
+          "y": 76
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "How Many Levels?",
+          "color": {
+            "value": -16737793,
+            "falpha": 0.0
+          },
+          "name": "How Many Levels?",
+          "x": 173,
+          "y": 66
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "HP Loss: <BNBT:number:LHP>",
+          "color": {
+            "value": -65536,
+            "falpha": 0.0
+          },
+          "name": "HP Loss: <BNBT:number:LHP>",
+          "x": 155,
+          "y": 97
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Convert",
+          "onClick": {
+            "name": "ConvertToXp"
+          },
+          "width": 60,
+          "height": 20,
+          "name": "Convert",
+          "x": 127,
+          "y": 153
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Click Again to confirm!",
+          "color": {
+            "value": -65485,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "ConfirmShown"
+          },
+          "name": "Click Again to confirm!",
+          "x": 127,
+          "y": 142
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

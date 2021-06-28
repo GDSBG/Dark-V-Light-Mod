@@ -1,0 +1,90 @@
+{
+  "_fv": 21,
+  "_type": "biome",
+  "definition": {
+    "name": "Glow Forest",
+    "groundBlock": {
+      "value": "CUSTOM:EnlightendGrass"
+    },
+    "undergroundBlock": {
+      "value": "CUSTOM:EnlightendDirt"
+    },
+    "airColor": {
+      "value": -1,
+      "falpha": 0.0
+    },
+    "ambientSound": {
+      "value": ""
+    },
+    "additionsSound": {
+      "value": ""
+    },
+    "music": {
+      "value": ""
+    },
+    "moodSound": {
+      "value": ""
+    },
+    "moodSoundDelay": 6000,
+    "spawnParticles": false,
+    "particleToSpawn": {
+      "value": "CUSTOM:Test"
+    },
+    "particlesProbability": 0.5,
+    "biomeCategory": "NONE",
+    "parent": {
+      "value": "No parent"
+    },
+    "rainingPossibility": 0.5,
+    "temperature": 0.5,
+    "baseHeight": 0.4,
+    "heightVariation": 0.7,
+    "biomeType": "DESERT",
+    "spawnBiome": false,
+    "biomeWeight": 10,
+    "biomeDictionaryTypes": [],
+    "grassPerChunk": 0,
+    "seagrassPerChunk": 0,
+    "flowersPerChunk": 0,
+    "mushroomsPerChunk": 0,
+    "bigMushroomsChunk": 0,
+    "sandPatchesPerChunk": 0,
+    "gravelPatchesPerChunk": 0,
+    "reedsPerChunk": 0,
+    "cactiPerChunk": 0,
+    "treesPerChunk": 6,
+    "vanillaTreeType": "Default",
+    "treeType": 1,
+    "minHeight": 4,
+    "maxWaterDepth": 0,
+    "treeStem": {
+      "value": "CUSTOM:GlowLog"
+    },
+    "treeBranch": {
+      "value": "CUSTOM:GlowLeaves"
+    },
+    "treeVines": {
+      "value": "CUSTOM:GlowLeaves"
+    },
+    "treeFruits": {
+      "value": "CUSTOM:GlowLeaves"
+    },
+    "spawnStronghold": false,
+    "spawnMineshaft": false,
+    "spawnPillagerOutpost": false,
+    "villageType": "none",
+    "spawnWoodlandMansion": false,
+    "spawnJungleTemple": false,
+    "spawnDesertPyramid": false,
+    "spawnIgloo": false,
+    "spawnOceanMonument": false,
+    "spawnShipwreck": false,
+    "oceanRuinType": "NONE",
+    "defaultFeatures": [
+      "Caves",
+      "Ores",
+      "FrozenTopLayer"
+    ],
+    "spawnEntries": []
+  }
+}

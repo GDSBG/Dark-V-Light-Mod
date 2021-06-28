@@ -1,0 +1,401 @@
+{
+  "_fv": 21,
+  "_type": "overlay",
+  "definition": {
+    "priority": "NORMAL",
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "darkingberry.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "DarkendMeterDisplayOverlayIngame"
+          },
+          "name": "darkingberry.png",
+          "x": 6,
+          "y": 224
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "glowingberry.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "EnlightendMeterDisplay"
+          },
+          "name": "glowingberry.png",
+          "x": 6,
+          "y": 224
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "darkingberry.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "Dark2"
+          },
+          "name": "darkingberry.png",
+          "x": 15,
+          "y": 224
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "glowingberry.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "Glow2"
+          },
+          "name": "glowingberry.png",
+          "x": 15,
+          "y": 224
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "darkingberry.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "Dark3"
+          },
+          "name": "darkingberry.png",
+          "x": 24,
+          "y": 224
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "glowingberry.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "Glow3"
+          },
+          "name": "glowingberry.png",
+          "x": 24,
+          "y": 224
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "darkingberry.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "Dark4"
+          },
+          "name": "darkingberry.png",
+          "x": 33,
+          "y": 224
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "glowingberry.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "Glow4"
+          },
+          "name": "glowingberry.png",
+          "x": 33,
+          "y": 224
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "darkingberry.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "Dark5"
+          },
+          "name": "darkingberry.png",
+          "x": 42,
+          "y": 224
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "glowingberry.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "Glow5"
+          },
+          "name": "glowingberry.png",
+          "x": 42,
+          "y": 224
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "darkingberry.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "Dark6"
+          },
+          "name": "darkingberry.png",
+          "x": 51,
+          "y": 224
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "glowingberry.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "Glow6"
+          },
+          "name": "glowingberry.png",
+          "x": 51,
+          "y": 224
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "darkingberry.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "Dark7"
+          },
+          "name": "darkingberry.png",
+          "x": 60,
+          "y": 224
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "glowingberry.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "Glow7"
+          },
+          "name": "glowingberry.png",
+          "x": 60,
+          "y": 224
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "darkingberry.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "Dark8"
+          },
+          "name": "darkingberry.png",
+          "x": 69,
+          "y": 224
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "glowingberry.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "Glow8"
+          },
+          "name": "glowingberry.png",
+          "x": 69,
+          "y": 224
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "darkingberry.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "Dark9"
+          },
+          "name": "darkingberry.png",
+          "x": 78,
+          "y": 224
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "glowingberry.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "Glow9"
+          },
+          "name": "glowingberry.png",
+          "x": 78,
+          "y": 224
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "glowbg.png",
+          "use1Xscale": true,
+          "name": "glowbg.png",
+          "x": 78,
+          "y": 215
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "glowbg.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "GlowBg1"
+          },
+          "name": "glowbg.png",
+          "x": 69,
+          "y": 215
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "glowbg.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "GlowBg2"
+          },
+          "name": "glowbg.png",
+          "x": 60,
+          "y": 215
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "glowbg.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "GlowBg3"
+          },
+          "name": "glowbg.png",
+          "x": 51,
+          "y": 215
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "glowbg.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "GlowBg4"
+          },
+          "name": "glowbg.png",
+          "x": 42,
+          "y": 215
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "glowplus.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Glowover"
+          },
+          "name": "glowplus.png",
+          "x": 69,
+          "y": 197
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "darkingberrybg.png",
+          "use1Xscale": true,
+          "name": "darkingberrybg.png",
+          "x": 6,
+          "y": 215
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "darkingberrybg.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "DarkBg1"
+          },
+          "name": "darkingberrybg.png",
+          "x": 15,
+          "y": 215
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "darkingberrybg.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "DarkBg2"
+          },
+          "name": "darkingberrybg.png",
+          "x": 24,
+          "y": 215
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "darkingberrybg.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "DarkBg3"
+          },
+          "name": "darkingberrybg.png",
+          "x": 33,
+          "y": 215
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "darkingberrybg.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "DarkBg4"
+          },
+          "name": "darkingberrybg.png",
+          "x": 42,
+          "y": 215
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "darkextra.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "DarkOver"
+          },
+          "name": "darkextra.png",
+          "x": 6,
+          "y": 197
+        }
+      }
+    ],
+    "baseTexture": "",
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

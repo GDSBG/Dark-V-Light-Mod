@@ -1,0 +1,22 @@
+{
+  "_fv": 21,
+  "_type": "potion",
+  "definition": {
+    "name": "Potion of Enlightend",
+    "effectName": "Enlightend",
+    "icon": "glowingberry.png",
+    "color": {
+      "value": -205,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": false,
+    "isBenefitical": true,
+    "registerPotionType": true,
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onActiveTick": {
+      "name": "EnlightendOnPotionActiveTick"
+    }
+  }
+}

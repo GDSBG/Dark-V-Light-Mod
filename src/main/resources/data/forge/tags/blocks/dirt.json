@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "dark_vs_light:darkend_grass",
+    "dark_vs_light:dark_dirt",
+    "dark_vs_light:enlightend_grass",
+    "dark_vs_light:enlightend_dirt"
+  ]
+}

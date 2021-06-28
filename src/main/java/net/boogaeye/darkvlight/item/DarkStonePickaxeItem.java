@@ -11,14 +11,14 @@ import net.minecraft.item.IItemTier;
 
 import net.boogaeye.darkvlight.itemgroup.DVLtabItemGroup;
 import net.boogaeye.darkvlight.block.DarkStoneBlock;
-import net.boogaeye.darkvlight.DarkVLightModElements;
+import net.boogaeye.darkvlight.DarkVsLightModElements;
 
-@DarkVLightModElements.ModElement.Tag
-public class DarkStonePickaxeItem extends DarkVLightModElements.ModElement {
-	@ObjectHolder("dark_v_light:dark_stone_pickaxe")
+@DarkVsLightModElements.ModElement.Tag
+public class DarkStonePickaxeItem extends DarkVsLightModElements.ModElement {
+	@ObjectHolder("dark_vs_light:dark_stone_pickaxe")
 	public static final Item block = null;
-	public DarkStonePickaxeItem(DarkVLightModElements instance) {
-		super(instance, 8);
+	public DarkStonePickaxeItem(DarkVsLightModElements instance) {
+		super(instance, 6);
 	}
 
 	@Override
@@ -33,7 +33,7 @@ public class DarkStonePickaxeItem extends DarkVLightModElements.ModElement {
 			}
 
 			public float getAttackDamage() {
-				return 2f;
+				return 0f;
 			}
 
 			public int getHarvestLevel() {

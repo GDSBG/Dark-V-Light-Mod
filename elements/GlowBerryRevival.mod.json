@@ -1,0 +1,19 @@
+{
+  "_fv": 21,
+  "_type": "potion",
+  "definition": {
+    "name": "Glow Berry Revival",
+    "effectName": "Revival",
+    "icon": "glowplus.png",
+    "color": {
+      "value": -256,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": false,
+    "isBenefitical": false,
+    "registerPotionType": false,
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:zombie_head"
+    },
+    "title": {
+      "translate": "advancements.trusted_leader.title"
+    },
+    "description": {
+      "translate": "advancements.trusted_leader.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "trusted_leader": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 5
+  },
+  "parent": "dark_vs_light:the_start_of_something_dark"
+}

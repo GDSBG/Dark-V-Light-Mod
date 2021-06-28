@@ -1,0 +1,40 @@
+{
+  "_fv": 21,
+  "_type": "fluid",
+  "definition": {
+    "name": "Endarkend Fluid",
+    "bucketName": "Endarkend Fluid Bucket",
+    "textureStill": "darkwaterstill",
+    "textureFlowing": "darkwaterflow",
+    "luminosity": 0,
+    "density": 1000,
+    "viscosity": 3000,
+    "isGas": false,
+    "type": "WATER",
+    "generateBucket": true,
+    "textureBucket": "",
+    "creativeTab": {
+      "value": "CUSTOM:DVLtab"
+    },
+    "emptySound": {
+      "value": ""
+    },
+    "rarity": "COMMON",
+    "specialInfo": [],
+    "resistance": 100.0,
+    "luminance": 0,
+    "emissiveRendering": false,
+    "flammability": 0,
+    "fireSpreadSpeed": 0,
+    "colorOnMap": "DEFAULT",
+    "frequencyOnChunks": 1,
+    "spawnWorldTypes": [],
+    "restrictionBiomes": [],
+    "onTickUpdate": {
+      "name": "EndarkendFluidUpdateTick"
+    },
+    "onEntityCollides": {
+      "name": "EndarkendFluidMobplayerCollidesBlock"
+    }
+  }
+}

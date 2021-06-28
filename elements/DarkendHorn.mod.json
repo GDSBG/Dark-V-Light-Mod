@@ -1,0 +1,136 @@
+{
+  "_fv": 21,
+  "_type": "mob",
+  "definition": {
+    "mobName": "Darkend Horn",
+    "mobLabel": "",
+    "mobModelName": "ModelDark_Horn",
+    "mobModelTexture": "dark_horn.png",
+    "mobModelGlowTexture": "",
+    "modelWidth": 3.0,
+    "modelHeight": 3.0,
+    "modelShadowSize": 3.0,
+    "mountedYOffset": 0.0,
+    "hasSpawnEgg": true,
+    "spawnEggBaseColor": {
+      "value": -3407668,
+      "falpha": 0.0
+    },
+    "spawnEggDotColor": {
+      "value": -3407872,
+      "falpha": 0.0
+    },
+    "creativeTab": {
+      "value": "CUSTOM:DVLtab"
+    },
+    "isBoss": false,
+    "bossBarColor": "PINK",
+    "bossBarType": "PROGRESS",
+    "equipmentMainHand": {
+      "value": ""
+    },
+    "equipmentOffHand": {
+      "value": ""
+    },
+    "equipmentHelmet": {
+      "value": ""
+    },
+    "equipmentBody": {
+      "value": ""
+    },
+    "equipmentLeggings": {
+      "value": ""
+    },
+    "equipmentBoots": {
+      "value": ""
+    },
+    "mobBehaviourType": "Mob",
+    "mobCreatureType": "UNDEFINED",
+    "attackStrength": 5,
+    "attackKnockback": 3.0,
+    "knockbackResistance": 0.5,
+    "movementSpeed": 0.125,
+    "armorBaseValue": 10.0,
+    "trackingRange": 64,
+    "health": 35,
+    "xpAmount": 8,
+    "waterMob": false,
+    "flyingMob": false,
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "disableCollisions": false,
+    "ridable": false,
+    "canControlForward": false,
+    "canControlStrafe": false,
+    "immuneToFire": false,
+    "immuneToArrows": true,
+    "immuneToFallDamage": false,
+    "immuneToCactus": false,
+    "immuneToDrowning": false,
+    "immuneToLightning": false,
+    "immuneToPotions": false,
+    "immuneToPlayer": false,
+    "immuneToExplosion": false,
+    "immuneToTrident": true,
+    "immuneToAnvil": false,
+    "immuneToWither": false,
+    "immuneToDragonBreath": false,
+    "mobDrop": {
+      "value": ""
+    },
+    "livingSound": {
+      "value": "CUSTOM:hornambient"
+    },
+    "hurtSound": {
+      "value": "CUSTOM:hornhurt"
+    },
+    "deathSound": {
+      "value": "CUSTOM:hornhurt"
+    },
+    "stepSound": {
+      "value": "CUSTOM:hornstomp"
+    },
+    "spawnParticles": true,
+    "particleToSpawn": {
+      "value": "CUSTOM:Darkness"
+    },
+    "particleSpawningShape": "Top",
+    "particleSpawningRadious": 0.5,
+    "particleAmount": 4,
+    "particleCondition": {
+      "name": "DarkendHornParticleSpawningCondition"
+    },
+    "whenMobIsHurt": {
+      "name": "DarkendHornEntityIsHurt"
+    },
+    "onRightClickedOn": {
+      "name": "DarkendHornRightClickedOnEntity"
+    },
+    "onMobTickUpdate": {
+      "name": "DarkendHornOnEntityTickUpdate"
+    },
+    "onInitialSpawn": {
+      "name": "DarkendHornOnInitialEntitySpawn"
+    },
+    "hasAI": true,
+    "aiBase": "(none)",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"avoid_entity\"><field name=\"radius\">16</field><field name=\"farspeed\">2</field><field name=\"nearspeed\">4</field><field name=\"entity\">CUSTOM:DarkendDestroyer</field><field name=\"condition\">AngerForDarkHornAI,AngerForDarkHornAI</field><next><block type=\"avoid_entity\"><field name=\"radius\">16</field><field name=\"farspeed\">2</field><field name=\"nearspeed\">4</field><field name=\"entity\">CUSTOM:DarkendShooter</field><field name=\"condition\">AngerForDarkHornAI,AngerForDarkHornAI</field><next><block type=\"avoid_entity\"><field name=\"radius\">10</field><field name=\"farspeed\">2</field><field name=\"nearspeed\">4</field><field name=\"entity\">CUSTOM:DarkendFloater</field><field name=\"condition\">AngerForDarkHornAI,AngerForDarkHornAI</field><next><block type=\"avoid_entity\"><field name=\"radius\">10</field><field name=\"farspeed\">2</field><field name=\"nearspeed\">4</field><field name=\"entity\">EntityGhast</field><field name=\"condition\">AngerForDarkHornAI,AngerForDarkHornAI</field><next><block type=\"attack_action\"><field name=\"callhelp\">TRUE</field><field name=\"condition\">null,null</field><next><block type=\"attack_on_collide\"><field name=\"speed\">1.8</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"attack_entity\"><field name=\"insight\">FALSE</field><field name=\"nearby\">TRUE</field><field name=\"entity\">CUSTOM:DarkendFloater</field><field name=\"condition\">null,null</field><next><block type=\"attack_entity\"><field name=\"insight\">FALSE</field><field name=\"nearby\">TRUE</field><field name=\"entity\">EntityZombie</field><field name=\"condition\">null,null</field><next><block type=\"attack_entity\"><field name=\"insight\">FALSE</field><field name=\"nearby\">TRUE</field><field name=\"entity\">EntityBlaze</field><field name=\"condition\">null,null</field><next><block type=\"attack_entity\"><field name=\"insight\">FALSE</field><field name=\"nearby\">TRUE</field><field name=\"entity\">CUSTOM:DarkendBossEntity</field><field name=\"condition\">null,null</field><next><block type=\"attack_entity\"><field name=\"insight\">FALSE</field><field name=\"nearby\">TRUE</field><field name=\"entity\">CUSTOM:DarkendTallend</field><field name=\"condition\">null,null</field><next><block type=\"attack_entity\"><field name=\"insight\">FALSE</field><field name=\"nearby\">TRUE</field><field name=\"entity\">EntityPlayerMP</field><field name=\"condition\">null,null</field><next><block type=\"attack_entity\"><field name=\"insight\">FALSE</field><field name=\"nearby\">TRUE</field><field name=\"entity\">EntityPlayer</field><field name=\"condition\">null,null</field><next><block type=\"swim\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"wander_avoid_water\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>",
+    "breedable": false,
+    "tameable": false,
+    "breedTriggerItems": [],
+    "ranged": false,
+    "rangedAttackItem": {
+      "value": ""
+    },
+    "rangedItemType": "Default item",
+    "spawnThisMob": false,
+    "doesDespawnWhenIdle": true,
+    "spawningProbability": 20,
+    "mobSpawningType": "monster",
+    "minNumberOfMobsPerGroup": 4,
+    "maxNumberOfMobsPerGroup": 4,
+    "restrictionBiomes": [],
+    "spawnInDungeons": false
+  }
+}

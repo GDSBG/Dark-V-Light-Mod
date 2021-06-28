@@ -1,0 +1,59 @@
+{
+  "display": {
+    "icon": {
+      "item": "dark_vs_light:darkend_dimension"
+    },
+    "title": {
+      "translate": "advancements.darker_we_go.title"
+    },
+    "description": {
+      "translate": "advancements.darker_we_go.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "darker_we_go": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 3,
+    "recipes": [
+      "dark_vs_light:smooth_dark_stone_recipe",
+      "dark_vs_light:burn_gaze_wooden_planks_recipe",
+      "dark_vs_light:burn_gaze_wooden_door_recipe",
+      "dark_vs_light:burn_ore_furnace",
+      "dark_vs_light:burn_ore_blast",
+      "dark_vs_light:dark_stone_sword_recipe",
+      "dark_vs_light:burn_pane_recipe_1",
+      "dark_vs_light:burn_pane_recipe_2",
+      "dark_vs_light:dark_stone_pick_recipe",
+      "dark_vs_light:sticks_from_dark_wood",
+      "dark_vs_light:darkend_portal_ignitor_recipe",
+      "dark_vs_light:darkend_hoe_why_recipe",
+      "dark_vs_light:dark_stone_axe_recipe",
+      "dark_vs_light:burn_armor_helmet_recipe",
+      "dark_vs_light:burn_armor_body_recipe",
+      "dark_vs_light:burn_armor_leggings_recipe",
+      "dark_vs_light:burn_armor_boots_recipe",
+      "dark_vs_light:burn_ore_surface_furnace",
+      "dark_vs_light:crafting_table_from_dark_wood",
+      "dark_vs_light:wooden_sword_recipe",
+      "dark_vs_light:smooth_dark_stone_stairs_recipe",
+      "dark_vs_light:smooth_dark_stone_wall_recipe",
+      "dark_vs_light:dark_stone_stairs_recipe",
+      "dark_vs_light:dark_stone_wall_recipe",
+      "dark_vs_light:dark_stone_slab_recipe",
+      "dark_vs_light:dark_stone_pane_recipe",
+      "dark_vs_light:dried_glow_berry_recipe",
+      "dark_vs_light:glow_berry_to_torch",
+      "dark_vs_light:waypoint_recipe",
+      "dark_vs_light:darkend_boss_temple_detector_recipe",
+      "dark_vs_light:gliph_recipe"
+    ]
+  },
+  "parent": "dark_vs_light:the_start_of_something_dark"
+}

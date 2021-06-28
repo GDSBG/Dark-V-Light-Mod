@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "dark_vs_light:burn_diamond"
+    },
+    "title": {
+      "translate": "advancements.ahhh_this_burns_less.title"
+    },
+    "description": {
+      "translate": "advancements.ahhh_this_burns_less.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "ahhh_this_burns_less": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 1
+  },
+  "parent": "dark_vs_light:this_diamond_is_on_fire"
+}

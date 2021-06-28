@@ -1,29 +1,13 @@
 {
-  "_fv": 10,
+  "_fv": 21,
   "_type": "biome",
   "definition": {
+    "name": "Burned Gaze Forest",
     "groundBlock": {
       "value": "CUSTOM:DarkendGrass"
     },
     "undergroundBlock": {
       "value": "CUSTOM:DarkDirt"
-    },
-    "generateLakes": false,
-    "treeType": 1,
-    "vanillaTreeType": "Default",
-    "minHeight": 8,
-    "spawnVines": false,
-    "treeVines": {
-      "value": "Blocks.AIR"
-    },
-    "treeStem": {
-      "value": "CUSTOM:BurnedGazeWood"
-    },
-    "treeBranch": {
-      "value": "CUSTOM:DarkStone"
-    },
-    "treeFruits": {
-      "value": "Blocks.AIR"
     },
     "airColor": {
       "value": -10092493,
@@ -33,40 +17,188 @@
       "value": -16777216,
       "falpha": 0.0
     },
+    "foliageColor": {
+      "value": -16777216,
+      "falpha": 0.0
+    },
     "waterColor": {
       "value": -10066432,
       "falpha": 0.0
     },
-    "treesPerChunk": 7,
-    "grassPerChunk": 0,
-    "flowersPerChunk": 0,
-    "mushroomsPerChunk": 0,
-    "bigMushroomsChunk": 0,
-    "sandPathcesPerChunk": 0,
-    "gravelPatchesPerChunk": 0,
-    "reedsPerChunk": 0,
-    "cactiPerChunk": 0,
-    "rainingPossibility": 0.8,
-    "temperature": 0.7,
-    "baseHeight": 0.1,
-    "heightVariation": 0.2,
-    "spawnBiome": false,
-    "biomeWeight": 10,
-    "biomeType": "DESERT",
+    "waterFogColor": {
+      "value": -10066432,
+      "falpha": 0.0
+    },
+    "ambientSound": {
+      "value": "CUSTOM:burnforestambient"
+    },
+    "additionsSound": {
+      "value": "CUSTOM:burngazeadditions"
+    },
+    "music": {
+      "value": "CUSTOM:darkforest"
+    },
+    "moodSound": {
+      "value": "CUSTOM:burnforestmood"
+    },
+    "moodSoundDelay": 400,
+    "spawnParticles": false,
+    "particleToSpawn": {
+      "value": "CUSTOM:Test"
+    },
+    "particlesProbability": 0.0,
     "biomeCategory": "NONE",
     "parent": {
       "value": "No parent"
     },
+    "rainingPossibility": 0.8,
+    "temperature": 0.7,
+    "baseHeight": 0.1,
+    "heightVariation": 0.2,
+    "biomeType": "WARM",
+    "spawnBiome": false,
+    "biomeWeight": 8,
     "biomeDictionaryTypes": [],
+    "grassPerChunk": 0,
+    "seagrassPerChunk": 0,
+    "flowersPerChunk": 0,
+    "mushroomsPerChunk": 0,
+    "bigMushroomsChunk": 0,
+    "sandPatchesPerChunk": 0,
+    "gravelPatchesPerChunk": 0,
+    "reedsPerChunk": 0,
+    "cactiPerChunk": 0,
+    "treesPerChunk": 7,
+    "vanillaTreeType": "Birch trees",
+    "treeType": 1,
+    "minHeight": 8,
+    "maxWaterDepth": 0,
+    "treeStem": {
+      "value": "CUSTOM:BurnGazeWood"
+    },
+    "treeBranch": {
+      "value": "CUSTOM:DarkStone"
+    },
+    "treeVines": {
+      "value": "Blocks.AIR"
+    },
+    "treeFruits": {
+      "value": "Blocks.AIR"
+    },
+    "spawnStronghold": false,
+    "spawnMineshaft": false,
+    "spawnPillagerOutpost": false,
+    "villageType": "none",
+    "spawnWoodlandMansion": false,
+    "spawnJungleTemple": false,
+    "spawnDesertPyramid": false,
+    "spawnIgloo": false,
+    "spawnOceanMonument": false,
+    "spawnShipwreck": false,
+    "oceanRuinType": "NONE",
+    "defaultFeatures": [
+      "Caves",
+      "FrozenTopLayer"
+    ],
     "spawnEntries": [
       {
         "entity": {
           "value": "CUSTOM:DarkendFloater"
         },
         "minGroup": 2,
-        "maxGroup": 16,
+        "maxGroup": 5,
         "weight": 30,
-        "spawnType": "ambient"
+        "spawnType": "monster"
+      },
+      {
+        "entity": {
+          "value": "CUSTOM:DarkendLoner"
+        },
+        "minGroup": 1,
+        "maxGroup": 4,
+        "weight": 10,
+        "spawnType": "monster"
+      },
+      {
+        "entity": {
+          "value": "EntityZombie"
+        },
+        "minGroup": 1,
+        "maxGroup": 6,
+        "weight": 20,
+        "spawnType": "monster"
+      },
+      {
+        "entity": {
+          "value": "EntitySkeleton"
+        },
+        "minGroup": 1,
+        "maxGroup": 2,
+        "weight": 15,
+        "spawnType": "monster"
+      },
+      {
+        "entity": {
+          "value": "EntityEnderman"
+        },
+        "minGroup": 1,
+        "maxGroup": 2,
+        "weight": 4,
+        "spawnType": "monster"
+      },
+      {
+        "entity": {
+          "value": "CUSTOM:DarkendShooter"
+        },
+        "minGroup": 1,
+        "maxGroup": 2,
+        "weight": 10,
+        "spawnType": "monster"
+      },
+      {
+        "entity": {
+          "value": "CUSTOM:DarkendDestroyer"
+        },
+        "minGroup": 1,
+        "maxGroup": 2,
+        "weight": 2,
+        "spawnType": "monster"
+      },
+      {
+        "entity": {
+          "value": "CUSTOM:DarkendTeleporter"
+        },
+        "minGroup": 1,
+        "maxGroup": 4,
+        "weight": 15,
+        "spawnType": "monster"
+      },
+      {
+        "entity": {
+          "value": "CUSTOM:DarkendWolf"
+        },
+        "minGroup": 4,
+        "maxGroup": 8,
+        "weight": 20,
+        "spawnType": "monster"
+      },
+      {
+        "entity": {
+          "value": "CUSTOM:DarkendSurviver"
+        },
+        "minGroup": 1,
+        "maxGroup": 2,
+        "weight": 2,
+        "spawnType": "monster"
+      },
+      {
+        "entity": {
+          "value": "CUSTOM:DarkendDrone"
+        },
+        "minGroup": 1,
+        "maxGroup": 1,
+        "weight": 4,
+        "spawnType": "monster"
       }
     ]
   }

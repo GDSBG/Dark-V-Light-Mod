@@ -1,0 +1,31 @@
+{
+  "display": {
+    "icon": {
+      "item": "dark_vs_light:darkend_enchanter"
+    },
+    "title": {
+      "translate": "advancements.deep_dark_enchantments.title"
+    },
+    "description": {
+      "translate": "advancements.deep_dark_enchantments.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "deep_dark_enchantments": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "item": {
+          "item": "dark_vs_light:darkend_enchanter"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "experience": 1
+  },
+  "parent": "dark_vs_light:i_dont_trust_this_guys"
+}

@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "dark_vs_light:stone_plated_dark_stone",
+    "dark_vs_light:enlightend_stone",
+    "dark_vs_light:burn_block",
+    "dark_vs_light:carbonated_dark_stone",
+    "dark_vs_light:jelk"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "_fv": 21,
+  "_type": "potion",
+  "definition": {
+    "name": "Survivor Trade",
+    "effectName": "Survivor Trade",
+    "icon": "darkendoverlay.png",
+    "color": {
+      "value": -10027162,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": false,
+    "isBenefitical": false,
+    "registerPotionType": false,
+    "renderStatusInInventory": false,
+    "renderStatusInHUD": false,
+    "onStarted": {
+      "name": "SurvivorTradePotionStartedapplied"
+    },
+    "onExpired": {
+      "name": "SurvivorTradePotionExpires"
+    }
+  }
+}

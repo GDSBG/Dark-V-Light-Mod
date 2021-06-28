@@ -1,5 +1,5 @@
 {
-  "_fv": 10,
+  "_fv": 21,
   "_type": "mob",
   "definition": {
     "mobName": "Darkend Loner",
@@ -47,6 +47,8 @@
     "mobBehaviourType": "Mob",
     "mobCreatureType": "UNDEFINED",
     "attackStrength": 3,
+    "attackKnockback": 0.0,
+    "knockbackResistance": 0.0,
     "movementSpeed": 0.15,
     "armorBaseValue": 0.0,
     "trackingRange": 64,
@@ -69,17 +71,25 @@
     "immuneToLightning": false,
     "immuneToPotions": false,
     "immuneToPlayer": false,
+    "immuneToExplosion": false,
+    "immuneToTrident": false,
+    "immuneToAnvil": false,
+    "immuneToWither": false,
+    "immuneToDragonBreath": false,
     "mobDrop": {
       "value": ""
     },
     "livingSound": {
-      "value": ""
+      "value": "CUSTOM:dloner"
     },
     "hurtSound": {
-      "value": "entity.generic.hurt"
+      "value": "CUSTOM:dlonerhurt"
     },
     "deathSound": {
-      "value": "entity.generic.death"
+      "value": "CUSTOM:dlonerhurt"
+    },
+    "stepSound": {
+      "value": ""
     },
     "spawnParticles": false,
     "particleToSpawn": {
@@ -88,12 +98,19 @@
     "particleSpawningShape": "Spread",
     "particleSpawningRadious": 0.5,
     "particleAmount": 4,
+    "whenMobIsHurt": {
+      "name": "DarkendLonerEntityIsHurt"
+    },
     "hasAI": true,
     "aiBase": "(none)",
-    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"doors_break\"><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">0.2</field><field name=\"condition\">null,null</field><next><block type=\"watch_closest_entity\"><field name=\"radius\">6</field><field name=\"entity\">CUSTOM:DarkendFloater</field><field name=\"condition\">null,null</field><next><block type=\"attack_on_collide\"><field name=\"speed\">0.8</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"attack_entity\"><field name=\"insight\">TRUE</field><field name=\"nearby\">TRUE</field><field name=\"entity\">CUSTOM:DarkendFloater</field><field name=\"condition\">null,null</field><next><block type=\"follow_entity\"><field name=\"speed\">0.8</field><field name=\"maxrange\">15</field><field name=\"followarea\">4</field><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"avoid_entity\"><field name=\"radius\">20</field><field name=\"farspeed\">2</field><field name=\"nearspeed\">2</field><field name=\"entity\">CUSTOM:DarkendDestroyer</field><field name=\"condition\">null,null</field><next><block type=\"avoid_entity\"><field name=\"radius\">20</field><field name=\"farspeed\">2</field><field name=\"nearspeed\">2</field><field name=\"entity\">CUSTOM:DarkendShooter</field><field name=\"condition\">null,null</field><next><block type=\"avoid_entity\"><field name=\"radius\">6</field><field name=\"farspeed\">1</field><field name=\"nearspeed\">1.2</field><field name=\"entity\">CUSTOM:DarkendFloater</field><field name=\"condition\">null,null</field><next><block type=\"attack_on_collide\"><field name=\"speed\">0.8</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"attack_entity\"><field name=\"insight\">FALSE</field><field name=\"nearby\">TRUE</field><field name=\"entity\">EntitySlime</field><field name=\"condition\">null,null</field><next><block type=\"attack_entity\"><field name=\"insight\">FALSE</field><field name=\"nearby\">TRUE</field><field name=\"entity\">EntitySilverfish</field><field name=\"condition\">null,null</field><next><block type=\"attack_entity\"><field name=\"insight\">FALSE</field><field name=\"nearby\">TRUE</field><field name=\"entity\">EntityZombie</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">0.5</field><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field><next><block type=\"swim\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"panic_when_attacked\"><field name=\"speed\">1.2</field><field name=\"condition\">null,null</field><next><block type=\"watch_closest_entity\"><field name=\"radius\">6</field><field name=\"entity\">CUSTOM:DarkendFloater</field><field name=\"condition\">null,null</field><next><block type=\"follow_entity\"><field name=\"speed\">0.8</field><field name=\"maxrange\">15</field><field name=\"followarea\">4</field><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>",
     "breedable": false,
     "tameable": false,
-    "breedTriggerItems": [],
+    "breedTriggerItems": [
+      {
+        "value": "CUSTOM:BurnCrystal"
+      }
+    ],
     "ranged": false,
     "rangedAttackItem": {
       "value": ""
@@ -105,7 +122,14 @@
     "mobSpawningType": "monster",
     "minNumberOfMobsPerGroup": 1,
     "maxNumberOfMobsPerGroup": 1,
-    "restrictionBiomes": [],
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:GlowForest"
+      },
+      {
+        "value": "CUSTOM:EnchantedForest"
+      }
+    ],
     "spawnInDungeons": false
   }
 }

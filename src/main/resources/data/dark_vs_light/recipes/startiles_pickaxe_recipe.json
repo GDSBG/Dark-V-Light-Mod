@@ -1,0 +1,30 @@
+{
+  "group": "dark_vs_light",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    " 4 ",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "dark_vs_light:startile"
+    },
+    "1": {
+      "item": "dark_vs_light:startile"
+    },
+    "2": {
+      "item": "dark_vs_light:startile"
+    },
+    "4": {
+      "item": "minecraft:stick"
+    },
+    "7": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "dark_vs_light:startiles_pickaxe",
+    "count": 1
+  }
+}

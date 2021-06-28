@@ -1,0 +1,16 @@
+{
+  "group": "basaltdarkstone",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "dark_vs_light:dark_stone"
+    },
+    {
+      "item": "dark_vs_light:darkend_basalt"
+    }
+  ],
+  "result": {
+    "item": "dark_vs_light:basalt_dark_stone",
+    "count": 1
+  }
+}

@@ -1,0 +1,678 @@
+{
+  "upgrade": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "dark_vs_light:upgrade1",
+        "stream": false
+      },
+      {
+        "name": "dark_vs_light:upgrade2",
+        "stream": false
+      },
+      {
+        "name": "dark_vs_light:upgrade3",
+        "stream": false
+      }
+    ]
+  },
+  "dstonebreak": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "dark_vs_light:dstonebreak",
+        "stream": false
+      },
+      {
+        "name": "dark_vs_light:dstonebreak2",
+        "stream": false
+      }
+    ]
+  },
+  "trader": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "dark_vs_light:trader",
+        "stream": false
+      },
+      {
+        "name": "dark_vs_light:trader2",
+        "stream": false
+      }
+    ]
+  },
+  "darkendtallend": {
+    "category": "hostile",
+    "sounds": [
+      {
+        "name": "dark_vs_light:darkendtallend",
+        "stream": false
+      },
+      {
+        "name": "dark_vs_light:darkendtallend2",
+        "stream": false
+      }
+    ]
+  },
+  "darkendtallendhurt": {
+    "category": "hostile",
+    "sounds": [
+      {
+        "name": "dark_vs_light:darkendtallendhurt",
+        "stream": false
+      }
+    ]
+  },
+  "tracker": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "dark_vs_light:anyconv.com__tracker1",
+        "stream": false
+      },
+      {
+        "name": "dark_vs_light:anyconv.com__tracker2",
+        "stream": false
+      },
+      {
+        "name": "dark_vs_light:anyconv.com__tracker3",
+        "stream": false
+      }
+    ]
+  },
+  "trackercrafted": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "dark_vs_light:anyconv.com__trackercrafted1",
+        "stream": false
+      },
+      {
+        "name": "dark_vs_light:anyconv.com__trackercrafted2",
+        "stream": false
+      }
+    ]
+  },
+  "trackerdeny": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "dark_vs_light:anyconv.com__trackerdeny1",
+        "stream": false
+      },
+      {
+        "name": "dark_vs_light:anyconv.com__trackerdeny2",
+        "stream": false
+      },
+      {
+        "name": "dark_vs_light:anyconv.com__trackerdeny3",
+        "stream": false
+      },
+      {
+        "name": "dark_vs_light:anyconv.com__trackerdeny4",
+        "stream": false
+      },
+      {
+        "name": "dark_vs_light:anyconv.com__trackerdeny5",
+        "stream": false
+      },
+      {
+        "name": "dark_vs_light:anyconv.com__trackerdeny6",
+        "stream": false
+      },
+      {
+        "name": "dark_vs_light:anyconv.com__trackerdeny7",
+        "stream": false
+      }
+    ]
+  },
+  "trackerdrop": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "dark_vs_light:anyconv.com__trackerdropped1",
+        "stream": false
+      },
+      {
+        "name": "dark_vs_light:anyconv.com__trackerdropped2",
+        "stream": false
+      },
+      {
+        "name": "dark_vs_light:anyconv.com__trackerdropped3",
+        "stream": false
+      },
+      {
+        "name": "dark_vs_light:anyconv.com__trackerdropped4",
+        "stream": false
+      }
+    ]
+  },
+  "trackerfound": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "dark_vs_light:anyconv.com__trackerfound1",
+        "stream": false
+      },
+      {
+        "name": "dark_vs_light:anyconv.com__trackerfound2",
+        "stream": false
+      },
+      {
+        "name": "dark_vs_light:anyconv.com__trackerfound3",
+        "stream": false
+      },
+      {
+        "name": "dark_vs_light:anyconv.com__trackerfound4",
+        "stream": false
+      },
+      {
+        "name": "dark_vs_light:anyconv.com__trackerfound5",
+        "stream": false
+      },
+      {
+        "name": "dark_vs_light:anyconv.com__trackerfound6",
+        "stream": false
+      },
+      {
+        "name": "dark_vs_light:anyconv.com__trackerfound7",
+        "stream": false
+      },
+      {
+        "name": "dark_vs_light:anyconv.com__trackerfound8",
+        "stream": false
+      }
+    ]
+  },
+  "bosshurt": {
+    "category": "hostile",
+    "sounds": [
+      {
+        "name": "dark_vs_light:anyconv.com__bosshurt",
+        "stream": false
+      },
+      {
+        "name": "dark_vs_light:anyconv.com__bosshurt2",
+        "stream": false
+      },
+      {
+        "name": "dark_vs_light:anyconv.com__bosshurt3",
+        "stream": false
+      },
+      {
+        "name": "dark_vs_light:anyconv.com__bosshurt4",
+        "stream": false
+      },
+      {
+        "name": "dark_vs_light:anyconv.com__bosshurt5",
+        "stream": false
+      }
+    ]
+  },
+  "bossidle": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "dark_vs_light:anyconv.com__bossidle",
+        "stream": false
+      },
+      {
+        "name": "dark_vs_light:anyconv.com__bossidle2",
+        "stream": false
+      },
+      {
+        "name": "dark_vs_light:anyconv.com__bossidle3",
+        "stream": false
+      }
+    ]
+  },
+  "bossspell": {
+    "category": "hostile",
+    "sounds": [
+      {
+        "name": "dark_vs_light:anyconv.com__bossspell",
+        "stream": false
+      },
+      {
+        "name": "dark_vs_light:anyconv.com__bossspell2",
+        "stream": false
+      }
+    ]
+  },
+  "bosswalk": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "dark_vs_light:anyconv.com__bosswalk1",
+        "stream": false
+      },
+      {
+        "name": "dark_vs_light:anyconv.com__bosswalk2",
+        "stream": false
+      }
+    ]
+  },
+  "waterfill": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "dark_vs_light:waterfill1",
+        "stream": false
+      },
+      {
+        "name": "dark_vs_light:waterfill2",
+        "stream": false
+      },
+      {
+        "name": "dark_vs_light:waterfill3",
+        "stream": false
+      }
+    ]
+  },
+  "hornstomp": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "dark_vs_light:hornstomp",
+        "stream": false
+      }
+    ]
+  },
+  "hornambient": {
+    "category": "hostile",
+    "sounds": [
+      {
+        "name": "dark_vs_light:hornsound1",
+        "stream": false
+      },
+      {
+        "name": "dark_vs_light:hornsound2",
+        "stream": false
+      },
+      {
+        "name": "dark_vs_light:hornsound3",
+        "stream": false
+      }
+    ]
+  },
+  "hornhurt": {
+    "category": "hostile",
+    "sounds": [
+      {
+        "name": "dark_vs_light:hornhurt1",
+        "stream": false
+      },
+      {
+        "name": "dark_vs_light:hornhurt2",
+        "stream": false
+      },
+      {
+        "name": "dark_vs_light:hornhurt3",
+        "stream": false
+      },
+      {
+        "name": "dark_vs_light:hornhurt4",
+        "stream": false
+      },
+      {
+        "name": "dark_vs_light:hornhurt5",
+        "stream": false
+      }
+    ]
+  },
+  "dloner": {
+    "category": "ambient",
+    "sounds": [
+      {
+        "name": "dark_vs_light:dloner1",
+        "stream": false
+      },
+      {
+        "name": "dark_vs_light:dloner2",
+        "stream": false
+      },
+      {
+        "name": "dark_vs_light:dloner3",
+        "stream": false
+      },
+      {
+        "name": "dark_vs_light:dloner4",
+        "stream": false
+      }
+    ]
+  },
+  "dlonerhurt": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "dark_vs_light:dlonerhurt1",
+        "stream": false
+      },
+      {
+        "name": "dark_vs_light:dlonerhurt2",
+        "stream": false
+      },
+      {
+        "name": "dark_vs_light:dlonerhurt3",
+        "stream": false
+      }
+    ]
+  },
+  "darkendwolfam": {
+    "category": "ambient",
+    "sounds": [
+      {
+        "name": "dark_vs_light:darkendwolfambient1",
+        "stream": false
+      },
+      {
+        "name": "dark_vs_light:darkendwolfambient2",
+        "stream": false
+      }
+    ]
+  },
+  "darkenddessertambient": {
+    "category": "ambient",
+    "sounds": [
+      {
+        "name": "dark_vs_light:darkenddessertambient",
+        "stream": false
+      },
+      {
+        "name": "dark_vs_light:darkenddessertambient2",
+        "stream": false
+      },
+      {
+        "name": "dark_vs_light:darkenddessertambient3",
+        "stream": false
+      },
+      {
+        "name": "dark_vs_light:darkenddessertambient4",
+        "stream": false
+      },
+      {
+        "name": "dark_vs_light:darkenddessertambient5",
+        "stream": false
+      },
+      {
+        "name": "dark_vs_light:darkenddessertambient6",
+        "stream": false
+      }
+    ]
+  },
+  "dfloater": {
+    "category": "ambient",
+    "sounds": [
+      {
+        "name": "dark_vs_light:darkendfloater1",
+        "stream": false
+      },
+      {
+        "name": "dark_vs_light:darkendfloater2",
+        "stream": false
+      },
+      {
+        "name": "dark_vs_light:darkendfloater3",
+        "stream": false
+      },
+      {
+        "name": "dark_vs_light:darkendfloater4",
+        "stream": false
+      },
+      {
+        "name": "dark_vs_light:darkendfloater5",
+        "stream": false
+      },
+      {
+        "name": "dark_vs_light:darkendfloater6",
+        "stream": false
+      }
+    ]
+  },
+  "dfloaterhurt": {
+    "category": "hostile",
+    "sounds": [
+      {
+        "name": "dark_vs_light:darkendfloaterhurt",
+        "stream": false
+      },
+      {
+        "name": "dark_vs_light:darkendfloaterhurt1",
+        "stream": false
+      },
+      {
+        "name": "dark_vs_light:darkendfloaterhurt2",
+        "stream": false
+      },
+      {
+        "name": "dark_vs_light:darkendfloaterhurt3",
+        "stream": false
+      }
+    ]
+  },
+  "bdiamond": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "dark_vs_light:bdiamond1",
+        "stream": false
+      },
+      {
+        "name": "dark_vs_light:bdiamond2",
+        "stream": false
+      }
+    ]
+  },
+  "shadowarmor": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "dark_vs_light:shadowarmor1",
+        "stream": false
+      },
+      {
+        "name": "dark_vs_light:shadowarmor2",
+        "stream": false
+      },
+      {
+        "name": "dark_vs_light:shadowarmor3",
+        "stream": false
+      },
+      {
+        "name": "dark_vs_light:shadowarmor4",
+        "stream": false
+      },
+      {
+        "name": "dark_vs_light:shadowarmor5",
+        "stream": false
+      }
+    ]
+  },
+  "burngazeforest": {
+    "category": "ambient",
+    "sounds": [
+      {
+        "name": "dark_vs_light:burngazeforest",
+        "stream": false
+      },
+      {
+        "name": "dark_vs_light:burngazeforest2",
+        "stream": false
+      }
+    ]
+  },
+  "blindforest": {
+    "category": "ambient",
+    "sounds": [
+      {
+        "name": "dark_vs_light:blindforest1",
+        "stream": false
+      },
+      {
+        "name": "dark_vs_light:blindforest2",
+        "stream": false
+      }
+    ]
+  },
+  "hornsong": {
+    "category": "record",
+    "subtitle": "subtitles.hornsong",
+    "sounds": [
+      {
+        "name": "dark_vs_light:darkhornsong",
+        "stream": true
+      }
+    ]
+  },
+  "drag": {
+    "category": "hostile",
+    "sounds": [
+      {
+        "name": "dark_vs_light:bossdragin",
+        "stream": false
+      }
+    ]
+  },
+  "burnforestambient": {
+    "category": "ambient",
+    "sounds": [
+      {
+        "name": "dark_vs_light:burnforestambient",
+        "stream": false
+      }
+    ]
+  },
+  "burngazeadditions": {
+    "category": "ambient",
+    "sounds": [
+      {
+        "name": "dark_vs_light:burngazeadditions",
+        "stream": false
+      },
+      {
+        "name": "dark_vs_light:burngazeadditions2",
+        "stream": false
+      },
+      {
+        "name": "dark_vs_light:burngazeadditions3",
+        "stream": false
+      }
+    ]
+  },
+  "burnforestmood": {
+    "category": "ambient",
+    "sounds": [
+      {
+        "name": "dark_vs_light:burnforestmood",
+        "stream": false
+      }
+    ]
+  },
+  "enlightendspider": {
+    "category": "hostile",
+    "sounds": [
+      {
+        "name": "dark_vs_light:enlightendspider1.ogg",
+        "stream": false
+      },
+      {
+        "name": "dark_vs_light:enlightendspider2",
+        "stream": false
+      },
+      {
+        "name": "dark_vs_light:enlightendspider3",
+        "stream": false
+      },
+      {
+        "name": "dark_vs_light:enlightendspider4",
+        "stream": false
+      }
+    ]
+  },
+  "enchantedloop": {
+    "category": "ambient",
+    "sounds": [
+      {
+        "name": "dark_vs_light:enchantedloop",
+        "stream": false
+      }
+    ]
+  },
+  "enlightendspiderhurt": {
+    "category": "hostile",
+    "sounds": [
+      {
+        "name": "dark_vs_light:enlightendspiderhurt1",
+        "stream": false
+      }
+    ]
+  },
+  "hololoop": {
+    "category": "ambient",
+    "sounds": [
+      {
+        "name": "dark_vs_light:hololoop1",
+        "stream": false
+      },
+      {
+        "name": "dark_vs_light:hololoop2",
+        "stream": false
+      }
+    ]
+  },
+  "darkforest": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "dark_vs_light:dark-forest",
+        "stream": true
+      }
+    ]
+  },
+  "apocalypse": {
+    "category": "ambient",
+    "sounds": [
+      {
+        "name": "dark_vs_light:sound-effects-library-apocalypse",
+        "stream": false
+      }
+    ]
+  },
+  "theswamp": {
+    "category": "ambient",
+    "sounds": [
+      {
+        "name": "dark_vs_light:loyalty_freak_music_-_08_-_the_swamp",
+        "stream": false
+      }
+    ]
+  },
+  "lovehim": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "dark_vs_light:loyalty_freak_music_-_03_-_love_him",
+        "stream": true
+      }
+    ]
+  },
+  "oceanending": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "dark_vs_light:soft_and_furious_-_07_-_ocean_ending",
+        "stream": true
+      }
+    ]
+  },
+  "breakdarkgrass": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "dark_vs_light:darkgrassbreak",
+        "stream": false
+      }
+    ]
+  }
+}

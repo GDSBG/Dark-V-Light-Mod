@@ -1,0 +1,7 @@
+{
+  "parent": "block/wall_inventory",
+  "textures": {
+    "wall": "dark_vs_light:blocks/new_darkstone",
+    "particle": "dark_vs_light:blocks/new_darkstone"
+  }
+}

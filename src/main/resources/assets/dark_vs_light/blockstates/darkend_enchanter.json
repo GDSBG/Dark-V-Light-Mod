@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "dark_vs_light:block/darkend_enchanter"
+    },
+    "facing=east": {
+      "model": "dark_vs_light:block/darkend_enchanter",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "dark_vs_light:block/darkend_enchanter",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "dark_vs_light:block/darkend_enchanter",
+      "y": 270
+    }
+  }
+}

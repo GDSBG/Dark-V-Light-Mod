@@ -1,0 +1,153 @@
+{
+  "_fv": 21,
+  "_type": "biome",
+  "definition": {
+    "name": "Lava Forest",
+    "groundBlock": {
+      "value": "CUSTOM:DarkendGrass"
+    },
+    "undergroundBlock": {
+      "value": "CUSTOM:DarkDirt"
+    },
+    "airColor": {
+      "value": -13434880,
+      "falpha": 0.0
+    },
+    "grassColor": {
+      "value": -16777216,
+      "falpha": 0.0
+    },
+    "foliageColor": {
+      "value": -16777216,
+      "falpha": 0.0
+    },
+    "ambientSound": {
+      "value": ""
+    },
+    "additionsSound": {
+      "value": ""
+    },
+    "music": {
+      "value": "CUSTOM:oceanending"
+    },
+    "moodSound": {
+      "value": ""
+    },
+    "moodSoundDelay": 0,
+    "spawnParticles": false,
+    "particleToSpawn": {
+      "value": "CUSTOM:Test"
+    },
+    "particlesProbability": 0.0,
+    "biomeCategory": "NONE",
+    "parent": {
+      "value": "No parent"
+    },
+    "rainingPossibility": 0.0,
+    "temperature": 2.0,
+    "baseHeight": 1.0,
+    "heightVariation": 0.2,
+    "biomeType": "DESERT",
+    "spawnBiome": false,
+    "biomeWeight": 5,
+    "biomeDictionaryTypes": [],
+    "grassPerChunk": 0,
+    "seagrassPerChunk": 0,
+    "flowersPerChunk": 0,
+    "mushroomsPerChunk": 7,
+    "bigMushroomsChunk": 0,
+    "sandPatchesPerChunk": 0,
+    "gravelPatchesPerChunk": 0,
+    "reedsPerChunk": 0,
+    "cactiPerChunk": 0,
+    "treesPerChunk": 6,
+    "vanillaTreeType": "Mega spruce trees",
+    "treeType": 1,
+    "minHeight": 18,
+    "maxWaterDepth": 0,
+    "treeStem": {
+      "value": "CUSTOM:DarkendLavaWood"
+    },
+    "treeBranch": {
+      "value": "CUSTOM:DarkendLavaLeaves"
+    },
+    "treeVines": {
+      "value": "CUSTOM:DarkendLavaLeaves"
+    },
+    "treeFruits": {
+      "value": "Blocks.MAGMA"
+    },
+    "spawnStronghold": false,
+    "spawnMineshaft": false,
+    "spawnPillagerOutpost": false,
+    "villageType": "none",
+    "spawnWoodlandMansion": false,
+    "spawnJungleTemple": false,
+    "spawnDesertPyramid": false,
+    "spawnIgloo": false,
+    "spawnOceanMonument": false,
+    "spawnShipwreck": false,
+    "oceanRuinType": "NONE",
+    "defaultFeatures": [
+      "Caves",
+      "Fossils",
+      "FrozenTopLayer"
+    ],
+    "spawnEntries": [
+      {
+        "entity": {
+          "value": "CUSTOM:DarkendFloater"
+        },
+        "minGroup": 1,
+        "maxGroup": 1,
+        "weight": 10,
+        "spawnType": "monster"
+      },
+      {
+        "entity": {
+          "value": "CUSTOM:DarkendLoner"
+        },
+        "minGroup": 2,
+        "maxGroup": 4,
+        "weight": 20,
+        "spawnType": "monster"
+      },
+      {
+        "entity": {
+          "value": "EntityBlaze"
+        },
+        "minGroup": 1,
+        "maxGroup": 6,
+        "weight": 15,
+        "spawnType": "monster"
+      },
+      {
+        "entity": {
+          "value": "CUSTOM:DarkendHorn"
+        },
+        "minGroup": 1,
+        "maxGroup": 2,
+        "weight": 5,
+        "spawnType": "monster"
+      },
+      {
+        "entity": {
+          "value": "CUSTOM:DarkendWolf"
+        },
+        "minGroup": 1,
+        "maxGroup": 7,
+        "weight": 20,
+        "spawnType": "monster"
+      },
+      {
+        "entity": {
+          "value": "CUSTOM:DarkendSurviver"
+        },
+        "minGroup": 1,
+        "maxGroup": 3,
+        "weight": 5,
+        "spawnType": "monster"
+      }
+    ]
+  }
+}

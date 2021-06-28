@@ -1,0 +1,7 @@
+{
+  "parent": "block/door_top_rh",
+  "textures": {
+    "bottom": "dark_vs_light:blocks/darklavawoodside",
+    "top": "dark_vs_light:blocks/darkstonepane"
+  }
+}

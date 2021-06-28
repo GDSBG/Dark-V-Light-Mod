@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "dark_vs_light:upgrade_block"
+    },
+    "title": {
+      "translate": "advancements.perfectly_balanced_as_it_should_be.title"
+    },
+    "description": {
+      "translate": "advancements.perfectly_balanced_as_it_should_be.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "perfectly_balanced_as_it_should_be": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 1
+  },
+  "parent": "dark_vs_light:the_start_of_your_journey"
+}

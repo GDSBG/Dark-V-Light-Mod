@@ -1,0 +1,54 @@
+{
+  "_fv": 21,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 300,
+    "height": 86,
+    "inventoryOffsetX": -66,
+    "inventoryOffsetY": -38,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "color": {
+            "value": -65536,
+            "falpha": 0.0
+          },
+          "id": 0,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #0",
+          "x": 295,
+          "y": 100
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Convert To XP",
+          "onClick": {
+            "name": "GarbageToXp"
+          },
+          "width": 90,
+          "height": 20,
+          "name": "Convert To XP",
+          "x": 259,
+          "y": 126
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

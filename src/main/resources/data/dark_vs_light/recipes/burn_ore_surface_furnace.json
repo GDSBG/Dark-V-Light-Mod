@@ -1,0 +1,12 @@
+{
+  "group": "dark_vs_light",
+  "type": "minecraft:smelting",
+  "experience": 5,
+  "cookingtime": 200,
+  "ingredient": {
+    "item": "dark_vs_light:burn_ore_surface"
+  },
+  "result": {
+    "item": "dark_vs_light:burn_crystal"
+  }
+}

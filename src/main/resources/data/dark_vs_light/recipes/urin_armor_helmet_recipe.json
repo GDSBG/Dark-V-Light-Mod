@@ -1,0 +1,29 @@
+{
+  "group": "dark_vs_light",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "dark_vs_light:urin_gem"
+    },
+    "1": {
+      "item": "dark_vs_light:urin_gem"
+    },
+    "2": {
+      "item": "dark_vs_light:urin_gem"
+    },
+    "3": {
+      "item": "dark_vs_light:urin_gem"
+    },
+    "5": {
+      "item": "dark_vs_light:urin_gem"
+    }
+  },
+  "result": {
+    "item": "dark_vs_light:urin_armor_helmet",
+    "count": 1
+  }
+}

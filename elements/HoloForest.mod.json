@@ -1,0 +1,91 @@
+{
+  "_fv": 21,
+  "_type": "biome",
+  "definition": {
+    "name": "Holo Forest",
+    "groundBlock": {
+      "value": "CUSTOM:EnlightendGrass"
+    },
+    "undergroundBlock": {
+      "value": "CUSTOM:EnlightendDirt"
+    },
+    "airColor": {
+      "value": -16776961,
+      "falpha": 0.0
+    },
+    "ambientSound": {
+      "value": "CUSTOM:hololoop"
+    },
+    "additionsSound": {
+      "value": ""
+    },
+    "music": {
+      "value": ""
+    },
+    "moodSound": {
+      "value": ""
+    },
+    "moodSoundDelay": 6000,
+    "spawnParticles": false,
+    "particleToSpawn": {
+      "value": "CUSTOM:Test"
+    },
+    "particlesProbability": 0.5,
+    "biomeCategory": "NONE",
+    "parent": {
+      "value": "No parent"
+    },
+    "rainingPossibility": 0.5,
+    "temperature": 0.5,
+    "baseHeight": 0.4,
+    "heightVariation": 0.1,
+    "biomeType": "ICY",
+    "spawnBiome": false,
+    "biomeWeight": 10,
+    "biomeDictionaryTypes": [],
+    "grassPerChunk": 0,
+    "seagrassPerChunk": 0,
+    "flowersPerChunk": 0,
+    "mushroomsPerChunk": 0,
+    "bigMushroomsChunk": 0,
+    "sandPatchesPerChunk": 0,
+    "gravelPatchesPerChunk": 0,
+    "reedsPerChunk": 0,
+    "cactiPerChunk": 0,
+    "treesPerChunk": 8,
+    "vanillaTreeType": "Mega pine trees",
+    "treeType": 1,
+    "minHeight": 15,
+    "maxWaterDepth": 3,
+    "treeStem": {
+      "value": "CUSTOM:HoloLog"
+    },
+    "treeBranch": {
+      "value": "CUSTOM:HoloLeaves"
+    },
+    "treeVines": {
+      "value": "Blocks.AIR"
+    },
+    "treeFruits": {
+      "value": "Blocks.AIR"
+    },
+    "spawnStronghold": false,
+    "spawnMineshaft": false,
+    "spawnPillagerOutpost": false,
+    "villageType": "none",
+    "spawnWoodlandMansion": false,
+    "spawnJungleTemple": false,
+    "spawnDesertPyramid": false,
+    "spawnIgloo": false,
+    "spawnOceanMonument": false,
+    "spawnShipwreck": false,
+    "oceanRuinType": "NONE",
+    "defaultFeatures": [
+      "Caves",
+      "Ores",
+      "Icebergs",
+      "FrozenTopLayer"
+    ],
+    "spawnEntries": []
+  }
+}

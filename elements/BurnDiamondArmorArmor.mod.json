@@ -1,0 +1,73 @@
+{
+  "_fv": 21,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "burndiamondarmor_head",
+    "enableBody": true,
+    "textureBody": "burndiamondarmor_body",
+    "enableLeggings": true,
+    "textureLeggings": "burndiamondarmor_leggings",
+    "enableBoots": true,
+    "textureBoots": "burndiamondarmor_boots",
+    "onHelmetTick": {
+      "name": "BurnDiamondArmorArmorHelmetTickEvent"
+    },
+    "onBodyTick": {
+      "name": "BurnDiamondArmorArmorHelmetTickEvent"
+    },
+    "onLeggingsTick": {
+      "name": "BurnDiamondArmorArmorHelmetTickEvent"
+    },
+    "onBootsTick": {
+      "name": "BurnDiamondArmorArmorHelmetTickEvent"
+    },
+    "creativeTab": {
+      "value": "CUSTOM:DVLtab"
+    },
+    "armorTextureFile": "burndiamondarmor",
+    "helmetName": "Burn Diamond Helmet",
+    "bodyName": "Burn Diamond Chestplate",
+    "leggingsName": "Burn Diamond Leggings",
+    "bootsName": "Burn Diamond Boots",
+    "helmetSpecialInfo": [],
+    "bodySpecialInfo": [],
+    "leggingsSpecialInfo": [],
+    "bootsSpecialInfo": [],
+    "helmetModelName": "Modelburnarmor",
+    "helmetModelPart": "Head",
+    "helmetModelTexture": "burnarmor.png",
+    "bodyModelName": "Modelburnarmor",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "LeftArm",
+    "armsModelPartR": "RightArm",
+    "bodyModelTexture": "burnarmor.png",
+    "leggingsModelName": "Modelburnarmor",
+    "leggingsModelPartL": "LeftLeg",
+    "leggingsModelPartR": "RightLeg",
+    "leggingsModelTexture": "burnarmor.png",
+    "bootsModelName": "Modelburnarmor",
+    "bootsModelPartL": "LeftBoot",
+    "bootsModelPartR": "RightBoot",
+    "bootsModelTexture": "burnarmor.png",
+    "maxDamage": 60,
+    "damageValueHelmet": 6,
+    "damageValueBody": 20,
+    "damageValueLeggings": 16,
+    "damageValueBoots": 8,
+    "enchantability": 36,
+    "toughness": 2.5,
+    "knockbackResistance": 0.3,
+    "equipSound": {
+      "value": "CUSTOM:bdiamond"
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:BurnDiamond"
+      },
+      {
+        "value": "CUSTOM:BurnDiamondIncasedObsidianBlock"
+      }
+    ]
+  }
+}

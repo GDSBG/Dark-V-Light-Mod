@@ -1,0 +1,46 @@
+{
+  "_fv": 21,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 4,
+    "group": "stairs",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:DarkStone"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:DarkStone"
+      },
+      {
+        "value": "CUSTOM:DarkStone"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:DarkStone"
+      },
+      {
+        "value": "CUSTOM:DarkStone"
+      },
+      {
+        "value": "CUSTOM:DarkStone"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:DarkStoneStairs"
+    },
+    "name": "dark_stone_stairs_recipe",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "display": {
+    "icon": {
+      "item": "dark_vs_light:darkend_glowing_leaves"
+    },
+    "title": {
+      "translate": "advancements.isnt_it_wonderful.title"
+    },
+    "description": {
+      "translate": "advancements.isnt_it_wonderful.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "isnt_it_wonderful": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "biome": "dark_vs_light:darkend_glow_forest"
+      }
+    }
+  },
+  "rewards": {
+    "experience": 1,
+    "recipes": [
+      "dark_vs_light:dried_glow_berry_recipe",
+      "dark_vs_light:glow_berry_to_torch",
+      "dark_vs_light:sweet_glow_fruit_recipe"
+    ]
+  },
+  "parent": "dark_vs_light:darker_we_go"
+}

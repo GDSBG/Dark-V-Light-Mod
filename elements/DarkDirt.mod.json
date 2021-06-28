@@ -1,32 +1,43 @@
 {
-  "_fv": 10,
+  "_fv": 21,
   "_type": "block",
   "definition": {
-    "texture": "darkgrassside",
+    "texture": "darkendgrasstop",
     "textureTop": "darkgrassside",
     "textureLeft": "darkgrassside",
     "textureFront": "darkgrassside",
     "textureRight": "darkgrassside",
     "textureBack": "darkgrassside",
-    "renderType": 10,
-    "customModelName": "Normal",
+    "renderType": 11,
+    "customModelName": "Single texture",
     "rotationMode": 0,
     "emissiveRendering": false,
+    "displayFluidOverlay": false,
     "itemTexture": "",
+    "particleTexture": "",
+    "tintType": "No tint",
+    "isItemTinted": false,
     "hasTransparency": false,
     "connectedSides": false,
     "transparencyType": "SOLID",
-    "mx": 0.0,
-    "my": 0.0,
-    "mz": 0.0,
-    "Mx": 1.0,
-    "My": 1.0,
-    "Mz": 1.0,
+    "disableOffset": false,
+    "boundingBoxes": [
+      {
+        "mx": 0.0,
+        "my": 0.0,
+        "mz": 0.0,
+        "Mx": 16.0,
+        "My": 16.0,
+        "Mz": 16.0,
+        "subtract": false
+      }
+    ],
     "name": "Darkend Grass",
     "specialInfo": [],
     "hardness": 1.0,
     "resistance": 10.0,
     "hasGravity": false,
+    "isWaterloggable": false,
     "creativeTab": {
       "value": "CUSTOM:DVLtab"
     },
@@ -35,18 +46,22 @@
       "value": ""
     },
     "dropAmount": 1,
-    "isBeaconBase": false,
+    "useLootTableForDrops": false,
     "enchantPowerBonus": 0.0,
-    "plantsGrowOn": false,
-    "canProvidePower": false,
+    "plantsGrowOn": true,
+    "canRedstoneConnect": false,
     "lightOpacity": 255,
     "material": {
       "value": "EARTH"
     },
     "tickRate": 10,
-    "tickRandomly": false,
+    "tickRandomly": true,
     "isReplaceable": false,
-    "colorOnMap": "DEFAULT",
+    "canProvidePower": false,
+    "emittedRedstonePower": {
+      "fixedValue": 15.0
+    },
+    "colorOnMap": "GRASS",
     "creativePickItem": {
       "value": ""
     },
@@ -56,14 +71,32 @@
     "fireSpreadSpeed": 0,
     "isLadder": false,
     "slipperiness": 0.6,
+    "speedFactor": 1.0,
+    "jumpFactor": 1.0,
     "reactionToPushing": "DESTROY",
     "isNotColidable": false,
+    "isCustomSoundType": false,
     "soundOnStep": {
       "value": "WET_GRASS"
     },
-    "luminance": 0.0,
+    "breakSound": {
+      "value": ""
+    },
+    "stepSound": {
+      "value": ""
+    },
+    "placeSound": {
+      "value": ""
+    },
+    "hitSound": {
+      "value": ""
+    },
+    "fallSound": {
+      "value": ""
+    },
+    "luminance": 0,
     "unbreakable": false,
-    "breakHarvestLevel": 2,
+    "breakHarvestLevel": 0,
     "spawnParticles": false,
     "particleToSpawn": {
       "value": "EXPLOSION_NORMAL"
@@ -88,6 +121,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onTickUpdate": {
+      "name": "DarkDirtUpdateTick"
+    },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "blocksToReplace": [],

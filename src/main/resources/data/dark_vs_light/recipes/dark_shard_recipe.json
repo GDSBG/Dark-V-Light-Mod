@@ -1,0 +1,26 @@
+{
+  "group": "darkshard",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "dark_vs_light:dark_stone_dust"
+    },
+    "1": {
+      "item": "dark_vs_light:dark_stone_dust"
+    },
+    "2": {
+      "item": "dark_vs_light:dark_stone_dust"
+    },
+    "3": {
+      "item": "dark_vs_light:dark_stone_dust"
+    }
+  },
+  "result": {
+    "item": "dark_vs_light:dark_shard",
+    "count": 1
+  }
+}

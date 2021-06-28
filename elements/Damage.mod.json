@@ -1,8 +1,9 @@
 {
-  "_fv": 10,
+  "_fv": 21,
   "_type": "command",
   "definition": {
     "commandName": "damage",
+    "permissionLevel": "4",
     "onCommandExecuted": {
       "name": "DamageCommandExecuted"
     }

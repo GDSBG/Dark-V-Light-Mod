@@ -1,0 +1,32 @@
+{
+  "_fv": 21,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:BurnGazeWoodenPlank"
+      },
+      {
+        "value": "CUSTOM:DarkendWoodenPlanks"
+      },
+      {
+        "value": "CUSTOM:BlindPlanks"
+      },
+      {
+        "value": "CUSTOM:HoloPlank"
+      },
+      {
+        "value": "CUSTOM:EnchantedPlanks"
+      },
+      {
+        "value": "CUSTOM:GlowPlanks"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "name": "planks",
+    "namespace": "minecraft"
+  }
+}

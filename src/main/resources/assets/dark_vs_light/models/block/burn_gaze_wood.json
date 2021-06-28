@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "dark_vs_light:blocks/topburngazewood",
+    "up": "dark_vs_light:blocks/topburngazewood",
+    "north": "dark_vs_light:blocks/sideburngazewood",
+    "east": "dark_vs_light:blocks/sideburngazewood",
+    "south": "dark_vs_light:blocks/sideburngazewood",
+    "west": "dark_vs_light:blocks/sideburngazewood",
+    "particle": "dark_vs_light:blocks/topburngazewood"
+  }
+}

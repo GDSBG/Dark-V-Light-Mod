@@ -8,12 +8,12 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemGroup;
 
 import net.boogaeye.darkvlight.block.DarkStoneBlock;
-import net.boogaeye.darkvlight.DarkVLightModElements;
+import net.boogaeye.darkvlight.DarkVsLightModElements;
 
-@DarkVLightModElements.ModElement.Tag
-public class DVLtabItemGroup extends DarkVLightModElements.ModElement {
-	public DVLtabItemGroup(DarkVLightModElements instance) {
-		super(instance, 5);
+@DarkVsLightModElements.ModElement.Tag
+public class DVLtabItemGroup extends DarkVsLightModElements.ModElement {
+	public DVLtabItemGroup(DarkVsLightModElements instance) {
+		super(instance, 48);
 	}
 
 	@Override

@@ -1,0 +1,36 @@
+{
+  "_fv": 21,
+  "_type": "fluid",
+  "definition": {
+    "name": "Hot Darkend Fluid",
+    "bucketName": "Hot Darkend Fluid Bucket",
+    "textureStill": "hotdarkfluid",
+    "textureFlowing": "flowdarkhotfluid",
+    "luminosity": 0,
+    "density": 5,
+    "viscosity": 10000,
+    "isGas": false,
+    "type": "LAVA",
+    "generateBucket": true,
+    "creativeTab": {
+      "value": "CUSTOM:DVLtab"
+    },
+    "rarity": "COMMON",
+    "specialInfo": [],
+    "resistance": 100.0,
+    "luminance": 0,
+    "emissiveRendering": false,
+    "flammability": 0,
+    "fireSpreadSpeed": 0,
+    "colorOnMap": "DEFAULT",
+    "frequencyOnChunks": 5,
+    "spawnWorldTypes": [
+      "CUSTOM:DarkendDimension"
+    ],
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:LavaSprings"
+      }
+    ]
+  }
+}
