@@ -1,0 +1,23 @@
+{
+  "replace": false,
+  "values": [
+    "dark_vs_light:burn_diamond",
+    "dark_vs_light:upgrade_block",
+    "dark_vs_light:darkend_dimension",
+    "dark_vs_light:darkend_orb",
+    "dark_vs_light:glow_sapling",
+    "dark_vs_light:blind_ore",
+    "dark_vs_light:startile_ore",
+    "dark_vs_light:startile",
+    "dark_vs_light:burn_crystal",
+    "dark_vs_light:darkend_boss_temple_detector",
+    "dark_vs_light:burn_diamond_armor_armor_helmet",
+    "dark_vs_light:burn_diamond_armor_armor_chestplate",
+    "dark_vs_light:burn_diamond_armor_armor_leggings",
+    "dark_vs_light:burn_diamond_armor_armor_boots",
+    "dark_vs_light:burn_diamond_tool_pickaxe",
+    "dark_vs_light:burn_diamond_tool_axe",
+    "dark_vs_light:burn_diamond_tool_sword",
+    "dark_vs_light:burn_diamond_tool_hoe"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "dark_vs_light:upgrade_block"
+    },
+    "title": {
+      "translate": "advancements.update_to_tools_update_to_tools.title"
+    },
+    "description": {
+      "translate": "advancements.update_to_tools_update_to_tools.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "update_to_tools_update_to_tools": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 5
+  },
+  "parent": "dark_vs_light:we_need_fuel_for_this_thing"
+}

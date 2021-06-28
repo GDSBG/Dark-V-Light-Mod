@@ -1,0 +1,26 @@
+{
+  "display": {
+    "background": "dark_vs_light:textures/dvllogo.png",
+    "icon": {
+      "item": "dark_vs_light:darkend_flower"
+    },
+    "title": {
+      "translate": "advancements.the_start_of_your_journey.title"
+    },
+    "description": {
+      "translate": "advancements.the_start_of_your_journey.descr"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "the_start_of_your_journey": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "rewards": {
+    "experience": 1
+  }
+}

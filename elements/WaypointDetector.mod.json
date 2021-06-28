@@ -1,0 +1,45 @@
+{
+  "_fv": 21,
+  "_type": "item",
+  "definition": {
+    "renderType": 0,
+    "texture": "waypoint",
+    "customModelName": "Normal",
+    "name": "Waypoint Detector",
+    "rarity": "EPIC",
+    "creativeTab": {
+      "value": "CUSTOM:DVLtab"
+    },
+    "stackSize": 1,
+    "enchantability": 0,
+    "useDuration": 20,
+    "toolType": 1.0,
+    "damageCount": 500,
+    "recipeRemainder": {
+      "value": ""
+    },
+    "destroyAnyBlock": false,
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": true,
+    "damageOnCrafting": true,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "specialInfo": [],
+    "hasGlow": true,
+    "glowCondition": {
+      "name": "WaypointDetectorMakeItemGlow"
+    },
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "onRightClickedInAir": {
+      "name": "WaypointDetectorRightClickedInAir"
+    },
+    "onCrafted": {
+      "name": "DarkendBossTempleDetectorItemIsCraftedsmelted"
+    },
+    "onDroppedByPlayer": {
+      "name": "DarkendBossTempleDetectorItemIsDroppedByPlayer"
+    }
+  }
+}

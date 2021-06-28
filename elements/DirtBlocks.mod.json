@@ -1,0 +1,26 @@
+{
+  "_fv": 21,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:DarkendGrass"
+      },
+      {
+        "value": "CUSTOM:DarkDirt"
+      },
+      {
+        "value": "CUSTOM:EnlightendGrass"
+      },
+      {
+        "value": "CUSTOM:EnlightendDirt"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "name": "dirt",
+    "namespace": "forge"
+  }
+}

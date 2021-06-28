@@ -1,0 +1,9 @@
+{
+  "group": "basaltdarkstone",
+  "type": "minecraft:stonecutting",
+  "count": 4,
+  "ingredient": {
+    "item": "dark_vs_light:basalt_dark_stone"
+  },
+  "result": "dark_vs_light:basalt_stone_fence"
+}

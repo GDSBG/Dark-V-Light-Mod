@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "dark_vs_light:blocks/glowtreetop",
+    "up": "dark_vs_light:blocks/glowtreetop",
+    "north": "dark_vs_light:blocks/glowtreeside",
+    "east": "dark_vs_light:blocks/glowtreeside",
+    "south": "dark_vs_light:blocks/glowtreeside",
+    "west": "dark_vs_light:blocks/glowtreeside",
+    "particle": "dark_vs_light:blocks/glowtreetop"
+  }
+}

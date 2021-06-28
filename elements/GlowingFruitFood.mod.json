@@ -1,0 +1,29 @@
+{
+  "_fv": 21,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "glowingberry",
+    "customModelName": "Normal",
+    "name": "Glowing Fruit",
+    "rarity": "COMMON",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:DVLFood"
+    },
+    "stackSize": 64,
+    "nutritionalValue": 1,
+    "saturation": 0.1,
+    "eatingSpeed": 12,
+    "resultItem": {
+      "value": ""
+    },
+    "forDogs": false,
+    "isAlwaysEdible": false,
+    "animation": "eat",
+    "hasGlow": false,
+    "onEaten": {
+      "name": "GlowingFruitFoodFoodEaten"
+    }
+  }
+}

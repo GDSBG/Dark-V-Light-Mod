@@ -1,0 +1,208 @@
+{
+  "_fv": 21,
+  "_type": "biome",
+  "definition": {
+    "name": "Darkend Dessert",
+    "groundBlock": {
+      "value": "CUSTOM:DarkendBasalt"
+    },
+    "undergroundBlock": {
+      "value": "CUSTOM:SmoothDarkStone"
+    },
+    "airColor": {
+      "value": -13421824,
+      "falpha": 0.0
+    },
+    "grassColor": {
+      "value": -16777165,
+      "falpha": 0.0
+    },
+    "foliageColor": {
+      "value": -16751002,
+      "falpha": 0.0
+    },
+    "waterColor": {
+      "value": -16777216,
+      "falpha": 0.0
+    },
+    "waterFogColor": {
+      "value": -10092442,
+      "falpha": 0.0
+    },
+    "ambientSound": {
+      "value": ""
+    },
+    "additionsSound": {
+      "value": "CUSTOM:darkenddessertambient"
+    },
+    "music": {
+      "value": "CUSTOM:lovehim"
+    },
+    "moodSound": {
+      "value": ""
+    },
+    "moodSoundDelay": 0,
+    "spawnParticles": true,
+    "particleToSpawn": {
+      "value": "CUSTOM:DarkendDessertParticle"
+    },
+    "particlesProbability": 5.0,
+    "biomeCategory": "NONE",
+    "parent": {
+      "value": "CUSTOM:MountainOfCavesBiome"
+    },
+    "rainingPossibility": 0.0,
+    "temperature": 0.0,
+    "baseHeight": 0.5,
+    "heightVariation": 0.15,
+    "biomeType": "DESERT",
+    "spawnBiome": false,
+    "biomeWeight": 5,
+    "biomeDictionaryTypes": [],
+    "grassPerChunk": 4,
+    "seagrassPerChunk": 20,
+    "flowersPerChunk": 0,
+    "mushroomsPerChunk": 4,
+    "bigMushroomsChunk": 2,
+    "sandPatchesPerChunk": 0,
+    "gravelPatchesPerChunk": 2,
+    "reedsPerChunk": 0,
+    "cactiPerChunk": 5,
+    "treesPerChunk": 0,
+    "vanillaTreeType": "Default",
+    "treeType": 1,
+    "minHeight": 0,
+    "maxWaterDepth": 0,
+    "treeStem": {
+      "value": "Blocks.AIR"
+    },
+    "treeBranch": {
+      "value": "Blocks.AIR"
+    },
+    "treeVines": {
+      "value": "Blocks.AIR"
+    },
+    "treeFruits": {
+      "value": "Blocks.AIR"
+    },
+    "spawnStronghold": false,
+    "spawnMineshaft": true,
+    "spawnPillagerOutpost": true,
+    "villageType": "desert",
+    "spawnWoodlandMansion": false,
+    "spawnJungleTemple": true,
+    "spawnDesertPyramid": false,
+    "spawnIgloo": false,
+    "spawnOceanMonument": false,
+    "spawnShipwreck": false,
+    "oceanRuinType": "NONE",
+    "defaultFeatures": [
+      "Caves",
+      "DesertFeatures",
+      "DesertLakes",
+      "Fossils",
+      "FrozenTopLayer"
+    ],
+    "spawnEntries": [
+      {
+        "entity": {
+          "value": "CUSTOM:DarkendFloater"
+        },
+        "minGroup": 1,
+        "maxGroup": 2,
+        "weight": 5,
+        "spawnType": "monster"
+      },
+      {
+        "entity": {
+          "value": "CUSTOM:DarkendTallend"
+        },
+        "minGroup": 1,
+        "maxGroup": 2,
+        "weight": 20,
+        "spawnType": "monster"
+      },
+      {
+        "entity": {
+          "value": "EntityHusk"
+        },
+        "minGroup": 1,
+        "maxGroup": 8,
+        "weight": 15,
+        "spawnType": "monster"
+      },
+      {
+        "entity": {
+          "value": "EntityGolem"
+        },
+        "minGroup": 1,
+        "maxGroup": 1,
+        "weight": 2,
+        "spawnType": "monster"
+      },
+      {
+        "entity": {
+          "value": "EntityGhast"
+        },
+        "minGroup": 1,
+        "maxGroup": 2,
+        "weight": 5,
+        "spawnType": "monster"
+      },
+      {
+        "entity": {
+          "value": "EntityVex"
+        },
+        "minGroup": 1,
+        "maxGroup": 2,
+        "weight": 1,
+        "spawnType": "monster"
+      },
+      {
+        "entity": {
+          "value": "CUSTOM:DarkendHorn"
+        },
+        "minGroup": 1,
+        "maxGroup": 3,
+        "weight": 15,
+        "spawnType": "monster"
+      },
+      {
+        "entity": {
+          "value": "CUSTOM:DarkendShooter"
+        },
+        "minGroup": 1,
+        "maxGroup": 2,
+        "weight": 10,
+        "spawnType": "monster"
+      },
+      {
+        "entity": {
+          "value": "CUSTOM:DarkendDestroyer"
+        },
+        "minGroup": 1,
+        "maxGroup": 3,
+        "weight": 15,
+        "spawnType": "monster"
+      },
+      {
+        "entity": {
+          "value": "CUSTOM:DarkendSurviver"
+        },
+        "minGroup": 1,
+        "maxGroup": 3,
+        "weight": 5,
+        "spawnType": "monster"
+      },
+      {
+        "entity": {
+          "value": "CUSTOM:DarkendDrone"
+        },
+        "minGroup": 4,
+        "maxGroup": 4,
+        "weight": 20,
+        "spawnType": "monster"
+      }
+    ]
+  }
+}

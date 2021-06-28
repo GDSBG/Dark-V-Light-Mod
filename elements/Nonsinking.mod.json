@@ -1,0 +1,17 @@
+{
+  "_fv": 21,
+  "_type": "enchantment",
+  "definition": {
+    "name": "Nonsinking",
+    "type": "ARMOR_FEET",
+    "rarity": "UNCOMMON",
+    "minLevel": 1,
+    "maxLevel": 1,
+    "damageModifier": 0,
+    "compatibleEnchantments": [],
+    "compatibleItems": [],
+    "isTreasureEnchantment": false,
+    "isCurse": false,
+    "isAllowedOnBooks": true
+  }
+}

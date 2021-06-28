@@ -1,0 +1,22 @@
+{
+  "_fv": 21,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:DarkendLavaWood"
+      },
+      {
+        "value": "CUSTOM:BurnGazeWood"
+      },
+      {
+        "value": "CUSTOM:BlindLog"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "name": "darkend_wood_tag",
+    "namespace": "minecraft"
+  }
+}

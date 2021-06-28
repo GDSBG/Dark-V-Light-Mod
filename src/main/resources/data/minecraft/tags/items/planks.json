@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "dark_vs_light:burn_gaze_wooden_plank",
+    "dark_vs_light:darkend_wooden_planks",
+    "dark_vs_light:blind_planks",
+    "dark_vs_light:holo_plank",
+    "dark_vs_light:enchanted_planks",
+    "dark_vs_light:glow_planks"
+  ]
+}

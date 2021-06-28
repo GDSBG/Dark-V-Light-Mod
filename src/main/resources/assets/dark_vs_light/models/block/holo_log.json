@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "dark_vs_light:blocks/holologtop",
+    "up": "dark_vs_light:blocks/holologtop",
+    "north": "dark_vs_light:blocks/holologsides",
+    "east": "dark_vs_light:blocks/holologsides",
+    "south": "dark_vs_light:blocks/holologsides",
+    "west": "dark_vs_light:blocks/holologsides",
+    "particle": "dark_vs_light:blocks/holologtop"
+  }
+}

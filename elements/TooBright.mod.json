@@ -1,0 +1,31 @@
+{
+  "_fv": 21,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "Too Bright!!!!",
+    "achievementDescription": "Visit the Enlightend Dimension",
+    "achievementIcon": {
+      "value": "CUSTOM:EnlightendGrass"
+    },
+    "background": "lightendblindness.png",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": true,
+    "hideIfNotCompleted": true,
+    "rewardLoot": [],
+    "rewardRecipes": [
+      "Enlightend_toolPickaxeRecipe",
+      "Enlightend_toolAxeRecipe",
+      "Enlightend_toolSwordRecipe",
+      "Enlightend_toolShovelRecipe",
+      "Enlightend_toolHoeRecipe"
+    ],
+    "rewardFunction": "No function",
+    "rewardXP": 1,
+    "achievementType": "task",
+    "parent": {
+      "value": "CUSTOM:OneClickAway"
+    },
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"custom_trigger\" x=\"35\" y=\"60\"><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block></xml>"
+  }
+}

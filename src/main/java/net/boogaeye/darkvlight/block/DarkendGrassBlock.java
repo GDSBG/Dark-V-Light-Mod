@@ -2,35 +2,46 @@
 package net.boogaeye.darkvlight.block;
 
 import net.minecraftforge.registries.ObjectHolder;
+import net.minecraftforge.common.util.ForgeSoundType;
 import net.minecraftforge.common.ToolType;
+import net.minecraftforge.common.IPlantable;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
-import net.minecraft.world.storage.loot.LootContext;
+import net.minecraft.world.server.ServerWorld;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.util.text.ITextComponent;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.SoundEvent;
+import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.Direction;
+import net.minecraft.loot.LootContext;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.block.material.PushReaction;
+import net.minecraft.block.material.MaterialColor;
 import net.minecraft.block.material.Material;
-import net.minecraft.block.SoundType;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
+import net.boogaeye.darkvlight.procedures.DarkendGrassUpdateTickProcedure;
 import net.boogaeye.darkvlight.itemgroup.DVLtabItemGroup;
-import net.boogaeye.darkvlight.DarkVLightModElements;
+import net.boogaeye.darkvlight.DarkVsLightModElements;
 
+import java.util.Random;
+import java.util.Map;
 import java.util.List;
+import java.util.HashMap;
 import java.util.Collections;
 
-@DarkVLightModElements.ModElement.Tag
-public class DarkendGrassBlock extends DarkVLightModElements.ModElement {
-	@ObjectHolder("dark_v_light:darkend_grass")
+@DarkVsLightModElements.ModElement.Tag
+public class DarkendGrassBlock extends DarkVsLightModElements.ModElement {
+	@ObjectHolder("dark_vs_light:darkend_grass")
 	public static final Block block = null;
-	public DarkendGrassBlock(DarkVLightModElements instance) {
+	public DarkendGrassBlock(DarkVsLightModElements instance) {
 		super(instance, 2);
 	}
 
@@ -41,8 +52,14 @@ public class DarkendGrassBlock extends DarkVLightModElements.ModElement {
 	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.ORGANIC).sound(SoundType.WET_GRASS).hardnessAndResistance(1f, 20f).lightValue(0).harvestLevel(3)
-					.harvestTool(ToolType.SHOVEL));
+			super(Block.Properties.create(Material.ORGANIC)
+					.sound(new ForgeSoundType(1.0f, 1.0f, () -> new SoundEvent(new ResourceLocation("dark_vs_light:breakdarkgrass")),
+							() -> new SoundEvent(new ResourceLocation("dark_vs_light:drag")),
+							() -> new SoundEvent(new ResourceLocation("dark_vs_light:bossspell")),
+							() -> new SoundEvent(new ResourceLocation("dark_vs_light:drag")),
+							() -> new SoundEvent(new ResourceLocation("ambient.cave"))))
+					.hardnessAndResistance(1f, 20f).setLightLevel(s -> 0).harvestLevel(0).harvestTool(ToolType.SHOVEL).setRequiresTool()
+					.tickRandomly());
 			setRegistryName("darkend_grass");
 		}
 
@@ -51,6 +68,16 @@ public class DarkendGrassBlock extends DarkVLightModElements.ModElement {
 		public void addInformation(ItemStack itemstack, IBlockReader world, List<ITextComponent> list, ITooltipFlag flag) {
 			super.addInformation(itemstack, world, list, flag);
 			list.add(new StringTextComponent("Grass but harder?"));
+		}
+
+		@Override
+		public MaterialColor getMaterialColor() {
+			return MaterialColor.GRASS;
+		}
+
+		@Override
+		public boolean canSustainPlant(BlockState state, IBlockReader world, BlockPos pos, Direction direction, IPlantable plantable) {
+			return true;
 		}
 
 		@Override
@@ -63,7 +90,23 @@ public class DarkendGrassBlock extends DarkVLightModElements.ModElement {
 			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
-			return Collections.singletonList(new ItemStack(this, 1));
+			return Collections.singletonList(new ItemStack(DarkDirtBlock.block, (int) (1)));
+		}
+
+		@Override
+		public void tick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
+			super.tick(state, world, pos, random);
+			int x = pos.getX();
+			int y = pos.getY();
+			int z = pos.getZ();
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				DarkendGrassUpdateTickProcedure.executeProcedure($_dependencies);
+			}
 		}
 	}
 }

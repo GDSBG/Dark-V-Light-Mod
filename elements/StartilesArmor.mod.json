@@ -1,0 +1,58 @@
+{
+  "_fv": 21,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "startiles_head",
+    "enableBody": true,
+    "textureBody": "startiles_body",
+    "enableLeggings": true,
+    "textureLeggings": "startiles_leggings",
+    "enableBoots": true,
+    "textureBoots": "startiles_boots",
+    "creativeTab": {
+      "value": "CUSTOM:DVLtab"
+    },
+    "armorTextureFile": "startiles",
+    "helmetName": "Startile Helmet",
+    "bodyName": "Startile Chestplate",
+    "leggingsName": "Startile Leggings",
+    "bootsName": "Startile Boots",
+    "helmetSpecialInfo": [],
+    "bodySpecialInfo": [],
+    "leggingsSpecialInfo": [],
+    "bootsSpecialInfo": [],
+    "helmetModelName": "Default",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Default",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "Arms L",
+    "armsModelPartR": "Arms R",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "Default",
+    "leggingsModelPartL": "Leggings L",
+    "leggingsModelPartR": "Leggings R",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "From armor",
+    "maxDamage": 45,
+    "damageValueHelmet": 6,
+    "damageValueBody": 18,
+    "damageValueLeggings": 15,
+    "damageValueBoots": 6,
+    "enchantability": 27,
+    "toughness": 2.6,
+    "knockbackResistance": 1.4,
+    "equipSound": {
+      "value": "ambient.cave"
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:Startile"
+      }
+    ]
+  }
+}

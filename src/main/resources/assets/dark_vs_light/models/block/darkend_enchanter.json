@@ -1,0 +1,8 @@
+{
+  "parent": "dark_vs_light:custom/darkend_enchanter",
+  "textures": {
+    "all": "dark_vs_light:blocks/texture",
+    "particle": "dark_vs_light:blocks/texture",
+    "0": "dark_vs_light:blocks/texture"
+  }
+}

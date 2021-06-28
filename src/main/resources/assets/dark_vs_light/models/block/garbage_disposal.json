@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "dark_vs_light:blocks/upgradeblock",
+    "up": "dark_vs_light:blocks/gliphblock",
+    "north": "dark_vs_light:blocks/upgradeblock",
+    "east": "dark_vs_light:blocks/upgradeblock",
+    "south": "dark_vs_light:blocks/upgradeblock",
+    "west": "dark_vs_light:blocks/upgradeblock",
+    "particle": "dark_vs_light:blocks/upgradeblock"
+  }
+}

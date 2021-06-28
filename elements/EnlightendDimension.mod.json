@@ -1,0 +1,51 @@
+{
+  "_fv": 21,
+  "_type": "dimension",
+  "definition": {
+    "biomesInDimension": [
+      {
+        "value": "CUSTOM:HoloForest"
+      },
+      {
+        "value": "CUSTOM:GlowForest"
+      },
+      {
+        "value": "CUSTOM:EnchantedForest"
+      }
+    ],
+    "worldGenType": "End like gen",
+    "mainFillerBlock": {
+      "value": "CUSTOM:EnlightendStone"
+    },
+    "fluidBlock": {
+      "value": "Blocks.AIR"
+    },
+    "canRespawnHere": false,
+    "hasFog": true,
+    "isDark": false,
+    "doesWaterVaporize": false,
+    "sleepResult": "BED_EXPLODES",
+    "hasSkyLight": false,
+    "imitateOverworldBehaviour": false,
+    "onPlayerEntersDimension": {
+      "name": "EnlightendDimensionPlayerEntersDimension"
+    },
+    "portalFrame": {
+      "value": ""
+    },
+    "portalParticles": {
+      "value": "CUSTOM:Test"
+    },
+    "portalLuminance": 0,
+    "portalSound": {
+      "value": "block.portal.ambient"
+    },
+    "igniterName": "Enlightend Dimension Portal Igniter",
+    "igniterTab": {
+      "value": "TOOLS"
+    },
+    "texture": "",
+    "portalTexture": "",
+    "enablePortal": false
+  }
+}

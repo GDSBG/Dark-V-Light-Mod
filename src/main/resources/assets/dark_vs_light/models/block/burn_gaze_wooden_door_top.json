@@ -1,0 +1,7 @@
+{
+  "parent": "block/door_top",
+  "textures": {
+    "bottom": "dark_vs_light:blocks/sideburngazewood",
+    "top": "dark_vs_light:blocks/burngazewoodendoortop"
+  }
+}

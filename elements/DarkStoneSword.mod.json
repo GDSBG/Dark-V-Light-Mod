@@ -1,0 +1,27 @@
+{
+  "_fv": 21,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "darkstonesword",
+    "customModelName": "Normal",
+    "name": "Dark Stone Sword",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:DVLtab"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 1,
+    "efficiency": 1.0,
+    "attackSpeed": 1.0,
+    "enchantability": 6,
+    "damageVsEntity": 6.0,
+    "usageCount": 200,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

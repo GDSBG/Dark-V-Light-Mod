@@ -1,0 +1,16 @@
+{
+  "group": "woodplanks",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0"
+  ],
+  "key": {
+    "0": {
+      "item": "dark_vs_light:darkend_lava_wood"
+    }
+  },
+  "result": {
+    "item": "dark_vs_light:darkend_wooden_planks",
+    "count": 4
+  }
+}

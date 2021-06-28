@@ -1,0 +1,46 @@
+{
+  "_fv": 21,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "tracker",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:DarkStone"
+      },
+      {
+        "value": "Items.ENDER_EYE"
+      },
+      {
+        "value": "CUSTOM:DarkStone"
+      },
+      {
+        "value": "Items.ENDER_EYE"
+      },
+      {
+        "value": "Items.COMPASS"
+      },
+      {
+        "value": "Items.ENDER_EYE"
+      },
+      {
+        "value": "CUSTOM:DarkStone"
+      },
+      {
+        "value": "Items.ENDER_EYE"
+      },
+      {
+        "value": "CUSTOM:DarkStone"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:DarkendBossTempleDetector"
+    },
+    "name": "darkend_boss_temple_detector_recipe",
+    "namespace": "mod"
+  }
+}

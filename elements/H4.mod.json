@@ -1,0 +1,29 @@
+{
+  "_fv": 21,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:BlindShardPickaxe"
+      },
+      {
+        "value": "CUSTOM:StartilesPickaxe"
+      },
+      {
+        "value": "CUSTOM:Burn_Diamond_ToolPickaxe"
+      },
+      {
+        "value": "CUSTOM:BurnPickaxe"
+      },
+      {
+        "value": "Items.NETHERITE_PICKAXE"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "name": "h4",
+    "namespace": "minecraft"
+  }
+}

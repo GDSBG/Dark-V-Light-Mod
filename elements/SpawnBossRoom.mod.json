@@ -1,0 +1,11 @@
+{
+  "_fv": 21,
+  "_type": "command",
+  "definition": {
+    "commandName": "spawnbossroom",
+    "permissionLevel": "4",
+    "onCommandExecuted": {
+      "name": "SpawnBossRoomCommandExecuted"
+    }
+  }
+}

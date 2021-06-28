@@ -1,0 +1,25 @@
+{
+  "_fv": 21,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "That Is Way Too High!!!",
+    "achievementDescription": "Visit The Lava Forest",
+    "achievementIcon": {
+      "value": "CUSTOM:DarkendLavaLeaves"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": true,
+    "hideIfNotCompleted": true,
+    "rewardLoot": [],
+    "rewardRecipes": [],
+    "rewardFunction": "No function",
+    "rewardXP": 1,
+    "achievementType": "task",
+    "parent": {
+      "value": "CUSTOM:DarkerWeGo"
+    },
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"biome_entered\" x=\"43\" y=\"53\"><field name=\"biome\">CUSTOM:LavaForest</field><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block></xml>"
+  }
+}

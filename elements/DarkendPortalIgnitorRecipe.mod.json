@@ -1,0 +1,46 @@
+{
+  "_fv": 21,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Items.IRON_INGOT"
+      },
+      {
+        "value": "CUSTOM:DarkStone"
+      },
+      {
+        "value": "Items.IRON_INGOT"
+      },
+      {
+        "value": "CUSTOM:DarkStone"
+      },
+      {
+        "value": "Items.ENDER_PEARL"
+      },
+      {
+        "value": "CUSTOM:DarkStone"
+      },
+      {
+        "value": "Items.IRON_INGOT"
+      },
+      {
+        "value": "CUSTOM:DarkStone"
+      },
+      {
+        "value": "Items.IRON_INGOT"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:DarkendDimension"
+    },
+    "name": "darkend_portal_ignitor_recipe",
+    "namespace": "mod"
+  }
+}

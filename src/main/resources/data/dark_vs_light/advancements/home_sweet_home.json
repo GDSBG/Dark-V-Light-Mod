@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "dark_vs_light:glowing_fruit_food"
+    },
+    "title": {
+      "translate": "advancements.home_sweet_home.title"
+    },
+    "description": {
+      "translate": "advancements.home_sweet_home.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "home_sweet_home": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 5
+  },
+  "parent": "dark_vs_light:isnt_it_wonderful"
+}

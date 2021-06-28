@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "dark_vs_light:glow_leaves"
+    },
+    "title": {
+      "translate": "advancements.biomes_glow_in_this_dimension_too.title"
+    },
+    "description": {
+      "translate": "advancements.biomes_glow_in_this_dimension_too.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "biomes_glow_in_this_dimension_too": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "biome": "dark_vs_light:glow_forest"
+      }
+    }
+  },
+  "rewards": {
+    "experience": 1
+  },
+  "parent": "dark_vs_light:one_click_away"
+}

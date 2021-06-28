@@ -1,0 +1,43 @@
+{
+  "display": {
+    "icon": {
+      "item": "dark_vs_light:blind_stone"
+    },
+    "title": {
+      "translate": "advancements.oh_enlightend_ore.title"
+    },
+    "description": {
+      "translate": "advancements.oh_enlightend_ore.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "oh_enlightend_ore": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 1,
+    "recipes": [
+      "dark_vs_light:dark_shard_recipe",
+      "dark_vs_light:blind_stone_recipe",
+      "dark_vs_light:darkend_orb_recipe",
+      "minecraft:ender_eye_recipe",
+      "dark_vs_light:darkend_ore_smelt",
+      "dark_vs_light:dark_ore_blast",
+      "dark_vs_light:blind_shard_pickaxe_recipe",
+      "dark_vs_light:blind_shard_axe_recipe",
+      "dark_vs_light:blind_shard_sword_recipe",
+      "dark_vs_light:blind_shard_shovel_recipe",
+      "dark_vs_light:blind_shard_hoe_recipe",
+      "dark_vs_light:blind_shard_armor_helmet_recipe",
+      "dark_vs_light:blind_shard_armor_body_recipe",
+      "dark_vs_light:blind_shard_armor_leggings_recipe",
+      "dark_vs_light:blind_shard_armor_boots_recipe"
+    ]
+  },
+  "parent": "dark_vs_light:darker_we_go"
+}

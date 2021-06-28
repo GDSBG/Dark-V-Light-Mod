@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "dark_vs_light:darkend_dimension"
+    },
+    "title": {
+      "translate": "advancements.i_dont_feel_so_good.title"
+    },
+    "description": {
+      "translate": "advancements.i_dont_feel_so_good.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "i_dont_feel_so_good": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 5
+  },
+  "parent": "dark_vs_light:darker_we_go"
+}

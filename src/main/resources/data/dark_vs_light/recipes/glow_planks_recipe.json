@@ -1,0 +1,16 @@
+{
+  "group": "enlightendplanks",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0"
+  ],
+  "key": {
+    "0": {
+      "item": "dark_vs_light:glow_log"
+    }
+  },
+  "result": {
+    "item": "dark_vs_light:glow_planks",
+    "count": 4
+  }
+}

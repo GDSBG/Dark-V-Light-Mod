@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "item": "dark_vs_light:enlightend_grass"
+    },
+    "title": {
+      "translate": "advancements.too_bright.title"
+    },
+    "description": {
+      "translate": "advancements.too_bright.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "too_bright": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 1,
+    "recipes": [
+      "dark_vs_light:deleted_mod_element",
+      "dark_vs_light:deleted_mod_element",
+      "dark_vs_light:deleted_mod_element",
+      "dark_vs_light:deleted_mod_element",
+      "dark_vs_light:deleted_mod_element"
+    ]
+  },
+  "parent": "dark_vs_light:one_click_away"
+}

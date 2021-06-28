@@ -4,24 +4,22 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 
-import net.boogaeye.darkvlight.DarkVLightModElements;
+import net.boogaeye.darkvlight.DarkVsLightMod;
 
 import java.util.Random;
+import java.util.Map;
 import java.util.HashMap;
 
-@DarkVLightModElements.ModElement.Tag
-public class DamageCommandExecutedProcedure extends DarkVLightModElements.ModElement {
-	public DamageCommandExecutedProcedure(DarkVLightModElements instance) {
-		super(instance, 18);
-	}
-
-	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {
+public class DamageCommandExecutedProcedure {
+	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
-			System.err.println("Failed to load dependency entity for procedure DamageCommandExecuted!");
+			if (!dependencies.containsKey("entity"))
+				DarkVsLightMod.LOGGER.warn("Failed to load dependency entity for procedure DamageCommandExecuted!");
 			return;
 		}
 		if (dependencies.get("cmdparams") == null) {
-			System.err.println("Failed to load dependency cmdparams for procedure DamageCommandExecuted!");
+			if (!dependencies.containsKey("cmdparams"))
+				DarkVsLightMod.LOGGER.warn("Failed to load dependency cmdparams for procedure DamageCommandExecuted!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
@@ -29,9 +27,9 @@ public class DamageCommandExecutedProcedure extends DarkVLightModElements.ModEle
 		{
 			ItemStack _ist = ((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY);
 			if (_ist.attemptDamageItem((int) new Object() {
-				int convert(String s) {
+				double convert(String s) {
 					try {
-						return Integer.parseInt(s.trim());
+						return Double.parseDouble(s.trim());
 					} catch (Exception e) {
 					}
 					return 0;

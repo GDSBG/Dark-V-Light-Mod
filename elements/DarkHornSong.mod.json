@@ -1,0 +1,17 @@
+{
+  "_fv": 21,
+  "_type": "musicdisc",
+  "definition": {
+    "texture": "dhs",
+    "name": "Dark Disk 1",
+    "description": "BoogaEye - Dark Horn Song",
+    "creativeTab": {
+      "value": "CUSTOM:DVLtab"
+    },
+    "music": {
+      "value": "CUSTOM:hornsong"
+    },
+    "specialInfo": [],
+    "hasGlow": false
+  }
+}

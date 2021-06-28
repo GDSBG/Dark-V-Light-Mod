@@ -1,0 +1,7 @@
+{
+  "parent": "dark_vs_light:custom/urenshooter",
+  "textures": {
+    "1": "dark_vs_light:blocks/tbow",
+    "particle": "dark_vs_light:items/textureforbow"
+  }
+}

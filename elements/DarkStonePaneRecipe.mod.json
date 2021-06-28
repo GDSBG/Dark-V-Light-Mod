@@ -1,0 +1,46 @@
+{
+  "_fv": 21,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 4,
+    "group": "glass",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Blocks.GLASS"
+      },
+      {
+        "value": "CUSTOM:DarkStone"
+      },
+      {
+        "value": "Blocks.GLASS"
+      },
+      {
+        "value": "CUSTOM:DarkStone"
+      },
+      {
+        "value": "Blocks.GLASS"
+      },
+      {
+        "value": "CUSTOM:DarkStone"
+      },
+      {
+        "value": "Blocks.GLASS"
+      },
+      {
+        "value": "CUSTOM:DarkStone"
+      },
+      {
+        "value": "Blocks.GLASS"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:DarkStonePane"
+    },
+    "name": "dark_stone_pane_recipe",
+    "namespace": "mod"
+  }
+}

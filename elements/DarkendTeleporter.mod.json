@@ -1,0 +1,127 @@
+{
+  "_fv": 21,
+  "_type": "mob",
+  "definition": {
+    "mobName": "Darkend Teleporter",
+    "mobLabel": "",
+    "mobModelName": "ModelDarkendFloater",
+    "mobModelTexture": "darkendfloaterblack.png",
+    "mobModelGlowTexture": "darkendfloaterglowblack.png",
+    "modelWidth": 0.6,
+    "modelHeight": 1.8,
+    "modelShadowSize": 0.5,
+    "mountedYOffset": 0.0,
+    "hasSpawnEgg": true,
+    "spawnEggBaseColor": {
+      "value": -10066330,
+      "falpha": 0.0
+    },
+    "spawnEggDotColor": {
+      "value": -10092442,
+      "falpha": 0.0
+    },
+    "creativeTab": {
+      "value": "CUSTOM:DVLtab"
+    },
+    "isBoss": false,
+    "bossBarColor": "PINK",
+    "bossBarType": "PROGRESS",
+    "equipmentMainHand": {
+      "value": ""
+    },
+    "equipmentOffHand": {
+      "value": ""
+    },
+    "equipmentHelmet": {
+      "value": ""
+    },
+    "equipmentBody": {
+      "value": ""
+    },
+    "equipmentLeggings": {
+      "value": ""
+    },
+    "equipmentBoots": {
+      "value": ""
+    },
+    "mobBehaviourType": "Mob",
+    "mobCreatureType": "UNDEFINED",
+    "attackStrength": 3,
+    "attackKnockback": 0.0,
+    "knockbackResistance": 0.0,
+    "movementSpeed": 0.5,
+    "armorBaseValue": 0.0,
+    "trackingRange": 64,
+    "health": 35,
+    "xpAmount": 8,
+    "waterMob": false,
+    "flyingMob": true,
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "disableCollisions": false,
+    "ridable": false,
+    "canControlForward": false,
+    "canControlStrafe": false,
+    "immuneToFire": false,
+    "immuneToArrows": true,
+    "immuneToFallDamage": false,
+    "immuneToCactus": false,
+    "immuneToDrowning": false,
+    "immuneToLightning": false,
+    "immuneToPotions": false,
+    "immuneToPlayer": false,
+    "immuneToExplosion": false,
+    "immuneToTrident": false,
+    "immuneToAnvil": false,
+    "immuneToWither": false,
+    "immuneToDragonBreath": false,
+    "mobDrop": {
+      "value": ""
+    },
+    "livingSound": {
+      "value": "CUSTOM:dfloater"
+    },
+    "hurtSound": {
+      "value": "CUSTOM:dfloaterhurt"
+    },
+    "deathSound": {
+      "value": "CUSTOM:dfloaterhurt"
+    },
+    "stepSound": {
+      "value": ""
+    },
+    "spawnParticles": false,
+    "particleToSpawn": {
+      "value": "EXPLOSION_NORMAL"
+    },
+    "particleSpawningShape": "Spread",
+    "particleSpawningRadious": 0.5,
+    "particleAmount": 4,
+    "whenMobIsHurt": {
+      "name": "DarkendFloaterEntityIsHurt"
+    },
+    "onInitialSpawn": {
+      "name": "OtherFloatersOnInitialEntitySpawn"
+    },
+    "hasAI": true,
+    "aiBase": "Enderman",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"watch_closest_entity\"><field name=\"radius\">6</field><field name=\"entity\">EntityPlayer</field><field name=\"condition\">null,null</field><next><block type=\"watch_closest_entity\"><field name=\"radius\">6</field><field name=\"entity\">CUSTOM:DarkendFloater</field><field name=\"condition\">null,null</field><next><block type=\"follow_entity\"><field name=\"speed\">1</field><field name=\"maxrange\">15</field><field name=\"followarea\">25</field><field name=\"condition\">null,null</field><next><block type=\"attack_entity\"><field name=\"insight\">TRUE</field><field name=\"nearby\">TRUE</field><field name=\"entity\">CUSTOM:DarkendHorn</field><field name=\"condition\">null,null</field><next><block type=\"attack_entity\"><field name=\"insight\">TRUE</field><field name=\"nearby\">TRUE</field><field name=\"entity\">CUSTOM:DarkendTallend</field><field name=\"condition\">null,null</field><next><block type=\"attack_entity\"><field name=\"insight\">TRUE</field><field name=\"nearby\">TRUE</field><field name=\"entity\">EntityPlayer</field><field name=\"condition\">null,null</field><next><block type=\"attack_entity\"><field name=\"insight\">TRUE</field><field name=\"nearby\">TRUE</field><field name=\"entity\">EntityPlayerMP</field><field name=\"condition\">null,null</field><next><block type=\"attack_fly\"><field name=\"radius\">16</field><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"fly\"><field name=\"speed\">0.8</field><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>",
+    "breedable": false,
+    "tameable": false,
+    "breedTriggerItems": [],
+    "ranged": false,
+    "rangedAttackItem": {
+      "value": ""
+    },
+    "rangedItemType": "UrenShooter",
+    "spawnThisMob": false,
+    "doesDespawnWhenIdle": true,
+    "spawningProbability": 20,
+    "mobSpawningType": "monster",
+    "minNumberOfMobsPerGroup": 4,
+    "maxNumberOfMobsPerGroup": 4,
+    "restrictionBiomes": [],
+    "spawnInDungeons": false
+  }
+}

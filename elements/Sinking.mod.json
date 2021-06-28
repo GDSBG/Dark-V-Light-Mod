@@ -1,0 +1,22 @@
+{
+  "_fv": 21,
+  "_type": "potion",
+  "definition": {
+    "name": "Potion Of Sinking",
+    "effectName": "Sinking",
+    "icon": "darkendoverlay.png",
+    "color": {
+      "value": -39322,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": true,
+    "isBenefitical": false,
+    "registerPotionType": true,
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onActiveTick": {
+      "name": "SinkingOnPotionActiveTick"
+    }
+  }
+}

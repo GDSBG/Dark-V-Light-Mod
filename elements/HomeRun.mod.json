@@ -1,0 +1,25 @@
+{
+  "_fv": 21,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "Home Run",
+    "achievementDescription": "Break a Stone Plated Dark Stone",
+    "achievementIcon": {
+      "value": "CUSTOM:StonePlatedDarkStone"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": true,
+    "hideIfNotCompleted": false,
+    "rewardLoot": [],
+    "rewardRecipes": [],
+    "rewardFunction": "No function",
+    "rewardXP": 1,
+    "achievementType": "goal",
+    "parent": {
+      "value": "CUSTOM:TheStartOfYourJourney"
+    },
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"custom_trigger\" x=\"47\" y=\"43\"><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block></xml>"
+  }
+}

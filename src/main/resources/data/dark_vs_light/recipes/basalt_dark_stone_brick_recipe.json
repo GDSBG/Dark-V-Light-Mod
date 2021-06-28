@@ -1,0 +1,22 @@
+{
+  "group": "basaltdarkstone",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "dark_vs_light:basalt_dark_stone"
+    },
+    {
+      "item": "dark_vs_light:basalt_dark_stone"
+    },
+    {
+      "item": "dark_vs_light:basalt_dark_stone"
+    },
+    {
+      "item": "dark_vs_light:basalt_dark_stone"
+    }
+  ],
+  "result": {
+    "item": "dark_vs_light:basalt_dark_stone_brick",
+    "count": 4
+  }
+}

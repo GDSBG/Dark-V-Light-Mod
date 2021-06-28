@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "dark_vs_light:stone_plated_dark_stone"
+    },
+    "title": {
+      "translate": "advancements.home_run.title"
+    },
+    "description": {
+      "translate": "advancements.home_run.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "home_run": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 1
+  },
+  "parent": "dark_vs_light:the_start_of_your_journey"
+}

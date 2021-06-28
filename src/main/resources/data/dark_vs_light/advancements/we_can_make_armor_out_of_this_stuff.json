@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "dark_vs_light:dark_shard"
+    },
+    "title": {
+      "translate": "advancements.we_can_make_armor_out_of_this_stuff.title"
+    },
+    "description": {
+      "translate": "advancements.we_can_make_armor_out_of_this_stuff.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "we_can_make_armor_out_of_this_stuff": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 1
+  },
+  "parent": "dark_vs_light:oh_enlightend_ore"
+}

@@ -1,0 +1,733 @@
+{
+  "_fv": 21,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 200,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 20,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Survivor Bag",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Survivor Bag",
+          "x": 187,
+          "y": 21
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "color": {
+            "value": -26215,
+            "falpha": 0.0
+          },
+          "id": 0,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #0",
+          "x": 140,
+          "y": 31
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "color": {
+            "value": -103,
+            "falpha": 0.0
+          },
+          "id": 1,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #1",
+          "x": 140,
+          "y": 62
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "color": {
+            "value": -6684673,
+            "falpha": 0.0
+          },
+          "id": 2,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #2",
+          "x": 276,
+          "y": 33
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "color": {
+            "value": -13369345,
+            "falpha": 0.0
+          },
+          "id": 3,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #3",
+          "x": 276,
+          "y": 50
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "color": {
+            "value": -16724788,
+            "falpha": 0.0
+          },
+          "id": 4,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #4",
+          "x": 276,
+          "y": 67
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "color": {
+            "value": -16751002,
+            "falpha": 0.0
+          },
+          "id": 5,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #5",
+          "x": 276,
+          "y": 84
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Armor",
+          "color": {
+            "value": -16724788,
+            "falpha": 0.0
+          },
+          "name": "Armor",
+          "x": 272,
+          "y": 23
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Main Hand",
+          "color": {
+            "value": -39322,
+            "falpha": 0.0
+          },
+          "name": "Main Hand",
+          "x": 128,
+          "y": 22
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Off Hand",
+          "color": {
+            "value": -154,
+            "falpha": 0.0
+          },
+          "name": "Off Hand",
+          "x": 130,
+          "y": 51
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Heal Source",
+          "color": {
+            "value": -65536,
+            "falpha": 0.0
+          },
+          "name": "Heal Source",
+          "x": 128,
+          "y": 81
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "color": {
+            "value": -26215,
+            "falpha": 0.0
+          },
+          "id": 6,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #6",
+          "x": 139,
+          "y": 91
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "heartleft.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "HP1"
+          },
+          "name": "heartleft.png",
+          "x": 177,
+          "y": 44
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "heartright.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "HP2"
+          },
+          "name": "heartright.png",
+          "x": 177,
+          "y": 44
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "armorleft.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "Armor1"
+          },
+          "name": "armorleft.png",
+          "x": 177,
+          "y": 62
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "armorright.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "Armor2"
+          },
+          "name": "armorright.png",
+          "x": 177,
+          "y": 62
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "armorleft.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "Armor3"
+          },
+          "name": "armorleft.png",
+          "x": 186,
+          "y": 62
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "armorright.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "Armor4"
+          },
+          "name": "armorright.png",
+          "x": 186,
+          "y": 62
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "armorleft.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "Armor5"
+          },
+          "name": "armorleft.png",
+          "x": 195,
+          "y": 62
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "armorright.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "Armor6"
+          },
+          "name": "armorright.png",
+          "x": 195,
+          "y": 62
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "armorleft.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "Armor7"
+          },
+          "name": "armorleft.png",
+          "x": 204,
+          "y": 62
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "armorright.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "Armor8"
+          },
+          "name": "armorright.png",
+          "x": 204,
+          "y": 62
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "armorleft.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "Armor9"
+          },
+          "name": "armorleft.png",
+          "x": 213,
+          "y": 62
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "armorright.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "Armor10"
+          },
+          "name": "armorright.png",
+          "x": 213,
+          "y": 62
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "armorleft.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "Armor11"
+          },
+          "name": "armorleft.png",
+          "x": 222,
+          "y": 62
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "armorright.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "Armor12"
+          },
+          "name": "armorright.png",
+          "x": 222,
+          "y": 62
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "armorleft.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "Armor13"
+          },
+          "name": "armorleft.png",
+          "x": 231,
+          "y": 62
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "armorright.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "Armor14"
+          },
+          "name": "armorright.png",
+          "x": 231,
+          "y": 62
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "armorleft.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "Armor15"
+          },
+          "name": "armorleft.png",
+          "x": 240,
+          "y": 62
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "armorright.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "Armor16"
+          },
+          "name": "armorright.png",
+          "x": 240,
+          "y": 62
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "armorleft.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "Armor17"
+          },
+          "name": "armorleft.png",
+          "x": 249,
+          "y": 62
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "armorright.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "Armor18"
+          },
+          "name": "armorright.png",
+          "x": 249,
+          "y": 62
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "armorleft.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "Armor19"
+          },
+          "name": "armorleft.png",
+          "x": 258,
+          "y": 62
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "armorright.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "Armor20"
+          },
+          "name": "armorright.png",
+          "x": 258,
+          "y": 62
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "heartleft.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "HP3"
+          },
+          "name": "heartleft.png",
+          "x": 186,
+          "y": 44
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "heartright.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "HP4"
+          },
+          "name": "heartright.png",
+          "x": 186,
+          "y": 44
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "heartleft.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "HP5"
+          },
+          "name": "heartleft.png",
+          "x": 195,
+          "y": 44
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "heartright.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "HP6"
+          },
+          "name": "heartright.png",
+          "x": 195,
+          "y": 44
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "heartleft.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "HP7"
+          },
+          "name": "heartleft.png",
+          "x": 204,
+          "y": 44
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "heartright.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "HP8"
+          },
+          "name": "heartright.png",
+          "x": 204,
+          "y": 44
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "heartleft.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "HP9"
+          },
+          "name": "heartleft.png",
+          "x": 213,
+          "y": 44
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "heartright.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "HP10"
+          },
+          "name": "heartright.png",
+          "x": 213,
+          "y": 44
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "heartleft.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "HP11"
+          },
+          "name": "heartleft.png",
+          "x": 222,
+          "y": 44
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "heartright.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "HP12"
+          },
+          "name": "heartright.png",
+          "x": 222,
+          "y": 44
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "heartleft.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "HP13"
+          },
+          "name": "heartleft.png",
+          "x": 231,
+          "y": 44
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "heartright.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "HP14"
+          },
+          "name": "heartright.png",
+          "x": 231,
+          "y": 44
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "heartleft.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "HP15"
+          },
+          "name": "heartleft.png",
+          "x": 240,
+          "y": 44
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "heartright.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "HP16"
+          },
+          "name": "heartright.png",
+          "x": 240,
+          "y": 44
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "heartleft.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "HP17"
+          },
+          "name": "heartleft.png",
+          "x": 249,
+          "y": 44
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "heartright.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "HP18"
+          },
+          "name": "heartright.png",
+          "x": 249,
+          "y": 44
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "heartleft.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "HP19"
+          },
+          "name": "heartleft.png",
+          "x": 258,
+          "y": 44
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "heartright.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "HP20"
+          },
+          "name": "heartright.png",
+          "x": 258,
+          "y": 44
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

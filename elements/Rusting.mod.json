@@ -1,0 +1,22 @@
+{
+  "_fv": 21,
+  "_type": "potion",
+  "definition": {
+    "name": "Potion of Rusting",
+    "effectName": "Rusting",
+    "icon": "notextureother.png",
+    "color": {
+      "value": -26317,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": true,
+    "isBenefitical": false,
+    "registerPotionType": true,
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onActiveTick": {
+      "name": "RustingOnPotionActiveTick"
+    }
+  }
+}

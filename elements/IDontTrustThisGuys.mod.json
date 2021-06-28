@@ -1,0 +1,29 @@
+{
+  "_fv": 21,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "I Dont Trust This Guys...",
+    "achievementDescription": "Get A Darkend Enchanter",
+    "achievementIcon": {
+      "value": "CUSTOM:DarkendEnchanter"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": true,
+    "hideIfNotCompleted": true,
+    "rewardLoot": [],
+    "rewardRecipes": [
+      "DarkendOrbRecipe",
+      "DarkendOreSmelt",
+      "DarkOreBlast"
+    ],
+    "rewardFunction": "No function",
+    "rewardXP": 1,
+    "achievementType": "task",
+    "parent": {
+      "value": "CUSTOM:DarkerWeGo"
+    },
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"item_in_inventory\" x=\"28\" y=\"25\"><value name=\"amount_l\"><block type=\"math_number\"><field name=\"NUM\">1</field></block></value><value name=\"amount_h\"><block type=\"math_number\"><field name=\"NUM\">64</field></block></value><value name=\"item\"><block type=\"mcitem_all\"><field name=\"value\">CUSTOM:DarkendEnchanter</field></block></value><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block></xml>"
+  }
+}

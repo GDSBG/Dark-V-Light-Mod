@@ -1,0 +1,35 @@
+{
+  "_fv": 21,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:DarkendLavaWood"
+      },
+      {
+        "value": "CUSTOM:BurnGazeWood"
+      },
+      {
+        "value": "CUSTOM:BlindLog"
+      },
+      {
+        "value": "CUSTOM:EnlightendLog"
+      },
+      {
+        "value": "CUSTOM:HoloLog"
+      },
+      {
+        "value": "CUSTOM:EnchantedLog"
+      },
+      {
+        "value": "CUSTOM:GlowLog"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "name": "logs",
+    "namespace": "minecraft"
+  }
+}

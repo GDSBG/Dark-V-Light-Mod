@@ -1,0 +1,25 @@
+{
+  "_fv": 21,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "Biomes Glow In This Dimension Too?",
+    "achievementDescription": "Visit the Glow Forest",
+    "achievementIcon": {
+      "value": "CUSTOM:GlowLeaves"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": true,
+    "hideIfNotCompleted": true,
+    "rewardLoot": [],
+    "rewardRecipes": [],
+    "rewardFunction": "No function",
+    "rewardXP": 1,
+    "achievementType": "task",
+    "parent": {
+      "value": "CUSTOM:OneClickAway"
+    },
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"biome_entered\" x=\"65\" y=\"47\"><field name=\"biome\">CUSTOM:GlowForest</field><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block></xml>"
+  }
+}

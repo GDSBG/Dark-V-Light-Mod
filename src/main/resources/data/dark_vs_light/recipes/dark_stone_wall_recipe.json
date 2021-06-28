@@ -1,0 +1,32 @@
+{
+  "group": "wall",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "dark_vs_light:dark_stone"
+    },
+    "1": {
+      "item": "dark_vs_light:dark_stone"
+    },
+    "2": {
+      "item": "dark_vs_light:dark_stone"
+    },
+    "3": {
+      "item": "dark_vs_light:dark_stone"
+    },
+    "4": {
+      "item": "dark_vs_light:dark_stone"
+    },
+    "5": {
+      "item": "dark_vs_light:dark_stone"
+    }
+  },
+  "result": {
+    "item": "dark_vs_light:real_dark_stone_wall",
+    "count": 6
+  }
+}

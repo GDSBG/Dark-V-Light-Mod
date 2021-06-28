@@ -1,0 +1,39 @@
+{
+  "group": "basaltdarkstone",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "dark_vs_light:basalt_dark_stone"
+    },
+    "1": {
+      "item": "minecraft:stick"
+    },
+    "2": {
+      "item": "dark_vs_light:basalt_dark_stone"
+    },
+    "3": {
+      "item": "minecraft:stick"
+    },
+    "5": {
+      "item": "minecraft:stick"
+    },
+    "6": {
+      "item": "dark_vs_light:basalt_dark_stone"
+    },
+    "7": {
+      "item": "minecraft:stick"
+    },
+    "8": {
+      "item": "dark_vs_light:basalt_dark_stone"
+    }
+  },
+  "result": {
+    "item": "dark_vs_light:basalt_stone_gate",
+    "count": 2
+  }
+}

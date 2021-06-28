@@ -1,0 +1,154 @@
+{
+  "_fv": 21,
+  "_type": "biome",
+  "definition": {
+    "name": "Darkend Glow Forest",
+    "groundBlock": {
+      "value": "CUSTOM:DarkendGrass"
+    },
+    "undergroundBlock": {
+      "value": "CUSTOM:DarkDirt"
+    },
+    "airColor": {
+      "value": -6711040,
+      "falpha": 0.0
+    },
+    "grassColor": {
+      "value": -13369600,
+      "falpha": 0.0
+    },
+    "foliageColor": {
+      "value": -10066432,
+      "falpha": 0.0
+    },
+    "waterColor": {
+      "value": -103,
+      "falpha": 0.0
+    },
+    "waterFogColor": {
+      "value": -6711040,
+      "falpha": 0.0
+    },
+    "ambientSound": {
+      "value": "CUSTOM:theswamp"
+    },
+    "additionsSound": {
+      "value": ""
+    },
+    "music": {
+      "value": ""
+    },
+    "moodSound": {
+      "value": ""
+    },
+    "moodSoundDelay": 0,
+    "spawnParticles": false,
+    "particleToSpawn": {
+      "value": "CUSTOM:Test"
+    },
+    "particlesProbability": 0.0,
+    "biomeCategory": "NONE",
+    "parent": {
+      "value": "CUSTOM:MountainOfCavesBiome"
+    },
+    "rainingPossibility": 0.7,
+    "temperature": 0.5,
+    "baseHeight": 0.5,
+    "heightVariation": 0.18,
+    "biomeType": "WARM",
+    "spawnBiome": false,
+    "biomeWeight": 2,
+    "biomeDictionaryTypes": [],
+    "grassPerChunk": 0,
+    "seagrassPerChunk": 0,
+    "flowersPerChunk": 0,
+    "mushroomsPerChunk": 0,
+    "bigMushroomsChunk": 0,
+    "sandPatchesPerChunk": 0,
+    "gravelPatchesPerChunk": 0,
+    "reedsPerChunk": 0,
+    "cactiPerChunk": 0,
+    "treesPerChunk": 5,
+    "vanillaTreeType": "Default",
+    "treeType": 1,
+    "minHeight": 4,
+    "maxWaterDepth": 0,
+    "treeStem": {
+      "value": "CUSTOM:BurnGazeWood"
+    },
+    "treeBranch": {
+      "value": "CUSTOM:DarkendGlowingLeaves"
+    },
+    "treeVines": {
+      "value": "CUSTOM:GlowingFruit"
+    },
+    "treeFruits": {
+      "value": "Blocks.AIR"
+    },
+    "spawnStronghold": false,
+    "spawnMineshaft": true,
+    "spawnPillagerOutpost": true,
+    "villageType": "plains",
+    "spawnWoodlandMansion": false,
+    "spawnJungleTemple": false,
+    "spawnDesertPyramid": false,
+    "spawnIgloo": false,
+    "spawnOceanMonument": false,
+    "spawnShipwreck": true,
+    "oceanRuinType": "COLD",
+    "defaultFeatures": [
+      "Lakes",
+      "OceanCaves",
+      "Ores",
+      "Caves",
+      "FrozenTopLayer"
+    ],
+    "spawnEntries": [
+      {
+        "entity": {
+          "value": "CUSTOM:DarkendTallend"
+        },
+        "minGroup": 1,
+        "maxGroup": 2,
+        "weight": 35,
+        "spawnType": "monster"
+      },
+      {
+        "entity": {
+          "value": "CUSTOM:DarkendLoner"
+        },
+        "minGroup": 1,
+        "maxGroup": 4,
+        "weight": 20,
+        "spawnType": "monster"
+      },
+      {
+        "entity": {
+          "value": "EntitySlime"
+        },
+        "minGroup": 1,
+        "maxGroup": 4,
+        "weight": 15,
+        "spawnType": "monster"
+      },
+      {
+        "entity": {
+          "value": "EntitySalmon"
+        },
+        "minGroup": 1,
+        "maxGroup": 5,
+        "weight": 2,
+        "spawnType": "waterCreature"
+      },
+      {
+        "entity": {
+          "value": "CUSTOM:DarkendSurviver"
+        },
+        "minGroup": 2,
+        "maxGroup": 6,
+        "weight": 20,
+        "spawnType": "monster"
+      }
+    ]
+  }
+}

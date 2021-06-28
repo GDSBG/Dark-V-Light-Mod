@@ -1,0 +1,20 @@
+{
+  "_fv": 21,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Blasting",
+    "xpReward": 25.0,
+    "cookingTime": 100,
+    "recipeRetstackSize": 1,
+    "group": "darkorb",
+    "recipeShapeless": false,
+    "blastingInputStack": {
+      "value": "CUSTOM:BlindOre"
+    },
+    "blastingReturnStack": {
+      "value": "CUSTOM:DarkendOrb"
+    },
+    "name": "dark_ore_blast",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "_fv": 21,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "darkorb",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:DarkShard"
+      },
+      {
+        "value": "CUSTOM:DarkShard"
+      },
+      {
+        "value": "CUSTOM:DarkShard"
+      },
+      {
+        "value": "CUSTOM:DarkShard"
+      },
+      {
+        "value": "Items.ENDER_PEARL"
+      },
+      {
+        "value": "CUSTOM:DarkShard"
+      },
+      {
+        "value": "CUSTOM:DarkShard"
+      },
+      {
+        "value": "CUSTOM:DarkShard"
+      },
+      {
+        "value": "CUSTOM:DarkShard"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:DarkendOrb"
+    },
+    "name": "darkend_orb_recipe",
+    "namespace": "mod"
+  }
+}

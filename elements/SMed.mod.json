@@ -1,0 +1,100 @@
+{
+  "_fv": 21,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:DarkStonePickaxe"
+      },
+      {
+        "value": "CUSTOM:DarkStoneSword"
+      },
+      {
+        "value": "CUSTOM:DarkendHoe"
+      },
+      {
+        "value": "CUSTOM:DarkStoneAxe"
+      },
+      {
+        "value": "CUSTOM:SweetGlowBerry"
+      },
+      {
+        "value": "CUSTOM:DarkendFlower"
+      },
+      {
+        "value": "CUSTOM:DarkendShovel"
+      },
+      {
+        "value": "CUSTOM:DarkFruit"
+      },
+      {
+        "value": "CUSTOM:UrinGem"
+      },
+      {
+        "value": "CUSTOM:UrinPickaxe"
+      },
+      {
+        "value": "CUSTOM:UrinAxe"
+      },
+      {
+        "value": "CUSTOM:UrinSword"
+      },
+      {
+        "value": "CUSTOM:UrinShovel"
+      },
+      {
+        "value": "CUSTOM:UrinHoe"
+      },
+      {
+        "value": "CUSTOM:UrenBall"
+      },
+      {
+        "value": "CUSTOM:DarkStoneDust"
+      },
+      {
+        "value": "CUSTOM:DarkShard"
+      },
+      {
+        "value": "CUSTOM:WaypointDetector"
+      },
+      {
+        "value": "CUSTOM:BurnArmor.helmet"
+      },
+      {
+        "value": "CUSTOM:BurnArmor.body"
+      },
+      {
+        "value": "CUSTOM:BurnArmor.legs"
+      },
+      {
+        "value": "CUSTOM:BurnArmor.boots"
+      },
+      {
+        "value": "CUSTOM:Burn_Diamond_ToolShovel"
+      },
+      {
+        "value": "CUSTOM:EnlightendTeleporter"
+      },
+      {
+        "value": "CUSTOM:BurnPickaxe"
+      },
+      {
+        "value": "CUSTOM:BurnAxe"
+      },
+      {
+        "value": "CUSTOM:BurnSword"
+      },
+      {
+        "value": "CUSTOM:BurnShovel"
+      },
+      {
+        "value": "CUSTOM:BurnHoe"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "name": "smed",
+    "namespace": "minecraft"
+  }
+}

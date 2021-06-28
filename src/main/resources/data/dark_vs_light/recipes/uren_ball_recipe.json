@@ -1,0 +1,39 @@
+{
+  "group": "dark_vs_light",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "dark_vs_light:urin_gem"
+    },
+    "1": {
+      "item": "dark_vs_light:urin_gem"
+    },
+    "2": {
+      "item": "dark_vs_light:urin_gem"
+    },
+    "3": {
+      "item": "dark_vs_light:urin_gem"
+    },
+    "5": {
+      "item": "dark_vs_light:urin_gem"
+    },
+    "6": {
+      "item": "dark_vs_light:urin_gem"
+    },
+    "7": {
+      "item": "dark_vs_light:urin_gem"
+    },
+    "8": {
+      "item": "dark_vs_light:urin_gem"
+    }
+  },
+  "result": {
+    "item": "dark_vs_light:uren_ball",
+    "count": 1
+  }
+}

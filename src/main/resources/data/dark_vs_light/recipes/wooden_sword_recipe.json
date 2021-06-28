@@ -1,0 +1,24 @@
+{
+  "group": "dark_vs_light",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1",
+    "2"
+  ],
+  "key": {
+    "0": {
+      "tag": "darkend_planks_tag"
+    },
+    "1": {
+      "tag": "darkend_planks_tag"
+    },
+    "2": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "minecraft:wooden_sword",
+    "count": 1
+  }
+}

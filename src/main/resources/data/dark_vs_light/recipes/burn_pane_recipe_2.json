@@ -1,0 +1,42 @@
+{
+  "group": "glass",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:red_stained_glass"
+    },
+    "1": {
+      "item": "minecraft:stick"
+    },
+    "2": {
+      "item": "minecraft:red_stained_glass"
+    },
+    "3": {
+      "item": "minecraft:stick"
+    },
+    "4": {
+      "item": "dark_vs_light:burn_crystal"
+    },
+    "5": {
+      "item": "minecraft:stick"
+    },
+    "6": {
+      "item": "minecraft:red_stained_glass"
+    },
+    "7": {
+      "item": "minecraft:stick"
+    },
+    "8": {
+      "item": "minecraft:red_stained_glass"
+    }
+  },
+  "result": {
+    "item": "dark_vs_light:burn_pane",
+    "count": 8
+  }
+}

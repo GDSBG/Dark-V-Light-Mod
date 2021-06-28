@@ -1,0 +1,26 @@
+{
+  "_fv": 21,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:DarkendGlowingLeaves"
+      },
+      {
+        "value": "CUSTOM:BlindLeaves"
+      },
+      {
+        "value": "CUSTOM:HoloLeaves"
+      },
+      {
+        "value": "CUSTOM:GlowLeaves"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "name": "leaves",
+    "namespace": "minecraft"
+  }
+}

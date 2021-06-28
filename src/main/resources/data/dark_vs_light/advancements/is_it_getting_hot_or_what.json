@@ -1,0 +1,51 @@
+{
+  "display": {
+    "icon": {
+      "item": "dark_vs_light:burn_crystal"
+    },
+    "title": {
+      "translate": "advancements.is_it_getting_hot_or_what.title"
+    },
+    "description": {
+      "translate": "advancements.is_it_getting_hot_or_what.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "is_it_getting_hot_or_what": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "dark_vs_light:burn_crystal",
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 1,
+    "recipes": [
+      "dark_vs_light:burn_pane_recipe_1",
+      "dark_vs_light:burn_pane_recipe_2",
+      "dark_vs_light:burn_armor_helmet_recipe",
+      "dark_vs_light:burn_armor_body_recipe",
+      "dark_vs_light:burn_armor_leggings_recipe",
+      "dark_vs_light:burn_armor_boots_recipe",
+      "dark_vs_light:burn_ore_surface_furnace",
+      "dark_vs_light:burn_pickaxe_recipe",
+      "dark_vs_light:burn_axe_recipe",
+      "dark_vs_light:burn_sword_recipe",
+      "dark_vs_light:burn_shovel_recipe",
+      "dark_vs_light:burn_hoe_recipe"
+    ]
+  },
+  "parent": "dark_vs_light:home_run"
+}

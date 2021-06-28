@@ -1,0 +1,11 @@
+{
+  "_fv": 21,
+  "_type": "tab",
+  "definition": {
+    "name": "Enlightend Dimension Tab",
+    "icon": {
+      "value": "CUSTOM:EnlightendTeleporter"
+    },
+    "showSearch": false
+  }
+}

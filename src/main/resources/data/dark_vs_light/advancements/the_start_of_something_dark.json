@@ -1,0 +1,52 @@
+{
+  "display": {
+    "icon": {
+      "item": "dark_vs_light:dark_stone"
+    },
+    "title": {
+      "translate": "advancements.the_start_of_something_dark.title"
+    },
+    "description": {
+      "translate": "advancements.the_start_of_something_dark.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "the_start_of_something_dark": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "dark_vs_light:dark_stone",
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 1,
+    "recipes": [
+      "dark_vs_light:smooth_dark_stone_recipe",
+      "dark_vs_light:dark_stone_sword_recipe",
+      "dark_vs_light:dark_stone_pick_recipe",
+      "dark_vs_light:darkend_portal_ignitor_recipe",
+      "dark_vs_light:darkend_hoe_why_recipe",
+      "dark_vs_light:dark_stone_axe_recipe",
+      "dark_vs_light:smooth_dark_stone_stairs_recipe",
+      "dark_vs_light:smooth_dark_stone_wall_recipe",
+      "dark_vs_light:dark_stone_stairs_recipe",
+      "dark_vs_light:dark_stone_wall_recipe",
+      "dark_vs_light:dark_stone_slab_recipe",
+      "dark_vs_light:dark_stone_pane_recipe",
+      "dark_vs_light:darkend_shovel_recipe"
+    ]
+  },
+  "parent": "dark_vs_light:home_run"
+}

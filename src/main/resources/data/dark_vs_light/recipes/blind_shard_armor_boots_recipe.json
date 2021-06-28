@@ -1,0 +1,26 @@
+{
+  "group": "dark_vs_light",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "dark_vs_light:dark_shard"
+    },
+    "2": {
+      "item": "dark_vs_light:dark_shard"
+    },
+    "3": {
+      "item": "dark_vs_light:dark_shard"
+    },
+    "5": {
+      "item": "dark_vs_light:dark_shard"
+    }
+  },
+  "result": {
+    "item": "dark_vs_light:blind_shard_armor_boots",
+    "count": 1
+  }
+}

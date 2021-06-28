@@ -1,0 +1,129 @@
+{
+  "_fv": 21,
+  "_type": "block",
+  "definition": {
+    "texture": "burndiamondincasedinobsidiantop",
+    "textureTop": "burndiamondincasedinobsidiantop",
+    "textureLeft": "burndiamondincasedinobsidianupdate",
+    "textureFront": "burndiamondincasedinobsidianupdate",
+    "textureRight": "burndiamondincasedinobsidianupdate",
+    "textureBack": "burndiamondincasedinobsidianupdate",
+    "renderType": 10,
+    "customModelName": "Normal",
+    "rotationMode": 5,
+    "emissiveRendering": true,
+    "displayFluidOverlay": false,
+    "itemTexture": "",
+    "particleTexture": "",
+    "tintType": "No tint",
+    "isItemTinted": false,
+    "hasTransparency": true,
+    "connectedSides": true,
+    "transparencyType": "TRANSLUCENT",
+    "disableOffset": false,
+    "boundingBoxes": [
+      {
+        "mx": 0.0,
+        "my": 0.0,
+        "mz": 0.0,
+        "Mx": 16.0,
+        "My": 16.0,
+        "Mz": 16.0,
+        "subtract": false
+      }
+    ],
+    "name": "Burn Diamond Incased Obsidian Block",
+    "specialInfo": [
+      "Burn Diamond Incased In Obsidian So That You Dont Burn",
+      "Beware This is very reactive"
+    ],
+    "hardness": 30.0,
+    "resistance": 1.0,
+    "hasGravity": true,
+    "isWaterloggable": false,
+    "creativeTab": {
+      "value": "CUSTOM:DVLtab"
+    },
+    "destroyTool": "pickaxe",
+    "customDrop": {
+      "value": ""
+    },
+    "dropAmount": 1,
+    "useLootTableForDrops": false,
+    "enchantPowerBonus": 0.0,
+    "plantsGrowOn": false,
+    "canRedstoneConnect": false,
+    "lightOpacity": 255,
+    "material": {
+      "value": "ROCK"
+    },
+    "tickRate": 10,
+    "tickRandomly": false,
+    "isReplaceable": false,
+    "canProvidePower": false,
+    "colorOnMap": "AIR",
+    "creativePickItem": {
+      "value": ""
+    },
+    "offsetType": "NONE",
+    "aiPathNodeType": "BLOCKED",
+    "flammability": 50,
+    "fireSpreadSpeed": 0,
+    "isLadder": false,
+    "slipperiness": 0.6,
+    "speedFactor": 1.0,
+    "jumpFactor": 1.0,
+    "reactionToPushing": "NORMAL",
+    "isNotColidable": false,
+    "isCustomSoundType": false,
+    "soundOnStep": {
+      "value": "GLASS"
+    },
+    "luminance": 15,
+    "unbreakable": false,
+    "breakHarvestLevel": 3,
+    "spawnParticles": true,
+    "particleToSpawn": {
+      "value": "CUSTOM:DarkendDessertParticle"
+    },
+    "particleSpawningShape": "Spread",
+    "particleSpawningRadious": 0.5,
+    "particleAmount": 4,
+    "particleCondition": {
+      "name": "BurnedGazeWoodParticleSpawningCondition"
+    },
+    "hasInventory": false,
+    "guiBoundTo": "<NONE>",
+    "openGUIOnRightClick": false,
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "inventoryDropWhenDestroyed": true,
+    "inventoryComparatorPower": true,
+    "inventoryOutSlotIDs": [],
+    "inventoryInSlotIDs": [],
+    "hasEnergyStorage": false,
+    "energyInitial": 0,
+    "energyCapacity": 400000,
+    "energyMaxReceive": 200,
+    "energyMaxExtract": 200,
+    "isFluidTank": false,
+    "fluidCapacity": 8000,
+    "fluidRestrictions": [],
+    "onNeighbourBlockChanges": {
+      "name": "BurnDiamondIncasedObsidianBlockNeighbourBlockChanges"
+    },
+    "onRedstoneOn": {
+      "name": "BurnDiamondIncasedObsidianBlockRedstoneOn"
+    },
+    "onRedstoneOff": {
+      "name": "BurnDiamondIncasedObsidianBlockRedstoneOff"
+    },
+    "spawnWorldTypes": [],
+    "restrictionBiomes": [],
+    "blocksToReplace": [],
+    "frequencyPerChunks": 8,
+    "frequencyOnChunk": 1,
+    "minGenerateHeight": 0,
+    "maxGenerateHeight": 60
+  }
+}

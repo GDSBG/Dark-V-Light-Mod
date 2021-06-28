@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "dark_vs_light:garbage_disposal"
+    },
+    "title": {
+      "translate": "advancements.no_longer_garbage.title"
+    },
+    "description": {
+      "translate": "advancements.no_longer_garbage.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "no_longer_garbage": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 1
+  },
+  "parent": "dark_vs_light:the_start_of_your_journey"
+}

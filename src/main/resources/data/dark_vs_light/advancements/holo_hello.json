@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "dark_vs_light:holo_leaves"
+    },
+    "title": {
+      "translate": "advancements.holo_hello.title"
+    },
+    "description": {
+      "translate": "advancements.holo_hello.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "holo_hello": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "biome": "dark_vs_light:holo_forest"
+      }
+    }
+  },
+  "rewards": {
+    "experience": 1
+  },
+  "parent": "dark_vs_light:too_bright"
+}

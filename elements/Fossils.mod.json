@@ -1,0 +1,25 @@
+{
+  "_fv": 21,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "Fossils?! Its a Cold Dessert",
+    "achievementDescription": "find the darkend dessert",
+    "achievementIcon": {
+      "value": "Blocks.SAND#0"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": true,
+    "hideIfNotCompleted": true,
+    "rewardLoot": [],
+    "rewardRecipes": [],
+    "rewardFunction": "No function",
+    "rewardXP": 1,
+    "achievementType": "task",
+    "parent": {
+      "value": "CUSTOM:DarkerWeGo"
+    },
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"biome_entered\" x=\"56\" y=\"51\"><field name=\"biome\">CUSTOM:DarkendDessert</field><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block></xml>"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "dark_vs_light:custom/xpgrinder",
+  "textures": {
+    "all": "dark_vs_light:blocks/xpgrinder",
+    "particle": "dark_vs_light:blocks/xpgrinder",
+    "0": "dark_vs_light:blocks/realxpgrinder"
+  }
+}

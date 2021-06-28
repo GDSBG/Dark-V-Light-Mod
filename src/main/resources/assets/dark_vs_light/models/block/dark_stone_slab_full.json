@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "bottom": "dark_vs_light:blocks/new_darkstone",
+    "top": "dark_vs_light:blocks/new_darkstone",
+    "side": "dark_vs_light:blocks/new_darkstone"
+  }
+}

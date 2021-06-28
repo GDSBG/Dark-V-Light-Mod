@@ -1,0 +1,13 @@
+{
+  "group": "darkwood",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "dark_vs_light:burn_gaze_wood"
+    }
+  ],
+  "result": {
+    "item": "dark_vs_light:burn_gaze_wooden_plank",
+    "count": 4
+  }
+}

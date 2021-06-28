@@ -1,9 +1,0 @@
-{
-  "group": "dark_v_light",
-  "type": "minecraft:stonecutting",
-  "count": 4,
-  "ingredient": {
-    "item": "dark_v_light:dark_stone"
-  },
-  "result": "dark_v_light:pickles_dark_stone"
-}

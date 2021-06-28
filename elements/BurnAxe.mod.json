@@ -1,0 +1,31 @@
+{
+  "_fv": 21,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "burn_axe",
+    "customModelName": "Normal",
+    "name": "Burn Axe",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:DVLtab"
+    },
+    "toolType": "Axe",
+    "harvestLevel": 4,
+    "efficiency": 9.0,
+    "attackSpeed": 0.7,
+    "enchantability": 28,
+    "damageVsEntity": 18.0,
+    "usageCount": 660,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:BurnCrystal"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

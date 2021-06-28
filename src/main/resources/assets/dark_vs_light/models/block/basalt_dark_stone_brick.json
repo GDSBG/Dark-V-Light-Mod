@@ -1,0 +1,7 @@
+{
+  "parent": "block/leaves",
+  "textures": {
+    "all": "dark_vs_light:blocks/basaltdarkstone",
+    "particle": "dark_vs_light:blocks/basaltdarkstone"
+  }
+}

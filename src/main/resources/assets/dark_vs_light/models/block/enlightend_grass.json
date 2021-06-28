@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "dark_vs_light:blocks/grasssidelight",
+    "up": "dark_vs_light:blocks/grasstoplight",
+    "north": "dark_vs_light:blocks/grasssidelight",
+    "east": "dark_vs_light:blocks/grasssidelight",
+    "south": "dark_vs_light:blocks/grasssidelight",
+    "west": "dark_vs_light:blocks/grasssidelight",
+    "particle": "dark_vs_light:blocks/grasssidelight"
+  }
+}

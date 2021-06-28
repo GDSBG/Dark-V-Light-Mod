@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "dark_vs_light:glowing_fruit_food"
+    },
+    "title": {
+      "translate": "advancements.is_this_blindness.title"
+    },
+    "description": {
+      "translate": "advancements.is_this_blindness.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "is_this_blindness": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 1
+  },
+  "parent": "dark_vs_light:one_click_away"
+}

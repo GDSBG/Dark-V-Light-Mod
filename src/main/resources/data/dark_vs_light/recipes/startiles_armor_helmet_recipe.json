@@ -1,0 +1,29 @@
+{
+  "group": "dark_vs_light",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "dark_vs_light:startile"
+    },
+    "1": {
+      "item": "dark_vs_light:startile"
+    },
+    "2": {
+      "item": "dark_vs_light:startile"
+    },
+    "3": {
+      "item": "dark_vs_light:startile"
+    },
+    "5": {
+      "item": "dark_vs_light:startile"
+    }
+  },
+  "result": {
+    "item": "dark_vs_light:startiles_armor_helmet",
+    "count": 1
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "_fv": 21,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "glowreviveberry",
+    "customModelName": "Normal",
+    "name": "Glow Revival Berry",
+    "rarity": "UNCOMMON",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:DVLFood"
+    },
+    "stackSize": 64,
+    "nutritionalValue": 1,
+    "saturation": 0.1,
+    "eatingSpeed": 15,
+    "resultItem": {
+      "value": ""
+    },
+    "forDogs": false,
+    "isAlwaysEdible": false,
+    "animation": "eat",
+    "hasGlow": true,
+    "onEaten": {
+      "name": "GlowRevivalBerruFoodEaten"
+    }
+  }
+}

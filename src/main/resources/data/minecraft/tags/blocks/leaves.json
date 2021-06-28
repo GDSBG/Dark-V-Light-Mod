@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "dark_vs_light:darkend_glowing_leaves",
+    "dark_vs_light:blind_leaves",
+    "dark_vs_light:holo_leaves",
+    "dark_vs_light:glow_leaves"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "dark_vs_light:blocks/darkendflower",
+    "particle": "dark_vs_light:blocks/darkendflower"
+  }
+}

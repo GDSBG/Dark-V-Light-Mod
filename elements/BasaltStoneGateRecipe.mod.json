@@ -1,0 +1,46 @@
+{
+  "_fv": 21,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 2,
+    "group": "basaltdarkstone",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:BasaltDarkStone"
+      },
+      {
+        "value": "Items.STICK"
+      },
+      {
+        "value": "CUSTOM:BasaltDarkStone"
+      },
+      {
+        "value": "Items.STICK"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.STICK"
+      },
+      {
+        "value": "CUSTOM:BasaltDarkStone"
+      },
+      {
+        "value": "Items.STICK"
+      },
+      {
+        "value": "CUSTOM:BasaltDarkStone"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:BasaltStoneGate"
+    },
+    "name": "basalt_stone_gate_recipe",
+    "namespace": "mod"
+  }
+}

@@ -1,8 +1,6 @@
 
 package net.boogaeye.darkvlight.gui;
 
-import org.lwjgl.opengl.GL11;
-
 import net.minecraftforge.items.SlotItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
 import net.minecraftforge.items.IItemHandler;
@@ -11,16 +9,13 @@ import net.minecraftforge.fml.network.NetworkEvent;
 import net.minecraftforge.fml.network.IContainerFactory;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.fml.DeferredWorkQueue;
-import net.minecraftforge.fluids.capability.CapabilityFluidHandler;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.World;
-import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.ResourceLocation;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.network.PacketBuffer;
 import net.minecraft.item.Items;
@@ -31,43 +26,40 @@ import net.minecraft.inventory.container.Container;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.client.gui.widget.button.Button;
-import net.minecraft.client.gui.screen.inventory.ContainerScreen;
+import net.minecraft.entity.Entity;
 import net.minecraft.client.gui.ScreenManager;
-import net.minecraft.client.Minecraft;
 
 import net.boogaeye.darkvlight.procedures.WaterLevelProcedure;
 import net.boogaeye.darkvlight.procedures.UpgradeItemProcedure;
-import net.boogaeye.darkvlight.DarkVLightModElements;
-import net.boogaeye.darkvlight.DarkVLightMod;
+import net.boogaeye.darkvlight.DarkVsLightModElements;
+import net.boogaeye.darkvlight.DarkVsLightMod;
 
 import java.util.function.Supplier;
-import java.util.concurrent.atomic.AtomicInteger;
 import java.util.Map;
 import java.util.HashMap;
 
-@DarkVLightModElements.ModElement.Tag
-public class UpgradeBlockGUIGui extends DarkVLightModElements.ModElement {
+@DarkVsLightModElements.ModElement.Tag
+public class UpgradeBlockGUIGui extends DarkVsLightModElements.ModElement {
 	public static HashMap guistate = new HashMap();
 	private static ContainerType<GuiContainerMod> containerType = null;
-	public UpgradeBlockGUIGui(DarkVLightModElements instance) {
-		super(instance, 14);
+	public UpgradeBlockGUIGui(DarkVsLightModElements instance) {
+		super(instance, 52);
 		elements.addNetworkMessage(ButtonPressedMessage.class, ButtonPressedMessage::buffer, ButtonPressedMessage::new,
 				ButtonPressedMessage::handler);
 		elements.addNetworkMessage(GUISlotChangedMessage.class, GUISlotChangedMessage::buffer, GUISlotChangedMessage::new,
 				GUISlotChangedMessage::handler);
 		containerType = new ContainerType<>(new GuiContainerModFactory());
-		FMLJavaModLoadingContext.get().getModEventBus().register(this);
+		FMLJavaModLoadingContext.get().getModEventBus().register(new ContainerRegisterHandler());
 	}
-
+	private static class ContainerRegisterHandler {
+		@SubscribeEvent
+		public void registerContainer(RegistryEvent.Register<ContainerType<?>> event) {
+			event.getRegistry().register(containerType.setRegistryName("upgrade_block_gui"));
+		}
+	}
 	@OnlyIn(Dist.CLIENT)
 	public void initElements() {
-		DeferredWorkQueue.runLater(() -> ScreenManager.registerFactory(containerType, GuiWindow::new));
-	}
-
-	@SubscribeEvent
-	public void registerContainer(RegistryEvent.Register<ContainerType<?>> event) {
-		event.getRegistry().register(containerType.setRegistryName("upgrade_block_gui"));
+		DeferredWorkQueue.runLater(() -> ScreenManager.registerFactory(containerType, UpgradeBlockGUIGuiWindow::new));
 	}
 	public static class GuiContainerModFactory implements IContainerFactory {
 		public GuiContainerMod create(int id, PlayerInventory inv, PacketBuffer extraData) {
@@ -76,9 +68,9 @@ public class UpgradeBlockGUIGui extends DarkVLightModElements.ModElement {
 	}
 
 	public static class GuiContainerMod extends Container implements Supplier<Map<Integer, Slot>> {
-		private World world;
-		private PlayerEntity entity;
-		private int x, y, z;
+		World world;
+		PlayerEntity entity;
+		int x, y, z;
 		private IItemHandler internal;
 		private Map<Integer, Slot> customSlots = new HashMap<>();
 		private boolean bound = false;
@@ -106,6 +98,14 @@ public class UpgradeBlockGUIGui extends DarkVLightModElements.ModElement {
 						this.internal = capability;
 						this.bound = true;
 					});
+				} else if (extraData.readableBytes() > 1) {
+					extraData.readByte(); // drop padding
+					Entity entity = world.getEntityByID(extraData.readVarInt());
+					if (entity != null)
+						entity.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+							this.internal = capability;
+							this.bound = true;
+						});
 				} else { // might be bound to block
 					TileEntity ent = inv.player != null ? inv.player.world.getTileEntity(pos) : null;
 					if (ent != null) {
@@ -118,13 +118,13 @@ public class UpgradeBlockGUIGui extends DarkVLightModElements.ModElement {
 			}
 			this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 16, 31) {
 			}));
-			this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 137, 30) {
+			this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 137, 31) {
 				@Override
 				public boolean isItemValid(ItemStack stack) {
 					return false;
 				}
 			}));
-			this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 14, 60) {
+			this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 14, 61) {
 				@Override
 				public boolean isItemValid(ItemStack stack) {
 					return (new ItemStack(Items.WATER_BUCKET, (int) (1)).getItem() == stack.getItem());
@@ -284,92 +284,10 @@ public class UpgradeBlockGUIGui extends DarkVLightModElements.ModElement {
 		}
 
 		private void slotChanged(int slotid, int ctype, int meta) {
-			if (this.world != null && this.world.isRemote) {
-				DarkVLightMod.PACKET_HANDLER.sendToServer(new GUISlotChangedMessage(slotid, x, y, z, ctype, meta));
+			if (this.world != null && this.world.isRemote()) {
+				DarkVsLightMod.PACKET_HANDLER.sendToServer(new GUISlotChangedMessage(slotid, x, y, z, ctype, meta));
 				handleSlotAction(entity, slotid, ctype, meta, x, y, z);
 			}
-		}
-	}
-
-	@OnlyIn(Dist.CLIENT)
-	public static class GuiWindow extends ContainerScreen<GuiContainerMod> {
-		private World world;
-		private int x, y, z;
-		private PlayerEntity entity;
-		public GuiWindow(GuiContainerMod container, PlayerInventory inventory, ITextComponent text) {
-			super(container, inventory, text);
-			this.world = container.world;
-			this.x = container.x;
-			this.y = container.y;
-			this.z = container.z;
-			this.entity = container.entity;
-			this.xSize = 176;
-			this.ySize = 166;
-		}
-		private static final ResourceLocation texture = new ResourceLocation("dark_v_light:textures/upgrade_block_gui.png");
-		@Override
-		public void render(int mouseX, int mouseY, float partialTicks) {
-			this.renderBackground();
-			super.render(mouseX, mouseY, partialTicks);
-			this.renderHoveredToolTip(mouseX, mouseY);
-		}
-
-		@Override
-		protected void drawGuiContainerBackgroundLayer(float par1, int par2, int par3) {
-			GL11.glColor4f(1.0F, 1.0F, 1.0F, 1.0F);
-			Minecraft.getInstance().getTextureManager().bindTexture(texture);
-			int k = (this.width - this.xSize) / 2;
-			int l = (this.height - this.ySize) / 2;
-			this.blit(k, l, 0, 0, this.xSize, this.ySize);
-		}
-
-		@Override
-		public boolean keyPressed(int key, int b, int c) {
-			if (key == 256) {
-				this.minecraft.player.closeScreen();
-			}
-			return super.keyPressed(key, b, c);
-		}
-
-		@Override
-		public void tick() {
-			super.tick();
-		}
-
-		@Override
-		protected void drawGuiContainerForegroundLayer(int mouseX, int mouseY) {
-			this.font.drawString("Upgrade Block", 54, 1, -6711040);
-			this.font.drawString("" + (new Object() {
-				public int getFluidTankLevel(BlockPos pos, int tank) {
-					AtomicInteger _retval = new AtomicInteger(0);
-					TileEntity _ent = world.getTileEntity(pos);
-					if (_ent != null)
-						_ent.getCapability(CapabilityFluidHandler.FLUID_HANDLER_CAPABILITY, null)
-								.ifPresent(capability -> _retval.set(capability.getFluidInTank(tank).getAmount()));
-					return _retval.get();
-				}
-			}.getFluidTankLevel(new BlockPos((int) x, (int) y, (int) z), 1)) + "", 61, 49, -16777012);
-			this.font.drawString("FluidLeft:", 12, 49, -16777063);
-		}
-
-		@Override
-		public void removed() {
-			super.removed();
-			Minecraft.getInstance().keyboardListener.enableRepeatEvents(false);
-		}
-
-		@Override
-		public void init(Minecraft minecraft, int width, int height) {
-			super.init(minecraft, width, height);
-			minecraft.keyboardListener.enableRepeatEvents(true);
-			this.addButton(new Button(this.guiLeft + 52, this.guiTop + 29, 70, 20, "Upgrade", e -> {
-				DarkVLightMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(0, x, y, z));
-				handleButtonAction(entity, 0, x, y, z);
-			}));
-			this.addButton(new Button(this.guiLeft + 31, this.guiTop + 59, 40, 20, "Fill", e -> {
-				DarkVLightMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(1, x, y, z));
-				handleButtonAction(entity, 1, x, y, z);
-			}));
 		}
 	}
 
@@ -454,14 +372,14 @@ public class UpgradeBlockGUIGui extends DarkVLightModElements.ModElement {
 			context.setPacketHandled(true);
 		}
 	}
-	private static void handleButtonAction(PlayerEntity entity, int buttonID, int x, int y, int z) {
+	static void handleButtonAction(PlayerEntity entity, int buttonID, int x, int y, int z) {
 		World world = entity.world;
 		// security measure to prevent arbitrary chunk generation
 		if (!world.isBlockLoaded(new BlockPos(x, y, z)))
 			return;
 		if (buttonID == 0) {
 			{
-				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
 				$_dependencies.put("x", x);
 				$_dependencies.put("y", y);
@@ -472,7 +390,7 @@ public class UpgradeBlockGUIGui extends DarkVLightModElements.ModElement {
 		}
 		if (buttonID == 1) {
 			{
-				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
 				$_dependencies.put("x", x);
 				$_dependencies.put("y", y);

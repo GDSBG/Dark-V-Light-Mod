@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "dark_vs_light:blind_log"
+    },
+    "title": {
+      "translate": "advancements.colorless.title"
+    },
+    "description": {
+      "translate": "advancements.colorless.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "colorless": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "biome": "dark_vs_light:blind_forest"
+      }
+    }
+  },
+  "rewards": {
+    "experience": 1
+  },
+  "parent": "dark_vs_light:darker_we_go"
+}

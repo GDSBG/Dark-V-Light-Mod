@@ -1,0 +1,7 @@
+{
+  "parent": "block/template_wall_side_tall",
+  "textures": {
+    "wall": "dark_vs_light:blocks/new_darkstone",
+    "particle": "dark_vs_light:blocks/new_darkstone"
+  }
+}

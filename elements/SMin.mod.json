@@ -1,0 +1,118 @@
+{
+  "_fv": 21,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:DarkStone"
+      },
+      {
+        "value": "CUSTOM:BurnGazeWoodenDoor"
+      },
+      {
+        "value": "CUSTOM:BurnGazeWoodenPlank"
+      },
+      {
+        "value": "CUSTOM:GlowingFruit"
+      },
+      {
+        "value": "CUSTOM:GlowingFruitFood"
+      },
+      {
+        "value": "CUSTOM:DarkendGlowingLeaves"
+      },
+      {
+        "value": "CUSTOM:DriedGlowBerry"
+      },
+      {
+        "value": "CUSTOM:DarkendLavaWood"
+      },
+      {
+        "value": "CUSTOM:DarkendLavaLeaves"
+      },
+      {
+        "value": "CUSTOM:DarkendWoodenPlanks"
+      },
+      {
+        "value": "CUSTOM:UrinOre"
+      },
+      {
+        "value": "CUSTOM:BurnGazeWood"
+      },
+      {
+        "value": "CUSTOM:BlindStone"
+      },
+      {
+        "value": "CUSTOM:BlindLeaves"
+      },
+      {
+        "value": "CUSTOM:EnlightendLog"
+      },
+      {
+        "value": "CUSTOM:LavaWoodSapling"
+      },
+      {
+        "value": "CUSTOM:Enlightend_toolPickaxe"
+      },
+      {
+        "value": "CUSTOM:Enlightend_toolAxe"
+      },
+      {
+        "value": "CUSTOM:Enlightend_toolSword"
+      },
+      {
+        "value": "CUSTOM:Enlightend_toolShovel"
+      },
+      {
+        "value": "CUSTOM:Enlightend_toolHoe"
+      },
+      {
+        "value": "CUSTOM:UrinArmor.helmet"
+      },
+      {
+        "value": "CUSTOM:UrinArmor.body"
+      },
+      {
+        "value": "CUSTOM:UrinArmor.legs"
+      },
+      {
+        "value": "CUSTOM:UrinArmor.boots"
+      },
+      {
+        "value": "CUSTOM:BlindShardPickaxe"
+      },
+      {
+        "value": "CUSTOM:BlindShardAxe"
+      },
+      {
+        "value": "CUSTOM:BlindShardSword"
+      },
+      {
+        "value": "CUSTOM:BlindShardShovel"
+      },
+      {
+        "value": "CUSTOM:BlindShardHoe"
+      },
+      {
+        "value": "CUSTOM:BlindShardArmor.helmet"
+      },
+      {
+        "value": "CUSTOM:BlindShardArmor.body"
+      },
+      {
+        "value": "CUSTOM:BlindShardArmor.legs"
+      },
+      {
+        "value": "CUSTOM:BlindShardArmor.boots"
+      },
+      {
+        "value": "Items.SHIELD"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "name": "smin",
+    "namespace": "minecraft"
+  }
+}

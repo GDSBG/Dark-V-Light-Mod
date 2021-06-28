@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "dark_vs_light:dark_stone"
+    },
+    "title": {
+      "translate": "advancements.dark_stone_and_riches.title"
+    },
+    "description": {
+      "translate": "advancements.dark_stone_and_riches.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "dark_stone_and_riches": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "biome": "dark_vs_light:mountain_of_caves_biome"
+      }
+    }
+  },
+  "rewards": {
+    "experience": 1
+  },
+  "parent": "dark_vs_light:darker_we_go"
+}

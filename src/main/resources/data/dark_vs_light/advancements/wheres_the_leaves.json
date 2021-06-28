@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "dark_vs_light:burn_gaze_wood"
+    },
+    "title": {
+      "translate": "advancements.wheres_the_leaves.title"
+    },
+    "description": {
+      "translate": "advancements.wheres_the_leaves.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "wheres_the_leaves": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "biome": "dark_vs_light:burned_gaze_forest"
+      }
+    }
+  },
+  "rewards": {
+    "experience": 1
+  },
+  "parent": "dark_vs_light:darker_we_go"
+}

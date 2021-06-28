@@ -1,0 +1,36 @@
+{
+  "group": "dark_vs_light",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5",
+    "6 8"
+  ],
+  "key": {
+    "0": {
+      "item": "dark_vs_light:burn_crystal"
+    },
+    "1": {
+      "item": "dark_vs_light:burn_crystal"
+    },
+    "2": {
+      "item": "dark_vs_light:burn_crystal"
+    },
+    "3": {
+      "item": "dark_vs_light:burn_crystal"
+    },
+    "5": {
+      "item": "dark_vs_light:burn_crystal"
+    },
+    "6": {
+      "item": "dark_vs_light:burn_crystal"
+    },
+    "8": {
+      "item": "dark_vs_light:burn_crystal"
+    }
+  },
+  "result": {
+    "item": "dark_vs_light:burn_armor_leggings",
+    "count": 1
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "_fv": 21,
+  "_type": "enchantment",
+  "definition": {
+    "name": "Endarkend Filtering",
+    "type": "WEAPON",
+    "rarity": "COMMON",
+    "minLevel": 1,
+    "maxLevel": 5,
+    "damageModifier": 0,
+    "compatibleEnchantments": [],
+    "compatibleItems": [],
+    "isTreasureEnchantment": false,
+    "isCurse": false,
+    "isAllowedOnBooks": true
+  }
+}

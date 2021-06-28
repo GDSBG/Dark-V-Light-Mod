@@ -1,27 +1,34 @@
 {
-  "_fv": 10,
+  "_fv": 21,
   "_type": "dimension",
   "definition": {
-    "portalFrame": {
-      "value": "CUSTOM:DarkStone"
-    },
-    "portalParticles": {
-      "value": "DRAGON_BREATH"
-    },
-    "portalLuminance": 0.0,
-    "portalSound": {
-      "value": "ambient.cave"
-    },
-    "igniterName": "Darkend Dimension Portal Igniter",
-    "igniterTab": {
-      "value": "CUSTOM:DVLtab"
-    },
-    "texture": "notextureitem",
-    "portalTexture": "smoothdstone",
-    "enablePortal": true,
     "biomesInDimension": [
       {
         "value": "CUSTOM:BurnedGazeForest"
+      },
+      {
+        "value": "CUSTOM:MountainOfCavesBiome"
+      },
+      {
+        "value": "CUSTOM:DarkendDessert"
+      },
+      {
+        "value": "CUSTOM:DarkendGlowForest"
+      },
+      {
+        "value": "CUSTOM:DarkendGlowForestMountains"
+      },
+      {
+        "value": "CUSTOM:LavaForest"
+      },
+      {
+        "value": "CUSTOM:LavaSprings"
+      },
+      {
+        "value": "CUSTOM:BlindForest"
+      },
+      {
+        "value": "CUSTOM:DeepDarkValley"
       }
     ],
     "worldGenType": "Normal world gen",
@@ -29,19 +36,37 @@
       "value": "CUSTOM:DarkStone"
     },
     "fluidBlock": {
-      "value": "Blocks.AIR"
-    },
-    "airColor": {
-      "value": -10092442,
-      "falpha": 0.0
+      "value": "CUSTOM:EndarkendFluid"
     },
     "canRespawnHere": false,
     "hasFog": true,
-    "hasWeather": true,
     "isDark": true,
-    "doesWaterVaporize": true,
+    "doesWaterVaporize": false,
     "sleepResult": "BED_EXPLODES",
     "hasSkyLight": false,
-    "imitateOverworldBehaviour": false
+    "imitateOverworldBehaviour": false,
+    "onPlayerEntersDimension": {
+      "name": "DarkendDimensionPlayerEntersDimension"
+    },
+    "portalFrame": {
+      "value": "CUSTOM:DarkStone"
+    },
+    "portalParticles": {
+      "value": "DRAGON_BREATH"
+    },
+    "portalLuminance": 0,
+    "portalSound": {
+      "value": "ambient.cave"
+    },
+    "igniterName": "Darkend Dimension Portal Reactor",
+    "igniterTab": {
+      "value": "CUSTOM:DVLtab"
+    },
+    "texture": "portaligniter",
+    "portalTexture": "portalframe",
+    "enablePortal": true,
+    "whenPortaTriggerlUsed": {
+      "name": "DarkendDimensionPortalTriggerUsed"
+    }
   }
 }

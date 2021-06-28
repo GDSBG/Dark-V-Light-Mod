@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "dark_vs_light:blocks/burndiamondincasedinobsidiantop",
+    "up": "dark_vs_light:blocks/burndiamondincasedinobsidiantop",
+    "north": "dark_vs_light:blocks/burndiamondincasedinobsidianupdate",
+    "east": "dark_vs_light:blocks/burndiamondincasedinobsidianupdate",
+    "south": "dark_vs_light:blocks/burndiamondincasedinobsidianupdate",
+    "west": "dark_vs_light:blocks/burndiamondincasedinobsidianupdate",
+    "particle": "dark_vs_light:blocks/burndiamondincasedinobsidiantop"
+  }
+}

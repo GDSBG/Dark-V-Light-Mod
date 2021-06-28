@@ -1,0 +1,39 @@
+{
+  "group": "dark_vs_light",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "dark_vs_light:dark_shard"
+    },
+    "2": {
+      "item": "dark_vs_light:dark_shard"
+    },
+    "3": {
+      "item": "dark_vs_light:dark_shard"
+    },
+    "4": {
+      "item": "dark_vs_light:dark_shard"
+    },
+    "5": {
+      "item": "dark_vs_light:dark_shard"
+    },
+    "6": {
+      "item": "dark_vs_light:dark_shard"
+    },
+    "7": {
+      "item": "dark_vs_light:dark_shard"
+    },
+    "8": {
+      "item": "dark_vs_light:dark_shard"
+    }
+  },
+  "result": {
+    "item": "dark_vs_light:blind_shard_armor_chestplate",
+    "count": 1
+  }
+}
