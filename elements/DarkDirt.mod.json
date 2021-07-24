@@ -1,8 +1,8 @@
 {
-  "_fv": 21,
+  "_fv": 23,
   "_type": "block",
   "definition": {
-    "texture": "darkendgrasstop",
+    "texture": "darkdirtrevision",
     "textureTop": "darkgrassside",
     "textureLeft": "darkgrassside",
     "textureFront": "darkgrassside",
@@ -32,7 +32,7 @@
         "subtract": false
       }
     ],
-    "name": "Darkend Grass",
+    "name": "Darkend Dirt",
     "specialInfo": [],
     "hardness": 1.0,
     "resistance": 10.0,
@@ -50,7 +50,7 @@
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": true,
     "canRedstoneConnect": false,
-    "lightOpacity": 255,
+    "lightOpacity": 15,
     "material": {
       "value": "EARTH"
     },

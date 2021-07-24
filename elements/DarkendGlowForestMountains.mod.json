@@ -1,5 +1,5 @@
 {
-  "_fv": 21,
+  "_fv": 23,
   "_type": "biome",
   "definition": {
     "name": "Darkend Glow Forest Mountains",
@@ -36,7 +36,7 @@
       "value": ""
     },
     "music": {
-      "value": ""
+      "value": "CUSTOM:disintegrating"
     },
     "moodSound": {
       "value": ""

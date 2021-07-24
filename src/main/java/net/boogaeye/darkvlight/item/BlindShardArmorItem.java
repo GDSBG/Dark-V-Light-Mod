@@ -63,7 +63,7 @@ public class BlindShardArmorItem extends DarkVsLightModElements.ModElement {
 
 			@Override
 			public Ingredient getRepairMaterial() {
-				return Ingredient.fromStacks(new ItemStack(DarkShardItem.block, (int) (1)), new ItemStack(DarkStoneDustItem.block, (int) (1)));
+				return Ingredient.fromStacks(new ItemStack(DarkShardItem.block), new ItemStack(DarkStoneDustItem.block));
 			}
 
 			@OnlyIn(Dist.CLIENT)

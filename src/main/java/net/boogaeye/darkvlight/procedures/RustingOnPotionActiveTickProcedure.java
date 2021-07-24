@@ -4,13 +4,17 @@ import net.minecraftforge.items.IItemHandlerModifiable;
 import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.CapabilityItemHandler;
 
+import net.minecraft.world.server.ServerWorld;
 import net.minecraft.world.IWorld;
+import net.minecraft.util.DamageSource;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.item.ItemStack;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
+import net.minecraft.block.Blocks;
 
-import net.boogaeye.darkvlight.potion.RustingPotion;
+import net.boogaeye.darkvlight.potion.RustingPotionEffect;
+import net.boogaeye.darkvlight.particle.DarkendDessertParticleParticle;
 import net.boogaeye.darkvlight.DarkVsLightMod;
 
 import java.util.concurrent.atomic.AtomicReference;
@@ -25,12 +29,30 @@ public class RustingOnPotionActiveTickProcedure {
 				DarkVsLightMod.LOGGER.warn("Failed to load dependency entity for procedure RustingOnPotionActiveTick!");
 			return;
 		}
+		if (dependencies.get("x") == null) {
+			if (!dependencies.containsKey("x"))
+				DarkVsLightMod.LOGGER.warn("Failed to load dependency x for procedure RustingOnPotionActiveTick!");
+			return;
+		}
+		if (dependencies.get("y") == null) {
+			if (!dependencies.containsKey("y"))
+				DarkVsLightMod.LOGGER.warn("Failed to load dependency y for procedure RustingOnPotionActiveTick!");
+			return;
+		}
+		if (dependencies.get("z") == null) {
+			if (!dependencies.containsKey("z"))
+				DarkVsLightMod.LOGGER.warn("Failed to load dependency z for procedure RustingOnPotionActiveTick!");
+			return;
+		}
 		if (dependencies.get("world") == null) {
 			if (!dependencies.containsKey("world"))
 				DarkVsLightMod.LOGGER.warn("Failed to load dependency world for procedure RustingOnPotionActiveTick!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
+		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
+		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
+		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
 		ItemStack vopy = ItemStack.EMPTY;
 		double slot = 0;
@@ -39,7 +61,7 @@ public class RustingOnPotionActiveTickProcedure {
 				if (_entity instanceof LivingEntity) {
 					Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
 					for (EffectInstance effect : effects) {
-						if (effect.getPotion() == RustingPotion.potion)
+						if (effect.getPotion() == RustingPotionEffect.potion)
 							return effect.getAmplifier();
 					}
 				}
@@ -72,17 +94,26 @@ public class RustingOnPotionActiveTickProcedure {
 									}
 								});
 							}
+						} else {
+							if ((!(Blocks.AIR.asItem() == (vopy).getItem()))) {
+								if (entity instanceof LivingEntity) {
+									((LivingEntity) entity).attackEntityFrom(new DamageSource("rust").setDamageBypassesArmor(), (float) 1);
+								}
+							}
 						}
 						slot = (double) (slot + 1);
 					}
 				}
+			}
+			if (world instanceof ServerWorld) {
+				((ServerWorld) world).spawnParticle(DarkendDessertParticleParticle.particle, x, y, z, (int) 5, 1, 1, 1, 1);
 			}
 			entity.getPersistentData().putDouble("RustTick", ((new Object() {
 				int check(Entity _entity) {
 					if (_entity instanceof LivingEntity) {
 						Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
 						for (EffectInstance effect : effects) {
-							if (effect.getPotion() == RustingPotion.potion)
+							if (effect.getPotion() == RustingPotionEffect.potion)
 								return effect.getAmplifier();
 						}
 					}

@@ -45,7 +45,7 @@ public class DarkStonePickaxeItem extends DarkVsLightModElements.ModElement {
 			}
 
 			public Ingredient getRepairMaterial() {
-				return Ingredient.fromStacks(new ItemStack(DarkStoneBlock.block, (int) (1)));
+				return Ingredient.fromStacks(new ItemStack(DarkStoneBlock.block));
 			}
 		}, 1, 2f, new Item.Properties().group(DVLtabItemGroup.tab)) {
 		}.setRegistryName("dark_stone_pickaxe"));

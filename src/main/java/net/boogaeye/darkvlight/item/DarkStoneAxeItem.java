@@ -45,9 +45,9 @@ public class DarkStoneAxeItem extends DarkVsLightModElements.ModElement {
 			}
 
 			public Ingredient getRepairMaterial() {
-				return Ingredient.fromStacks(new ItemStack(DarkStoneBlock.block, (int) (1)));
+				return Ingredient.fromStacks(new ItemStack(DarkStoneBlock.block));
 			}
-		}, 1, 0f, new Item.Properties().group(DVLtabItemGroup.tab)) {
+		}, 1, -3.4f, new Item.Properties().group(DVLtabItemGroup.tab)) {
 		}.setRegistryName("dark_stone_axe"));
 	}
 }

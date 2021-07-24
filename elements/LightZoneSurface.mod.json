@@ -1,0 +1,47 @@
+{
+  "_fv": 23,
+  "_type": "structure",
+  "definition": {
+    "structure": "lightzone",
+    "randomlyRotateStructure": true,
+    "surfaceDetectionType": "First motion blocking block",
+    "spawnProbability": 400,
+    "minCountPerChunk": 1,
+    "maxCountPerChunk": 1,
+    "spawnLocation": "Ground",
+    "spawnHeightOffset": 0,
+    "spawnXOffset": 0,
+    "spawnZOffset": 0,
+    "spawnWorldTypes": [
+      "Surface"
+    ],
+    "restrictionBlocks": [
+      {
+        "value": "Blocks.STONE#0"
+      },
+      {
+        "value": "Blocks.GRASS"
+      },
+      {
+        "value": "Blocks.GRASS_PATH"
+      },
+      {
+        "value": "Blocks.MYCELIUM"
+      },
+      {
+        "value": "Blocks.DIRT#0"
+      },
+      {
+        "value": "Blocks.DIRT#1"
+      },
+      {
+        "value": "Blocks.DIRT#2"
+      },
+      {
+        "value": "Blocks.COBBLESTONE"
+      }
+    ],
+    "restrictionBiomes": [],
+    "ignoreBlocks": "STRUCTURE_BLOCK"
+  }
+}

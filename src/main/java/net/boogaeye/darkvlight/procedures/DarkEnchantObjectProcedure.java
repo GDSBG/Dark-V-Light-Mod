@@ -61,7 +61,7 @@ public class DarkEnchantObjectProcedure {
 					}
 					return ItemStack.EMPTY;
 				}
-			}.getItemStack((int) (3))).getItem() == new ItemStack(Items.FLINT_AND_STEEL, (int) (1)).getItem())) {
+			}.getItemStack((int) (3))).getItem() == Items.FLINT_AND_STEEL)) {
 				if (((EnchantmentHelper.getEnchantmentLevel(BlazingEnchantment.enchantment, (new Object() {
 					public ItemStack getItemStack(int sltid) {
 						Entity _ent = entity;
@@ -314,7 +314,7 @@ public class DarkEnchantObjectProcedure {
 					}
 					return ItemStack.EMPTY;
 				}
-			}.getItemStack((int) (3))).getItem() == new ItemStack(GlowingFruitFoodItem.block, (int) (1)).getItem())) {
+			}.getItemStack((int) (3))).getItem() == GlowingFruitFoodItem.block)) {
 				if (((EnchantmentHelper.getEnchantmentLevel(DarkendProtectionEnchantment.enchantment, (new Object() {
 					public ItemStack getItemStack(int sltid) {
 						Entity _ent = entity;
@@ -556,7 +556,7 @@ public class DarkEnchantObjectProcedure {
 					}
 					return ItemStack.EMPTY;
 				}
-			}.getItemStack((int) (3))).getItem() == new ItemStack(Items.ENDER_PEARL, (int) (1)).getItem())) {
+			}.getItemStack((int) (3))).getItem() == Items.ENDER_PEARL)) {
 				if (((EnchantmentHelper.getEnchantmentLevel(TeleportationEnchantment.enchantment, (new Object() {
 					public ItemStack getItemStack(int sltid) {
 						Entity _ent = entity;

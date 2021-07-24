@@ -4,7 +4,7 @@ import net.minecraft.potion.EffectInstance;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 
-import net.boogaeye.darkvlight.potion.PurpleFlamePotion;
+import net.boogaeye.darkvlight.potion.PurpleFlamePotionEffect;
 import net.boogaeye.darkvlight.DarkVsLightMod;
 
 import java.util.Map;
@@ -18,6 +18,6 @@ public class JelkFoodEatenProcedure {
 		}
 		Entity entity = (Entity) dependencies.get("entity");
 		if (entity instanceof LivingEntity)
-			((LivingEntity) entity).addPotionEffect(new EffectInstance(PurpleFlamePotion.potion, (int) 200, (int) 0));
+			((LivingEntity) entity).addPotionEffect(new EffectInstance(PurpleFlamePotionEffect.potion, (int) 200, (int) 0));
 	}
 }

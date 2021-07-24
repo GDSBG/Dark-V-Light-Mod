@@ -126,7 +126,7 @@ public class DarkendEnchanterGUIGui extends DarkVsLightModElements.ModElement {
 			this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 25, 16) {
 				@Override
 				public boolean isItemValid(ItemStack stack) {
-					return (new ItemStack(DarkendOrbItem.block, (int) (1)).getItem() == stack.getItem());
+					return (DarkendOrbItem.block == stack.getItem());
 				}
 			}));
 			this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 25, 53) {

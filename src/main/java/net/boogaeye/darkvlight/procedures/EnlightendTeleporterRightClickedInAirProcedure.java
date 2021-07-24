@@ -67,7 +67,7 @@ public class EnlightendTeleporterRightClickedInAirProcedure {
 				}
 			}
 			if (entity instanceof PlayerEntity)
-				((PlayerEntity) entity).getCooldownTracker().setCooldown(((itemstack)).getItem(), (int) 1200);
+				((PlayerEntity) entity).getCooldownTracker().setCooldown((itemstack).getItem(), (int) 1200);
 			if (entity instanceof ServerPlayerEntity) {
 				Advancement _adv = ((MinecraftServer) ((ServerPlayerEntity) entity).server).getAdvancementManager()
 						.getAdvancement(new ResourceLocation("dark_vs_light:too_bright"));

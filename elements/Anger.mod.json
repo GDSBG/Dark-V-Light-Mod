@@ -1,0 +1,17 @@
+{
+  "_fv": 23,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Anger",
+    "icon": "notextureother.png",
+    "color": {
+      "value": -6750208,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": true,
+    "isBenefitical": false,
+    "renderStatusInInventory": false,
+    "renderStatusInHUD": false
+  }
+}

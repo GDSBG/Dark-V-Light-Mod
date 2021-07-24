@@ -145,11 +145,11 @@ public class EnlightendTallendEntity extends DarkVsLightModElements.ModElement {
 			this.goalSelector.addGoal(19, new FollowMobGoal(this, (float) 1.5, 16, 8));
 			this.goalSelector.addGoal(20, new RandomWalkingGoal(this, 0.5));
 			this.goalSelector.addGoal(21, new RandomSwimmingGoal(this, 0.3, 40));
-			this.goalSelector.addGoal(22, new BreakBlockGoal(DarkStoneBlock.block.getDefaultState().getBlock(), this, 1, (int) 5));
-			this.goalSelector.addGoal(23, new BreakBlockGoal(BurnGazeWoodenPlankBlock.block.getDefaultState().getBlock(), this, 1, (int) 5));
-			this.goalSelector.addGoal(24, new BreakBlockGoal(SmoothDarkStoneBlock.block.getDefaultState().getBlock(), this, 1, (int) 5));
-			this.goalSelector.addGoal(25, new BreakBlockGoal(Blocks.SAND.getDefaultState().getBlock(), this, 1, (int) 5));
-			this.goalSelector.addGoal(26, new BreakBlockGoal(DarkDirtBlock.block.getDefaultState().getBlock(), this, 1, (int) 5));
+			this.goalSelector.addGoal(22, new BreakBlockGoal(DarkStoneBlock.block, this, 1, (int) 5));
+			this.goalSelector.addGoal(23, new BreakBlockGoal(BurnGazeWoodenPlankBlock.block, this, 1, (int) 5));
+			this.goalSelector.addGoal(24, new BreakBlockGoal(SmoothDarkStoneBlock.block, this, 1, (int) 5));
+			this.goalSelector.addGoal(25, new BreakBlockGoal(Blocks.SAND, this, 1, (int) 5));
+			this.goalSelector.addGoal(26, new BreakBlockGoal(DarkDirtBlock.block, this, 1, (int) 5));
 		}
 
 		@Override

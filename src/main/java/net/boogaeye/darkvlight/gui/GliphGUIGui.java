@@ -117,7 +117,7 @@ public class GliphGUIGui extends DarkVsLightModElements.ModElement {
 			this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 76, 16) {
 				@Override
 				public boolean isItemValid(ItemStack stack) {
-					return (new ItemStack(Items.COAL, (int) (1)).getItem() == stack.getItem());
+					return (Items.COAL == stack.getItem());
 				}
 			}));
 			int si;

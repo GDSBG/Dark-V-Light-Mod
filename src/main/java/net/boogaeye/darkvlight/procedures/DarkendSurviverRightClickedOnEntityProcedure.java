@@ -8,10 +8,12 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 
-import net.boogaeye.darkvlight.potion.SurvivorTradePotion;
+import net.boogaeye.darkvlight.potion.SurvivorTradePotionEffect;
+import net.boogaeye.darkvlight.potion.AngerPotionEffect;
 import net.boogaeye.darkvlight.DarkVsLightMod;
 
 import java.util.Map;
+import java.util.Collection;
 
 public class DarkendSurviverRightClickedOnEntityProcedure {
 	public static void executeProcedure(Map<String, Object> dependencies) {
@@ -37,17 +39,30 @@ public class DarkendSurviverRightClickedOnEntityProcedure {
 		double WaitTime = 0;
 		if (sourceentity instanceof PlayerEntity)
 			((PlayerEntity) sourceentity).closeScreen();
-		entity.getPersistentData().putBoolean("Trade", (true));
-		if (entity instanceof LivingEntity)
-			((LivingEntity) entity)
-					.addPotionEffect(new EffectInstance(SurvivorTradePotion.potion, (int) (100 + (Math.random() * 100)), (int) 0, (false), (true)));
-		if (entity instanceof LivingEntity) {
-			ItemStack _setstack = ((itemstack).copy());
-			_setstack.setCount((int) 1);
-			((LivingEntity) entity).setHeldItem(Hand.MAIN_HAND, _setstack);
-			if (entity instanceof ServerPlayerEntity)
-				((ServerPlayerEntity) entity).inventory.markDirty();
+		if ((!(new Object() {
+			boolean check(Entity _entity) {
+				if (_entity instanceof LivingEntity) {
+					Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
+					for (EffectInstance effect : effects) {
+						if (effect.getPotion() == AngerPotionEffect.potion)
+							return true;
+					}
+				}
+				return false;
+			}
+		}.check(entity)))) {
+			entity.getPersistentData().putBoolean("Trade", (true));
+			if (entity instanceof LivingEntity)
+				((LivingEntity) entity).addPotionEffect(
+						new EffectInstance(SurvivorTradePotionEffect.potion, (int) (100 + (Math.random() * 100)), (int) 0, (false), (true)));
+			if (entity instanceof LivingEntity) {
+				ItemStack _setstack = ((itemstack).copy());
+				_setstack.setCount((int) 1);
+				((LivingEntity) entity).setHeldItem(Hand.MAIN_HAND, _setstack);
+				if (entity instanceof ServerPlayerEntity)
+					((ServerPlayerEntity) entity).inventory.markDirty();
+			}
+			((itemstack)).shrink((int) 1);
 		}
-		((itemstack)).shrink((int) 1);
 	}
 }

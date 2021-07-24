@@ -44,7 +44,7 @@ public class BurnHoeItem extends DarkVsLightModElements.ModElement {
 			}
 
 			public Ingredient getRepairMaterial() {
-				return Ingredient.fromStacks(new ItemStack(BurnCrystalItem.block, (int) (1)));
+				return Ingredient.fromStacks(new ItemStack(BurnCrystalItem.block));
 			}
 		}, 0, -3f, new Item.Properties().group(DVLtabItemGroup.tab)) {
 		}.setRegistryName("burn_hoe"));

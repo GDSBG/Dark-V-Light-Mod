@@ -57,7 +57,7 @@ public class StartilesArmorItem extends DarkVsLightModElements.ModElement {
 
 			@Override
 			public Ingredient getRepairMaterial() {
-				return Ingredient.fromStacks(new ItemStack(StartileItem.block, (int) (1)));
+				return Ingredient.fromStacks(new ItemStack(StartileItem.block));
 			}
 
 			@OnlyIn(Dist.CLIENT)

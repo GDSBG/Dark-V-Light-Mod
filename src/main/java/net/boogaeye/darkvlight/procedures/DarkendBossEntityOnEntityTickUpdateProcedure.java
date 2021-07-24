@@ -26,6 +26,7 @@ import net.minecraft.entity.EntityType;
 import net.minecraft.entity.Entity;
 import net.minecraft.block.Blocks;
 
+import net.boogaeye.darkvlight.world.BossAIGameRule;
 import net.boogaeye.darkvlight.item.DarkendOrbItem;
 import net.boogaeye.darkvlight.item.DarkStoneSwordItem;
 import net.boogaeye.darkvlight.entity.DarkendFloaterEntity;
@@ -68,17 +69,17 @@ public class DarkendBossEntityOnEntityTickUpdateProcedure {
 		IWorld world = (IWorld) dependencies.get("world");
 		double attacks = 0;
 		attacks = (double) 7;
-		if ((DarkVsLightModVariables.MapVariables.get(world).BossAI != 0)) {
+		if (((world.getWorldInfo().getGameRulesInstance().getInt(BossAIGameRule.gamerule)) != 0)) {
 			if ((DarkVsLightModVariables.MapVariables.get(world).BossAttackType == 1)) {
 				if (entity instanceof LivingEntity) {
-					ItemStack _setstack = new ItemStack(DarkStoneSwordItem.block, (int) (1));
+					ItemStack _setstack = new ItemStack(DarkStoneSwordItem.block);
 					_setstack.setCount((int) 1);
 					((LivingEntity) entity).setHeldItem(Hand.MAIN_HAND, _setstack);
 					if (entity instanceof ServerPlayerEntity)
 						((ServerPlayerEntity) entity).inventory.markDirty();
 				}
 				if (entity instanceof LivingEntity) {
-					ItemStack _setstack = new ItemStack(Items.SHIELD, (int) (1));
+					ItemStack _setstack = new ItemStack(Items.SHIELD);
 					_setstack.setCount((int) 1);
 					((LivingEntity) entity).setHeldItem(Hand.OFF_HAND, _setstack);
 					if (entity instanceof ServerPlayerEntity)
@@ -87,7 +88,7 @@ public class DarkendBossEntityOnEntityTickUpdateProcedure {
 				if (entity instanceof LivingEntity)
 					((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.RESISTANCE, (int) 10, (int) 2, (false), (false)));
 				if ((DarkVsLightModVariables.MapVariables.get(world).BossWorldTick > 500)) {
-					if ((DarkVsLightModVariables.MapVariables.get(world).BossAI != 2)) {
+					if (((world.getWorldInfo().getGameRulesInstance().getInt(BossAIGameRule.gamerule)) != 2)) {
 						DarkVsLightModVariables.MapVariables.get(world).BossAttackType = (double) Math.round((Math.random() * attacks));
 						DarkVsLightModVariables.MapVariables.get(world).syncData(world);
 					}
@@ -96,14 +97,14 @@ public class DarkendBossEntityOnEntityTickUpdateProcedure {
 				}
 			} else if ((DarkVsLightModVariables.MapVariables.get(world).BossAttackType == 2)) {
 				if (entity instanceof LivingEntity) {
-					ItemStack _setstack = new ItemStack(DarkStoneSwordItem.block, (int) (1));
+					ItemStack _setstack = new ItemStack(DarkStoneSwordItem.block);
 					_setstack.setCount((int) 1);
 					((LivingEntity) entity).setHeldItem(Hand.MAIN_HAND, _setstack);
 					if (entity instanceof ServerPlayerEntity)
 						((ServerPlayerEntity) entity).inventory.markDirty();
 				}
 				if (entity instanceof LivingEntity) {
-					ItemStack _setstack = new ItemStack(Blocks.AIR, (int) (1));
+					ItemStack _setstack = new ItemStack(Blocks.AIR);
 					_setstack.setCount((int) 1);
 					((LivingEntity) entity).setHeldItem(Hand.OFF_HAND, _setstack);
 					if (entity instanceof ServerPlayerEntity)
@@ -119,14 +120,14 @@ public class DarkendBossEntityOnEntityTickUpdateProcedure {
 				}
 			} else if ((DarkVsLightModVariables.MapVariables.get(world).BossAttackType == 3)) {
 				if (entity instanceof LivingEntity) {
-					ItemStack _setstack = new ItemStack(Items.POTION, (int) (1));
+					ItemStack _setstack = new ItemStack(Items.POTION);
 					_setstack.setCount((int) 1);
 					((LivingEntity) entity).setHeldItem(Hand.MAIN_HAND, _setstack);
 					if (entity instanceof ServerPlayerEntity)
 						((ServerPlayerEntity) entity).inventory.markDirty();
 				}
 				if (entity instanceof LivingEntity) {
-					ItemStack _setstack = new ItemStack(Blocks.AIR, (int) (1));
+					ItemStack _setstack = new ItemStack(Blocks.AIR);
 					_setstack.setCount((int) 1);
 					((LivingEntity) entity).setHeldItem(Hand.OFF_HAND, _setstack);
 					if (entity instanceof ServerPlayerEntity)
@@ -143,12 +144,12 @@ public class DarkendBossEntityOnEntityTickUpdateProcedure {
 							((World) world)
 									.playSound(null, new BlockPos((int) x, (int) y, (int) z),
 											(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS
-													.getValue(new ResourceLocation("dark_vs_light:waterfill")),
+													.getValue(new ResourceLocation("item.bucket.empty_fish")),
 											SoundCategory.NEUTRAL, (float) 1, (float) 1);
 						} else {
 							((World) world).playSound(x, y, z,
 									(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS
-											.getValue(new ResourceLocation("dark_vs_light:waterfill")),
+											.getValue(new ResourceLocation("item.bucket.empty_fish")),
 									SoundCategory.NEUTRAL, (float) 1, (float) 1, false);
 						}
 						if (entity instanceof LivingEntity)
@@ -196,14 +197,14 @@ public class DarkendBossEntityOnEntityTickUpdateProcedure {
 				}
 			} else if ((DarkVsLightModVariables.MapVariables.get(world).BossAttackType == 4)) {
 				if (entity instanceof LivingEntity) {
-					ItemStack _setstack = new ItemStack(Items.ENCHANTED_BOOK, (int) (1));
+					ItemStack _setstack = new ItemStack(Items.ENCHANTED_BOOK);
 					_setstack.setCount((int) 1);
 					((LivingEntity) entity).setHeldItem(Hand.MAIN_HAND, _setstack);
 					if (entity instanceof ServerPlayerEntity)
 						((ServerPlayerEntity) entity).inventory.markDirty();
 				}
 				if (entity instanceof LivingEntity) {
-					ItemStack _setstack = new ItemStack(DarkendOrbItem.block, (int) (1));
+					ItemStack _setstack = new ItemStack(DarkendOrbItem.block);
 					_setstack.setCount((int) 1);
 					((LivingEntity) entity).setHeldItem(Hand.OFF_HAND, _setstack);
 					if (entity instanceof ServerPlayerEntity)
@@ -245,14 +246,14 @@ public class DarkendBossEntityOnEntityTickUpdateProcedure {
 				}
 			} else if ((DarkVsLightModVariables.MapVariables.get(world).BossAttackType == 5)) {
 				if (entity instanceof LivingEntity) {
-					ItemStack _setstack = new ItemStack(Items.ENCHANTED_BOOK, (int) (1));
+					ItemStack _setstack = new ItemStack(Items.ENCHANTED_BOOK);
 					_setstack.setCount((int) 1);
 					((LivingEntity) entity).setHeldItem(Hand.MAIN_HAND, _setstack);
 					if (entity instanceof ServerPlayerEntity)
 						((ServerPlayerEntity) entity).inventory.markDirty();
 				}
 				if (entity instanceof LivingEntity) {
-					ItemStack _setstack = new ItemStack(Items.BONE, (int) (1));
+					ItemStack _setstack = new ItemStack(Items.BONE);
 					_setstack.setCount((int) 1);
 					((LivingEntity) entity).setHeldItem(Hand.OFF_HAND, _setstack);
 					if (entity instanceof ServerPlayerEntity)
@@ -294,14 +295,14 @@ public class DarkendBossEntityOnEntityTickUpdateProcedure {
 				}
 			} else if ((DarkVsLightModVariables.MapVariables.get(world).BossAttackType == 6)) {
 				if (entity instanceof LivingEntity) {
-					ItemStack _setstack = new ItemStack(Items.ENCHANTED_BOOK, (int) (1));
+					ItemStack _setstack = new ItemStack(Items.ENCHANTED_BOOK);
 					_setstack.setCount((int) 1);
 					((LivingEntity) entity).setHeldItem(Hand.MAIN_HAND, _setstack);
 					if (entity instanceof ServerPlayerEntity)
 						((ServerPlayerEntity) entity).inventory.markDirty();
 				}
 				if (entity instanceof LivingEntity) {
-					ItemStack _setstack = new ItemStack(Items.ROTTEN_FLESH, (int) (1));
+					ItemStack _setstack = new ItemStack(Items.ROTTEN_FLESH);
 					_setstack.setCount((int) 1);
 					((LivingEntity) entity).setHeldItem(Hand.OFF_HAND, _setstack);
 					if (entity instanceof ServerPlayerEntity)
@@ -343,14 +344,14 @@ public class DarkendBossEntityOnEntityTickUpdateProcedure {
 				}
 			} else if ((DarkVsLightModVariables.MapVariables.get(world).BossAttackType == 7)) {
 				if (entity instanceof LivingEntity) {
-					ItemStack _setstack = new ItemStack(DarkStoneSwordItem.block, (int) (1));
+					ItemStack _setstack = new ItemStack(DarkStoneSwordItem.block);
 					_setstack.setCount((int) 1);
 					((LivingEntity) entity).setHeldItem(Hand.MAIN_HAND, _setstack);
 					if (entity instanceof ServerPlayerEntity)
 						((ServerPlayerEntity) entity).inventory.markDirty();
 				}
 				if (entity instanceof LivingEntity) {
-					ItemStack _setstack = new ItemStack(Items.BOW, (int) (1));
+					ItemStack _setstack = new ItemStack(Items.BOW);
 					_setstack.setCount((int) 1);
 					((LivingEntity) entity).setHeldItem(Hand.OFF_HAND, _setstack);
 					if (entity instanceof ServerPlayerEntity)

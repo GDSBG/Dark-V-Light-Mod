@@ -149,7 +149,7 @@ public class ChargedFlowerBlock extends DarkVsLightModElements.ModElement {
 		}
 
 		@Override
-		public void tick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
+		public void tick(BlockState blockstate, ServerWorld world, BlockPos pos, Random random) {
 			int x = pos.getX();
 			int y = pos.getY();
 			int z = pos.getZ();
@@ -161,18 +161,18 @@ public class ChargedFlowerBlock extends DarkVsLightModElements.ModElement {
 				$_dependencies.put("world", world);
 				ChargedFlowerUpdateTickProcedure.executeProcedure($_dependencies);
 			}
-			if (!state.isValidPosition(world, pos)) {
+			if (!blockstate.isValidPosition(world, pos)) {
 				world.destroyBlock(pos, true);
 			} else if (world.isAirBlock(pos.up())) {
 				int i = 1;
 				for (; world.getBlockState(pos.down(i)).getBlock() == this; ++i);
 				if (i < 8) {
-					int j = state.get(AGE);
+					int j = blockstate.get(AGE);
 					if (j == 15) {
 						world.setBlockState(pos.up(), getDefaultState());
-						world.setBlockState(pos, state.with(AGE, 0), 4);
+						world.setBlockState(pos, blockstate.with(AGE, 0), 4);
 					} else {
-						world.setBlockState(pos, state.with(AGE, j + 1), 4);
+						world.setBlockState(pos, blockstate.with(AGE, j + 1), 4);
 					}
 				}
 			}

@@ -1,0 +1,12 @@
+{
+  "_fv": 23,
+  "_type": "gamerule",
+  "definition": {
+    "type": "Number",
+    "displayName": "Boss AI",
+    "description": "controls what bosses can and cant do",
+    "category": "MOBS",
+    "defaultValueLogic": false,
+    "defaultValueNumber": 1
+  }
+}

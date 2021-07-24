@@ -51,6 +51,11 @@ public class DarkDirtBlock extends DarkVsLightModElements.ModElement {
 		}
 
 		@Override
+		public int getOpacity(BlockState state, IBlockReader worldIn, BlockPos pos) {
+			return 15;
+		}
+
+		@Override
 		public MaterialColor getMaterialColor() {
 			return MaterialColor.GRASS;
 		}
@@ -74,8 +79,8 @@ public class DarkDirtBlock extends DarkVsLightModElements.ModElement {
 		}
 
 		@Override
-		public void tick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
-			super.tick(state, world, pos, random);
+		public void tick(BlockState blockstate, ServerWorld world, BlockPos pos, Random random) {
+			super.tick(blockstate, world, pos, random);
 			int x = pos.getX();
 			int y = pos.getY();
 			int z = pos.getZ();

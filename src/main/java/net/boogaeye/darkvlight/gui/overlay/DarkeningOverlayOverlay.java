@@ -24,15 +24,27 @@ import com.google.common.collect.ImmutableMap;
 public class DarkeningOverlayOverlay {
 	@OnlyIn(Dist.CLIENT)
 	@SubscribeEvent(priority = EventPriority.NORMAL)
-	public static void eventHandler(RenderGameOverlayEvent event) {
-		if (!event.isCancelable() && event.getType() == RenderGameOverlayEvent.ElementType.HELMET) {
-			int posX = (event.getWindow().getScaledWidth()) / 2;
-			int posY = (event.getWindow().getScaledHeight()) / 2;
+	public static void eventHandler(RenderGameOverlayEvent.Post event) {
+		if (event.getType() == RenderGameOverlayEvent.ElementType.HELMET) {
+			int w = event.getWindow().getScaledWidth();
+			int h = event.getWindow().getScaledHeight();
+			int posX = w / 2;
+			int posY = h / 2;
+			World _world = null;
+			double _x = 0;
+			double _y = 0;
+			double _z = 0;
 			PlayerEntity entity = Minecraft.getInstance().player;
-			World world = entity.world;
-			double x = entity.getPosX();
-			double y = entity.getPosY();
-			double z = entity.getPosZ();
+			if (entity != null) {
+				_world = entity.world;
+				_x = entity.getPosX();
+				_y = entity.getPosY();
+				_z = entity.getPosZ();
+			}
+			World world = _world;
+			double x = _x;
+			double y = _y;
+			double z = _z;
 			RenderSystem.disableDepthTest();
 			RenderSystem.depthMask(false);
 			RenderSystem.blendFuncSeparate(GlStateManager.SourceFactor.SRC_ALPHA, GlStateManager.DestFactor.ONE_MINUS_SRC_ALPHA,
@@ -41,8 +53,7 @@ public class DarkeningOverlayOverlay {
 			RenderSystem.disableAlphaTest();
 			if (DarkeningOverlayDisplayOverlayIngameProcedure.executeProcedure(ImmutableMap.of("entity", entity))) {
 				Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("dark_vs_light:textures/darkendoverlay.png"));
-				Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), 0, 0, 0, 0, event.getWindow().getScaledWidth(),
-						event.getWindow().getScaledHeight(), event.getWindow().getScaledWidth(), event.getWindow().getScaledHeight());
+				Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), 0, 0, 0, 0, w, h, w, h);
 			}
 			RenderSystem.depthMask(true);
 			RenderSystem.enableDepthTest();

@@ -192,6 +192,6 @@ public class RightClickEnchantsProcedure {
 		}
 		if (entity instanceof PlayerEntity)
 			((PlayerEntity) entity).getCooldownTracker().setCooldown(
-					(((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)).getItem(), (int) CoolDown);
+					((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getItem(), (int) CoolDown);
 	}
 }

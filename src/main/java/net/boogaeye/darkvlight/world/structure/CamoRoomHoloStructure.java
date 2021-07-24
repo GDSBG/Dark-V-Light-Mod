@@ -45,15 +45,11 @@ public class CamoRoomHoloStructure {
 					int ck = (pos.getZ() >> 4) << 4;
 					RegistryKey<World> dimensionType = world.getWorld().getDimensionKey();
 					boolean dimensionCriteria = false;
-					if (dimensionType == World.OVERWORLD)
-						dimensionCriteria = true;
-					if (dimensionType == RegistryKey.getOrCreateKey(Registry.WORLD_KEY, new ResourceLocation("dark_vs_light:darkend_dimension")))
-						dimensionCriteria = true;
 					if (dimensionType == RegistryKey.getOrCreateKey(Registry.WORLD_KEY, new ResourceLocation("dark_vs_light:enlightend_dimension")))
 						dimensionCriteria = true;
 					if (!dimensionCriteria)
 						return false;
-					if ((random.nextInt(1000000) + 1) <= 10000) {
+					if ((random.nextInt(1000000) + 1) <= 3000) {
 						int count = random.nextInt(1) + 1;
 						for (int a = 0; a < count; a++) {
 							int i = ci + random.nextInt(16);

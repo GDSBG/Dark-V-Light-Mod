@@ -5,8 +5,8 @@ import net.minecraft.potion.EffectInstance;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 
-import net.boogaeye.darkvlight.potion.EnlightendPotion;
-import net.boogaeye.darkvlight.potion.DarkendFilteringPotion;
+import net.boogaeye.darkvlight.potion.EnlightendPotionEffect;
+import net.boogaeye.darkvlight.potion.DarkendFilteringPotionEffect;
 import net.boogaeye.darkvlight.DarkVsLightMod;
 
 import java.util.Map;
@@ -27,7 +27,7 @@ public class GlowingFruitFoodFoodEatenProcedure {
 				if (_entity instanceof LivingEntity) {
 					Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
 					for (EffectInstance effect : effects) {
-						if (effect.getPotion() == EnlightendPotion.potion)
+						if (effect.getPotion() == EnlightendPotionEffect.potion)
 							return true;
 					}
 				}
@@ -35,12 +35,12 @@ public class GlowingFruitFoodFoodEatenProcedure {
 			}
 		}.check(entity))) {
 			if (entity instanceof LivingEntity)
-				((LivingEntity) entity).addPotionEffect(new EffectInstance(EnlightendPotion.potion, (int) 100, (int) ((new Object() {
+				((LivingEntity) entity).addPotionEffect(new EffectInstance(EnlightendPotionEffect.potion, (int) 100, (int) ((new Object() {
 					int check(Entity _entity) {
 						if (_entity instanceof LivingEntity) {
 							Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
 							for (EffectInstance effect : effects) {
-								if (effect.getPotion() == EnlightendPotion.potion)
+								if (effect.getPotion() == EnlightendPotionEffect.potion)
 									return effect.getAmplifier();
 							}
 						}
@@ -49,9 +49,9 @@ public class GlowingFruitFoodFoodEatenProcedure {
 				}.check(entity)) + 1)));
 		} else {
 			if (entity instanceof LivingEntity)
-				((LivingEntity) entity).addPotionEffect(new EffectInstance(EnlightendPotion.potion, (int) 60, (int) 0));
+				((LivingEntity) entity).addPotionEffect(new EffectInstance(EnlightendPotionEffect.potion, (int) 60, (int) 0));
 			if (entity instanceof LivingEntity)
-				((LivingEntity) entity).addPotionEffect(new EffectInstance(DarkendFilteringPotion.potion, (int) 60, (int) 0));
+				((LivingEntity) entity).addPotionEffect(new EffectInstance(DarkendFilteringPotionEffect.potion, (int) 60, (int) 0));
 		}
 	}
 }

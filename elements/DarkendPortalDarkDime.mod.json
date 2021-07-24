@@ -1,0 +1,35 @@
+{
+  "_fv": 23,
+  "_type": "structure",
+  "definition": {
+    "structure": "darkend_portal",
+    "randomlyRotateStructure": true,
+    "surfaceDetectionType": "First motion blocking block",
+    "spawnProbability": 3000,
+    "minCountPerChunk": 1,
+    "maxCountPerChunk": 1,
+    "spawnLocation": "Ground",
+    "spawnHeightOffset": 0,
+    "spawnXOffset": 0,
+    "spawnZOffset": 0,
+    "spawnWorldTypes": [
+      "CUSTOM:DarkendDimension"
+    ],
+    "restrictionBlocks": [
+      {
+        "value": "CUSTOM:DarkendGrass"
+      },
+      {
+        "value": "CUSTOM:DarkDirt"
+      },
+      {
+        "value": "CUSTOM:DarkStone"
+      },
+      {
+        "value": "CUSTOM:DarkendBasalt"
+      }
+    ],
+    "restrictionBiomes": [],
+    "ignoreBlocks": "AIR_AND_STRUCTURE_BLOCK"
+  }
+}

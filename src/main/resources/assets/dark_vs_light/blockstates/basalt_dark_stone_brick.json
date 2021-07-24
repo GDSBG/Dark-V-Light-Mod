@@ -1,28 +1,16 @@
 {
   "variants": {
-    "facing=south": {
-      "model": "dark_vs_light:block/basalt_dark_stone_brick"
-    },
-    "facing=north": {
-      "model": "dark_vs_light:block/basalt_dark_stone_brick"
-    },
-    "facing=east": {
-      "model": "dark_vs_light:block/basalt_dark_stone_brick",
-      "x": 90
-    },
-    "facing=west": {
-      "model": "dark_vs_light:block/basalt_dark_stone_brick",
-      "x": 90
-    },
-    "facing=up": {
+    "axis=x": {
       "model": "dark_vs_light:block/basalt_dark_stone_brick",
       "x": 90,
       "y": 90
     },
-    "facing=down": {
+    "axis=y": {
+      "model": "dark_vs_light:block/basalt_dark_stone_brick"
+    },
+    "axis=z": {
       "model": "dark_vs_light:block/basalt_dark_stone_brick",
-      "x": 90,
-      "y": 90
+      "x": 90
     }
   }
 }

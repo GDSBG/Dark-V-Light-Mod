@@ -4,6 +4,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.TickEvent;
 
+import net.minecraft.world.server.ServerWorld;
 import net.minecraft.world.World;
 import net.minecraft.world.IWorld;
 import net.minecraft.util.registry.Registry;
@@ -11,8 +12,10 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.RegistryKey;
 import net.minecraft.util.DamageSource;
+import net.minecraft.server.MinecraftServer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.inventory.EquipmentSlotType;
+import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 import net.minecraft.enchantment.EnchantmentHelper;
@@ -86,7 +89,19 @@ public class DarkendMeterProProcedure {
 				capability.syncPlayerVariables(entity);
 			});
 		}
-		if ((100 < ((entity.getCapability(DarkVsLightModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+		{
+			boolean _setval = (boolean) (((entity instanceof ServerPlayerEntity) && (entity.world instanceof ServerWorld))
+					? ((ServerPlayerEntity) entity).getAdvancements()
+							.getProgress(((MinecraftServer) ((ServerPlayerEntity) entity).server).getAdvancementManager()
+									.getAdvancement(new ResourceLocation("dark_vs_light:nooooooooooooo")))
+							.isDone()
+					: false);
+			entity.getCapability(DarkVsLightModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+				capability.Boss1Defeated = _setval;
+				capability.syncPlayerVariables(entity);
+			});
+		}
+		if ((160 < ((entity.getCapability(DarkVsLightModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 				.orElse(new DarkVsLightModVariables.PlayerVariables())).DarkendTick))) {
 			if (((world instanceof World ? (((World) world).getDimensionKey()) : World.OVERWORLD) == (RegistryKey.getOrCreateKey(Registry.WORLD_KEY,
 					new ResourceLocation("dark_vs_light:enlightend_dimension"))))) {
@@ -241,7 +256,9 @@ public class DarkendMeterProProcedure {
 									}
 								}
 							} else {
-								entity.attackEntityFrom(DamageSource.MAGIC, (float) 2);
+								if (entity instanceof LivingEntity) {
+									((LivingEntity) entity).attackEntityFrom(new DamageSource("darkness").setDamageBypassesArmor(), (float) 2);
+								}
 							}
 						}
 					}

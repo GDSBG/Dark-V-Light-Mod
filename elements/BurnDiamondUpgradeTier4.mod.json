@@ -1,0 +1,44 @@
+{
+  "_fv": 23,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:BurnDiamond"
+      },
+      {
+        "value": "CUSTOM:BurnDiamondArmorArmor.helmet"
+      },
+      {
+        "value": "CUSTOM:BurnDiamondArmorArmor.body"
+      },
+      {
+        "value": "CUSTOM:BurnDiamondArmorArmor.legs"
+      },
+      {
+        "value": "CUSTOM:BurnDiamondArmorArmor.boots"
+      },
+      {
+        "value": "CUSTOM:Burn_Diamond_ToolPickaxe"
+      },
+      {
+        "value": "CUSTOM:Burn_Diamond_ToolAxe"
+      },
+      {
+        "value": "CUSTOM:Burn_Diamond_ToolSword"
+      },
+      {
+        "value": "CUSTOM:Burn_Diamond_ToolShovel"
+      },
+      {
+        "value": "CUSTOM:Burn_Diamond_ToolHoe"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "name": "burndiamondupgrade",
+    "namespace": "minecraft"
+  }
+}

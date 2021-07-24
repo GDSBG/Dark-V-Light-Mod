@@ -45,7 +45,7 @@ public class LightendStoneAxeItem extends DarkVsLightModElements.ModElement {
 			}
 
 			public Ingredient getRepairMaterial() {
-				return Ingredient.fromStacks(new ItemStack(EnlightendStoneBlock.block, (int) (1)));
+				return Ingredient.fromStacks(new ItemStack(EnlightendStoneBlock.block));
 			}
 		}, 1, -3f, new Item.Properties().group(EnlightendDimensionTabItemGroup.tab)) {
 		}.setRegistryName("lightend_stone_axe"));

@@ -9,7 +9,7 @@ import net.minecraft.entity.Entity;
 import net.minecraft.advancements.AdvancementProgress;
 import net.minecraft.advancements.Advancement;
 
-import net.boogaeye.darkvlight.potion.EnlightendFilteringPotion;
+import net.boogaeye.darkvlight.potion.EnlightendFilteringPotionEffect;
 import net.boogaeye.darkvlight.DarkVsLightModVariables;
 import net.boogaeye.darkvlight.DarkVsLightMod;
 
@@ -30,7 +30,7 @@ public class EnlightendFilteringOnTickProcedure {
 				if (_entity instanceof LivingEntity) {
 					Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
 					for (EffectInstance effect : effects) {
-						if (effect.getPotion() == EnlightendFilteringPotion.potion)
+						if (effect.getPotion() == EnlightendFilteringPotionEffect.potion)
 							return effect.getAmplifier();
 					}
 				}

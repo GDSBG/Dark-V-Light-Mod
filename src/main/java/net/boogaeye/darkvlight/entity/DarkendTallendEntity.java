@@ -26,11 +26,15 @@ import net.minecraft.entity.monster.SlimeEntity;
 import net.minecraft.entity.monster.PhantomEntity;
 import net.minecraft.entity.monster.MonsterEntity;
 import net.minecraft.entity.monster.GhastEntity;
+import net.minecraft.entity.ai.goal.RandomWalkingGoal;
+import net.minecraft.entity.ai.goal.RandomSwimmingGoal;
 import net.minecraft.entity.ai.goal.NearestAttackableTargetGoal;
 import net.minecraft.entity.ai.goal.MeleeAttackGoal;
 import net.minecraft.entity.ai.goal.LookAtGoal;
 import net.minecraft.entity.ai.goal.HurtByTargetGoal;
+import net.minecraft.entity.ai.goal.FollowMobGoal;
 import net.minecraft.entity.ai.goal.BreakDoorGoal;
+import net.minecraft.entity.ai.goal.BreakBlockGoal;
 import net.minecraft.entity.ai.goal.AvoidEntityGoal;
 import net.minecraft.entity.ai.attributes.Attributes;
 import net.minecraft.entity.ai.attributes.AttributeModifierMap;
@@ -41,11 +45,16 @@ import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.CreatureAttribute;
+import net.minecraft.block.Blocks;
 
 import net.boogaeye.darkvlight.procedures.DarkendTallendOnInitialEntitySpawnProcedure;
 import net.boogaeye.darkvlight.procedures.DarkendTallendOnEntityTickUpdateProcedure;
 import net.boogaeye.darkvlight.itemgroup.DVLtabItemGroup;
 import net.boogaeye.darkvlight.entity.renderer.DarkendTallendRenderer;
+import net.boogaeye.darkvlight.block.SmoothDarkStoneBlock;
+import net.boogaeye.darkvlight.block.DarkStoneBlock;
+import net.boogaeye.darkvlight.block.DarkDirtBlock;
+import net.boogaeye.darkvlight.block.BurnGazeWoodenPlankBlock;
 import net.boogaeye.darkvlight.DarkVsLightModElements;
 
 import javax.annotation.Nullable;
@@ -124,6 +133,14 @@ public class DarkendTallendEntity extends DarkVsLightModElements.ModElement {
 			this.targetSelector.addGoal(16, new NearestAttackableTargetGoal(this, ZombieEntity.class, false, true));
 			this.targetSelector.addGoal(17, new NearestAttackableTargetGoal(this, PlayerEntity.class, true, true));
 			this.targetSelector.addGoal(18, new NearestAttackableTargetGoal(this, ServerPlayerEntity.class, true, true));
+			this.goalSelector.addGoal(19, new FollowMobGoal(this, (float) 1.5, 16, 8));
+			this.goalSelector.addGoal(20, new RandomWalkingGoal(this, 0.5));
+			this.goalSelector.addGoal(21, new RandomSwimmingGoal(this, 0.3, 40));
+			this.goalSelector.addGoal(22, new BreakBlockGoal(DarkStoneBlock.block, this, 1, (int) 5));
+			this.goalSelector.addGoal(23, new BreakBlockGoal(BurnGazeWoodenPlankBlock.block, this, 1, (int) 5));
+			this.goalSelector.addGoal(24, new BreakBlockGoal(SmoothDarkStoneBlock.block, this, 1, (int) 5));
+			this.goalSelector.addGoal(25, new BreakBlockGoal(Blocks.SAND, this, 1, (int) 5));
+			this.goalSelector.addGoal(26, new BreakBlockGoal(DarkDirtBlock.block, this, 1, (int) 5));
 		}
 
 		@Override

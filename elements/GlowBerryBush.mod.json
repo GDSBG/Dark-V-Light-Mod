@@ -1,5 +1,5 @@
 {
-  "_fv": 21,
+  "_fv": 23,
   "_type": "plant",
   "definition": {
     "renderType": 12,
@@ -30,6 +30,21 @@
     "isCustomSoundType": false,
     "soundOnStep": {
       "value": "PLANT"
+    },
+    "breakSound": {
+      "value": ""
+    },
+    "stepSound": {
+      "value": ""
+    },
+    "placeSound": {
+      "value": ""
+    },
+    "hitSound": {
+      "value": ""
+    },
+    "fallSound": {
+      "value": ""
     },
     "useLootTableForDrops": false,
     "customDrop": {

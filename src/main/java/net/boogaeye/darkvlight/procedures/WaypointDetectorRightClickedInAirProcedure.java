@@ -86,8 +86,7 @@ public class WaypointDetectorRightClickedInAirProcedure {
 						SoundCategory.NEUTRAL, (float) 1, (float) 1, false);
 			}
 		} else {
-			if (((((itemstack).getDisplayName().getString()))
-					.equals((new ItemStack(WaypointDetectorItem.block, (int) (1)).getDisplayName().getString())))) {
+			if (((((itemstack).getDisplayName().getString())).equals((new ItemStack(WaypointDetectorItem.block).getDisplayName().getString())))) {
 				if (entity instanceof PlayerEntity && !entity.world.isRemote()) {
 					((PlayerEntity) entity).sendStatusMessage(new StringTextComponent("You must rename this item before setting a waypoint"), (true));
 				}

@@ -78,7 +78,8 @@ public class HotDarkendFluidBlock extends DarkVsLightModElements.ModElement {
 	public void initElements() {
 		fluidproperties = new ForgeFlowingFluid.Properties(() -> still, () -> flowing, FluidAttributes
 				.builder(new ResourceLocation("dark_vs_light:blocks/hotdarkfluid"), new ResourceLocation("dark_vs_light:blocks/flowdarkhotfluid"))
-				.luminosity(0).density(5).viscosity(10000).rarity(Rarity.COMMON)).explosionResistance(100f).bucket(() -> bucket).block(() -> block);
+				.luminosity(0).density(5).viscosity(10000).temperature(300).rarity(Rarity.COMMON)).explosionResistance(100f).tickRate(5)
+						.levelDecreasePerBlock(1).slopeFindDistance(4).bucket(() -> bucket).block(() -> block);
 		still = (FlowingFluid) new ForgeFlowingFluid.Source(fluidproperties).setRegistryName("hot_darkend_fluid");
 		flowing = (FlowingFluid) new ForgeFlowingFluid.Flowing(fluidproperties).setRegistryName("hot_darkend_fluid_flowing");
 		elements.blocks

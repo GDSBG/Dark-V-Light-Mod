@@ -34,7 +34,7 @@ public class GlowRevivalBerruItem extends DarkVsLightModElements.ModElement {
 	}
 	public static class FoodItemCustom extends Item {
 		public FoodItemCustom() {
-			super(new Item.Properties().group(DVLFoodItemGroup.tab).maxStackSize(64).rarity(Rarity.UNCOMMON)
+			super(new Item.Properties().group(DVLFoodItemGroup.tab).maxStackSize(16).rarity(Rarity.UNCOMMON)
 					.food((new Food.Builder()).hunger(1).saturation(0.1f).build()));
 			setRegistryName("glow_revival_berry");
 		}

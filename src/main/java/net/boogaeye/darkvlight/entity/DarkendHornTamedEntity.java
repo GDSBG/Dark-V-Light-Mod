@@ -211,7 +211,7 @@ public class DarkendHornTamedEntity extends DarkVsLightModElements.ModElement {
 
 		@Override
 		public double getMountedYOffset() {
-			return super.getMountedYOffset() + 3;
+			return super.getMountedYOffset() + 1;
 		}
 
 		@Override
@@ -313,10 +313,6 @@ public class DarkendHornTamedEntity extends DarkVsLightModElements.ModElement {
 				}
 			}
 			sourceentity.startRiding(this);
-			double x = this.getPosX();
-			double y = this.getPosY();
-			double z = this.getPosZ();
-			Entity entity = this;
 			return retval;
 		}
 

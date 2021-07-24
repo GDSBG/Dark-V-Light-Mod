@@ -46,10 +46,10 @@ public class EnlightendDimensionDimension extends DarkVsLightModElements.ModElem
 			try {
 				ObfuscationReflectionHelper.setPrivateValue(WorldCarver.class, WorldCarver.CAVE, new ImmutableSet.Builder<Block>()
 						.addAll((Set<Block>) ObfuscationReflectionHelper.getPrivateValue(WorldCarver.class, WorldCarver.CAVE, "field_222718_j"))
-						.add(EnlightendStoneBlock.block.getDefaultState().getBlock()).build(), "field_222718_j");
+						.add(EnlightendStoneBlock.block).build(), "field_222718_j");
 				ObfuscationReflectionHelper.setPrivateValue(WorldCarver.class, WorldCarver.CANYON, new ImmutableSet.Builder<Block>()
 						.addAll((Set<Block>) ObfuscationReflectionHelper.getPrivateValue(WorldCarver.class, WorldCarver.CANYON, "field_222718_j"))
-						.add(EnlightendStoneBlock.block.getDefaultState().getBlock()).build(), "field_222718_j");
+						.add(EnlightendStoneBlock.block).build(), "field_222718_j");
 			} catch (Exception e) {
 				e.printStackTrace();
 			}

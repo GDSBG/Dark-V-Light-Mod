@@ -1,6 +1,6 @@
 {
-  "_fv": 21,
-  "_type": "gun",
+  "_fv": 23,
+  "_type": "rangeditem",
   "definition": {
     "renderType": 1,
     "texture": "textureforbow",

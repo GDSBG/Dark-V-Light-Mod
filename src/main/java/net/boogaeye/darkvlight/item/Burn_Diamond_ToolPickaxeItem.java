@@ -44,7 +44,7 @@ public class Burn_Diamond_ToolPickaxeItem extends DarkVsLightModElements.ModElem
 			}
 
 			public Ingredient getRepairMaterial() {
-				return Ingredient.fromStacks(new ItemStack(BurnDiamondItem.block, (int) (1)));
+				return Ingredient.fromStacks(new ItemStack(BurnDiamondItem.block));
 			}
 		}, 1, -1f, new Item.Properties().group(DVLtabItemGroup.tab)) {
 		}.setRegistryName("burn_diamond_tool_pickaxe"));

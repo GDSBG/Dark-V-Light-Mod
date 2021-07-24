@@ -1,7 +1,7 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "dark_vs_light:blocks/darkendgrasstop",
-    "particle": "dark_vs_light:blocks/darkendgrasstop"
+    "all": "dark_vs_light:blocks/darkdirtrevision",
+    "particle": "dark_vs_light:blocks/darkdirtrevision"
   }
 }

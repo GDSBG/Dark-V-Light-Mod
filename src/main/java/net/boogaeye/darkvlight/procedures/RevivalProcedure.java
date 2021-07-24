@@ -14,7 +14,7 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 import net.minecraft.client.Minecraft;
 
-import net.boogaeye.darkvlight.potion.GlowBerryRevivalPotion;
+import net.boogaeye.darkvlight.potion.GlowBerryRevivalPotionEffect;
 import net.boogaeye.darkvlight.item.RevivalBerryItem;
 import net.boogaeye.darkvlight.DarkVsLightModVariables;
 import net.boogaeye.darkvlight.DarkVsLightMod;
@@ -73,7 +73,7 @@ public class RevivalProcedure {
 				if (_entity instanceof LivingEntity) {
 					Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
 					for (EffectInstance effect : effects) {
-						if (effect.getPotion() == GlowBerryRevivalPotion.potion)
+						if (effect.getPotion() == GlowBerryRevivalPotionEffect.potion)
 							return true;
 					}
 				}
@@ -88,7 +88,7 @@ public class RevivalProcedure {
 				if (entity instanceof LivingEntity)
 					((LivingEntity) entity).setHealth((float) ((entity instanceof LivingEntity) ? ((LivingEntity) entity).getMaxHealth() : -1));
 				if (world.isRemote()) {
-					Minecraft.getInstance().gameRenderer.displayItemActivation(new ItemStack(RevivalBerryItem.block, (int) (1)));
+					Minecraft.getInstance().gameRenderer.displayItemActivation(new ItemStack(RevivalBerryItem.block));
 				}
 				if (entity instanceof PlayerEntity) {
 					((PlayerEntity) entity).abilities.disableDamage = (false);

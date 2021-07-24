@@ -1,5 +1,5 @@
 {
-  "_fv": 21,
+  "_fv": 23,
   "_type": "overlay",
   "definition": {
     "priority": "NORMAL",
@@ -13,8 +13,8 @@
             "name": "DarkendMeterDisplayOverlayIngame"
           },
           "name": "darkingberry.png",
-          "x": 6,
-          "y": 224
+          "x": 195,
+          "y": -1
         }
       },
       {
@@ -26,8 +26,8 @@
             "name": "EnlightendMeterDisplay"
           },
           "name": "glowingberry.png",
-          "x": 6,
-          "y": 224
+          "x": 213,
+          "y": -1
         }
       },
       {
@@ -39,8 +39,8 @@
             "name": "Dark2"
           },
           "name": "darkingberry.png",
-          "x": 15,
-          "y": 224
+          "x": 186,
+          "y": -1
         }
       },
       {
@@ -52,8 +52,8 @@
             "name": "Glow2"
           },
           "name": "glowingberry.png",
-          "x": 15,
-          "y": 224
+          "x": 222,
+          "y": -1
         }
       },
       {
@@ -65,8 +65,8 @@
             "name": "Dark3"
           },
           "name": "darkingberry.png",
-          "x": 24,
-          "y": 224
+          "x": 177,
+          "y": -1
         }
       },
       {
@@ -78,8 +78,8 @@
             "name": "Glow3"
           },
           "name": "glowingberry.png",
-          "x": 24,
-          "y": 224
+          "x": 231,
+          "y": -1
         }
       },
       {
@@ -91,8 +91,8 @@
             "name": "Dark4"
           },
           "name": "darkingberry.png",
-          "x": 33,
-          "y": 224
+          "x": 168,
+          "y": -1
         }
       },
       {
@@ -104,8 +104,8 @@
             "name": "Glow4"
           },
           "name": "glowingberry.png",
-          "x": 33,
-          "y": 224
+          "x": 240,
+          "y": -1
         }
       },
       {
@@ -117,8 +117,8 @@
             "name": "Dark5"
           },
           "name": "darkingberry.png",
-          "x": 42,
-          "y": 224
+          "x": 159,
+          "y": -1
         }
       },
       {
@@ -130,8 +130,8 @@
             "name": "Glow5"
           },
           "name": "glowingberry.png",
-          "x": 42,
-          "y": 224
+          "x": 249,
+          "y": -1
         }
       },
       {
@@ -143,8 +143,8 @@
             "name": "Dark6"
           },
           "name": "darkingberry.png",
-          "x": 51,
-          "y": 224
+          "x": 150,
+          "y": -1
         }
       },
       {
@@ -156,8 +156,8 @@
             "name": "Glow6"
           },
           "name": "glowingberry.png",
-          "x": 51,
-          "y": 224
+          "x": 258,
+          "y": -1
         }
       },
       {
@@ -169,8 +169,8 @@
             "name": "Dark7"
           },
           "name": "darkingberry.png",
-          "x": 60,
-          "y": 224
+          "x": 141,
+          "y": -1
         }
       },
       {
@@ -182,8 +182,8 @@
             "name": "Glow7"
           },
           "name": "glowingberry.png",
-          "x": 60,
-          "y": 224
+          "x": 267,
+          "y": -1
         }
       },
       {
@@ -195,8 +195,8 @@
             "name": "Dark8"
           },
           "name": "darkingberry.png",
-          "x": 69,
-          "y": 224
+          "x": 132,
+          "y": -1
         }
       },
       {
@@ -208,8 +208,8 @@
             "name": "Glow8"
           },
           "name": "glowingberry.png",
-          "x": 69,
-          "y": 224
+          "x": 276,
+          "y": -1
         }
       },
       {
@@ -221,8 +221,8 @@
             "name": "Dark9"
           },
           "name": "darkingberry.png",
-          "x": 78,
-          "y": 224
+          "x": 123,
+          "y": -1
         }
       },
       {
@@ -234,8 +234,8 @@
             "name": "Glow9"
           },
           "name": "glowingberry.png",
-          "x": 78,
-          "y": 224
+          "x": 285,
+          "y": -1
         }
       },
       {
@@ -244,8 +244,8 @@
           "image": "glowbg.png",
           "use1Xscale": true,
           "name": "glowbg.png",
-          "x": 78,
-          "y": 215
+          "x": 294,
+          "y": 44
         }
       },
       {
@@ -257,8 +257,8 @@
             "name": "GlowBg1"
           },
           "name": "glowbg.png",
-          "x": 69,
-          "y": 215
+          "x": 294,
+          "y": 35
         }
       },
       {
@@ -270,8 +270,8 @@
             "name": "GlowBg2"
           },
           "name": "glowbg.png",
-          "x": 60,
-          "y": 215
+          "x": 294,
+          "y": 26
         }
       },
       {
@@ -283,8 +283,8 @@
             "name": "GlowBg3"
           },
           "name": "glowbg.png",
-          "x": 51,
-          "y": 215
+          "x": 294,
+          "y": 17
         }
       },
       {
@@ -296,21 +296,21 @@
             "name": "GlowBg4"
           },
           "name": "glowbg.png",
-          "x": 42,
-          "y": 215
+          "x": 294,
+          "y": 8
         }
       },
       {
         "type": "image",
         "data": {
           "image": "glowplus.png",
-          "use1Xscale": false,
+          "use1Xscale": true,
           "displayCondition": {
             "name": "Glowover"
           },
           "name": "glowplus.png",
-          "x": 69,
-          "y": 197
+          "x": 294,
+          "y": -1
         }
       },
       {
@@ -319,8 +319,8 @@
           "image": "darkingberrybg.png",
           "use1Xscale": true,
           "name": "darkingberrybg.png",
-          "x": 6,
-          "y": 215
+          "x": 114,
+          "y": 8
         }
       },
       {
@@ -332,8 +332,8 @@
             "name": "DarkBg1"
           },
           "name": "darkingberrybg.png",
-          "x": 15,
-          "y": 215
+          "x": 114,
+          "y": 17
         }
       },
       {
@@ -345,8 +345,8 @@
             "name": "DarkBg2"
           },
           "name": "darkingberrybg.png",
-          "x": 24,
-          "y": 215
+          "x": 114,
+          "y": 26
         }
       },
       {
@@ -358,8 +358,8 @@
             "name": "DarkBg3"
           },
           "name": "darkingberrybg.png",
-          "x": 33,
-          "y": 215
+          "x": 114,
+          "y": 35
         }
       },
       {
@@ -371,31 +371,32 @@
             "name": "DarkBg4"
           },
           "name": "darkingberrybg.png",
-          "x": 42,
-          "y": 215
+          "x": 114,
+          "y": 44
         }
       },
       {
         "type": "image",
         "data": {
           "image": "darkextra.png",
-          "use1Xscale": false,
+          "use1Xscale": true,
           "displayCondition": {
             "name": "DarkOver"
           },
           "name": "darkextra.png",
-          "x": 6,
-          "y": 197
+          "x": 114,
+          "y": -1
         }
       }
     ],
     "baseTexture": "",
+    "overlayTarget": "Ingame",
     "gridSettings": {
       "sx": 18,
       "sy": 18,
       "ox": 11,
       "oy": 15,
-      "snapOnGrid": false
+      "snapOnGrid": true
     }
   }
 }

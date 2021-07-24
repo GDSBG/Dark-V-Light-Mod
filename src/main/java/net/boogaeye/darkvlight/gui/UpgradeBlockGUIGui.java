@@ -127,7 +127,7 @@ public class UpgradeBlockGUIGui extends DarkVsLightModElements.ModElement {
 			this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 14, 61) {
 				@Override
 				public boolean isItemValid(ItemStack stack) {
-					return (new ItemStack(Items.WATER_BUCKET, (int) (1)).getItem() == stack.getItem());
+					return (Items.WATER_BUCKET == stack.getItem());
 				}
 			}));
 			int si;

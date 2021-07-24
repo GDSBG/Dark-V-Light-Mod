@@ -46,7 +46,7 @@ public class TopTierSurviverLootProcedure {
 		if ((Math.random() < 0.06)) {
 			for (int index0 = 0; index0 < (int) ((1 + (Math.random() * 8))); index0++) {
 				if (world instanceof World && !world.isRemote()) {
-					ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(BurnDiamondItem.block, (int) (1)));
+					ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(BurnDiamondItem.block));
 					entityToSpawn.setPickupDelay((int) 10);
 					world.addEntity(entityToSpawn);
 				}
@@ -54,48 +54,47 @@ public class TopTierSurviverLootProcedure {
 		} else if ((Math.random() < 0.16)) {
 			for (int index1 = 0; index1 < (int) ((1 + (Math.random() * 2))); index1++) {
 				if (world instanceof World && !world.isRemote()) {
-					ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(StartileItem.block, (int) (1)));
+					ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(StartileItem.block));
 					entityToSpawn.setPickupDelay((int) 10);
 					world.addEntity(entityToSpawn);
 				}
 			}
 		} else if ((Math.random() < 0.05)) {
 			if (world instanceof World && !world.isRemote()) {
-				ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z,
-						new ItemStack(BurnDiamondIncasedObsidianBlockBlock.block, (int) (1)));
+				ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(BurnDiamondIncasedObsidianBlockBlock.block));
 				entityToSpawn.setPickupDelay((int) 10);
 				world.addEntity(entityToSpawn);
 			}
 		} else if ((Math.random() < 0.3)) {
 			for (int index2 = 0; index2 < (int) ((1 + (Math.random() * 7))); index2++) {
 				if (world instanceof World && !world.isRemote()) {
-					ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(BurnCrystalItem.block, (int) (1)));
+					ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(BurnCrystalItem.block));
 					entityToSpawn.setPickupDelay((int) 10);
 					world.addEntity(entityToSpawn);
 				}
 			}
 		} else if ((Math.random() < 0.3)) {
 			if (world instanceof World && !world.isRemote()) {
-				ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(DarkendDimensionItem.block, (int) (1)));
+				ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(DarkendDimensionItem.block));
 				entityToSpawn.setPickupDelay((int) 10);
 				world.addEntity(entityToSpawn);
 			}
 		} else if ((Math.random() < 0.15)) {
 			if (world instanceof World && !world.isRemote()) {
-				ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(DarkendBossTempleDetectorItem.block, (int) (1)));
+				ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(DarkendBossTempleDetectorItem.block));
 				entityToSpawn.setPickupDelay((int) 10);
 				world.addEntity(entityToSpawn);
 			}
 		} else if ((Math.random() < 0.4)) {
 			if (world instanceof World && !world.isRemote()) {
-				ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(WaypointDetectorItem.block, (int) (1)));
+				ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(WaypointDetectorItem.block));
 				entityToSpawn.setPickupDelay((int) 10);
 				world.addEntity(entityToSpawn);
 			}
 		} else {
 			for (int index3 = 0; index3 < (int) ((1 + (Math.random() * 7))); index3++) {
 				if (world instanceof World && !world.isRemote()) {
-					ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(DarkShardItem.block, (int) (1)));
+					ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(DarkShardItem.block));
 					entityToSpawn.setPickupDelay((int) 10);
 					world.addEntity(entityToSpawn);
 				}

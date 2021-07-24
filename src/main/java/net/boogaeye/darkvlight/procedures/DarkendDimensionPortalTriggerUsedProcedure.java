@@ -44,7 +44,7 @@ public class DarkendDimensionPortalTriggerUsedProcedure {
 		IWorld world = (IWorld) dependencies.get("world");
 		if ((!(ItemTags.getCollection().getTagByID(new ResourceLocation(("fire_restriction").toLowerCase(java.util.Locale.ENGLISH)))
 				.contains((new ItemStack((world.getBlockState(new BlockPos((int) x, (int) (y + (-1)), (int) z))).getBlock())).getItem())))) {
-			if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == Blocks.AIR.getDefaultState().getBlock())) {
+			if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == Blocks.AIR)) {
 				world.setBlockState(new BlockPos((int) x, (int) y, (int) z), PurpleFireBlock.block.getDefaultState(), 3);
 				if (world instanceof World && !world.isRemote()) {
 					((World) world).playSound(null, new BlockPos((int) x, (int) y, (int) z),

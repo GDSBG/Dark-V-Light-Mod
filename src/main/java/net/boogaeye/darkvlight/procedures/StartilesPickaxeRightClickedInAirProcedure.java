@@ -7,7 +7,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 
-import net.boogaeye.darkvlight.potion.EnlightendPotion;
+import net.boogaeye.darkvlight.potion.EnlightendPotionEffect;
 import net.boogaeye.darkvlight.DarkVsLightMod;
 
 import java.util.Map;
@@ -27,10 +27,10 @@ public class StartilesPickaxeRightClickedInAirProcedure {
 		Entity entity = (Entity) dependencies.get("entity");
 		ItemStack itemstack = (ItemStack) dependencies.get("itemstack");
 		if (entity instanceof PlayerEntity)
-			((PlayerEntity) entity).getCooldownTracker().setCooldown(((itemstack)).getItem(), (int) 500);
+			((PlayerEntity) entity).getCooldownTracker().setCooldown((itemstack).getItem(), (int) 500);
 		if (entity instanceof LivingEntity)
 			((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.NIGHT_VISION, (int) 600, (int) 1, (false), (false)));
 		if (entity instanceof LivingEntity)
-			((LivingEntity) entity).addPotionEffect(new EffectInstance(EnlightendPotion.potion, (int) 20, (int) 60, (false), (false)));
+			((LivingEntity) entity).addPotionEffect(new EffectInstance(EnlightendPotionEffect.potion, (int) 20, (int) 60, (false), (false)));
 	}
 }

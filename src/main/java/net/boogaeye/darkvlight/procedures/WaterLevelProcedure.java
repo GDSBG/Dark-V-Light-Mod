@@ -75,7 +75,7 @@ public class WaterLevelProcedure {
 				}
 				return ItemStack.EMPTY;
 			}
-		}.getItemStack((int) (2))).getItem() == new ItemStack(Items.WATER_BUCKET, (int) (1)).getItem())) {
+		}.getItemStack((int) (2))).getItem() == Items.WATER_BUCKET)) {
 			if (entity instanceof ServerPlayerEntity) {
 				Advancement _adv = ((MinecraftServer) ((ServerPlayerEntity) entity).server).getAdvancementManager()
 						.getAdvancement(new ResourceLocation("dark_vs_light:we_need_fuel_for_this_thing"));
@@ -100,7 +100,7 @@ public class WaterLevelProcedure {
 				if (_current instanceof Supplier) {
 					Object invobj = ((Supplier) _current).get();
 					if (invobj instanceof Map) {
-						ItemStack _setstack = new ItemStack(Items.BUCKET, (int) (1));
+						ItemStack _setstack = new ItemStack(Items.BUCKET);
 						_setstack.setCount((int) 1);
 						((Slot) ((Map) invobj).get((int) (2))).putStack(_setstack);
 						_current.detectAndSendChanges();

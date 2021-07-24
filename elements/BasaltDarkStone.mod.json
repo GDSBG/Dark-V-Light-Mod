@@ -1,5 +1,5 @@
 {
-  "_fv": 21,
+  "_fv": 23,
   "_type": "block",
   "definition": {
     "texture": "darkendbasalt",
@@ -50,7 +50,7 @@
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canRedstoneConnect": false,
-    "lightOpacity": 255,
+    "lightOpacity": 15,
     "material": {
       "value": "ROCK"
     },

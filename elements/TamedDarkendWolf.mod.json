@@ -1,12 +1,12 @@
 {
-  "_fv": 21,
-  "_type": "mob",
+  "_fv": 23,
+  "_type": "livingentity",
   "definition": {
     "mobName": "Darkend Wolf",
     "mobLabel": "",
     "mobModelName": "Modeldarkendwolf",
     "mobModelTexture": "darkendwolf.png",
-    "mobModelGlowTexture": "darkendwolfglow.png",
+    "mobModelGlowTexture": "darkendwolfglowtamed.png",
     "modelWidth": 1.1,
     "modelHeight": 1.25,
     "modelShadowSize": 1.0,

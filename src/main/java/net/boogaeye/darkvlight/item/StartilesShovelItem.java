@@ -52,12 +52,12 @@ public class StartilesShovelItem extends DarkVsLightModElements.ModElement {
 			}
 
 			public Ingredient getRepairMaterial() {
-				return Ingredient.fromStacks(new ItemStack(StartileItem.block, (int) (1)));
+				return Ingredient.fromStacks(new ItemStack(StartileItem.block));
 			}
 		}, 1, -3f, new Item.Properties().group(DVLtabItemGroup.tab)) {
 			@Override
-			public boolean onBlockDestroyed(ItemStack itemstack, World world, BlockState bl, BlockPos pos, LivingEntity entity) {
-				boolean retval = super.onBlockDestroyed(itemstack, world, bl, pos, entity);
+			public boolean onBlockDestroyed(ItemStack itemstack, World world, BlockState blockstate, BlockPos pos, LivingEntity entity) {
+				boolean retval = super.onBlockDestroyed(itemstack, world, blockstate, pos, entity);
 				int x = pos.getX();
 				int y = pos.getY();
 				int z = pos.getZ();

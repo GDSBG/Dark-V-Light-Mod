@@ -18,7 +18,6 @@ import net.minecraft.network.IPacket;
 import net.minecraft.item.SpawnEggItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
-import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.passive.PigEntity;
 import net.minecraft.entity.passive.CatEntity;
@@ -42,15 +41,13 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.CreatureAttribute;
 
 import net.boogaeye.darkvlight.procedures.DarkendWolfWildRightClickedOnEntityProcedure;
-import net.boogaeye.darkvlight.procedures.DarkendWolfTamedProcedure;
+import net.boogaeye.darkvlight.procedures.DarkendWolfOnEntityTickUpdateProcedure;
 import net.boogaeye.darkvlight.itemgroup.DVLtabItemGroup;
 import net.boogaeye.darkvlight.entity.renderer.DarkendWolfRenderer;
 import net.boogaeye.darkvlight.DarkVsLightModElements;
 
 import java.util.Map;
 import java.util.HashMap;
-
-import com.google.common.collect.ImmutableMap;
 
 @DarkVsLightModElements.ModElement.Tag
 public class DarkendWolfEntity extends DarkVsLightModElements.ModElement {
@@ -108,200 +105,18 @@ public class DarkendWolfEntity extends DarkVsLightModElements.ModElement {
 			this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.2, false));
 			this.goalSelector.addGoal(2, new LeapAtTargetGoal(this, (float) 0.5));
 			this.targetSelector.addGoal(3, new HurtByTargetGoal(this).setCallsForHelp(this.getClass()));
-			this.targetSelector.addGoal(4, new NearestAttackableTargetGoal(this, DarkendHornEntity.CustomEntity.class, false, true) {
-				@Override
-				public boolean shouldExecute() {
-					double x = CustomEntity.this.getPosX();
-					double y = CustomEntity.this.getPosY();
-					double z = CustomEntity.this.getPosZ();
-					Entity entity = CustomEntity.this;
-					return super.shouldExecute() && DarkendWolfTamedProcedure.executeProcedure(ImmutableMap.of("entity", entity));
-				}
-
-				@Override
-				public boolean shouldContinueExecuting() {
-					double x = CustomEntity.this.getPosX();
-					double y = CustomEntity.this.getPosY();
-					double z = CustomEntity.this.getPosZ();
-					Entity entity = CustomEntity.this;
-					return super.shouldContinueExecuting() && DarkendWolfTamedProcedure.executeProcedure(ImmutableMap.of("entity", entity));
-				}
-			});
-			this.targetSelector.addGoal(5, new NearestAttackableTargetGoal(this, DarkendTallendEntity.CustomEntity.class, false, true) {
-				@Override
-				public boolean shouldExecute() {
-					double x = CustomEntity.this.getPosX();
-					double y = CustomEntity.this.getPosY();
-					double z = CustomEntity.this.getPosZ();
-					Entity entity = CustomEntity.this;
-					return super.shouldExecute() && DarkendWolfTamedProcedure.executeProcedure(ImmutableMap.of("entity", entity));
-				}
-
-				@Override
-				public boolean shouldContinueExecuting() {
-					double x = CustomEntity.this.getPosX();
-					double y = CustomEntity.this.getPosY();
-					double z = CustomEntity.this.getPosZ();
-					Entity entity = CustomEntity.this;
-					return super.shouldContinueExecuting() && DarkendWolfTamedProcedure.executeProcedure(ImmutableMap.of("entity", entity));
-				}
-			});
-			this.targetSelector.addGoal(6, new NearestAttackableTargetGoal(this, DarkendLonerEntity.CustomEntity.class, false, true) {
-				@Override
-				public boolean shouldExecute() {
-					double x = CustomEntity.this.getPosX();
-					double y = CustomEntity.this.getPosY();
-					double z = CustomEntity.this.getPosZ();
-					Entity entity = CustomEntity.this;
-					return super.shouldExecute() && DarkendWolfTamedProcedure.executeProcedure(ImmutableMap.of("entity", entity));
-				}
-
-				@Override
-				public boolean shouldContinueExecuting() {
-					double x = CustomEntity.this.getPosX();
-					double y = CustomEntity.this.getPosY();
-					double z = CustomEntity.this.getPosZ();
-					Entity entity = CustomEntity.this;
-					return super.shouldContinueExecuting() && DarkendWolfTamedProcedure.executeProcedure(ImmutableMap.of("entity", entity));
-				}
-			});
+			this.targetSelector.addGoal(4, new NearestAttackableTargetGoal(this, DarkendHornEntity.CustomEntity.class, false, true));
+			this.targetSelector.addGoal(5, new NearestAttackableTargetGoal(this, DarkendTallendEntity.CustomEntity.class, false, true));
+			this.targetSelector.addGoal(6, new NearestAttackableTargetGoal(this, DarkendLonerEntity.CustomEntity.class, false, true));
 			this.targetSelector.addGoal(7, new NearestAttackableTargetGoal(this, DarkendBossEntityEntity.CustomEntity.class, false, true));
-			this.targetSelector.addGoal(8, new NearestAttackableTargetGoal(this, BlazeEntity.class, false, true) {
-				@Override
-				public boolean shouldExecute() {
-					double x = CustomEntity.this.getPosX();
-					double y = CustomEntity.this.getPosY();
-					double z = CustomEntity.this.getPosZ();
-					Entity entity = CustomEntity.this;
-					return super.shouldExecute() && DarkendWolfTamedProcedure.executeProcedure(ImmutableMap.of("entity", entity));
-				}
-
-				@Override
-				public boolean shouldContinueExecuting() {
-					double x = CustomEntity.this.getPosX();
-					double y = CustomEntity.this.getPosY();
-					double z = CustomEntity.this.getPosZ();
-					Entity entity = CustomEntity.this;
-					return super.shouldContinueExecuting() && DarkendWolfTamedProcedure.executeProcedure(ImmutableMap.of("entity", entity));
-				}
-			});
-			this.targetSelector.addGoal(9, new NearestAttackableTargetGoal(this, CatEntity.class, false, true) {
-				@Override
-				public boolean shouldExecute() {
-					double x = CustomEntity.this.getPosX();
-					double y = CustomEntity.this.getPosY();
-					double z = CustomEntity.this.getPosZ();
-					Entity entity = CustomEntity.this;
-					return super.shouldExecute() && DarkendWolfTamedProcedure.executeProcedure(ImmutableMap.of("entity", entity));
-				}
-
-				@Override
-				public boolean shouldContinueExecuting() {
-					double x = CustomEntity.this.getPosX();
-					double y = CustomEntity.this.getPosY();
-					double z = CustomEntity.this.getPosZ();
-					Entity entity = CustomEntity.this;
-					return super.shouldContinueExecuting() && DarkendWolfTamedProcedure.executeProcedure(ImmutableMap.of("entity", entity));
-				}
-			});
+			this.targetSelector.addGoal(8, new NearestAttackableTargetGoal(this, BlazeEntity.class, false, true));
+			this.targetSelector.addGoal(9, new NearestAttackableTargetGoal(this, CatEntity.class, false, true));
 			this.targetSelector.addGoal(10, new NearestAttackableTargetGoal(this, CreeperEntity.class, false, true));
-			this.targetSelector.addGoal(11, new NearestAttackableTargetGoal(this, EndermanEntity.class, false, true) {
-				@Override
-				public boolean shouldExecute() {
-					double x = CustomEntity.this.getPosX();
-					double y = CustomEntity.this.getPosY();
-					double z = CustomEntity.this.getPosZ();
-					Entity entity = CustomEntity.this;
-					return super.shouldExecute() && DarkendWolfTamedProcedure.executeProcedure(ImmutableMap.of("entity", entity));
-				}
-
-				@Override
-				public boolean shouldContinueExecuting() {
-					double x = CustomEntity.this.getPosX();
-					double y = CustomEntity.this.getPosY();
-					double z = CustomEntity.this.getPosZ();
-					Entity entity = CustomEntity.this;
-					return super.shouldContinueExecuting() && DarkendWolfTamedProcedure.executeProcedure(ImmutableMap.of("entity", entity));
-				}
-			});
-			this.targetSelector.addGoal(12, new NearestAttackableTargetGoal(this, PigEntity.class, false, true) {
-				@Override
-				public boolean shouldExecute() {
-					double x = CustomEntity.this.getPosX();
-					double y = CustomEntity.this.getPosY();
-					double z = CustomEntity.this.getPosZ();
-					Entity entity = CustomEntity.this;
-					return super.shouldExecute() && DarkendWolfTamedProcedure.executeProcedure(ImmutableMap.of("entity", entity));
-				}
-
-				@Override
-				public boolean shouldContinueExecuting() {
-					double x = CustomEntity.this.getPosX();
-					double y = CustomEntity.this.getPosY();
-					double z = CustomEntity.this.getPosZ();
-					Entity entity = CustomEntity.this;
-					return super.shouldContinueExecuting() && DarkendWolfTamedProcedure.executeProcedure(ImmutableMap.of("entity", entity));
-				}
-			});
-			this.targetSelector.addGoal(13, new NearestAttackableTargetGoal(this, PlayerEntity.class, false, true) {
-				@Override
-				public boolean shouldExecute() {
-					double x = CustomEntity.this.getPosX();
-					double y = CustomEntity.this.getPosY();
-					double z = CustomEntity.this.getPosZ();
-					Entity entity = CustomEntity.this;
-					return super.shouldExecute() && DarkendWolfTamedProcedure.executeProcedure(ImmutableMap.of("entity", entity));
-				}
-
-				@Override
-				public boolean shouldContinueExecuting() {
-					double x = CustomEntity.this.getPosX();
-					double y = CustomEntity.this.getPosY();
-					double z = CustomEntity.this.getPosZ();
-					Entity entity = CustomEntity.this;
-					return super.shouldContinueExecuting() && DarkendWolfTamedProcedure.executeProcedure(ImmutableMap.of("entity", entity));
-				}
-			});
-			this.targetSelector.addGoal(14, new NearestAttackableTargetGoal(this, ServerPlayerEntity.class, false, true) {
-				@Override
-				public boolean shouldExecute() {
-					double x = CustomEntity.this.getPosX();
-					double y = CustomEntity.this.getPosY();
-					double z = CustomEntity.this.getPosZ();
-					Entity entity = CustomEntity.this;
-					return super.shouldExecute() && DarkendWolfTamedProcedure.executeProcedure(ImmutableMap.of("entity", entity));
-				}
-
-				@Override
-				public boolean shouldContinueExecuting() {
-					double x = CustomEntity.this.getPosX();
-					double y = CustomEntity.this.getPosY();
-					double z = CustomEntity.this.getPosZ();
-					Entity entity = CustomEntity.this;
-					return super.shouldContinueExecuting() && DarkendWolfTamedProcedure.executeProcedure(ImmutableMap.of("entity", entity));
-				}
-			});
-			this.targetSelector.addGoal(15, new NearestAttackableTargetGoal(this, ZombieEntity.class, false, true) {
-				@Override
-				public boolean shouldExecute() {
-					double x = CustomEntity.this.getPosX();
-					double y = CustomEntity.this.getPosY();
-					double z = CustomEntity.this.getPosZ();
-					Entity entity = CustomEntity.this;
-					return super.shouldExecute() && DarkendWolfTamedProcedure.executeProcedure(ImmutableMap.of("entity", entity));
-				}
-
-				@Override
-				public boolean shouldContinueExecuting() {
-					double x = CustomEntity.this.getPosX();
-					double y = CustomEntity.this.getPosY();
-					double z = CustomEntity.this.getPosZ();
-					Entity entity = CustomEntity.this;
-					return super.shouldContinueExecuting() && DarkendWolfTamedProcedure.executeProcedure(ImmutableMap.of("entity", entity));
-				}
-			});
-			this.goalSelector.addGoal(16, new LookRandomlyGoal(this));
-			this.goalSelector.addGoal(17, new WaterAvoidingRandomWalkingGoal(this, 0.8));
+			this.targetSelector.addGoal(11, new NearestAttackableTargetGoal(this, EndermanEntity.class, false, true));
+			this.targetSelector.addGoal(12, new NearestAttackableTargetGoal(this, PigEntity.class, false, true));
+			this.targetSelector.addGoal(13, new NearestAttackableTargetGoal(this, ZombieEntity.class, false, true));
+			this.goalSelector.addGoal(14, new LookRandomlyGoal(this));
+			this.goalSelector.addGoal(15, new WaterAvoidingRandomWalkingGoal(this, 0.8));
 		}
 
 		@Override
@@ -359,6 +174,24 @@ public class DarkendWolfEntity extends DarkVsLightModElements.ModElement {
 				DarkendWolfWildRightClickedOnEntityProcedure.executeProcedure($_dependencies);
 			}
 			return retval;
+		}
+
+		@Override
+		public void baseTick() {
+			super.baseTick();
+			double x = this.getPosX();
+			double y = this.getPosY();
+			double z = this.getPosZ();
+			Entity entity = this;
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				DarkendWolfOnEntityTickUpdateProcedure.executeProcedure($_dependencies);
+			}
 		}
 	}
 }

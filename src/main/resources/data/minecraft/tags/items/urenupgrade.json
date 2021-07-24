@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "dark_vs_light:urin_gem",
+    "dark_vs_light:urin_armor_helmet",
+    "dark_vs_light:urin_armor_chestplate",
+    "dark_vs_light:urin_armor_leggings",
+    "dark_vs_light:urin_armor_boots",
+    "dark_vs_light:urin_pickaxe",
+    "dark_vs_light:urin_axe",
+    "dark_vs_light:urin_sword",
+    "dark_vs_light:urin_shovel",
+    "dark_vs_light:urin_hoe"
+  ]
+}

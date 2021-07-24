@@ -1,0 +1,125 @@
+{
+  "_fv": 23,
+  "_type": "biome",
+  "definition": {
+    "name": "Deep Dark",
+    "groundBlock": {
+      "value": "CUSTOM:BasaltDarkStoneBrick"
+    },
+    "undergroundBlock": {
+      "value": "CUSTOM:DarkStoneBrick"
+    },
+    "airColor": {
+      "value": -16777216,
+      "falpha": 0.0
+    },
+    "grassColor": {
+      "value": -16777216,
+      "falpha": 0.0
+    },
+    "ambientSound": {
+      "value": "CUSTOM:enchantedloop"
+    },
+    "additionsSound": {
+      "value": "CUSTOM:shadowarmor"
+    },
+    "music": {
+      "value": "CUSTOM:darkforest"
+    },
+    "moodSound": {
+      "value": ""
+    },
+    "moodSoundDelay": 6000,
+    "spawnParticles": true,
+    "particleToSpawn": {
+      "value": "CUSTOM:DarkendDessertParticle"
+    },
+    "particlesProbability": 0.75,
+    "biomeCategory": "NONE",
+    "parent": {
+      "value": "CUSTOM:DeepDarkValley"
+    },
+    "rainingPossibility": 1.0,
+    "temperature": 0.2,
+    "baseHeight": -1.0,
+    "heightVariation": 0.15,
+    "biomeType": "COOL",
+    "spawnBiome": false,
+    "biomeWeight": 25,
+    "biomeDictionaryTypes": [],
+    "grassPerChunk": 0,
+    "seagrassPerChunk": 0,
+    "flowersPerChunk": 0,
+    "mushroomsPerChunk": 4,
+    "bigMushroomsChunk": 4,
+    "sandPatchesPerChunk": 6,
+    "gravelPatchesPerChunk": 8,
+    "reedsPerChunk": 0,
+    "cactiPerChunk": 6,
+    "treesPerChunk": 1,
+    "vanillaTreeType": "Mega spruce trees",
+    "treeType": 1,
+    "minHeight": 15,
+    "maxWaterDepth": 4,
+    "treeStem": {
+      "value": "CUSTOM:BlindLog"
+    },
+    "treeBranch": {
+      "value": "CUSTOM:DarkendLavaLeaves"
+    },
+    "treeVines": {
+      "value": "CUSTOM:BlindStone"
+    },
+    "treeFruits": {
+      "value": "CUSTOM:Clarnite"
+    },
+    "spawnStronghold": false,
+    "spawnMineshaft": false,
+    "spawnPillagerOutpost": false,
+    "villageType": "none",
+    "spawnWoodlandMansion": false,
+    "spawnJungleTemple": false,
+    "spawnDesertPyramid": false,
+    "spawnIgloo": false,
+    "spawnOceanMonument": false,
+    "spawnShipwreck": false,
+    "oceanRuinType": "NONE",
+    "defaultFeatures": [
+      "Caves",
+      "Ores",
+      "DesertFeatures",
+      "Fossils",
+      "InfestedStone",
+      "OceanCaves"
+    ],
+    "spawnEntries": [
+      {
+        "entity": {
+          "value": "CUSTOM:DarkendSurviver"
+        },
+        "minGroup": 2,
+        "maxGroup": 6,
+        "weight": 20,
+        "spawnType": "monster"
+      },
+      {
+        "entity": {
+          "value": "CUSTOM:DarkendTeleporter"
+        },
+        "minGroup": 1,
+        "maxGroup": 3,
+        "weight": 5,
+        "spawnType": "monster"
+      },
+      {
+        "entity": {
+          "value": "CUSTOM:DarkendWolf"
+        },
+        "minGroup": 3,
+        "maxGroup": 8,
+        "weight": 7,
+        "spawnType": "monster"
+      }
+    ]
+  }
+}

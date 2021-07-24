@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "dark_vs_light:items/darkingberry"
+    "layer0": "dark_vs_light:items/darkorbus"
   }
 }

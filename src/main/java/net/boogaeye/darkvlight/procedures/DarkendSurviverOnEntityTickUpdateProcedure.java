@@ -190,7 +190,7 @@ public class DarkendSurviverOnEntityTickUpdateProcedure {
 			if (entity instanceof ServerPlayerEntity)
 				((ServerPlayerEntity) entity).inventory.markDirty();
 		}
-		if ((new ItemStack(Items.SHIELD, (int) (1)).getItem() == (new Object() {
+		if ((Items.SHIELD == (new Object() {
 			public ItemStack getItemStack(int sltid, Entity entity) {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 				entity.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
@@ -239,11 +239,11 @@ public class DarkendSurviverOnEntityTickUpdateProcedure {
 				if (((entity.getPersistentData().getDouble("EatTick")) == 12)) {
 					if (world instanceof World && !world.isRemote()) {
 						((World) world).playSound(null, new BlockPos((int) x, (int) y, (int) z),
-								(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.eat")),
+								(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("dark_vs_light:upgrade")),
 								SoundCategory.NEUTRAL, (float) 1, (float) 1);
 					} else {
 						((World) world).playSound(x, y, z,
-								(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.eat")),
+								(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("dark_vs_light:upgrade")),
 								SoundCategory.NEUTRAL, (float) 1, (float) 1, false);
 					}
 				}

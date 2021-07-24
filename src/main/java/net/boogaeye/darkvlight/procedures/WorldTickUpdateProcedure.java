@@ -38,5 +38,8 @@ public class WorldTickUpdateProcedure {
 		DarkVsLightModVariables.MapVariables
 				.get(world).BossWorldTick2 = (double) (DarkVsLightModVariables.MapVariables.get(world).BossWorldTick2 + 1);
 		DarkVsLightModVariables.MapVariables.get(world).syncData(world);
+		DarkVsLightModVariables.MapVariables
+				.get(world).BossWorldTick3 = (double) (DarkVsLightModVariables.MapVariables.get(world).BossWorldTick3 + 1);
+		DarkVsLightModVariables.MapVariables.get(world).syncData(world);
 	}
 }

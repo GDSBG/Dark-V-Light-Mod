@@ -2,7 +2,7 @@ package net.boogaeye.darkvlight.procedures;
 
 import net.minecraft.world.IWorld;
 
-import net.boogaeye.darkvlight.world.DarkendDebugGameRule;
+import net.boogaeye.darkvlight.world.BossAIGameRule;
 import net.boogaeye.darkvlight.DarkVsLightModVariables;
 import net.boogaeye.darkvlight.DarkVsLightMod;
 
@@ -16,7 +16,7 @@ public class AvoidBossControlProcedure {
 			return false;
 		}
 		IWorld world = (IWorld) dependencies.get("world");
-		if ((world.getWorldInfo().getGameRulesInstance().getBoolean(DarkendDebugGameRule.gamerule))) {
+		if (((world.getWorldInfo().getGameRulesInstance().getInt(BossAIGameRule.gamerule)) != 0)) {
 			if ((DarkVsLightModVariables.MapVariables.get(world).BossAttackType >= 3)) {
 				return (true);
 			}

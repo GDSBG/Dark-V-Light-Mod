@@ -125,12 +125,12 @@ public class DarkendSurviverEntity extends DarkVsLightModElements.ModElement {
 			super(type, world);
 			experienceValue = 5;
 			setNoAI(false);
-			this.setItemStackToSlot(EquipmentSlotType.MAINHAND, new ItemStack(DarkStoneSwordItem.block, (int) (1)));
-			this.setItemStackToSlot(EquipmentSlotType.OFFHAND, new ItemStack(UrenShooterItem.block, (int) (1)));
-			this.setItemStackToSlot(EquipmentSlotType.HEAD, new ItemStack(StartilesArmorItem.helmet, (int) (1)));
-			this.setItemStackToSlot(EquipmentSlotType.CHEST, new ItemStack(StartilesArmorItem.body, (int) (1)));
-			this.setItemStackToSlot(EquipmentSlotType.LEGS, new ItemStack(StartilesArmorItem.legs, (int) (1)));
-			this.setItemStackToSlot(EquipmentSlotType.FEET, new ItemStack(StartilesArmorItem.boots, (int) (1)));
+			this.setItemStackToSlot(EquipmentSlotType.MAINHAND, new ItemStack(DarkStoneSwordItem.block));
+			this.setItemStackToSlot(EquipmentSlotType.OFFHAND, new ItemStack(UrenShooterItem.block));
+			this.setItemStackToSlot(EquipmentSlotType.HEAD, new ItemStack(StartilesArmorItem.helmet));
+			this.setItemStackToSlot(EquipmentSlotType.CHEST, new ItemStack(StartilesArmorItem.body));
+			this.setItemStackToSlot(EquipmentSlotType.LEGS, new ItemStack(StartilesArmorItem.legs));
+			this.setItemStackToSlot(EquipmentSlotType.FEET, new ItemStack(StartilesArmorItem.boots));
 		}
 
 		@Override
@@ -436,6 +436,10 @@ public class DarkendSurviverEntity extends DarkVsLightModElements.ModElement {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
 				DarkendSurviverOnInitialEntitySpawnProcedure.executeProcedure($_dependencies);
 			}
 			return retval;

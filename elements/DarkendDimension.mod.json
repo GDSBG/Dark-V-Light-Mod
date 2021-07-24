@@ -1,5 +1,5 @@
 {
-  "_fv": 21,
+  "_fv": 23,
   "_type": "dimension",
   "definition": {
     "biomesInDimension": [
@@ -29,6 +29,12 @@
       },
       {
         "value": "CUSTOM:DeepDarkValley"
+      },
+      {
+        "value": "CUSTOM:DeepDark"
+      },
+      {
+        "value": "CUSTOM:DeeperDark"
       }
     ],
     "worldGenType": "Normal world gen",

@@ -7,8 +7,6 @@ import net.minecraftforge.common.ToolType;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
-import net.minecraft.world.IBlockReader;
-import net.minecraft.util.math.BlockPos;
 import net.minecraft.state.properties.DoubleBlockHalf;
 import net.minecraft.state.properties.BlockStateProperties;
 import net.minecraft.loot.LootContext;
@@ -53,11 +51,6 @@ public class BlindDoorBlock extends DarkVsLightModElements.ModElement {
 			super(Block.Properties.create(Material.WOOD).sound(SoundType.WOOD).hardnessAndResistance(1f, 10f).setLightLevel(s -> 0).harvestLevel(1)
 					.harvestTool(ToolType.AXE).setRequiresTool().notSolid().setOpaque((bs, br, bp) -> false));
 			setRegistryName("blind_door");
-		}
-
-		@Override
-		public boolean propagatesSkylightDown(BlockState state, IBlockReader reader, BlockPos pos) {
-			return true;
 		}
 
 		@Override

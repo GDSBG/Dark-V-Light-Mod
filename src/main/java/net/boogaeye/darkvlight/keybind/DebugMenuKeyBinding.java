@@ -39,7 +39,7 @@ public class DebugMenuKeyBinding extends DarkVsLightModElements.ModElement {
 	@Override
 	@OnlyIn(Dist.CLIENT)
 	public void initElements() {
-		keys = new KeyBinding("key.dark_vs_light.debug_menu", GLFW.GLFW_KEY_KP_EQUAL, "key.categories.dvl");
+		keys = new KeyBinding("key.dark_vs_light.debug_menu", GLFW.GLFW_KEY_EQUAL, "key.categories.dvl");
 		ClientRegistry.registerKeyBinding(keys);
 		MinecraftForge.EVENT_BUS.register(this);
 	}

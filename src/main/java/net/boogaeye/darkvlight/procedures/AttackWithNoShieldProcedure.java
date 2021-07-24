@@ -2,6 +2,7 @@ package net.boogaeye.darkvlight.procedures;
 
 import net.minecraft.world.IWorld;
 
+import net.boogaeye.darkvlight.world.BossAIGameRule;
 import net.boogaeye.darkvlight.DarkVsLightModVariables;
 import net.boogaeye.darkvlight.DarkVsLightMod;
 
@@ -15,7 +16,7 @@ public class AttackWithNoShieldProcedure {
 			return false;
 		}
 		IWorld world = (IWorld) dependencies.get("world");
-		if ((DarkVsLightModVariables.MapVariables.get(world).BossAI != 0)) {
+		if (((world.getWorldInfo().getGameRulesInstance().getInt(BossAIGameRule.gamerule)) != 0)) {
 			return (DarkVsLightModVariables.MapVariables.get(world).BossAttackType == 2);
 		}
 		return (false);

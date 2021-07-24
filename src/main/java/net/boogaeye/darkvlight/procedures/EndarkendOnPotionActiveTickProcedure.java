@@ -5,7 +5,7 @@ import net.minecraft.potion.EffectInstance;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 
-import net.boogaeye.darkvlight.potion.EndarkendPotion;
+import net.boogaeye.darkvlight.potion.EndarkendPotionEffect;
 import net.boogaeye.darkvlight.DarkVsLightModVariables;
 import net.boogaeye.darkvlight.DarkVsLightMod;
 
@@ -25,7 +25,7 @@ public class EndarkendOnPotionActiveTickProcedure {
 				if (_entity instanceof LivingEntity) {
 					Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
 					for (EffectInstance effect : effects) {
-						if (effect.getPotion() == EndarkendPotion.potion)
+						if (effect.getPotion() == EndarkendPotionEffect.potion)
 							return effect.getAmplifier();
 					}
 				}

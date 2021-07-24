@@ -674,5 +674,90 @@
         "stream": false
       }
     ]
+  },
+  "upgradestart": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "dark_vs_light:upgradestart",
+        "stream": false
+      }
+    ]
+  },
+  "upgradeloop": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "dark_vs_light:upgradeloop",
+        "stream": false
+      }
+    ]
+  },
+  "upgradeend": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "dark_vs_light:upgradeend",
+        "stream": false
+      }
+    ]
+  },
+  "deepdark": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "dark_vs_light:deepdark",
+        "stream": true
+      }
+    ]
+  },
+  "disintegrating": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "dark_vs_light:myuu-disintegrating-music-box-version",
+        "stream": true
+      }
+    ]
+  },
+  "dessert": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "dark_vs_light:darkdessert",
+        "stream": true
+      }
+    ]
+  },
+  "randomdark": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "dark_vs_light:darkrandom",
+        "stream": true
+      }
+    ]
+  },
+  "dgrassbreak": {
+    "category": "block",
+    "subtitle": "subtitles.dgrassbreak",
+    "sounds": [
+      {
+        "name": "dark_vs_light:darkgrassbreaking1",
+        "stream": false
+      },
+      {
+        "name": "dark_vs_light:darkgrassbreaking2",
+        "stream": false
+      },
+      {
+        "name": "dark_vs_light:darkgrassbreaking3",
+        "stream": false
+      },
+      {
+        "name": "dark_vs_light:darkgrassbreaking4",
+        "stream": false
+      }
+    ]
   }
 }

@@ -1,28 +1,16 @@
 {
   "variants": {
-    "facing=south": {
-      "model": "dark_vs_light:block/burn_diamond_incased_obsidian_block"
-    },
-    "facing=north": {
-      "model": "dark_vs_light:block/burn_diamond_incased_obsidian_block"
-    },
-    "facing=east": {
-      "model": "dark_vs_light:block/burn_diamond_incased_obsidian_block",
-      "x": 90
-    },
-    "facing=west": {
-      "model": "dark_vs_light:block/burn_diamond_incased_obsidian_block",
-      "x": 90
-    },
-    "facing=up": {
+    "axis=x": {
       "model": "dark_vs_light:block/burn_diamond_incased_obsidian_block",
       "x": 90,
       "y": 90
     },
-    "facing=down": {
+    "axis=y": {
+      "model": "dark_vs_light:block/burn_diamond_incased_obsidian_block"
+    },
+    "axis=z": {
       "model": "dark_vs_light:block/burn_diamond_incased_obsidian_block",
-      "x": 90,
-      "y": 90
+      "x": 90
     }
   }
 }

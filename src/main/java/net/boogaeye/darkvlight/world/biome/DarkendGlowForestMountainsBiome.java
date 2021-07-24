@@ -43,6 +43,7 @@ import net.minecraft.util.Direction;
 import net.minecraft.state.BooleanProperty;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntityClassification;
+import net.minecraft.client.audio.BackgroundMusicSelector;
 import net.minecraft.block.HugeMushroomBlock;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
@@ -79,6 +80,8 @@ public class DarkendGlowForestMountainsBiome extends DarkVsLightModElements.ModE
 						.withSkyColor(-6724096).withFoliageColor(-6750208).withGrassColor(-10092544)
 						.setAmbientSound(
 								(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("dark_vs_light:theswamp")))
+						.setMusic(new BackgroundMusicSelector((net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS
+								.getValue(new ResourceLocation("dark_vs_light:disintegrating")), 12000, 24000, true))
 						.build();
 				BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder()
 						.withSurfaceBuilder(SurfaceBuilder.DEFAULT.func_242929_a(new SurfaceBuilderConfig(DarkendGrassBlock.block.getDefaultState(),

@@ -59,14 +59,19 @@ public class BlindStoneBlock extends DarkVsLightModElements.ModElement {
 		}
 
 		@Override
+		public int getOpacity(BlockState state, IBlockReader worldIn, BlockPos pos) {
+			return 0;
+		}
+
+		@Override
 		public MaterialColor getMaterialColor() {
 			return MaterialColor.AIR;
 		}
 
 		@OnlyIn(Dist.CLIENT)
 		@Override
-		public void animateTick(BlockState state, World world, BlockPos pos, Random random) {
-			super.animateTick(state, world, pos, random);
+		public void animateTick(BlockState blockstate, World world, BlockPos pos, Random random) {
+			super.animateTick(blockstate, world, pos, random);
 			PlayerEntity entity = Minecraft.getInstance().player;
 			int x = pos.getX();
 			int y = pos.getY();
@@ -85,8 +90,8 @@ public class BlindStoneBlock extends DarkVsLightModElements.ModElement {
 		}
 
 		@Override
-		public boolean removedByPlayer(BlockState state, World world, BlockPos pos, PlayerEntity entity, boolean willHarvest, FluidState fluid) {
-			boolean retval = super.removedByPlayer(state, world, pos, entity, willHarvest, fluid);
+		public boolean removedByPlayer(BlockState blockstate, World world, BlockPos pos, PlayerEntity entity, boolean willHarvest, FluidState fluid) {
+			boolean retval = super.removedByPlayer(blockstate, world, pos, entity, willHarvest, fluid);
 			int x = pos.getX();
 			int y = pos.getY();
 			int z = pos.getZ();

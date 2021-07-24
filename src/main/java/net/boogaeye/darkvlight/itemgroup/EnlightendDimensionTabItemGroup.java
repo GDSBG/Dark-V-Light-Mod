@@ -22,7 +22,7 @@ public class EnlightendDimensionTabItemGroup extends DarkVsLightModElements.ModE
 			@OnlyIn(Dist.CLIENT)
 			@Override
 			public ItemStack createIcon() {
-				return new ItemStack(EnlightendTeleporterItem.block, (int) (1));
+				return new ItemStack(EnlightendTeleporterItem.block);
 			}
 
 			@OnlyIn(Dist.CLIENT)

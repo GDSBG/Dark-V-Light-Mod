@@ -72,7 +72,7 @@ public class LavaSpringsBiome extends DarkVsLightModElements.ModElement {
 				BiomeAmbience effects = new BiomeAmbience.Builder().setFogColor(-65536).setWaterColor(-16777216).setWaterFogColor(-16777216)
 						.withSkyColor(-65536).withFoliageColor(-16777216).withGrassColor(-16777216)
 						.setMusic(new BackgroundMusicSelector((net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS
-								.getValue(new ResourceLocation("dark_vs_light:oceanending")), 12000, 24000, true))
+								.getValue(new ResourceLocation("dark_vs_light:randomdark")), 12000, 24000, true))
 						.build();
 				BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder()
 						.withSurfaceBuilder(SurfaceBuilder.DEFAULT.func_242929_a(new SurfaceBuilderConfig(DarkendGrassBlock.block.getDefaultState(),

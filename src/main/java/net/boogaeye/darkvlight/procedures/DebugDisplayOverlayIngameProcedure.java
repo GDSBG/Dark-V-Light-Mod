@@ -15,7 +15,10 @@ public class DebugDisplayOverlayIngameProcedure {
 			return false;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
-		return ((entity.getCapability(DarkVsLightModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new DarkVsLightModVariables.PlayerVariables())).Debug);
+		if (((entity.getCapability(DarkVsLightModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+				.orElse(new DarkVsLightModVariables.PlayerVariables())).Debug)) {
+			return (true);
+		}
+		return (false);
 	}
 }

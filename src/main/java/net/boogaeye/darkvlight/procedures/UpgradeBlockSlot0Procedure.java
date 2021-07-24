@@ -50,6 +50,6 @@ public class UpgradeBlockSlot0Procedure {
 				}
 				return _retval.get();
 			}
-		}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (0))).getItem() == new ItemStack(Blocks.AIR, (int) (1)).getItem()));
+		}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (0))).getItem() == Blocks.AIR.asItem()));
 	}
 }

@@ -44,7 +44,7 @@ public class BlindShardHoeItem extends DarkVsLightModElements.ModElement {
 			}
 
 			public Ingredient getRepairMaterial() {
-				return Ingredient.fromStacks(new ItemStack(DarkShardItem.block, (int) (1)));
+				return Ingredient.fromStacks(new ItemStack(DarkShardItem.block));
 			}
 		}, 0, -3f, new Item.Properties().group(DVLtabItemGroup.tab)) {
 		}.setRegistryName("blind_shard_hoe"));

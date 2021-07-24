@@ -10,7 +10,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 
-import net.boogaeye.darkvlight.potion.EnlightendFilteringPotion;
+import net.boogaeye.darkvlight.potion.EnlightendFilteringPotionEffect;
 import net.boogaeye.darkvlight.DarkVsLightMod;
 
 import java.util.function.Function;
@@ -63,7 +63,7 @@ public class DarkendFloaterEntityIsHurtProcedure {
 					}.compareDistOf(x, y, z)).findFirst().orElse(null)) != null)) {
 				if (sourceentity instanceof LivingEntity)
 					((LivingEntity) sourceentity)
-							.addPotionEffect(new EffectInstance(EnlightendFilteringPotion.potion, (int) 200, (int) 0, (false), (true)));
+							.addPotionEffect(new EffectInstance(EnlightendFilteringPotionEffect.potion, (int) 200, (int) 0, (false), (true)));
 			}
 			if ((((Entity) world
 					.getEntitiesWithinAABB(ServerPlayerEntity.class,
@@ -75,7 +75,7 @@ public class DarkendFloaterEntityIsHurtProcedure {
 					}.compareDistOf(x, y, z)).findFirst().orElse(null)) != null)) {
 				if (sourceentity instanceof LivingEntity)
 					((LivingEntity) sourceentity)
-							.addPotionEffect(new EffectInstance(EnlightendFilteringPotion.potion, (int) 200, (int) 0, (false), (true)));
+							.addPotionEffect(new EffectInstance(EnlightendFilteringPotionEffect.potion, (int) 200, (int) 0, (false), (true)));
 			}
 		}
 	}

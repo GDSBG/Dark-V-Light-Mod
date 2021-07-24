@@ -19,6 +19,7 @@ import net.minecraft.world.gen.GenerationStage;
 import net.minecraft.world.gen.ChunkGenerator;
 import net.minecraft.world.World;
 import net.minecraft.world.ISeedReader;
+import net.minecraft.world.IBlockReader;
 import net.minecraft.util.registry.WorldGenRegistries;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.util.math.BlockPos;
@@ -65,11 +66,16 @@ public class DarkendBurnDiamondBlock extends DarkVsLightModElements.ModElement {
 		}
 
 		@Override
+		public int getOpacity(BlockState state, IBlockReader worldIn, BlockPos pos) {
+			return 15;
+		}
+
+		@Override
 		public List<ItemStack> getDrops(BlockState state, LootContext.Builder builder) {
 			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
-			return Collections.singletonList(new ItemStack(BurnDiamondItem.block, (int) (1)));
+			return Collections.singletonList(new ItemStack(BurnDiamondItem.block));
 		}
 	}
 	private static Feature<OreFeatureConfig> feature = null;
@@ -80,7 +86,7 @@ public class DarkendBurnDiamondBlock extends DarkVsLightModElements.ModElement {
 		static final com.mojang.serialization.Codec<CustomRuleTest> codec = com.mojang.serialization.Codec.unit(() -> INSTANCE);
 		public boolean test(BlockState blockAt, Random random) {
 			boolean blockCriteria = false;
-			if (blockAt.getBlock() == DarkStoneBlock.block.getDefaultState().getBlock())
+			if (blockAt.getBlock() == DarkStoneBlock.block)
 				blockCriteria = true;
 			return blockCriteria;
 		}

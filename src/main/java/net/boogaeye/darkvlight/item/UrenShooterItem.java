@@ -83,11 +83,11 @@ public class UrenShooterItem extends DarkVsLightModElements.ModElement {
 				double y = entity.getPosY();
 				double z = entity.getPosZ();
 				if (true) {
-					ItemStack stack = ShootableItem.getHeldAmmo(entity, e -> e.getItem() == new ItemStack(UrenBallItem.block, (int) (1)).getItem());
+					ItemStack stack = ShootableItem.getHeldAmmo(entity, e -> e.getItem() == UrenBallItem.block);
 					if (stack == ItemStack.EMPTY) {
 						for (int i = 0; i < entity.inventory.mainInventory.size(); i++) {
 							ItemStack teststack = entity.inventory.mainInventory.get(i);
-							if (teststack != null && teststack.getItem() == new ItemStack(UrenBallItem.block, (int) (1)).getItem()) {
+							if (teststack != null && teststack.getItem() == UrenBallItem.block) {
 								stack = teststack;
 								break;
 							}
@@ -99,7 +99,7 @@ public class UrenShooterItem extends DarkVsLightModElements.ModElement {
 						if (entity.abilities.isCreativeMode) {
 							entityarrow.pickupStatus = AbstractArrowEntity.PickupStatus.CREATIVE_ONLY;
 						} else {
-							if (new ItemStack(UrenBallItem.block, (int) (1)).isDamageable()) {
+							if (new ItemStack(UrenBallItem.block).isDamageable()) {
 								if (stack.attemptDamageItem(1, random, entity)) {
 									stack.shrink(1);
 									stack.setDamage(0);
@@ -144,12 +144,12 @@ public class UrenShooterItem extends DarkVsLightModElements.ModElement {
 		@Override
 		@OnlyIn(Dist.CLIENT)
 		public ItemStack getItem() {
-			return new ItemStack(UrenBallItem.block, (int) (1));
+			return new ItemStack(UrenBallItem.block);
 		}
 
 		@Override
 		protected ItemStack getArrowStack() {
-			return new ItemStack(UrenBallItem.block, (int) (1));
+			return new ItemStack(UrenBallItem.block);
 		}
 
 		@Override
@@ -166,6 +166,7 @@ public class UrenShooterItem extends DarkVsLightModElements.ModElement {
 			double z = this.getPosZ();
 			World world = this.world;
 			Entity entity = this.func_234616_v_();
+			Entity imediatesourceentity = this;
 			if (this.inGround) {
 				this.remove();
 			}

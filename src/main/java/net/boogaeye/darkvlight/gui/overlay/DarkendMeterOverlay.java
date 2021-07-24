@@ -51,15 +51,27 @@ import com.google.common.collect.ImmutableMap;
 public class DarkendMeterOverlay {
 	@OnlyIn(Dist.CLIENT)
 	@SubscribeEvent(priority = EventPriority.NORMAL)
-	public static void eventHandler(RenderGameOverlayEvent event) {
-		if (!event.isCancelable() && event.getType() == RenderGameOverlayEvent.ElementType.HELMET) {
-			int posX = (event.getWindow().getScaledWidth()) / 2;
-			int posY = (event.getWindow().getScaledHeight()) / 2;
+	public static void eventHandler(RenderGameOverlayEvent.Post event) {
+		if (event.getType() == RenderGameOverlayEvent.ElementType.HELMET) {
+			int w = event.getWindow().getScaledWidth();
+			int h = event.getWindow().getScaledHeight();
+			int posX = w / 2;
+			int posY = h / 2;
+			World _world = null;
+			double _x = 0;
+			double _y = 0;
+			double _z = 0;
 			PlayerEntity entity = Minecraft.getInstance().player;
-			World world = entity.world;
-			double x = entity.getPosX();
-			double y = entity.getPosY();
-			double z = entity.getPosZ();
+			if (entity != null) {
+				_world = entity.world;
+				_x = entity.getPosX();
+				_y = entity.getPosY();
+				_z = entity.getPosZ();
+			}
+			World world = _world;
+			double x = _x;
+			double y = _y;
+			double z = _z;
 			RenderSystem.disableDepthTest();
 			RenderSystem.depthMask(false);
 			RenderSystem.blendFuncSeparate(GlStateManager.SourceFactor.SRC_ALPHA, GlStateManager.DestFactor.ONE_MINUS_SRC_ALPHA,
@@ -69,119 +81,119 @@ public class DarkendMeterOverlay {
 			if (true) {
 				if (DarkendMeterDisplayOverlayIngameProcedure.executeProcedure(ImmutableMap.of("entity", entity))) {
 					Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("dark_vs_light:textures/darkingberry.png"));
-					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -207, posY + 104, 0, 0, 8, 8, 8, 8);
+					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -18, posY + -121, 0, 0, 8, 8, 8, 8);
 				}
 				if (EnlightendMeterDisplayProcedure.executeProcedure(ImmutableMap.of("entity", entity))) {
 					Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("dark_vs_light:textures/glowingberry.png"));
-					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -207, posY + 104, 0, 0, 8, 8, 8, 8);
+					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + 0, posY + -121, 0, 0, 8, 8, 8, 8);
 				}
 				if (Dark2Procedure.executeProcedure(ImmutableMap.of("entity", entity))) {
 					Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("dark_vs_light:textures/darkingberry.png"));
-					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -198, posY + 104, 0, 0, 8, 8, 8, 8);
+					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -27, posY + -121, 0, 0, 8, 8, 8, 8);
 				}
 				if (Glow2Procedure.executeProcedure(ImmutableMap.of("entity", entity))) {
 					Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("dark_vs_light:textures/glowingberry.png"));
-					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -198, posY + 104, 0, 0, 8, 8, 8, 8);
+					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + 9, posY + -121, 0, 0, 8, 8, 8, 8);
 				}
 				if (Dark3Procedure.executeProcedure(ImmutableMap.of("entity", entity))) {
 					Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("dark_vs_light:textures/darkingberry.png"));
-					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -189, posY + 104, 0, 0, 8, 8, 8, 8);
+					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -36, posY + -121, 0, 0, 8, 8, 8, 8);
 				}
 				if (Glow3Procedure.executeProcedure(ImmutableMap.of("entity", entity))) {
 					Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("dark_vs_light:textures/glowingberry.png"));
-					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -189, posY + 104, 0, 0, 8, 8, 8, 8);
+					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + 18, posY + -121, 0, 0, 8, 8, 8, 8);
 				}
 				if (Dark4Procedure.executeProcedure(ImmutableMap.of("entity", entity))) {
 					Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("dark_vs_light:textures/darkingberry.png"));
-					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -180, posY + 104, 0, 0, 8, 8, 8, 8);
+					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -45, posY + -121, 0, 0, 8, 8, 8, 8);
 				}
 				if (Glow4Procedure.executeProcedure(ImmutableMap.of("entity", entity))) {
 					Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("dark_vs_light:textures/glowingberry.png"));
-					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -180, posY + 104, 0, 0, 8, 8, 8, 8);
+					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + 27, posY + -121, 0, 0, 8, 8, 8, 8);
 				}
 				if (Dark5Procedure.executeProcedure(ImmutableMap.of("entity", entity))) {
 					Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("dark_vs_light:textures/darkingberry.png"));
-					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -171, posY + 104, 0, 0, 8, 8, 8, 8);
+					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -54, posY + -121, 0, 0, 8, 8, 8, 8);
 				}
 				if (Glow5Procedure.executeProcedure(ImmutableMap.of("entity", entity))) {
 					Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("dark_vs_light:textures/glowingberry.png"));
-					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -171, posY + 104, 0, 0, 8, 8, 8, 8);
+					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + 36, posY + -121, 0, 0, 8, 8, 8, 8);
 				}
 				if (Dark6Procedure.executeProcedure(ImmutableMap.of("entity", entity))) {
 					Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("dark_vs_light:textures/darkingberry.png"));
-					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -162, posY + 104, 0, 0, 8, 8, 8, 8);
+					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -63, posY + -121, 0, 0, 8, 8, 8, 8);
 				}
 				if (Glow6Procedure.executeProcedure(ImmutableMap.of("entity", entity))) {
 					Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("dark_vs_light:textures/glowingberry.png"));
-					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -162, posY + 104, 0, 0, 8, 8, 8, 8);
+					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + 45, posY + -121, 0, 0, 8, 8, 8, 8);
 				}
 				if (Dark7Procedure.executeProcedure(ImmutableMap.of("entity", entity))) {
 					Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("dark_vs_light:textures/darkingberry.png"));
-					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -153, posY + 104, 0, 0, 8, 8, 8, 8);
+					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -72, posY + -121, 0, 0, 8, 8, 8, 8);
 				}
 				if (Glow7Procedure.executeProcedure(ImmutableMap.of("entity", entity))) {
 					Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("dark_vs_light:textures/glowingberry.png"));
-					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -153, posY + 104, 0, 0, 8, 8, 8, 8);
+					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + 54, posY + -121, 0, 0, 8, 8, 8, 8);
 				}
 				if (Dark8Procedure.executeProcedure(ImmutableMap.of("entity", entity))) {
 					Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("dark_vs_light:textures/darkingberry.png"));
-					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -144, posY + 104, 0, 0, 8, 8, 8, 8);
+					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -81, posY + -121, 0, 0, 8, 8, 8, 8);
 				}
 				if (Glow8Procedure.executeProcedure(ImmutableMap.of("entity", entity))) {
 					Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("dark_vs_light:textures/glowingberry.png"));
-					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -144, posY + 104, 0, 0, 8, 8, 8, 8);
+					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + 63, posY + -121, 0, 0, 8, 8, 8, 8);
 				}
 				if (Dark9Procedure.executeProcedure(ImmutableMap.of("entity", entity))) {
 					Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("dark_vs_light:textures/darkingberry.png"));
-					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -135, posY + 104, 0, 0, 8, 8, 8, 8);
+					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -90, posY + -121, 0, 0, 8, 8, 8, 8);
 				}
 				if (Glow9Procedure.executeProcedure(ImmutableMap.of("entity", entity))) {
 					Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("dark_vs_light:textures/glowingberry.png"));
-					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -135, posY + 104, 0, 0, 8, 8, 8, 8);
+					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + 72, posY + -121, 0, 0, 8, 8, 8, 8);
 				}
 				Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("dark_vs_light:textures/glowbg.png"));
-				Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -135, posY + 95, 0, 0, 8, 8, 8, 8);
+				Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + 81, posY + -76, 0, 0, 8, 8, 8, 8);
 				if (GlowBg1Procedure.executeProcedure(ImmutableMap.of("entity", entity))) {
 					Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("dark_vs_light:textures/glowbg.png"));
-					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -144, posY + 95, 0, 0, 8, 8, 8, 8);
+					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + 81, posY + -85, 0, 0, 8, 8, 8, 8);
 				}
 				if (GlowBg2Procedure.executeProcedure(ImmutableMap.of("entity", entity))) {
 					Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("dark_vs_light:textures/glowbg.png"));
-					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -153, posY + 95, 0, 0, 8, 8, 8, 8);
+					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + 81, posY + -94, 0, 0, 8, 8, 8, 8);
 				}
 				if (GlowBg3Procedure.executeProcedure(ImmutableMap.of("entity", entity))) {
 					Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("dark_vs_light:textures/glowbg.png"));
-					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -162, posY + 95, 0, 0, 8, 8, 8, 8);
+					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + 81, posY + -103, 0, 0, 8, 8, 8, 8);
 				}
 				if (GlowBg4Procedure.executeProcedure(ImmutableMap.of("entity", entity))) {
 					Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("dark_vs_light:textures/glowbg.png"));
-					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -171, posY + 95, 0, 0, 8, 8, 8, 8);
+					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + 81, posY + -112, 0, 0, 8, 8, 8, 8);
 				}
 				if (GlowoverProcedure.executeProcedure(ImmutableMap.of("entity", entity))) {
 					Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("dark_vs_light:textures/glowplus.png"));
-					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -144, posY + 77, 0, 0, 16, 16, 16, 16);
+					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + 81, posY + -121, 0, 0, 8, 8, 8, 8);
 				}
 				Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("dark_vs_light:textures/darkingberrybg.png"));
-				Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -207, posY + 95, 0, 0, 8, 8, 8, 8);
+				Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -99, posY + -112, 0, 0, 8, 8, 8, 8);
 				if (DarkBg1Procedure.executeProcedure(ImmutableMap.of("entity", entity))) {
 					Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("dark_vs_light:textures/darkingberrybg.png"));
-					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -198, posY + 95, 0, 0, 8, 8, 8, 8);
+					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -99, posY + -103, 0, 0, 8, 8, 8, 8);
 				}
 				if (DarkBg2Procedure.executeProcedure(ImmutableMap.of("entity", entity))) {
 					Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("dark_vs_light:textures/darkingberrybg.png"));
-					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -189, posY + 95, 0, 0, 8, 8, 8, 8);
+					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -99, posY + -94, 0, 0, 8, 8, 8, 8);
 				}
 				if (DarkBg3Procedure.executeProcedure(ImmutableMap.of("entity", entity))) {
 					Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("dark_vs_light:textures/darkingberrybg.png"));
-					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -180, posY + 95, 0, 0, 8, 8, 8, 8);
+					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -99, posY + -85, 0, 0, 8, 8, 8, 8);
 				}
 				if (DarkBg4Procedure.executeProcedure(ImmutableMap.of("entity", entity))) {
 					Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("dark_vs_light:textures/darkingberrybg.png"));
-					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -171, posY + 95, 0, 0, 8, 8, 8, 8);
+					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -99, posY + -76, 0, 0, 8, 8, 8, 8);
 				}
 				if (DarkOverProcedure.executeProcedure(ImmutableMap.of("entity", entity))) {
 					Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("dark_vs_light:textures/darkextra.png"));
-					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -207, posY + 77, 0, 0, 16, 16, 16, 16);
+					Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -99, posY + -121, 0, 0, 8, 8, 8, 8);
 				}
 			}
 			RenderSystem.depthMask(true);

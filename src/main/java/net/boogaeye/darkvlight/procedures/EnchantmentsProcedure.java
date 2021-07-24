@@ -6,9 +6,7 @@ import net.minecraftforge.event.TickEvent;
 
 import net.minecraft.world.server.ServerWorld;
 import net.minecraft.world.World;
-import net.minecraft.util.registry.Registry;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.RegistryKey;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.network.play.server.SPlayerAbilitiesPacket;
@@ -83,8 +81,7 @@ public class EnchantmentsProcedure {
 				});
 			}
 		}
-		if (((entity.world.getDimensionKey()) == (RegistryKey.getOrCreateKey(Registry.WORLD_KEY,
-				new ResourceLocation("dark_vs_light:enlightend_dimension"))))) {
+		if (((entity.world.getDimensionKey()) == (World.OVERWORLD))) {
 			if (((entity.getPosY()) < 0)) {
 				{
 					Entity _ent = entity;

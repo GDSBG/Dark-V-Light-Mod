@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "dark_vs_light:burn_crystal",
+    "dark_vs_light:burn_armor_helmet",
+    "dark_vs_light:burn_armor_chestplate",
+    "dark_vs_light:burn_armor_leggings",
+    "dark_vs_light:burn_armor_boots",
+    "dark_vs_light:burn_pickaxe",
+    "dark_vs_light:burn_axe",
+    "dark_vs_light:burn_sword",
+    "dark_vs_light:burn_shovel",
+    "dark_vs_light:burn_hoe"
+  ]
+}

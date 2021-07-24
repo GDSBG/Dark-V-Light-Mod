@@ -56,6 +56,16 @@ public class DarkendGlowingLeavesBlock extends DarkVsLightModElements.ModElement
 		}
 
 		@Override
+		public boolean propagatesSkylightDown(BlockState state, IBlockReader reader, BlockPos pos) {
+			return true;
+		}
+
+		@Override
+		public int getOpacity(BlockState state, IBlockReader worldIn, BlockPos pos) {
+			return 0;
+		}
+
+		@Override
 		public PathNodeType getAiPathNodeType(BlockState state, IBlockReader world, BlockPos pos, MobEntity entity) {
 			return PathNodeType.BLOCKED;
 		}
@@ -65,7 +75,7 @@ public class DarkendGlowingLeavesBlock extends DarkVsLightModElements.ModElement
 			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
-			return Collections.singletonList(new ItemStack(GlowSaplingBlock.block, (int) (1)));
+			return Collections.singletonList(new ItemStack(GlowSaplingBlock.block));
 		}
 	}
 }

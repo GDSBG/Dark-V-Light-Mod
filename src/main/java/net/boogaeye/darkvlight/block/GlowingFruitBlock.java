@@ -6,11 +6,15 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
+import net.minecraft.world.World;
 import net.minecraft.world.IWorldReader;
 import net.minecraft.world.IWorld;
 import net.minecraft.world.IBlockReader;
+import net.minecraft.util.math.BlockRayTraceResult;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.Hand;
 import net.minecraft.util.Direction;
+import net.minecraft.util.ActionResultType;
 import net.minecraft.state.properties.BlockStateProperties;
 import net.minecraft.state.StateContainer;
 import net.minecraft.state.BooleanProperty;
@@ -20,6 +24,7 @@ import net.minecraft.item.BlockItemUseContext;
 import net.minecraft.item.BlockItem;
 import net.minecraft.fluid.Fluids;
 import net.minecraft.fluid.FluidState;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.MobEntity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.client.renderer.RenderTypeLookup;
@@ -32,8 +37,12 @@ import net.minecraft.block.IWaterLoggable;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
+import net.boogaeye.darkvlight.procedures.GlowingFruitOnBlockRightClickedProcedure;
 import net.boogaeye.darkvlight.itemgroup.DVLtabItemGroup;
 import net.boogaeye.darkvlight.DarkVsLightModElements;
+
+import java.util.Map;
+import java.util.HashMap;
 
 @DarkVsLightModElements.ModElement.Tag
 public class GlowingFruitBlock extends DarkVsLightModElements.ModElement {
@@ -66,7 +75,12 @@ public class GlowingFruitBlock extends DarkVsLightModElements.ModElement {
 
 		@Override
 		public boolean propagatesSkylightDown(BlockState state, IBlockReader reader, BlockPos pos) {
-			return true;
+			return state.getFluidState().isEmpty();
+		}
+
+		@Override
+		public int getOpacity(BlockState state, IBlockReader worldIn, BlockPos pos) {
+			return 0;
 		}
 
 		@Override
@@ -117,6 +131,25 @@ public class GlowingFruitBlock extends DarkVsLightModElements.ModElement {
 		@Override
 		public PushReaction getPushReaction(BlockState state) {
 			return PushReaction.DESTROY;
+		}
+
+		@Override
+		public ActionResultType onBlockActivated(BlockState blockstate, World world, BlockPos pos, PlayerEntity entity, Hand hand,
+				BlockRayTraceResult hit) {
+			super.onBlockActivated(blockstate, world, pos, entity, hand, hit);
+			int x = pos.getX();
+			int y = pos.getY();
+			int z = pos.getZ();
+			Direction direction = hit.getFace();
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				GlowingFruitOnBlockRightClickedProcedure.executeProcedure($_dependencies);
+			}
+			return ActionResultType.SUCCESS;
 		}
 	}
 }

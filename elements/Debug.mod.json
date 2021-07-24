@@ -1,5 +1,5 @@
 {
-  "_fv": 21,
+  "_fv": 23,
   "_type": "overlay",
   "definition": {
     "priority": "HIGHEST",
@@ -7,25 +7,38 @@
       {
         "type": "label",
         "data": {
-          "text": "BossWorldTick2: <VAR:integer:BossWorldTick2>",
+          "text": "Gliph: <VAR:integer:BossWorldTick2> BossAttackType: <VAR:BossAttackType2>",
           "color": {
             "value": -1,
             "falpha": 0.0
           },
-          "name": "BossWorldTick2: <VAR:integer:BossWorldTick2>",
+          "name": "Gliph: <VAR:integer:BossWorldTick2> BossAttackType: <VAR:BossAttackType2>",
           "x": 6,
-          "y": 26
+          "y": 17
         }
       },
       {
         "type": "label",
         "data": {
-          "text": "BossAttackType2: <VAR:integer:BossAttackType2>",
+          "text": "Darkend Defender: <VAR:BossWorldTick> BossAttackType: <VAR:BossAttackType> Defeated?: <VAR:Boss1Defeated>",
           "color": {
             "value": -1,
             "falpha": 0.0
           },
-          "name": "BossAttackType2: <VAR:integer:BossAttackType2>",
+          "name": "Darkend Defender: <VAR:BossWorldTick> BossAttackType: <VAR:BossAttackType> Defeated?: <VAR:Boss1Defeated>",
+          "x": 6,
+          "y": 8
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Darkend: <VAR:integer:Darkend> Tick: <VAR:DarkendTick>",
+          "color": {
+            "value": -39169,
+            "falpha": 0.0
+          },
+          "name": "Darkend: <VAR:integer:Darkend> Tick: <VAR:DarkendTick>",
           "x": 6,
           "y": 35
         }
@@ -33,12 +46,12 @@
       {
         "type": "label",
         "data": {
-          "text": "BossAttackType: <VAR:integer:BossAttackType>",
+          "text": "Enlightend: <VAR:integer:Enlightend> Tick: <VAR:EnlightendTick>",
           "color": {
-            "value": -1,
+            "value": -3355648,
             "falpha": 0.0
           },
-          "name": "BossAttackType: <VAR:integer:BossAttackType>",
+          "name": "Enlightend: <VAR:integer:Enlightend> Tick: <VAR:EnlightendTick>",
           "x": 6,
           "y": 44
         }
@@ -46,122 +59,19 @@
       {
         "type": "label",
         "data": {
-          "text": "BossWorldTick: <VAR:BossWorldTick>",
+          "text": "BossWorldTick3: <VAR:BossWorldTick3> BossAttackType: <VAR:BossAttackType3>",
           "color": {
             "value": -1,
             "falpha": 0.0
           },
-          "name": "BossWorldTick: <VAR:BossWorldTick>",
+          "name": "BossWorldTick3: <VAR:BossWorldTick3> BossAttackType: <VAR:BossAttackType3>",
           "x": 6,
-          "y": 53
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "text": "DarkendTick: <VAR:integer:DarkendTick>",
-          "color": {
-            "value": -39169,
-            "falpha": 0.0
-          },
-          "name": "DarkendTick: <VAR:integer:DarkendTick>",
-          "x": 6,
-          "y": 62
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "text": "EnlightendTick: <VAR:integer:EnlightendTick>",
-          "color": {
-            "value": -256,
-            "falpha": 0.0
-          },
-          "name": "EnlightendTick: <VAR:integer:EnlightendTick>",
-          "x": 6,
-          "y": 71
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "text": "Darkend: <VAR:integer:Darkend>",
-          "color": {
-            "value": -39169,
-            "falpha": 0.0
-          },
-          "name": "Darkend: <VAR:integer:Darkend>",
-          "x": 6,
-          "y": 80
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "text": "Enlightend: <VAR:integer:Enlightend>",
-          "color": {
-            "value": -3355648,
-            "falpha": 0.0
-          },
-          "name": "Enlightend: <VAR:integer:Enlightend>",
-          "x": 6,
-          "y": 89
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "text": "TempleX: <VAR:integer:TempleX>",
-          "color": {
-            "value": -39322,
-            "falpha": 0.0
-          },
-          "name": "TempleX: <VAR:integer:TempleX>",
-          "x": 6,
-          "y": 107
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "text": "TempleY: <VAR:integer:TempleY>",
-          "color": {
-            "value": -52429,
-            "falpha": 0.0
-          },
-          "name": "TempleY: <VAR:integer:TempleY>",
-          "x": 6,
-          "y": 116
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "text": "TempleZ: <VAR:integer:TempleZ>",
-          "color": {
-            "value": -52429,
-            "falpha": 0.0
-          },
-          "name": "TempleZ: <VAR:integer:TempleZ>",
-          "x": 6,
-          "y": 125
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "text": "Boss1Defeated: <VAR:Boss1Defeated>",
-          "color": {
-            "value": -6736897,
-            "falpha": 0.0
-          },
-          "name": "Boss1Defeated: <VAR:Boss1Defeated>",
-          "x": 6,
-          "y": 98
+          "y": 26
         }
       }
     ],
     "baseTexture": "",
+    "overlayTarget": "Ingame",
     "displayCondition": {
       "name": "DebugDisplayOverlayIngame"
     },
@@ -170,7 +80,7 @@
       "sy": 18,
       "ox": 11,
       "oy": 15,
-      "snapOnGrid": false
+      "snapOnGrid": true
     }
   }
 }

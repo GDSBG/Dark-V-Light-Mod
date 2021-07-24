@@ -1,5 +1,5 @@
 {
-  "_fv": 21,
+  "_fv": 23,
   "_type": "block",
   "definition": {
     "texture": "darkgrassside",
@@ -52,7 +52,7 @@
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": true,
     "canRedstoneConnect": false,
-    "lightOpacity": 255,
+    "lightOpacity": 15,
     "material": {
       "value": "GRASS"
     },
@@ -82,16 +82,16 @@
       "value": "WET_GRASS"
     },
     "breakSound": {
-      "value": "CUSTOM:breakdarkgrass"
+      "value": "block.grass.break"
     },
     "stepSound": {
-      "value": "CUSTOM:drag"
+      "value": "block.glass.step"
     },
     "placeSound": {
-      "value": "CUSTOM:bossspell"
+      "value": "block.grass.place"
     },
     "hitSound": {
-      "value": "CUSTOM:drag"
+      "value": "CUSTOM:dgrassbreak"
     },
     "fallSound": {
       "value": "ambient.cave"

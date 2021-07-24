@@ -7,11 +7,10 @@ import net.minecraftforge.event.TickEvent;
 
 import net.minecraft.world.World;
 import net.minecraft.world.IWorld;
-import net.minecraft.util.registry.Registry;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.SoundCategory;
 import net.minecraft.util.ResourceLocation;
-import net.minecraft.util.RegistryKey;
+import net.minecraft.util.DamageSource;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.item.ItemStack;
@@ -23,7 +22,7 @@ import net.minecraft.entity.Entity;
 import net.minecraft.advancements.AdvancementProgress;
 import net.minecraft.advancements.Advancement;
 
-import net.boogaeye.darkvlight.potion.EnlightendBlindnessPotion;
+import net.boogaeye.darkvlight.potion.EnlightendBlindnessPotionEffect;
 import net.boogaeye.darkvlight.item.DarkStoneDustItem;
 import net.boogaeye.darkvlight.item.BlindShardArmorItem;
 import net.boogaeye.darkvlight.DarkVsLightModVariables;
@@ -95,10 +94,9 @@ public class EnlightendMeterProProcedure {
 				capability.syncPlayerVariables(entity);
 			});
 		}
-		if ((100 < ((entity.getCapability(DarkVsLightModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+		if ((160 < ((entity.getCapability(DarkVsLightModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 				.orElse(new DarkVsLightModVariables.PlayerVariables())).EnlightendTick))) {
-			if (((RegistryKey.getOrCreateKey(Registry.WORLD_KEY, new ResourceLocation(
-					"dark_vs_light:enlightend_dimension"))) == (world instanceof World ? (((World) world).getDimensionKey()) : World.OVERWORLD))) {
+			if (((World.OVERWORLD) == (world instanceof World ? (((World) world).getDimensionKey()) : World.OVERWORLD))) {
 				if ((5 > ((entity.getCapability(DarkVsLightModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 						.orElse(new DarkVsLightModVariables.PlayerVariables())).EnlightendMultiplier))) {
 					if ((0.15 > Math.random())) {
@@ -130,8 +128,8 @@ public class EnlightendMeterProProcedure {
 					if ((0 > ((entity.getCapability(DarkVsLightModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 							.orElse(new DarkVsLightModVariables.PlayerVariables())).Darkend))) {
 						if (entity instanceof LivingEntity)
-							((LivingEntity) entity)
-									.addPotionEffect(new EffectInstance(EnlightendBlindnessPotion.potion, (int) 200, (int) 1, (false), (false)));
+							((LivingEntity) entity).addPotionEffect(
+									new EffectInstance(EnlightendBlindnessPotionEffect.potion, (int) 200, (int) 1, (false), (false)));
 					}
 				}
 				{
@@ -143,7 +141,7 @@ public class EnlightendMeterProProcedure {
 				}
 				if ((((entity instanceof LivingEntity)
 						? ((LivingEntity) entity).getItemStackFromSlot(EquipmentSlotType.fromSlotTypeAndIndex(EquipmentSlotType.Group.ARMOR, (int) 0))
-						: ItemStack.EMPTY).getItem() == new ItemStack(BlindShardArmorItem.boots, (int) (1)).getItem())) {
+						: ItemStack.EMPTY).getItem() == BlindShardArmorItem.boots)) {
 					if ((((((entity instanceof LivingEntity)
 							? ((LivingEntity) entity)
 									.getItemStackFromSlot(EquipmentSlotType.fromSlotTypeAndIndex(EquipmentSlotType.Group.ARMOR, (int) 0))
@@ -153,7 +151,7 @@ public class EnlightendMeterProProcedure {
 													EquipmentSlotType.fromSlotTypeAndIndex(EquipmentSlotType.Group.ARMOR, (int) 0))
 											: ItemStack.EMPTY)).getDamage())))) {
 						if (world instanceof World && !world.isRemote()) {
-							ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(DarkStoneDustItem.block, (int) (1)));
+							ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(DarkStoneDustItem.block));
 							entityToSpawn.setPickupDelay((int) 60);
 							world.addEntity(entityToSpawn);
 						}
@@ -183,7 +181,7 @@ public class EnlightendMeterProProcedure {
 				}
 				if ((((entity instanceof LivingEntity)
 						? ((LivingEntity) entity).getItemStackFromSlot(EquipmentSlotType.fromSlotTypeAndIndex(EquipmentSlotType.Group.ARMOR, (int) 1))
-						: ItemStack.EMPTY).getItem() == new ItemStack(BlindShardArmorItem.legs, (int) (1)).getItem())) {
+						: ItemStack.EMPTY).getItem() == BlindShardArmorItem.legs)) {
 					if ((((((entity instanceof LivingEntity)
 							? ((LivingEntity) entity)
 									.getItemStackFromSlot(EquipmentSlotType.fromSlotTypeAndIndex(EquipmentSlotType.Group.ARMOR, (int) 1))
@@ -193,7 +191,7 @@ public class EnlightendMeterProProcedure {
 													EquipmentSlotType.fromSlotTypeAndIndex(EquipmentSlotType.Group.ARMOR, (int) 1))
 											: ItemStack.EMPTY)).getDamage())))) {
 						if (world instanceof World && !world.isRemote()) {
-							ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(DarkStoneDustItem.block, (int) (1)));
+							ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(DarkStoneDustItem.block));
 							entityToSpawn.setPickupDelay((int) 60);
 							world.addEntity(entityToSpawn);
 						}
@@ -223,7 +221,7 @@ public class EnlightendMeterProProcedure {
 				}
 				if ((((entity instanceof LivingEntity)
 						? ((LivingEntity) entity).getItemStackFromSlot(EquipmentSlotType.fromSlotTypeAndIndex(EquipmentSlotType.Group.ARMOR, (int) 2))
-						: ItemStack.EMPTY).getItem() == new ItemStack(BlindShardArmorItem.body, (int) (1)).getItem())) {
+						: ItemStack.EMPTY).getItem() == BlindShardArmorItem.body)) {
 					if ((((((entity instanceof LivingEntity)
 							? ((LivingEntity) entity)
 									.getItemStackFromSlot(EquipmentSlotType.fromSlotTypeAndIndex(EquipmentSlotType.Group.ARMOR, (int) 2))
@@ -233,7 +231,7 @@ public class EnlightendMeterProProcedure {
 													EquipmentSlotType.fromSlotTypeAndIndex(EquipmentSlotType.Group.ARMOR, (int) 2))
 											: ItemStack.EMPTY)).getDamage())))) {
 						if (world instanceof World && !world.isRemote()) {
-							ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(DarkStoneDustItem.block, (int) (1)));
+							ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(DarkStoneDustItem.block));
 							entityToSpawn.setPickupDelay((int) 60);
 							world.addEntity(entityToSpawn);
 						}
@@ -263,7 +261,7 @@ public class EnlightendMeterProProcedure {
 				}
 				if ((((entity instanceof LivingEntity)
 						? ((LivingEntity) entity).getItemStackFromSlot(EquipmentSlotType.fromSlotTypeAndIndex(EquipmentSlotType.Group.ARMOR, (int) 3))
-						: ItemStack.EMPTY).getItem() == new ItemStack(BlindShardArmorItem.helmet, (int) (1)).getItem())) {
+						: ItemStack.EMPTY).getItem() == BlindShardArmorItem.helmet)) {
 					if ((((((entity instanceof LivingEntity)
 							? ((LivingEntity) entity)
 									.getItemStackFromSlot(EquipmentSlotType.fromSlotTypeAndIndex(EquipmentSlotType.Group.ARMOR, (int) 3))
@@ -273,7 +271,7 @@ public class EnlightendMeterProProcedure {
 													EquipmentSlotType.fromSlotTypeAndIndex(EquipmentSlotType.Group.ARMOR, (int) 3))
 											: ItemStack.EMPTY)).getDamage())))) {
 						if (world instanceof World && !world.isRemote()) {
-							ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(DarkStoneDustItem.block, (int) (1)));
+							ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(DarkStoneDustItem.block));
 							entityToSpawn.setPickupDelay((int) 60);
 							world.addEntity(entityToSpawn);
 						}
@@ -304,7 +302,7 @@ public class EnlightendMeterProProcedure {
 			} else {
 				if ((((entity instanceof LivingEntity)
 						? ((LivingEntity) entity).getItemStackFromSlot(EquipmentSlotType.fromSlotTypeAndIndex(EquipmentSlotType.Group.ARMOR, (int) 0))
-						: ItemStack.EMPTY).getItem() == new ItemStack(BlindShardArmorItem.boots, (int) (1)).getItem())) {
+						: ItemStack.EMPTY).getItem() == BlindShardArmorItem.boots)) {
 					if ((5 > ((entity.getCapability(DarkVsLightModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 							.orElse(new DarkVsLightModVariables.PlayerVariables())).EnlightendMultiplier))) {
 						if ((0.15 > Math.random())) {
@@ -336,8 +334,8 @@ public class EnlightendMeterProProcedure {
 						if ((0 > ((entity.getCapability(DarkVsLightModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 								.orElse(new DarkVsLightModVariables.PlayerVariables())).Darkend))) {
 							if (entity instanceof LivingEntity)
-								((LivingEntity) entity)
-										.addPotionEffect(new EffectInstance(EnlightendBlindnessPotion.potion, (int) 200, (int) 1, (false), (false)));
+								((LivingEntity) entity).addPotionEffect(
+										new EffectInstance(EnlightendBlindnessPotionEffect.potion, (int) 200, (int) 1, (false), (false)));
 						}
 					}
 					{
@@ -349,7 +347,7 @@ public class EnlightendMeterProProcedure {
 					}
 				} else if ((((entity instanceof LivingEntity)
 						? ((LivingEntity) entity).getItemStackFromSlot(EquipmentSlotType.fromSlotTypeAndIndex(EquipmentSlotType.Group.ARMOR, (int) 1))
-						: ItemStack.EMPTY).getItem() == new ItemStack(BlindShardArmorItem.legs, (int) (1)).getItem())) {
+						: ItemStack.EMPTY).getItem() == BlindShardArmorItem.legs)) {
 					if ((5 > ((entity.getCapability(DarkVsLightModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 							.orElse(new DarkVsLightModVariables.PlayerVariables())).EnlightendMultiplier))) {
 						if ((0.15 > Math.random())) {
@@ -381,8 +379,8 @@ public class EnlightendMeterProProcedure {
 						if ((0 > ((entity.getCapability(DarkVsLightModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 								.orElse(new DarkVsLightModVariables.PlayerVariables())).Darkend))) {
 							if (entity instanceof LivingEntity)
-								((LivingEntity) entity)
-										.addPotionEffect(new EffectInstance(EnlightendBlindnessPotion.potion, (int) 200, (int) 1, (false), (false)));
+								((LivingEntity) entity).addPotionEffect(
+										new EffectInstance(EnlightendBlindnessPotionEffect.potion, (int) 200, (int) 1, (false), (false)));
 						}
 					}
 					{
@@ -394,7 +392,7 @@ public class EnlightendMeterProProcedure {
 					}
 				} else if ((((entity instanceof LivingEntity)
 						? ((LivingEntity) entity).getItemStackFromSlot(EquipmentSlotType.fromSlotTypeAndIndex(EquipmentSlotType.Group.ARMOR, (int) 2))
-						: ItemStack.EMPTY).getItem() == new ItemStack(BlindShardArmorItem.body, (int) (1)).getItem())) {
+						: ItemStack.EMPTY).getItem() == BlindShardArmorItem.body)) {
 					if ((5 > ((entity.getCapability(DarkVsLightModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 							.orElse(new DarkVsLightModVariables.PlayerVariables())).EnlightendMultiplier))) {
 						if ((0.15 > Math.random())) {
@@ -426,8 +424,8 @@ public class EnlightendMeterProProcedure {
 						if ((0 > ((entity.getCapability(DarkVsLightModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 								.orElse(new DarkVsLightModVariables.PlayerVariables())).Darkend))) {
 							if (entity instanceof LivingEntity)
-								((LivingEntity) entity)
-										.addPotionEffect(new EffectInstance(EnlightendBlindnessPotion.potion, (int) 200, (int) 1, (false), (false)));
+								((LivingEntity) entity).addPotionEffect(
+										new EffectInstance(EnlightendBlindnessPotionEffect.potion, (int) 200, (int) 1, (false), (false)));
 						}
 					}
 					{
@@ -439,7 +437,7 @@ public class EnlightendMeterProProcedure {
 					}
 				} else if ((((entity instanceof LivingEntity)
 						? ((LivingEntity) entity).getItemStackFromSlot(EquipmentSlotType.fromSlotTypeAndIndex(EquipmentSlotType.Group.ARMOR, (int) 3))
-						: ItemStack.EMPTY).getItem() == new ItemStack(BlindShardArmorItem.helmet, (int) (1)).getItem())) {
+						: ItemStack.EMPTY).getItem() == BlindShardArmorItem.helmet)) {
 					if ((5 > ((entity.getCapability(DarkVsLightModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 							.orElse(new DarkVsLightModVariables.PlayerVariables())).EnlightendMultiplier))) {
 						if ((0.15 > Math.random())) {
@@ -471,8 +469,8 @@ public class EnlightendMeterProProcedure {
 						if ((0 > ((entity.getCapability(DarkVsLightModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 								.orElse(new DarkVsLightModVariables.PlayerVariables())).Darkend))) {
 							if (entity instanceof LivingEntity)
-								((LivingEntity) entity)
-										.addPotionEffect(new EffectInstance(EnlightendBlindnessPotion.potion, (int) 200, (int) 1, (false), (false)));
+								((LivingEntity) entity).addPotionEffect(
+										new EffectInstance(EnlightendBlindnessPotionEffect.potion, (int) 200, (int) 1, (false), (false)));
 						}
 					}
 					{
@@ -516,7 +514,7 @@ public class EnlightendMeterProProcedure {
 									.orElse(new DarkVsLightModVariables.PlayerVariables())).Darkend))) {
 								if (entity instanceof LivingEntity)
 									((LivingEntity) entity).addPotionEffect(
-											new EffectInstance(EnlightendBlindnessPotion.potion, (int) 200, (int) 1, (false), (false)));
+											new EffectInstance(EnlightendBlindnessPotionEffect.potion, (int) 200, (int) 1, (false), (false)));
 								if (entity instanceof ServerPlayerEntity) {
 									Advancement _adv = ((MinecraftServer) ((ServerPlayerEntity) entity).server).getAdvancementManager()
 											.getAdvancement(new ResourceLocation("dark_vs_light:is_this_blindness"));
@@ -527,6 +525,12 @@ public class EnlightendMeterProProcedure {
 											String _criterion = (String) _iterator.next();
 											((ServerPlayerEntity) entity).getAdvancements().grantCriterion(_adv, _criterion);
 										}
+									}
+								}
+								if ((100 < ((entity.getCapability(DarkVsLightModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+										.orElse(new DarkVsLightModVariables.PlayerVariables())).Enlightend))) {
+									if (entity instanceof LivingEntity) {
+										((LivingEntity) entity).attackEntityFrom(new DamageSource("light").setDamageBypassesArmor(), (float) 1);
 									}
 								}
 							}

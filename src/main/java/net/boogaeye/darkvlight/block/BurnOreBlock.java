@@ -70,6 +70,11 @@ public class BurnOreBlock extends DarkVsLightModElements.ModElement {
 		}
 
 		@Override
+		public int getOpacity(BlockState state, IBlockReader worldIn, BlockPos pos) {
+			return 0;
+		}
+
+		@Override
 		public List<ItemStack> getDrops(BlockState state, LootContext.Builder builder) {
 			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 			if (!dropsOriginal.isEmpty())
@@ -85,7 +90,7 @@ public class BurnOreBlock extends DarkVsLightModElements.ModElement {
 		static final com.mojang.serialization.Codec<CustomRuleTest> codec = com.mojang.serialization.Codec.unit(() -> INSTANCE);
 		public boolean test(BlockState blockAt, Random random) {
 			boolean blockCriteria = false;
-			if (blockAt.getBlock() == DarkStoneBlock.block.getDefaultState().getBlock())
+			if (blockAt.getBlock() == DarkStoneBlock.block)
 				blockCriteria = true;
 			return blockCriteria;
 		}

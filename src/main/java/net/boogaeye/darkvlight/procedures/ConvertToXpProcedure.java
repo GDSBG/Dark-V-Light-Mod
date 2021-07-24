@@ -111,7 +111,7 @@ public class ConvertToXpProcedure {
 							return "";
 						}
 					}.getText()))));
-				spawner = new ItemStack(XPFragmentItem.block, (int) (1));
+				spawner = new ItemStack(XPFragmentItem.block);
 				(spawner).getOrCreateTag().putDouble("XP", new Object() {
 					double convert(String s) {
 						try {
@@ -232,7 +232,7 @@ public class ConvertToXpProcedure {
 									return "";
 								}
 							}.getText())) * 3));
-							spawner = new ItemStack(XPFragmentItem.block, (int) (1));
+							spawner = new ItemStack(XPFragmentItem.block);
 							(spawner).getOrCreateTag().putDouble("XP", new Object() {
 								double convert(String s) {
 									try {

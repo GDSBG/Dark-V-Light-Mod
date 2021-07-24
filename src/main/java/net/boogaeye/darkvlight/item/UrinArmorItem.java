@@ -57,7 +57,7 @@ public class UrinArmorItem extends DarkVsLightModElements.ModElement {
 
 			@Override
 			public Ingredient getRepairMaterial() {
-				return Ingredient.fromStacks(new ItemStack(UrinGemItem.block, (int) (1)));
+				return Ingredient.fromStacks(new ItemStack(UrinGemItem.block));
 			}
 
 			@OnlyIn(Dist.CLIENT)

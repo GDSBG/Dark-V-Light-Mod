@@ -53,59 +53,59 @@ public class ItemUpgradeListProcedure {
 			if (_current instanceof Supplier) {
 				Object invobj = ((Supplier) _current).get();
 				if (invobj instanceof Map) {
-					ItemStack _setstack = new ItemStack(Blocks.AIR, (int) (1));
+					ItemStack _setstack = new ItemStack(Blocks.AIR);
 					_setstack.setCount((int) 1);
 					((Slot) ((Map) invobj).get((int) (0))).putStack(_setstack);
 					_current.detectAndSendChanges();
 				}
 			}
 		}
-		if (((ItemCopy).getItem() == new ItemStack(Items.WOODEN_PICKAXE, (int) (1)).getItem())) {
+		if (((ItemCopy).getItem() == Items.WOODEN_PICKAXE)) {
 			if (entity instanceof PlayerEntity) {
 				Container _current = ((PlayerEntity) entity).openContainer;
 				if (_current instanceof Supplier) {
 					Object invobj = ((Supplier) _current).get();
 					if (invobj instanceof Map) {
-						ItemStack _setstack = new ItemStack(Items.STONE_PICKAXE, (int) (1));
+						ItemStack _setstack = new ItemStack(Items.STONE_PICKAXE);
 						_setstack.setCount((int) 1);
 						((Slot) ((Map) invobj).get((int) (1))).putStack(_setstack);
 						_current.detectAndSendChanges();
 					}
 				}
 			}
-		} else if (((ItemCopy).getItem() == new ItemStack(Items.STONE_PICKAXE, (int) (1)).getItem())) {
+		} else if (((ItemCopy).getItem() == Items.STONE_PICKAXE)) {
 			if (entity instanceof PlayerEntity) {
 				Container _current = ((PlayerEntity) entity).openContainer;
 				if (_current instanceof Supplier) {
 					Object invobj = ((Supplier) _current).get();
 					if (invobj instanceof Map) {
-						ItemStack _setstack = new ItemStack(Items.IRON_PICKAXE, (int) (1));
+						ItemStack _setstack = new ItemStack(Items.IRON_PICKAXE);
 						_setstack.setCount((int) 1);
 						((Slot) ((Map) invobj).get((int) (1))).putStack(_setstack);
 						_current.detectAndSendChanges();
 					}
 				}
 			}
-		} else if (((ItemCopy).getItem() == new ItemStack(Items.IRON_PICKAXE, (int) (1)).getItem())) {
+		} else if (((ItemCopy).getItem() == Items.IRON_PICKAXE)) {
 			if (entity instanceof PlayerEntity) {
 				Container _current = ((PlayerEntity) entity).openContainer;
 				if (_current instanceof Supplier) {
 					Object invobj = ((Supplier) _current).get();
 					if (invobj instanceof Map) {
-						ItemStack _setstack = new ItemStack(Items.DIAMOND_PICKAXE, (int) (1));
+						ItemStack _setstack = new ItemStack(Items.DIAMOND_PICKAXE);
 						_setstack.setCount((int) 1);
 						((Slot) ((Map) invobj).get((int) (1))).putStack(_setstack);
 						_current.detectAndSendChanges();
 					}
 				}
 			}
-		} else if (((ItemCopy).getItem() == new ItemStack(Items.DIAMOND_PICKAXE, (int) (1)).getItem())) {
+		} else if (((ItemCopy).getItem() == Items.DIAMOND_PICKAXE)) {
 			if (entity instanceof PlayerEntity) {
 				Container _current = ((PlayerEntity) entity).openContainer;
 				if (_current instanceof Supplier) {
 					Object invobj = ((Supplier) _current).get();
 					if (invobj instanceof Map) {
-						ItemStack _setstack = new ItemStack(Items.GOLDEN_PICKAXE, (int) (1));
+						ItemStack _setstack = new ItemStack(Items.GOLDEN_PICKAXE);
 						_setstack.setCount((int) 1);
 						((Slot) ((Map) invobj).get((int) (1))).putStack(_setstack);
 						_current.detectAndSendChanges();
@@ -113,52 +113,52 @@ public class ItemUpgradeListProcedure {
 				}
 			}
 		} else {
-			if (((ItemCopy).getItem() == new ItemStack(Items.WOODEN_SHOVEL, (int) (1)).getItem())) {
+			if (((ItemCopy).getItem() == Items.WOODEN_SHOVEL)) {
 				if (entity instanceof PlayerEntity) {
 					Container _current = ((PlayerEntity) entity).openContainer;
 					if (_current instanceof Supplier) {
 						Object invobj = ((Supplier) _current).get();
 						if (invobj instanceof Map) {
-							ItemStack _setstack = new ItemStack(Items.STONE_SHOVEL, (int) (1));
+							ItemStack _setstack = new ItemStack(Items.STONE_SHOVEL);
 							_setstack.setCount((int) 1);
 							((Slot) ((Map) invobj).get((int) (1))).putStack(_setstack);
 							_current.detectAndSendChanges();
 						}
 					}
 				}
-			} else if (((ItemCopy).getItem() == new ItemStack(Items.STONE_SHOVEL, (int) (1)).getItem())) {
+			} else if (((ItemCopy).getItem() == Items.STONE_SHOVEL)) {
 				if (entity instanceof PlayerEntity) {
 					Container _current = ((PlayerEntity) entity).openContainer;
 					if (_current instanceof Supplier) {
 						Object invobj = ((Supplier) _current).get();
 						if (invobj instanceof Map) {
-							ItemStack _setstack = new ItemStack(Items.IRON_SHOVEL, (int) (1));
+							ItemStack _setstack = new ItemStack(Items.IRON_SHOVEL);
 							_setstack.setCount((int) 1);
 							((Slot) ((Map) invobj).get((int) (1))).putStack(_setstack);
 							_current.detectAndSendChanges();
 						}
 					}
 				}
-			} else if (((ItemCopy).getItem() == new ItemStack(Items.IRON_SHOVEL, (int) (1)).getItem())) {
+			} else if (((ItemCopy).getItem() == Items.IRON_SHOVEL)) {
 				if (entity instanceof PlayerEntity) {
 					Container _current = ((PlayerEntity) entity).openContainer;
 					if (_current instanceof Supplier) {
 						Object invobj = ((Supplier) _current).get();
 						if (invobj instanceof Map) {
-							ItemStack _setstack = new ItemStack(Items.DIAMOND_SHOVEL, (int) (1));
+							ItemStack _setstack = new ItemStack(Items.DIAMOND_SHOVEL);
 							_setstack.setCount((int) 1);
 							((Slot) ((Map) invobj).get((int) (1))).putStack(_setstack);
 							_current.detectAndSendChanges();
 						}
 					}
 				}
-			} else if (((ItemCopy).getItem() == new ItemStack(Items.DIAMOND_SHOVEL, (int) (1)).getItem())) {
+			} else if (((ItemCopy).getItem() == Items.DIAMOND_SHOVEL)) {
 				if (entity instanceof PlayerEntity) {
 					Container _current = ((PlayerEntity) entity).openContainer;
 					if (_current instanceof Supplier) {
 						Object invobj = ((Supplier) _current).get();
 						if (invobj instanceof Map) {
-							ItemStack _setstack = new ItemStack(Items.GOLDEN_SHOVEL, (int) (1));
+							ItemStack _setstack = new ItemStack(Items.GOLDEN_SHOVEL);
 							_setstack.setCount((int) 1);
 							((Slot) ((Map) invobj).get((int) (1))).putStack(_setstack);
 							_current.detectAndSendChanges();
@@ -166,52 +166,52 @@ public class ItemUpgradeListProcedure {
 					}
 				}
 			} else {
-				if (((ItemCopy).getItem() == new ItemStack(Items.WOODEN_AXE, (int) (1)).getItem())) {
+				if (((ItemCopy).getItem() == Items.WOODEN_AXE)) {
 					if (entity instanceof PlayerEntity) {
 						Container _current = ((PlayerEntity) entity).openContainer;
 						if (_current instanceof Supplier) {
 							Object invobj = ((Supplier) _current).get();
 							if (invobj instanceof Map) {
-								ItemStack _setstack = new ItemStack(Items.STONE_AXE, (int) (1));
+								ItemStack _setstack = new ItemStack(Items.STONE_AXE);
 								_setstack.setCount((int) 1);
 								((Slot) ((Map) invobj).get((int) (1))).putStack(_setstack);
 								_current.detectAndSendChanges();
 							}
 						}
 					}
-				} else if (((ItemCopy).getItem() == new ItemStack(Items.STONE_AXE, (int) (1)).getItem())) {
+				} else if (((ItemCopy).getItem() == Items.STONE_AXE)) {
 					if (entity instanceof PlayerEntity) {
 						Container _current = ((PlayerEntity) entity).openContainer;
 						if (_current instanceof Supplier) {
 							Object invobj = ((Supplier) _current).get();
 							if (invobj instanceof Map) {
-								ItemStack _setstack = new ItemStack(Items.IRON_AXE, (int) (1));
+								ItemStack _setstack = new ItemStack(Items.IRON_AXE);
 								_setstack.setCount((int) 1);
 								((Slot) ((Map) invobj).get((int) (1))).putStack(_setstack);
 								_current.detectAndSendChanges();
 							}
 						}
 					}
-				} else if (((ItemCopy).getItem() == new ItemStack(Items.IRON_AXE, (int) (1)).getItem())) {
+				} else if (((ItemCopy).getItem() == Items.IRON_AXE)) {
 					if (entity instanceof PlayerEntity) {
 						Container _current = ((PlayerEntity) entity).openContainer;
 						if (_current instanceof Supplier) {
 							Object invobj = ((Supplier) _current).get();
 							if (invobj instanceof Map) {
-								ItemStack _setstack = new ItemStack(Items.DIAMOND_AXE, (int) (1));
+								ItemStack _setstack = new ItemStack(Items.DIAMOND_AXE);
 								_setstack.setCount((int) 1);
 								((Slot) ((Map) invobj).get((int) (1))).putStack(_setstack);
 								_current.detectAndSendChanges();
 							}
 						}
 					}
-				} else if (((ItemCopy).getItem() == new ItemStack(Items.DIAMOND_AXE, (int) (1)).getItem())) {
+				} else if (((ItemCopy).getItem() == Items.DIAMOND_AXE)) {
 					if (entity instanceof PlayerEntity) {
 						Container _current = ((PlayerEntity) entity).openContainer;
 						if (_current instanceof Supplier) {
 							Object invobj = ((Supplier) _current).get();
 							if (invobj instanceof Map) {
-								ItemStack _setstack = new ItemStack(Items.GOLDEN_AXE, (int) (1));
+								ItemStack _setstack = new ItemStack(Items.GOLDEN_AXE);
 								_setstack.setCount((int) 1);
 								((Slot) ((Map) invobj).get((int) (1))).putStack(_setstack);
 								_current.detectAndSendChanges();
@@ -219,52 +219,52 @@ public class ItemUpgradeListProcedure {
 						}
 					}
 				} else {
-					if (((ItemCopy).getItem() == new ItemStack(Items.WOODEN_HOE, (int) (1)).getItem())) {
+					if (((ItemCopy).getItem() == Items.WOODEN_HOE)) {
 						if (entity instanceof PlayerEntity) {
 							Container _current = ((PlayerEntity) entity).openContainer;
 							if (_current instanceof Supplier) {
 								Object invobj = ((Supplier) _current).get();
 								if (invobj instanceof Map) {
-									ItemStack _setstack = new ItemStack(Items.STONE_HOE, (int) (1));
+									ItemStack _setstack = new ItemStack(Items.STONE_HOE);
 									_setstack.setCount((int) 1);
 									((Slot) ((Map) invobj).get((int) (1))).putStack(_setstack);
 									_current.detectAndSendChanges();
 								}
 							}
 						}
-					} else if (((ItemCopy).getItem() == new ItemStack(Items.STONE_HOE, (int) (1)).getItem())) {
+					} else if (((ItemCopy).getItem() == Items.STONE_HOE)) {
 						if (entity instanceof PlayerEntity) {
 							Container _current = ((PlayerEntity) entity).openContainer;
 							if (_current instanceof Supplier) {
 								Object invobj = ((Supplier) _current).get();
 								if (invobj instanceof Map) {
-									ItemStack _setstack = new ItemStack(Items.IRON_HOE, (int) (1));
+									ItemStack _setstack = new ItemStack(Items.IRON_HOE);
 									_setstack.setCount((int) 1);
 									((Slot) ((Map) invobj).get((int) (1))).putStack(_setstack);
 									_current.detectAndSendChanges();
 								}
 							}
 						}
-					} else if (((ItemCopy).getItem() == new ItemStack(Items.IRON_HOE, (int) (1)).getItem())) {
+					} else if (((ItemCopy).getItem() == Items.IRON_HOE)) {
 						if (entity instanceof PlayerEntity) {
 							Container _current = ((PlayerEntity) entity).openContainer;
 							if (_current instanceof Supplier) {
 								Object invobj = ((Supplier) _current).get();
 								if (invobj instanceof Map) {
-									ItemStack _setstack = new ItemStack(Items.DIAMOND_HOE, (int) (1));
+									ItemStack _setstack = new ItemStack(Items.DIAMOND_HOE);
 									_setstack.setCount((int) 1);
 									((Slot) ((Map) invobj).get((int) (1))).putStack(_setstack);
 									_current.detectAndSendChanges();
 								}
 							}
 						}
-					} else if (((ItemCopy).getItem() == new ItemStack(Items.DIAMOND_HOE, (int) (1)).getItem())) {
+					} else if (((ItemCopy).getItem() == Items.DIAMOND_HOE)) {
 						if (entity instanceof PlayerEntity) {
 							Container _current = ((PlayerEntity) entity).openContainer;
 							if (_current instanceof Supplier) {
 								Object invobj = ((Supplier) _current).get();
 								if (invobj instanceof Map) {
-									ItemStack _setstack = new ItemStack(Items.GOLDEN_HOE, (int) (1));
+									ItemStack _setstack = new ItemStack(Items.GOLDEN_HOE);
 									_setstack.setCount((int) 1);
 									((Slot) ((Map) invobj).get((int) (1))).putStack(_setstack);
 									_current.detectAndSendChanges();
@@ -272,52 +272,52 @@ public class ItemUpgradeListProcedure {
 							}
 						}
 					} else {
-						if (((ItemCopy).getItem() == new ItemStack(Items.WOODEN_SWORD, (int) (1)).getItem())) {
+						if (((ItemCopy).getItem() == Items.WOODEN_SWORD)) {
 							if (entity instanceof PlayerEntity) {
 								Container _current = ((PlayerEntity) entity).openContainer;
 								if (_current instanceof Supplier) {
 									Object invobj = ((Supplier) _current).get();
 									if (invobj instanceof Map) {
-										ItemStack _setstack = new ItemStack(Items.STONE_SWORD, (int) (1));
+										ItemStack _setstack = new ItemStack(Items.STONE_SWORD);
 										_setstack.setCount((int) 1);
 										((Slot) ((Map) invobj).get((int) (1))).putStack(_setstack);
 										_current.detectAndSendChanges();
 									}
 								}
 							}
-						} else if (((ItemCopy).getItem() == new ItemStack(Items.STONE_SWORD, (int) (1)).getItem())) {
+						} else if (((ItemCopy).getItem() == Items.STONE_SWORD)) {
 							if (entity instanceof PlayerEntity) {
 								Container _current = ((PlayerEntity) entity).openContainer;
 								if (_current instanceof Supplier) {
 									Object invobj = ((Supplier) _current).get();
 									if (invobj instanceof Map) {
-										ItemStack _setstack = new ItemStack(Items.IRON_SWORD, (int) (1));
+										ItemStack _setstack = new ItemStack(Items.IRON_SWORD);
 										_setstack.setCount((int) 1);
 										((Slot) ((Map) invobj).get((int) (1))).putStack(_setstack);
 										_current.detectAndSendChanges();
 									}
 								}
 							}
-						} else if (((ItemCopy).getItem() == new ItemStack(Items.IRON_SWORD, (int) (1)).getItem())) {
+						} else if (((ItemCopy).getItem() == Items.IRON_SWORD)) {
 							if (entity instanceof PlayerEntity) {
 								Container _current = ((PlayerEntity) entity).openContainer;
 								if (_current instanceof Supplier) {
 									Object invobj = ((Supplier) _current).get();
 									if (invobj instanceof Map) {
-										ItemStack _setstack = new ItemStack(Items.DIAMOND_SWORD, (int) (1));
+										ItemStack _setstack = new ItemStack(Items.DIAMOND_SWORD);
 										_setstack.setCount((int) 1);
 										((Slot) ((Map) invobj).get((int) (1))).putStack(_setstack);
 										_current.detectAndSendChanges();
 									}
 								}
 							}
-						} else if (((ItemCopy).getItem() == new ItemStack(Items.DIAMOND_SWORD, (int) (1)).getItem())) {
+						} else if (((ItemCopy).getItem() == Items.DIAMOND_SWORD)) {
 							if (entity instanceof PlayerEntity) {
 								Container _current = ((PlayerEntity) entity).openContainer;
 								if (_current instanceof Supplier) {
 									Object invobj = ((Supplier) _current).get();
 									if (invobj instanceof Map) {
-										ItemStack _setstack = new ItemStack(Items.GOLDEN_SWORD, (int) (1));
+										ItemStack _setstack = new ItemStack(Items.GOLDEN_SWORD);
 										_setstack.setCount((int) 1);
 										((Slot) ((Map) invobj).get((int) (1))).putStack(_setstack);
 										_current.detectAndSendChanges();
@@ -325,156 +325,156 @@ public class ItemUpgradeListProcedure {
 								}
 							}
 						} else {
-							if (((ItemCopy).getItem() == new ItemStack(Blocks.OAK_LOG, (int) (1)).getItem())) {
+							if (((ItemCopy).getItem() == Blocks.OAK_LOG.asItem())) {
 								if (entity instanceof PlayerEntity) {
 									Container _current = ((PlayerEntity) entity).openContainer;
 									if (_current instanceof Supplier) {
 										Object invobj = ((Supplier) _current).get();
 										if (invobj instanceof Map) {
-											ItemStack _setstack = new ItemStack(Blocks.STONE, (int) (1));
+											ItemStack _setstack = new ItemStack(Blocks.STONE);
 											_setstack.setCount((int) 1);
 											((Slot) ((Map) invobj).get((int) (1))).putStack(_setstack);
 											_current.detectAndSendChanges();
 										}
 									}
 								}
-							} else if (((ItemCopy).getItem() == new ItemStack(Blocks.STONE, (int) (1)).getItem())) {
+							} else if (((ItemCopy).getItem() == Blocks.STONE.asItem())) {
 								if (entity instanceof PlayerEntity) {
 									Container _current = ((PlayerEntity) entity).openContainer;
 									if (_current instanceof Supplier) {
 										Object invobj = ((Supplier) _current).get();
 										if (invobj instanceof Map) {
-											ItemStack _setstack = new ItemStack(Items.IRON_INGOT, (int) (1));
+											ItemStack _setstack = new ItemStack(Items.IRON_INGOT);
 											_setstack.setCount((int) 1);
 											((Slot) ((Map) invobj).get((int) (1))).putStack(_setstack);
 											_current.detectAndSendChanges();
 										}
 									}
 								}
-							} else if (((ItemCopy).getItem() == new ItemStack(Items.IRON_INGOT, (int) (1)).getItem())) {
+							} else if (((ItemCopy).getItem() == Items.IRON_INGOT)) {
 								if (entity instanceof PlayerEntity) {
 									Container _current = ((PlayerEntity) entity).openContainer;
 									if (_current instanceof Supplier) {
 										Object invobj = ((Supplier) _current).get();
 										if (invobj instanceof Map) {
-											ItemStack _setstack = new ItemStack(Items.GOLD_INGOT, (int) (1));
+											ItemStack _setstack = new ItemStack(Items.GOLD_INGOT);
 											_setstack.setCount((int) 1);
 											((Slot) ((Map) invobj).get((int) (1))).putStack(_setstack);
 											_current.detectAndSendChanges();
 										}
 									}
 								}
-							} else if (((ItemCopy).getItem() == new ItemStack(Items.GOLD_INGOT, (int) (1)).getItem())) {
+							} else if (((ItemCopy).getItem() == Items.GOLD_INGOT)) {
 								if (entity instanceof PlayerEntity) {
 									Container _current = ((PlayerEntity) entity).openContainer;
 									if (_current instanceof Supplier) {
 										Object invobj = ((Supplier) _current).get();
 										if (invobj instanceof Map) {
-											ItemStack _setstack = new ItemStack(BurnCrystalItem.block, (int) (1));
+											ItemStack _setstack = new ItemStack(BurnCrystalItem.block);
 											_setstack.setCount((int) 1);
 											((Slot) ((Map) invobj).get((int) (1))).putStack(_setstack);
 											_current.detectAndSendChanges();
 										}
 									}
 								}
-							} else if (((ItemCopy).getItem() == new ItemStack(BurnCrystalItem.block, (int) (1)).getItem())) {
+							} else if (((ItemCopy).getItem() == BurnCrystalItem.block)) {
 								if (entity instanceof PlayerEntity) {
 									Container _current = ((PlayerEntity) entity).openContainer;
 									if (_current instanceof Supplier) {
 										Object invobj = ((Supplier) _current).get();
 										if (invobj instanceof Map) {
-											ItemStack _setstack = new ItemStack(Items.DIAMOND, (int) (1));
+											ItemStack _setstack = new ItemStack(Items.DIAMOND);
 											_setstack.setCount((int) 1);
 											((Slot) ((Map) invobj).get((int) (1))).putStack(_setstack);
 											_current.detectAndSendChanges();
 										}
 									}
 								}
-							} else if (((ItemCopy).getItem() == new ItemStack(Items.GLOWSTONE_DUST, (int) (1)).getItem())) {
+							} else if (((ItemCopy).getItem() == Items.GLOWSTONE_DUST)) {
 								if (entity instanceof PlayerEntity) {
 									Container _current = ((PlayerEntity) entity).openContainer;
 									if (_current instanceof Supplier) {
 										Object invobj = ((Supplier) _current).get();
 										if (invobj instanceof Map) {
-											ItemStack _setstack = new ItemStack(Blocks.GLOWSTONE, (int) (1));
+											ItemStack _setstack = new ItemStack(Blocks.GLOWSTONE);
 											_setstack.setCount((int) 1);
 											((Slot) ((Map) invobj).get((int) (1))).putStack(_setstack);
 											_current.detectAndSendChanges();
 										}
 									}
 								}
-							} else if (((ItemCopy).getItem() == new ItemStack(DarkendGlowingLeavesBlock.block, (int) (1)).getItem())) {
+							} else if (((ItemCopy).getItem() == DarkendGlowingLeavesBlock.block.asItem())) {
 								if (entity instanceof PlayerEntity) {
 									Container _current = ((PlayerEntity) entity).openContainer;
 									if (_current instanceof Supplier) {
 										Object invobj = ((Supplier) _current).get();
 										if (invobj instanceof Map) {
-											ItemStack _setstack = new ItemStack(Items.GLOWSTONE_DUST, (int) (1));
+											ItemStack _setstack = new ItemStack(Items.GLOWSTONE_DUST);
 											_setstack.setCount((int) 1);
 											((Slot) ((Map) invobj).get((int) (1))).putStack(_setstack);
 											_current.detectAndSendChanges();
 										}
 									}
 								}
-							} else if (((ItemCopy).getItem() == new ItemStack(GlowingFruitBlock.block, (int) (1)).getItem())) {
+							} else if (((ItemCopy).getItem() == GlowingFruitBlock.block.asItem())) {
 								if (entity instanceof PlayerEntity) {
 									Container _current = ((PlayerEntity) entity).openContainer;
 									if (_current instanceof Supplier) {
 										Object invobj = ((Supplier) _current).get();
 										if (invobj instanceof Map) {
-											ItemStack _setstack = new ItemStack(Blocks.GLOWSTONE, (int) (1));
+											ItemStack _setstack = new ItemStack(Blocks.GLOWSTONE);
 											_setstack.setCount((int) 1);
 											((Slot) ((Map) invobj).get((int) (1))).putStack(_setstack);
 											_current.detectAndSendChanges();
 										}
 									}
 								}
-							} else if (((ItemCopy).getItem() == new ItemStack(GlowingFruitFoodItem.block, (int) (1)).getItem())) {
+							} else if (((ItemCopy).getItem() == GlowingFruitFoodItem.block)) {
 								if (entity instanceof PlayerEntity) {
 									Container _current = ((PlayerEntity) entity).openContainer;
 									if (_current instanceof Supplier) {
 										Object invobj = ((Supplier) _current).get();
 										if (invobj instanceof Map) {
-											ItemStack _setstack = new ItemStack(Blocks.TORCH, (int) (1));
+											ItemStack _setstack = new ItemStack(Blocks.TORCH);
 											_setstack.setCount((int) 1);
 											((Slot) ((Map) invobj).get((int) (1))).putStack(_setstack);
 											_current.detectAndSendChanges();
 										}
 									}
 								}
-							} else if (((ItemCopy).getItem() == new ItemStack(DriedGlowBerryItem.block, (int) (1)).getItem())) {
+							} else if (((ItemCopy).getItem() == DriedGlowBerryItem.block)) {
 								if (entity instanceof PlayerEntity) {
 									Container _current = ((PlayerEntity) entity).openContainer;
 									if (_current instanceof Supplier) {
 										Object invobj = ((Supplier) _current).get();
 										if (invobj instanceof Map) {
-											ItemStack _setstack = new ItemStack(GlowingFruitFoodItem.block, (int) (1));
+											ItemStack _setstack = new ItemStack(GlowingFruitFoodItem.block);
 											_setstack.setCount((int) 1);
 											((Slot) ((Map) invobj).get((int) (1))).putStack(_setstack);
 											_current.detectAndSendChanges();
 										}
 									}
 								}
-							} else if (((ItemCopy).getItem() == new ItemStack(Blocks.TORCH, (int) (1)).getItem())) {
+							} else if (((ItemCopy).getItem() == Blocks.TORCH.asItem())) {
 								if (entity instanceof PlayerEntity) {
 									Container _current = ((PlayerEntity) entity).openContainer;
 									if (_current instanceof Supplier) {
 										Object invobj = ((Supplier) _current).get();
 										if (invobj instanceof Map) {
-											ItemStack _setstack = new ItemStack(Items.FLINT_AND_STEEL, (int) (1));
+											ItemStack _setstack = new ItemStack(Items.FLINT_AND_STEEL);
 											_setstack.setCount((int) 1);
 											((Slot) ((Map) invobj).get((int) (1))).putStack(_setstack);
 											_current.detectAndSendChanges();
 										}
 									}
 								}
-							} else if (((ItemCopy).getItem() == new ItemStack(Items.FLINT_AND_STEEL, (int) (1)).getItem())) {
+							} else if (((ItemCopy).getItem() == Items.FLINT_AND_STEEL)) {
 								if (entity instanceof PlayerEntity) {
 									Container _current = ((PlayerEntity) entity).openContainer;
 									if (_current instanceof Supplier) {
 										Object invobj = ((Supplier) _current).get();
 										if (invobj instanceof Map) {
-											ItemStack _setstack = new ItemStack(Items.LAVA_BUCKET, (int) (1));
+											ItemStack _setstack = new ItemStack(Items.LAVA_BUCKET);
 											_setstack.setCount((int) 1);
 											((Slot) ((Map) invobj).get((int) (1))).putStack(_setstack);
 											_current.detectAndSendChanges();

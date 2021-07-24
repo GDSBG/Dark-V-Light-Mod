@@ -44,9 +44,9 @@ public class Burn_Diamond_ToolHoeItem extends DarkVsLightModElements.ModElement 
 			}
 
 			public Ingredient getRepairMaterial() {
-				return Ingredient.fromStacks(new ItemStack(BurnDiamondItem.block, (int) (1)));
+				return Ingredient.fromStacks(new ItemStack(BurnDiamondItem.block));
 			}
-		}, 0, 0f, new Item.Properties().group(DVLtabItemGroup.tab)) {
+		}, 0, -3.2f, new Item.Properties().group(DVLtabItemGroup.tab)) {
 		}.setRegistryName("burn_diamond_tool_hoe"));
 	}
 }

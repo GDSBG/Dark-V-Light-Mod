@@ -1,0 +1,44 @@
+{
+  "_fv": 23,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:UrinGem"
+      },
+      {
+        "value": "CUSTOM:UrinArmor.helmet"
+      },
+      {
+        "value": "CUSTOM:UrinArmor.body"
+      },
+      {
+        "value": "CUSTOM:UrinArmor.legs"
+      },
+      {
+        "value": "CUSTOM:UrinArmor.boots"
+      },
+      {
+        "value": "CUSTOM:UrinPickaxe"
+      },
+      {
+        "value": "CUSTOM:UrinAxe"
+      },
+      {
+        "value": "CUSTOM:UrinSword"
+      },
+      {
+        "value": "CUSTOM:UrinShovel"
+      },
+      {
+        "value": "CUSTOM:UrinHoe"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "name": "urenupgrade",
+    "namespace": "minecraft"
+  }
+}

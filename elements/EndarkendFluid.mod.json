@@ -1,15 +1,24 @@
 {
-  "_fv": 21,
+  "_fv": 23,
   "_type": "fluid",
   "definition": {
     "name": "Endarkend Fluid",
     "bucketName": "Endarkend Fluid Bucket",
     "textureStill": "darkwaterstill",
     "textureFlowing": "darkwaterflow",
+    "canMultiply": false,
+    "flowRate": 5,
+    "levelDecrease": 1,
+    "slopeFindDistance": 4,
+    "spawnParticles": false,
+    "dripParticle": {
+      "value": "CUSTOM:Test"
+    },
     "luminosity": 0,
     "density": 1000,
     "viscosity": 3000,
     "isGas": false,
+    "temperature": 300,
     "type": "WATER",
     "generateBucket": true,
     "textureBucket": "",
@@ -23,6 +32,7 @@
     "specialInfo": [],
     "resistance": 100.0,
     "luminance": 0,
+    "lightOpacity": 1,
     "emissiveRendering": false,
     "flammability": 0,
     "fireSpreadSpeed": 0,

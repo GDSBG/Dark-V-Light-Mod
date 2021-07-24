@@ -34,17 +34,21 @@ public class DarkendDessertParticleParticle {
 	@OnlyIn(Dist.CLIENT)
 	private static class CustomParticle extends SpriteTexturedParticle {
 		private final IAnimatedSprite spriteSet;
+		private float angularVelocity;
+		private float angularAcceleration;
 		protected CustomParticle(ClientWorld world, double x, double y, double z, double vx, double vy, double vz, IAnimatedSprite spriteSet) {
 			super(world, x, y, z);
 			this.spriteSet = spriteSet;
 			this.setSize((float) 0.2, (float) 0.2);
 			this.particleScale *= (float) 1;
 			this.maxAge = (int) Math.max(1, 20 + (this.rand.nextInt(10) - 5));
-			this.particleGravity = (float) 1;
+			this.particleGravity = (float) 0.2;
 			this.canCollide = true;
-			this.motionX = vx * 0;
-			this.motionY = vy * 0;
-			this.motionZ = vz * 0;
+			this.motionX = vx * 0.2;
+			this.motionY = vy * 0.2;
+			this.motionZ = vz * 0.2;
+			this.angularVelocity = (float) 0;
+			this.angularAcceleration = (float) 0.1;
 			this.selectSpriteWithAge(spriteSet);
 		}
 
@@ -56,6 +60,9 @@ public class DarkendDessertParticleParticle {
 		@Override
 		public void tick() {
 			super.tick();
+			this.prevParticleAngle = this.particleAngle;
+			this.particleAngle += this.angularVelocity;
+			this.angularVelocity += this.angularAcceleration;
 			if (!this.isExpired) {
 				this.setSprite(this.spriteSet.get((this.age / 1) % 6 + 1, 6));
 			}

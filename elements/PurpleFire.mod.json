@@ -1,5 +1,5 @@
 {
-  "_fv": 21,
+  "_fv": 23,
   "_type": "block",
   "definition": {
     "texture": "purpfire",
@@ -57,7 +57,10 @@
     "tickRate": 10,
     "tickRandomly": false,
     "isReplaceable": false,
-    "canProvidePower": false,
+    "canProvidePower": true,
+    "emittedRedstonePower": {
+      "fixedValue": 4.0
+    },
     "colorOnMap": "DEFAULT",
     "creativePickItem": {
       "value": "Blocks.AIR"
@@ -75,6 +78,21 @@
     "isCustomSoundType": false,
     "soundOnStep": {
       "value": "CLOTH"
+    },
+    "breakSound": {
+      "value": ""
+    },
+    "stepSound": {
+      "value": ""
+    },
+    "placeSound": {
+      "value": ""
+    },
+    "hitSound": {
+      "value": ""
+    },
+    "fallSound": {
+      "value": ""
     },
     "luminance": 6,
     "unbreakable": false,
@@ -106,6 +124,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onNeighbourBlockChanges": {
+      "name": "PurpleFireNeighbourBlockChanges"
+    },
     "onEntityCollides": {
       "name": "PurpleFireEntityCollidesInTheBlock"
     },

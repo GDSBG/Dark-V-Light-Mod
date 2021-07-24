@@ -7,6 +7,7 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.World;
+import net.minecraft.world.IBlockReader;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.particles.ParticleTypes;
 import net.minecraft.loot.LootContext;
@@ -17,7 +18,6 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.client.Minecraft;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
-import net.minecraft.block.LeavesBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
@@ -44,12 +44,17 @@ public class DarkendLavaLeavesBlock extends DarkVsLightModElements.ModElement {
 		elements.blocks.add(() -> new CustomBlock());
 		elements.items.add(() -> new BlockItem(block, new Item.Properties().group(DVLtabItemGroup.tab)).setRegistryName(block.getRegistryName()));
 	}
-	public static class CustomBlock extends LeavesBlock {
+	public static class CustomBlock extends Block {
 		public CustomBlock() {
 			super(Block.Properties.create(Material.LEAVES).sound(SoundType.PLANT).hardnessAndResistance(1f, 10f).setLightLevel(s -> 0).harvestLevel(0)
-					.harvestTool(ToolType.HOE).setRequiresTool().notSolid().setNeedsPostProcessing((bs, br, bp) -> true)
+					.harvestTool(ToolType.HOE).setRequiresTool().setNeedsPostProcessing((bs, br, bp) -> true)
 					.setEmmisiveRendering((bs, br, bp) -> true));
 			setRegistryName("darkend_lava_leaves");
+		}
+
+		@Override
+		public int getOpacity(BlockState state, IBlockReader worldIn, BlockPos pos) {
+			return 15;
 		}
 
 		@Override
@@ -57,13 +62,13 @@ public class DarkendLavaLeavesBlock extends DarkVsLightModElements.ModElement {
 			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
-			return Collections.singletonList(new ItemStack(LavaWoodSaplingBlock.block, (int) (1)));
+			return Collections.singletonList(new ItemStack(LavaWoodSaplingBlock.block));
 		}
 
 		@OnlyIn(Dist.CLIENT)
 		@Override
-		public void animateTick(BlockState state, World world, BlockPos pos, Random random) {
-			super.animateTick(state, world, pos, random);
+		public void animateTick(BlockState blockstate, World world, BlockPos pos, Random random) {
+			super.animateTick(blockstate, world, pos, random);
 			PlayerEntity entity = Minecraft.getInstance().player;
 			int x = pos.getX();
 			int y = pos.getY();

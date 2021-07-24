@@ -75,7 +75,7 @@ public class LavaForestBiome extends DarkVsLightModElements.ModElement {
 				BiomeAmbience effects = new BiomeAmbience.Builder().setFogColor(-13434880).setWaterColor(4159204).setWaterFogColor(329011)
 						.withSkyColor(-13434880).withFoliageColor(-16777216).withGrassColor(-16777216)
 						.setMusic(new BackgroundMusicSelector((net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS
-								.getValue(new ResourceLocation("dark_vs_light:oceanending")), 12000, 24000, true))
+								.getValue(new ResourceLocation("dark_vs_light:randomdark")), 12000, 24000, true))
 						.build();
 				BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder()
 						.withSurfaceBuilder(SurfaceBuilder.DEFAULT.func_242929_a(new SurfaceBuilderConfig(DarkendGrassBlock.block.getDefaultState(),

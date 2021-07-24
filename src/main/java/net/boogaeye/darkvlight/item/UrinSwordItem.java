@@ -44,7 +44,7 @@ public class UrinSwordItem extends DarkVsLightModElements.ModElement {
 			}
 
 			public Ingredient getRepairMaterial() {
-				return Ingredient.fromStacks(new ItemStack(UrinGemItem.block, (int) (1)));
+				return Ingredient.fromStacks(new ItemStack(UrinGemItem.block));
 			}
 		}, 3, -3f, new Item.Properties().group(DVLtabItemGroup.tab)) {
 		}.setRegistryName("urin_sword"));

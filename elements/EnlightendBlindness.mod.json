@@ -1,10 +1,9 @@
 {
-  "_fv": 21,
-  "_type": "potion",
+  "_fv": 23,
+  "_type": "potioneffect",
   "definition": {
-    "name": "Enlightend Blindness",
     "effectName": "Enlightend Blindness",
-    "icon": "dvllogo.png",
+    "icon": "glowbg.png",
     "color": {
       "value": -1,
       "falpha": 0.0
@@ -12,7 +11,6 @@
     "isInstant": false,
     "isBad": true,
     "isBenefitical": false,
-    "registerPotionType": false,
     "renderStatusInInventory": true,
     "renderStatusInHUD": true
   }

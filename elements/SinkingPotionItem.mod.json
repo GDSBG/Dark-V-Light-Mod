@@ -1,0 +1,21 @@
+{
+  "_fv": 23,
+  "_type": "potion",
+  "definition": {
+    "potionName": "Potion Of Sinking",
+    "splashName": "Splash Potion Of Sinking",
+    "lingeringName": "Lingering Potion Of Sinking",
+    "arrowName": "Arrow of Potion Of Sinking",
+    "effects": [
+      {
+        "effect": {
+          "value": "CUSTOM:Sinking"
+        },
+        "duration": 3600,
+        "amplifier": 0,
+        "ambient": false,
+        "showParticles": true
+      }
+    ]
+  }
+}

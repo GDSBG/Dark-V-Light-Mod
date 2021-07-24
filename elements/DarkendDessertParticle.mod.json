@@ -1,5 +1,5 @@
 {
-  "_fv": 21,
+  "_fv": 23,
   "_type": "particle",
   "definition": {
     "texture": "desertparticle.png",
@@ -8,12 +8,12 @@
     "width": 0.2,
     "height": 0.2,
     "scale": 1.0,
-    "speedFactor": 0.0,
-    "gravity": 1.0,
+    "speedFactor": 0.2,
+    "gravity": 0.2,
     "maxAge": 20,
     "maxAgeDiff": 5,
     "angularVelocity": 0.0,
-    "angularAcceleration": 0.0,
+    "angularAcceleration": 0.1,
     "canCollide": true,
     "alwaysShow": false,
     "renderType": "TRANSLUCENT"

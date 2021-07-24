@@ -1,10 +1,11 @@
 {
-  "_fv": 21,
+  "_fv": 23,
   "_type": "overlay",
   "definition": {
     "priority": "HIGHEST",
     "components": [],
     "baseTexture": "lightendblindness.png",
+    "overlayTarget": "Ingame",
     "displayCondition": {
       "name": "EnlightendBlindingDisplayOverlayIngame"
     },

@@ -1,0 +1,33 @@
+{
+  "_fv": 23,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "smaqurman",
+    "customModelName": "Normal",
+    "name": "Smaqur",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:DVLtab"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 0,
+    "efficiency": 4.0,
+    "attackSpeed": 1.0,
+    "enchantability": 2,
+    "damageVsEntity": 8.0,
+    "usageCount": 300,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedInAir": {
+      "name": "SmaqurRightClickedInAir"
+    },
+    "onRightClickedOnBlock": {
+      "name": "SmaqurRightClickedOnBlock"
+    }
+  }
+}

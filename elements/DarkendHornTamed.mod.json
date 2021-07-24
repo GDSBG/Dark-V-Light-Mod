@@ -1,6 +1,6 @@
 {
-  "_fv": 21,
-  "_type": "mob",
+  "_fv": 23,
+  "_type": "livingentity",
   "definition": {
     "mobName": "Darkend Horn",
     "mobLabel": "",
@@ -10,7 +10,7 @@
     "modelWidth": 3.0,
     "modelHeight": 3.0,
     "modelShadowSize": 3.0,
-    "mountedYOffset": 3.0,
+    "mountedYOffset": 1.0,
     "hasSpawnEgg": false,
     "spawnEggBaseColor": {
       "value": -3407668,

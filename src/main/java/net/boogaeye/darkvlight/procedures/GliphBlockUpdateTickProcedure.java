@@ -132,7 +132,7 @@ public class GliphBlockUpdateTickProcedure {
 						tryblockz = (double) (tryblockz + 1);
 						for (int index1 = 0; index1 < (int) (100); index1++) {
 							if ((!((world.getBlockState(new BlockPos((int) tryblockx, (int) tryblocky, (int) tryblockz)))
-									.getBlock() == GliphBlockBlock.block.getDefaultState().getBlock()))) {
+									.getBlock() == GliphBlockBlock.block))) {
 								world.setBlockState(new BlockPos((int) tryblockx, (int) tryblocky, (int) tryblockz), Blocks.AIR.getDefaultState(), 3);
 							}
 							tryblocky = (double) (tryblocky + 1);

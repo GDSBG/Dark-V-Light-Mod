@@ -1,0 +1,21 @@
+{
+  "_fv": 23,
+  "_type": "potion",
+  "definition": {
+    "potionName": "Potion of Darkness",
+    "splashName": "Splash Potion of Darkness",
+    "lingeringName": "Lingering Potion of Darkness",
+    "arrowName": "Arrow of Darkness",
+    "effects": [
+      {
+        "effect": {
+          "value": "CUSTOM:Endarkend"
+        },
+        "duration": 3600,
+        "amplifier": 0,
+        "ambient": false,
+        "showParticles": true
+      }
+    ]
+  }
+}

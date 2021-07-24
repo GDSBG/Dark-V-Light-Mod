@@ -1,5 +1,5 @@
 {
-  "_fv": 21,
+  "_fv": 23,
   "_type": "biome",
   "definition": {
     "name": "Lava Forest",
@@ -28,7 +28,7 @@
       "value": ""
     },
     "music": {
-      "value": "CUSTOM:oceanending"
+      "value": "CUSTOM:randomdark"
     },
     "moodSound": {
       "value": ""

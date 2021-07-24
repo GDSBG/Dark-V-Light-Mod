@@ -6,7 +6,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 
-import net.boogaeye.darkvlight.potion.RustingPotion;
+import net.boogaeye.darkvlight.potion.RustingPotionEffect;
 import net.boogaeye.darkvlight.DarkVsLightMod;
 
 import java.util.Map;
@@ -27,7 +27,7 @@ public class PurpleFlameOnPotionActiveTickProcedure {
 				if (_entity instanceof LivingEntity) {
 					Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
 					for (EffectInstance effect : effects) {
-						if (effect.getPotion() == RustingPotion.potion)
+						if (effect.getPotion() == RustingPotionEffect.potion)
 							return effect.getAmplifier();
 					}
 				}

@@ -7,8 +7,6 @@ import net.minecraftforge.common.ToolType;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
-import net.minecraft.world.IBlockReader;
-import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.Direction;
 import net.minecraft.loot.LootContext;
 import net.minecraft.item.ItemStack;
@@ -60,11 +58,6 @@ public class BasaltStoneFenceBlock extends DarkVsLightModElements.ModElement {
 			boolean flag = state.getBlock() instanceof FenceBlock && state.getMaterial() == this.material;
 			boolean flag1 = state.getBlock() instanceof FenceGateBlock && FenceGateBlock.isParallel(state, face);
 			return !cannotAttach(state.getBlock()) && checkattach || flag || flag1;
-		}
-
-		@Override
-		public boolean propagatesSkylightDown(BlockState state, IBlockReader reader, BlockPos pos) {
-			return true;
 		}
 
 		@Override

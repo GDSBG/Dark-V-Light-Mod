@@ -44,7 +44,7 @@ public class Burn_Diamond_ToolShovelItem extends DarkVsLightModElements.ModEleme
 			}
 
 			public Ingredient getRepairMaterial() {
-				return Ingredient.fromStacks(new ItemStack(BurnDiamondItem.block, (int) (1)));
+				return Ingredient.fromStacks(new ItemStack(BurnDiamondItem.block));
 			}
 		}, 1, -3f, new Item.Properties().group(DVLtabItemGroup.tab)) {
 		}.setRegistryName("burn_diamond_tool_shovel"));

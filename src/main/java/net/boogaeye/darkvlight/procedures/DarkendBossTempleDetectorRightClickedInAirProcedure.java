@@ -85,7 +85,7 @@ public class DarkendBossTempleDetectorRightClickedInAirProcedure {
 						SoundCategory.NEUTRAL, (float) 1, (float) 1, false);
 			}
 			if (entity instanceof PlayerEntity)
-				((PlayerEntity) entity).getCooldownTracker().setCooldown(((itemstack)).getItem(), (int) 60);
+				((PlayerEntity) entity).getCooldownTracker().setCooldown((itemstack).getItem(), (int) 60);
 		} else {
 			if (DarkVsLightModVariables.MapVariables.get(world).TempleGen) {
 				if (entity instanceof PlayerEntity && !entity.world.isRemote()) {
@@ -111,7 +111,7 @@ public class DarkendBossTempleDetectorRightClickedInAirProcedure {
 							SoundCategory.NEUTRAL, (float) 1, (float) 1, false);
 				}
 				if (entity instanceof PlayerEntity)
-					((PlayerEntity) entity).getCooldownTracker().setCooldown(((itemstack)).getItem(), (int) 600);
+					((PlayerEntity) entity).getCooldownTracker().setCooldown((itemstack).getItem(), (int) 600);
 			} else {
 				if (entity instanceof PlayerEntity && !entity.world.isRemote()) {
 					((PlayerEntity) entity).sendStatusMessage(new StringTextComponent("Explore More I cant See a temple from here..."), (true));
@@ -126,7 +126,7 @@ public class DarkendBossTempleDetectorRightClickedInAirProcedure {
 							SoundCategory.NEUTRAL, (float) 1, (float) 1, false);
 				}
 				if (entity instanceof PlayerEntity)
-					((PlayerEntity) entity).getCooldownTracker().setCooldown(((itemstack)).getItem(), (int) 200);
+					((PlayerEntity) entity).getCooldownTracker().setCooldown((itemstack).getItem(), (int) 200);
 			}
 		}
 	}

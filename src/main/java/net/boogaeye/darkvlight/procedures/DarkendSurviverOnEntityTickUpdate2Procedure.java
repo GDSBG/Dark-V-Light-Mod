@@ -26,7 +26,7 @@ import net.minecraft.entity.Entity;
 import net.minecraft.advancements.AdvancementProgress;
 import net.minecraft.advancements.Advancement;
 
-import net.boogaeye.darkvlight.potion.SurvivorTradePotion;
+import net.boogaeye.darkvlight.potion.SurvivorTradePotionEffect;
 import net.boogaeye.darkvlight.entity.TamedSurvivorEntity;
 import net.boogaeye.darkvlight.DarkVsLightMod;
 
@@ -74,7 +74,7 @@ public class DarkendSurviverOnEntityTickUpdate2Procedure {
 				if (_entity instanceof LivingEntity) {
 					Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
 					for (EffectInstance effect : effects) {
-						if (effect.getPotion() == SurvivorTradePotion.potion)
+						if (effect.getPotion() == SurvivorTradePotionEffect.potion)
 							return true;
 					}
 				}
@@ -86,7 +86,7 @@ public class DarkendSurviverOnEntityTickUpdate2Procedure {
 					if (_entity instanceof LivingEntity) {
 						Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
 						for (EffectInstance effect : effects) {
-							if (effect.getPotion() == SurvivorTradePotion.potion)
+							if (effect.getPotion() == SurvivorTradePotionEffect.potion)
 								return effect.getDuration();
 						}
 					}
@@ -424,7 +424,7 @@ public class DarkendSurviverOnEntityTickUpdate2Procedure {
 				if (entity instanceof ServerPlayerEntity)
 					((ServerPlayerEntity) entity).inventory.markDirty();
 			}
-			if ((new ItemStack(Items.SHIELD, (int) (1)).getItem() == (new Object() {
+			if ((Items.SHIELD == (new Object() {
 				public ItemStack getItemStack(int sltid, Entity entity) {
 					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 					entity.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {

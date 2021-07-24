@@ -7,8 +7,6 @@ import net.minecraftforge.common.ToolType;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
-import net.minecraft.world.IBlockReader;
-import net.minecraft.util.math.BlockPos;
 import net.minecraft.state.properties.DoubleBlockHalf;
 import net.minecraft.state.properties.BlockStateProperties;
 import net.minecraft.loot.LootContext;
@@ -55,11 +53,6 @@ public class GlowLogDoorBlock extends DarkVsLightModElements.ModElement {
 					.harvestTool(ToolType.AXE).setRequiresTool().notSolid().setNeedsPostProcessing((bs, br, bp) -> true)
 					.setEmmisiveRendering((bs, br, bp) -> true).setOpaque((bs, br, bp) -> false));
 			setRegistryName("glow_log_door");
-		}
-
-		@Override
-		public boolean propagatesSkylightDown(BlockState state, IBlockReader reader, BlockPos pos) {
-			return true;
 		}
 
 		@Override

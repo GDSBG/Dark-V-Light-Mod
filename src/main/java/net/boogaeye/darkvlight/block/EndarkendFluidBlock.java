@@ -69,14 +69,15 @@ public class EndarkendFluidBlock extends DarkVsLightModElements.ModElement {
 	public void initElements() {
 		fluidproperties = new ForgeFlowingFluid.Properties(() -> still, () -> flowing, FluidAttributes
 				.builder(new ResourceLocation("dark_vs_light:blocks/darkwaterstill"), new ResourceLocation("dark_vs_light:blocks/darkwaterflow"))
-				.luminosity(0).density(1000).viscosity(3000).rarity(Rarity.COMMON)).explosionResistance(100f).bucket(() -> bucket).block(() -> block);
+				.luminosity(0).density(1000).viscosity(3000).temperature(300).rarity(Rarity.COMMON)).explosionResistance(100f).tickRate(5)
+						.levelDecreasePerBlock(1).slopeFindDistance(4).bucket(() -> bucket).block(() -> block);
 		still = (FlowingFluid) new ForgeFlowingFluid.Source(fluidproperties).setRegistryName("endarkend_fluid");
 		flowing = (FlowingFluid) new ForgeFlowingFluid.Flowing(fluidproperties).setRegistryName("endarkend_fluid_flowing");
 		elements.blocks
 				.add(() -> new FlowingFluidBlock(still, Block.Properties.create(Material.WATER).hardnessAndResistance(100f).setLightLevel(s -> 0)) {
 					@Override
-					public void tick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
-						super.tick(state, world, pos, random);
+					public void tick(BlockState blockstate, ServerWorld world, BlockPos pos, Random random) {
+						super.tick(blockstate, world, pos, random);
 						int x = pos.getX();
 						int y = pos.getY();
 						int z = pos.getZ();
@@ -92,15 +93,14 @@ public class EndarkendFluidBlock extends DarkVsLightModElements.ModElement {
 					}
 
 					@Override
-					public void onEntityCollision(BlockState state, World world, BlockPos pos, Entity entity) {
-						super.onEntityCollision(state, world, pos, entity);
+					public void onEntityCollision(BlockState blockstate, World world, BlockPos pos, Entity entity) {
+						super.onEntityCollision(blockstate, world, pos, entity);
 						int x = pos.getX();
 						int y = pos.getY();
 						int z = pos.getZ();
 						{
 							Map<String, Object> $_dependencies = new HashMap<>();
 							$_dependencies.put("entity", entity);
-							$_dependencies.put("world", world);
 							EndarkendFluidMobplayerCollidesBlockProcedure.executeProcedure($_dependencies);
 						}
 					}

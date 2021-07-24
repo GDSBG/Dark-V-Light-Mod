@@ -57,7 +57,7 @@ public class BurnArmorItem extends DarkVsLightModElements.ModElement {
 
 			@Override
 			public Ingredient getRepairMaterial() {
-				return Ingredient.fromStacks(new ItemStack(BurnCrystalItem.block, (int) (1)));
+				return Ingredient.fromStacks(new ItemStack(BurnCrystalItem.block));
 			}
 
 			@OnlyIn(Dist.CLIENT)

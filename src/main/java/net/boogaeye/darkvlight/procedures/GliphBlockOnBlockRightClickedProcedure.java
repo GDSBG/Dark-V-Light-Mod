@@ -22,6 +22,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 import net.minecraft.client.Minecraft;
+import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 
 import net.boogaeye.darkvlight.item.EnlightendTeleporterItem;
@@ -74,7 +75,13 @@ public class GliphBlockOnBlockRightClickedProcedure {
 				}
 			}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "Active")))) {
 				if ((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
-						.getItem() == new ItemStack(EnlightendTeleporterItem.block, (int) (1)).getItem())) {
+						.getItem() == EnlightendTeleporterItem.block)) {
+					if ((y == 1)) {
+						if (world instanceof World && !((World) world).isRemote) {
+							((World) world).createExplosion(null, (int) x, (int) y, (int) z, (float) 50, Explosion.Mode.DESTROY);
+						}
+						world.setBlockState(new BlockPos((int) x, (int) y, (int) z), Blocks.AIR.getDefaultState(), 3);
+					}
 					if (!world.isRemote()) {
 						BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
 						TileEntity _tileEntity = world.getTileEntity(_bp);
@@ -85,7 +92,7 @@ public class GliphBlockOnBlockRightClickedProcedure {
 							((World) world).notifyBlockUpdate(_bp, _bs, _bs, 3);
 					}
 					if (world.isRemote()) {
-						Minecraft.getInstance().gameRenderer.displayItemActivation(new ItemStack(EnlightendTeleporterItem.block, (int) (1)));
+						Minecraft.getInstance().gameRenderer.displayItemActivation(new ItemStack(EnlightendTeleporterItem.block));
 					}
 					(((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)).shrink((int) 1);
 					if (world instanceof World && !world.isRemote()) {
@@ -119,8 +126,9 @@ public class GliphBlockOnBlockRightClickedProcedure {
 			}
 		} else {
 			if (world instanceof World && !((World) world).isRemote) {
-				((World) world).createExplosion(null, (int) x, (int) y, (int) z, (float) 50, Explosion.Mode.BREAK);
+				((World) world).createExplosion(null, (int) x, (int) y, (int) z, (float) 50, Explosion.Mode.DESTROY);
 			}
+			world.setBlockState(new BlockPos((int) x, (int) y, (int) z), Blocks.AIR.getDefaultState(), 3);
 		}
 	}
 }

@@ -1,0 +1,44 @@
+{
+  "_fv": 23,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:BurnCrystal"
+      },
+      {
+        "value": "CUSTOM:BurnArmor.helmet"
+      },
+      {
+        "value": "CUSTOM:BurnArmor.body"
+      },
+      {
+        "value": "CUSTOM:BurnArmor.legs"
+      },
+      {
+        "value": "CUSTOM:BurnArmor.boots"
+      },
+      {
+        "value": "CUSTOM:BurnPickaxe"
+      },
+      {
+        "value": "CUSTOM:BurnAxe"
+      },
+      {
+        "value": "CUSTOM:BurnSword"
+      },
+      {
+        "value": "CUSTOM:BurnShovel"
+      },
+      {
+        "value": "CUSTOM:BurnHoe"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "name": "burnupgrade",
+    "namespace": "minecraft"
+  }
+}

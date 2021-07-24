@@ -22,7 +22,7 @@ public class DVLFoodItemGroup extends DarkVsLightModElements.ModElement {
 			@OnlyIn(Dist.CLIENT)
 			@Override
 			public ItemStack createIcon() {
-				return new ItemStack(DriedGlowBerryItem.block, (int) (1));
+				return new ItemStack(DriedGlowBerryItem.block);
 			}
 
 			@OnlyIn(Dist.CLIENT)

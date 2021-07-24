@@ -10,7 +10,9 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.biome.BiomeColors;
+import net.minecraft.world.IBlockReader;
 import net.minecraft.world.GrassColors;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.loot.LootContext;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
@@ -67,6 +69,11 @@ public class EnlightendDirtBlock extends DarkVsLightModElements.ModElement {
 			super(Block.Properties.create(Material.EARTH).sound(SoundType.GROUND).hardnessAndResistance(1f, 10f).setLightLevel(s -> 0).harvestLevel(1)
 					.harvestTool(ToolType.SHOVEL).setRequiresTool());
 			setRegistryName("enlightend_dirt");
+		}
+
+		@Override
+		public int getOpacity(BlockState state, IBlockReader worldIn, BlockPos pos) {
+			return 15;
 		}
 
 		@Override

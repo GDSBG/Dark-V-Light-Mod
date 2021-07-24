@@ -1,5 +1,5 @@
 {
-  "_fv": 21,
+  "_fv": 23,
   "_type": "loottable",
   "definition": {
     "type": "Chest",
@@ -33,20 +33,6 @@
             "weight": 10,
             "minCount": 1,
             "maxCount": 2,
-            "minEnchantmentLevel": 0,
-            "maxEnchantmentLevel": 0,
-            "affectedByFortune": false,
-            "explosionDecay": false,
-            "silkTouchMode": 0
-          },
-          {
-            "type": "item",
-            "item": {
-              "value": "CUSTOM:UpgradeBlock"
-            },
-            "weight": 15,
-            "minCount": 1,
-            "maxCount": 1,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,
             "affectedByFortune": false,

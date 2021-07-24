@@ -12,8 +12,8 @@ import net.minecraft.entity.Entity;
 import net.minecraft.advancements.AdvancementProgress;
 import net.minecraft.advancements.Advancement;
 
-import net.boogaeye.darkvlight.potion.EnlightendPotion;
-import net.boogaeye.darkvlight.potion.DarkendFilteringPotion;
+import net.boogaeye.darkvlight.potion.EnlightendPotionEffect;
+import net.boogaeye.darkvlight.potion.DarkendFilteringPotionEffect;
 import net.boogaeye.darkvlight.DarkVsLightMod;
 
 import java.util.Map;
@@ -52,12 +52,12 @@ public class DriedGlowBerryFoodEatenProcedure {
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
 		if (entity instanceof LivingEntity)
-			((LivingEntity) entity).addPotionEffect(new EffectInstance(DarkendFilteringPotion.potion, (int) 60, (int) 0));
+			((LivingEntity) entity).addPotionEffect(new EffectInstance(DarkendFilteringPotionEffect.potion, (int) 60, (int) 0));
 		if ((world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z))) != null
 				&& world.func_241828_r().getRegistry(Registry.BIOME_KEY).getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z)))
 						.equals(new ResourceLocation("dark_vs_light:darkend_glow_forest")))) {
 			if (entity instanceof LivingEntity)
-				((LivingEntity) entity).addPotionEffect(new EffectInstance(EnlightendPotion.potion, (int) 60, (int) 0));
+				((LivingEntity) entity).addPotionEffect(new EffectInstance(EnlightendPotionEffect.potion, (int) 60, (int) 0));
 			if (entity instanceof ServerPlayerEntity) {
 				Advancement _adv = ((MinecraftServer) ((ServerPlayerEntity) entity).server).getAdvancementManager()
 						.getAdvancement(new ResourceLocation("dark_vs_light:home_sweet_home"));

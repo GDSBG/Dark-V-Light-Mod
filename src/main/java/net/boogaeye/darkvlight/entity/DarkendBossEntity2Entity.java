@@ -98,11 +98,11 @@ public class DarkendBossEntity2Entity extends DarkVsLightModElements.ModElement 
 			experienceValue = 100;
 			setNoAI(false);
 			enablePersistence();
-			this.setItemStackToSlot(EquipmentSlotType.MAINHAND, new ItemStack(StartilesSwordItem.block, (int) (1)));
-			this.setItemStackToSlot(EquipmentSlotType.HEAD, new ItemStack(StartilesArmorItem.helmet, (int) (1)));
-			this.setItemStackToSlot(EquipmentSlotType.CHEST, new ItemStack(StartilesArmorItem.body, (int) (1)));
-			this.setItemStackToSlot(EquipmentSlotType.LEGS, new ItemStack(StartilesArmorItem.legs, (int) (1)));
-			this.setItemStackToSlot(EquipmentSlotType.FEET, new ItemStack(StartilesArmorItem.boots, (int) (1)));
+			this.setItemStackToSlot(EquipmentSlotType.MAINHAND, new ItemStack(StartilesSwordItem.block));
+			this.setItemStackToSlot(EquipmentSlotType.HEAD, new ItemStack(StartilesArmorItem.helmet));
+			this.setItemStackToSlot(EquipmentSlotType.CHEST, new ItemStack(StartilesArmorItem.body));
+			this.setItemStackToSlot(EquipmentSlotType.LEGS, new ItemStack(StartilesArmorItem.legs));
+			this.setItemStackToSlot(EquipmentSlotType.FEET, new ItemStack(StartilesArmorItem.boots));
 		}
 
 		@Override
@@ -151,8 +151,8 @@ public class DarkendBossEntity2Entity extends DarkVsLightModElements.ModElement 
 					return super.shouldContinueExecuting() && Boss2NoAttackProcedure.executeProcedure(ImmutableMap.of("world", world));
 				}
 			});
-			this.targetSelector.addGoal(3, new NearestAttackableTargetGoal(this, PlayerEntity.class, false, false));
-			this.targetSelector.addGoal(4, new NearestAttackableTargetGoal(this, ServerPlayerEntity.class, false, false));
+			this.targetSelector.addGoal(3, new NearestAttackableTargetGoal(this, PlayerEntity.class, true, true));
+			this.targetSelector.addGoal(4, new NearestAttackableTargetGoal(this, ServerPlayerEntity.class, true, true));
 		}
 
 		@Override
@@ -167,7 +167,7 @@ public class DarkendBossEntity2Entity extends DarkVsLightModElements.ModElement 
 
 		protected void dropSpecialItems(DamageSource source, int looting, boolean recentlyHitIn) {
 			super.dropSpecialItems(source, looting, recentlyHitIn);
-			this.entityDropItem(new ItemStack(GliphsSwordItem.block, (int) (1)));
+			this.entityDropItem(new ItemStack(GliphsSwordItem.block));
 		}
 
 		@Override

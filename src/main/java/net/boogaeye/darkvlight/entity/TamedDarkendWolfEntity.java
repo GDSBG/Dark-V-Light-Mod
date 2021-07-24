@@ -187,10 +187,6 @@ public class TamedDarkendWolfEntity extends DarkVsLightModElements.ModElement {
 				}
 			}
 			sourceentity.startRiding(this);
-			double x = this.getPosX();
-			double y = this.getPosY();
-			double z = this.getPosZ();
-			Entity entity = this;
 			return retval;
 		}
 
@@ -206,27 +202,27 @@ public class TamedDarkendWolfEntity extends DarkVsLightModElements.ModElement {
 		public boolean isBreedingItem(ItemStack stack) {
 			if (stack == null)
 				return false;
-			if (new ItemStack(Items.PORKCHOP, (int) (1)).getItem() == stack.getItem())
+			if (Items.PORKCHOP == stack.getItem())
 				return true;
-			if (new ItemStack(Items.COOKED_PORKCHOP, (int) (1)).getItem() == stack.getItem())
+			if (Items.COOKED_PORKCHOP == stack.getItem())
 				return true;
-			if (new ItemStack(Items.BEEF, (int) (1)).getItem() == stack.getItem())
+			if (Items.BEEF == stack.getItem())
 				return true;
-			if (new ItemStack(Items.COOKED_BEEF, (int) (1)).getItem() == stack.getItem())
+			if (Items.COOKED_BEEF == stack.getItem())
 				return true;
-			if (new ItemStack(Items.CHICKEN, (int) (1)).getItem() == stack.getItem())
+			if (Items.CHICKEN == stack.getItem())
 				return true;
-			if (new ItemStack(Items.COOKED_CHICKEN, (int) (1)).getItem() == stack.getItem())
+			if (Items.COOKED_CHICKEN == stack.getItem())
 				return true;
-			if (new ItemStack(Items.RABBIT, (int) (1)).getItem() == stack.getItem())
+			if (Items.RABBIT == stack.getItem())
 				return true;
-			if (new ItemStack(Items.COOKED_RABBIT, (int) (1)).getItem() == stack.getItem())
+			if (Items.COOKED_RABBIT == stack.getItem())
 				return true;
-			if (new ItemStack(Items.RABBIT_FOOT, (int) (1)).getItem() == stack.getItem())
+			if (Items.RABBIT_FOOT == stack.getItem())
 				return true;
-			if (new ItemStack(Items.MUTTON, (int) (1)).getItem() == stack.getItem())
+			if (Items.MUTTON == stack.getItem())
 				return true;
-			if (new ItemStack(Items.COOKED_MUTTON, (int) (1)).getItem() == stack.getItem())
+			if (Items.COOKED_MUTTON == stack.getItem())
 				return true;
 			return false;
 		}

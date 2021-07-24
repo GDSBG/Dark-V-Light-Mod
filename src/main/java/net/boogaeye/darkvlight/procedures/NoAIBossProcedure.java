@@ -2,7 +2,7 @@ package net.boogaeye.darkvlight.procedures;
 
 import net.minecraft.world.IWorld;
 
-import net.boogaeye.darkvlight.world.DarkendDebugGameRule;
+import net.boogaeye.darkvlight.world.BossAIGameRule;
 import net.boogaeye.darkvlight.DarkVsLightMod;
 
 import java.util.Map;
@@ -15,6 +15,6 @@ public class NoAIBossProcedure {
 			return false;
 		}
 		IWorld world = (IWorld) dependencies.get("world");
-		return (world.getWorldInfo().getGameRulesInstance().getBoolean(DarkendDebugGameRule.gamerule));
+		return ((world.getWorldInfo().getGameRulesInstance().getInt(BossAIGameRule.gamerule)) == 0);
 	}
 }

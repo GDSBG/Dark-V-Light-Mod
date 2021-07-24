@@ -1,11 +1,11 @@
 {
-  "_fv": 21,
+  "_fv": 23,
   "_type": "structure",
   "definition": {
     "structure": "camo",
     "randomlyRotateStructure": true,
     "surfaceDetectionType": "First motion blocking block",
-    "spawnProbability": 10000,
+    "spawnProbability": 3000,
     "minCountPerChunk": 1,
     "maxCountPerChunk": 1,
     "spawnLocation": "Ground",
@@ -13,8 +13,6 @@
     "spawnXOffset": 0,
     "spawnZOffset": 0,
     "spawnWorldTypes": [
-      "Surface",
-      "CUSTOM:DarkendDimension",
       "CUSTOM:EnlightendDimension"
     ],
     "restrictionBlocks": [],

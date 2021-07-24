@@ -4,8 +4,8 @@ import net.minecraft.potion.EffectInstance;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 
-import net.boogaeye.darkvlight.potion.RustingPotion;
-import net.boogaeye.darkvlight.potion.DarkendFilteringPotion;
+import net.boogaeye.darkvlight.potion.RustingPotionEffect;
+import net.boogaeye.darkvlight.potion.DarkendFilteringPotionEffect;
 import net.boogaeye.darkvlight.DarkVsLightMod;
 
 import java.util.Map;
@@ -19,8 +19,9 @@ public class EnlightendSpiderEntityIsHurtProcedure {
 		}
 		Entity sourceentity = (Entity) dependencies.get("sourceentity");
 		if (sourceentity instanceof LivingEntity)
-			((LivingEntity) sourceentity).addPotionEffect(new EffectInstance(RustingPotion.potion, (int) 300, (int) 3, (false), (true)));
+			((LivingEntity) sourceentity).addPotionEffect(new EffectInstance(RustingPotionEffect.potion, (int) 300, (int) 3, (false), (true)));
 		if (sourceentity instanceof LivingEntity)
-			((LivingEntity) sourceentity).addPotionEffect(new EffectInstance(DarkendFilteringPotion.potion, (int) 300, (int) 3, (false), (true)));
+			((LivingEntity) sourceentity)
+					.addPotionEffect(new EffectInstance(DarkendFilteringPotionEffect.potion, (int) 300, (int) 3, (false), (true)));
 	}
 }

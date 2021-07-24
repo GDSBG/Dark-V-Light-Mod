@@ -1,15 +1,15 @@
 {
-  "_fv": 17,
+  "_fv": 23,
   "_type": "block",
   "definition": {
-    "texture": "blockmachineupdated",
+    "texture": "upgradeblocktexture",
     "textureTop": "notextureblock",
     "textureLeft": "notextureblock",
     "textureFront": "notextureblock",
     "textureRight": "notextureblock",
     "textureBack": "notextureblock",
     "renderType": 2,
-    "customModelName": "upgrademachine:default",
+    "customModelName": "upgradeblock:default",
     "rotationMode": 1,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
@@ -30,12 +30,37 @@
         "My": 16.0,
         "Mz": 16.0,
         "subtract": false
+      },
+      {
+        "mx": 7.0,
+        "my": 14.0,
+        "mz": -9.0,
+        "Mx": 9.0,
+        "My": 16.0,
+        "Mz": 0.0,
+        "subtract": false
+      },
+      {
+        "mx": 7.0,
+        "my": 0.0,
+        "mz": -11.0,
+        "Mx": 9.0,
+        "My": 16.0,
+        "Mz": -9.0,
+        "subtract": false
+      },
+      {
+        "mx": 7.0,
+        "my": 0.0,
+        "mz": -9.0,
+        "Mx": 9.0,
+        "My": 2.0,
+        "Mz": 0.0,
+        "subtract": false
       }
     ],
     "name": "Upgrade Block",
-    "specialInfo": [
-      "Special Block"
-    ],
+    "specialInfo": [],
     "hardness": 4.0,
     "resistance": 50.0,
     "hasGravity": true,
@@ -51,14 +76,18 @@
     "useLootTableForDrops": false,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
-    "canProvidePower": true,
+    "canRedstoneConnect": false,
     "lightOpacity": 0,
     "material": {
       "value": "ANVIL"
     },
-    "tickRate": 10,
+    "tickRate": 1,
     "tickRandomly": false,
     "isReplaceable": false,
+    "canProvidePower": false,
+    "emittedRedstonePower": {
+      "fixedValue": 15.0
+    },
     "colorOnMap": "DEFAULT",
     "creativePickItem": {
       "value": ""
@@ -73,21 +102,40 @@
     "jumpFactor": 1.0,
     "reactionToPushing": "IGNORE",
     "isNotColidable": false,
+    "isCustomSoundType": false,
     "soundOnStep": {
       "value": "ANVIL"
+    },
+    "breakSound": {
+      "value": ""
+    },
+    "stepSound": {
+      "value": ""
+    },
+    "placeSound": {
+      "value": ""
+    },
+    "hitSound": {
+      "value": ""
+    },
+    "fallSound": {
+      "value": ""
     },
     "luminance": 0,
     "unbreakable": true,
     "breakHarvestLevel": 1,
-    "spawnParticles": false,
+    "spawnParticles": true,
     "particleToSpawn": {
-      "value": "EXPLOSION_NORMAL"
+      "value": "CUSTOM:DarkFire"
     },
-    "particleSpawningShape": "Spread",
-    "particleSpawningRadious": 0.5,
-    "particleAmount": 4,
+    "particleSpawningShape": "Top",
+    "particleSpawningRadious": 1.0,
+    "particleAmount": 16,
+    "particleCondition": {
+      "name": "UpgradeBlockParticleSpawningCondition"
+    },
     "hasInventory": true,
-    "guiBoundTo": "UpgradeBlockGUI",
+    "guiBoundTo": "UpgradeBlockGUIRework",
     "openGUIOnRightClick": true,
     "inventorySize": 3,
     "inventoryStackSize": 1,
@@ -100,11 +148,14 @@
     "energyCapacity": 400000,
     "energyMaxReceive": 200,
     "energyMaxExtract": 200,
-    "isFluidTank": true,
+    "isFluidTank": false,
     "fluidCapacity": 10,
     "fluidRestrictions": [],
+    "onRightClicked": {
+      "name": "UpgradeBlockOnBlockRightClicked"
+    },
     "onTickUpdate": {
-      "name": "CalculateBucketUseUpgradeBlock"
+      "name": "UpgradeBlockUpdateTick"
     },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],

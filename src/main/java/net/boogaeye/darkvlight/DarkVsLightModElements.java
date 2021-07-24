@@ -131,6 +131,22 @@ public class DarkVsLightModElements {
 				new net.minecraft.util.SoundEvent(new ResourceLocation("dark_vs_light", "oceanending")));
 		sounds.put(new ResourceLocation("dark_vs_light", "breakdarkgrass"),
 				new net.minecraft.util.SoundEvent(new ResourceLocation("dark_vs_light", "breakdarkgrass")));
+		sounds.put(new ResourceLocation("dark_vs_light", "upgradestart"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("dark_vs_light", "upgradestart")));
+		sounds.put(new ResourceLocation("dark_vs_light", "upgradeloop"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("dark_vs_light", "upgradeloop")));
+		sounds.put(new ResourceLocation("dark_vs_light", "upgradeend"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("dark_vs_light", "upgradeend")));
+		sounds.put(new ResourceLocation("dark_vs_light", "deepdark"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("dark_vs_light", "deepdark")));
+		sounds.put(new ResourceLocation("dark_vs_light", "disintegrating"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("dark_vs_light", "disintegrating")));
+		sounds.put(new ResourceLocation("dark_vs_light", "dessert"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("dark_vs_light", "dessert")));
+		sounds.put(new ResourceLocation("dark_vs_light", "randomdark"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("dark_vs_light", "randomdark")));
+		sounds.put(new ResourceLocation("dark_vs_light", "dgrassbreak"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("dark_vs_light", "dgrassbreak")));
 		try {
 			ModFileScanData modFileInfo = ModList.get().getModFileById("dark_vs_light").getFile().getScanResult();
 			Set<ModFileScanData.AnnotationData> annotations = modFileInfo.getAnnotations();

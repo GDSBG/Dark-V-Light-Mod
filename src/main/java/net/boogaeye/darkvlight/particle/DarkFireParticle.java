@@ -40,7 +40,7 @@ public class DarkFireParticle {
 			this.setSize((float) 0.2, (float) 0.2);
 			this.particleScale *= (float) 1;
 			this.maxAge = 7;
-			this.particleGravity = (float) 0;
+			this.particleGravity = (float) -1;
 			this.canCollide = true;
 			this.motionX = vx * 0;
 			this.motionY = vy * 0;

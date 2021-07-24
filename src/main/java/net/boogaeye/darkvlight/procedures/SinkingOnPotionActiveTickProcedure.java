@@ -12,7 +12,7 @@ import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.advancements.AdvancementProgress;
 import net.minecraft.advancements.Advancement;
 
-import net.boogaeye.darkvlight.potion.SinkingPotion;
+import net.boogaeye.darkvlight.potion.SinkingPotionEffect;
 import net.boogaeye.darkvlight.enchantment.NonsinkingEnchantment;
 import net.boogaeye.darkvlight.DarkVsLightMod;
 
@@ -53,7 +53,7 @@ public class SinkingOnPotionActiveTickProcedure {
 				if (_entity instanceof LivingEntity) {
 					Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
 					for (EffectInstance effect : effects) {
-						if (effect.getPotion() == SinkingPotion.potion)
+						if (effect.getPotion() == SinkingPotionEffect.potion)
 							return effect.getAmplifier();
 					}
 				}

@@ -7,7 +7,7 @@ import net.minecraft.potion.EffectInstance;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 
-import net.boogaeye.darkvlight.potion.SinkingPotion;
+import net.boogaeye.darkvlight.potion.SinkingPotionEffect;
 import net.boogaeye.darkvlight.DarkVsLightMod;
 
 import java.util.stream.Collectors;
@@ -49,7 +49,7 @@ public class DarkendHornOnEntityTickUpdateProcedure {
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
 		if (entity instanceof LivingEntity) {
-			((LivingEntity) entity).removePotionEffect(SinkingPotion.potion);
+			((LivingEntity) entity).removePotionEffect(SinkingPotionEffect.potion);
 		}
 		if ((entity.getPersistentData().getBoolean("Anger"))) {
 			if (entity instanceof LivingEntity)
@@ -78,7 +78,7 @@ public class DarkendHornOnEntityTickUpdateProcedure {
 					for (Entity entityiterator : _entfound) {
 						if (entityiterator instanceof LivingEntity)
 							((LivingEntity) entityiterator)
-									.addPotionEffect(new EffectInstance(SinkingPotion.potion, (int) 60, (int) 1, (false), (true)));
+									.addPotionEffect(new EffectInstance(SinkingPotionEffect.potion, (int) 60, (int) 1, (false), (true)));
 					}
 				}
 			}

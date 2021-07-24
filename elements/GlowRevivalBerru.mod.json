@@ -1,5 +1,5 @@
 {
-  "_fv": 21,
+  "_fv": 23,
   "_type": "food",
   "definition": {
     "renderType": 0,
@@ -11,7 +11,7 @@
     "creativeTab": {
       "value": "CUSTOM:DVLFood"
     },
-    "stackSize": 64,
+    "stackSize": 16,
     "nutritionalValue": 1,
     "saturation": 0.1,
     "eatingSpeed": 15,

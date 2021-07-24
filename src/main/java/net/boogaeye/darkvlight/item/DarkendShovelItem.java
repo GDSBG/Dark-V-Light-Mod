@@ -45,7 +45,7 @@ public class DarkendShovelItem extends DarkVsLightModElements.ModElement {
 			}
 
 			public Ingredient getRepairMaterial() {
-				return Ingredient.fromStacks(new ItemStack(DarkStoneBlock.block, (int) (1)));
+				return Ingredient.fromStacks(new ItemStack(DarkStoneBlock.block));
 			}
 		}, 1, -3f, new Item.Properties().group(DVLtabItemGroup.tab)) {
 		}.setRegistryName("darkend_shovel"));

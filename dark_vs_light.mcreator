@@ -3,7 +3,7 @@
   "mod_elements": [
     {
       "name": "DarkendFloater",
-      "type": "mob",
+      "type": "livingentity",
       "sortid": 1,
       "compiles": true,
       "locked_code": false,
@@ -265,7 +265,7 @@
     },
     {
       "name": "DarkendLoner",
-      "type": "mob",
+      "type": "livingentity",
       "sortid": 10,
       "compiles": true,
       "locked_code": false,
@@ -546,7 +546,7 @@
     },
     {
       "name": "DarkendTallend",
-      "type": "mob",
+      "type": "livingentity",
       "sortid": 18,
       "compiles": true,
       "locked_code": false,
@@ -561,15 +561,6 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "darkend_hoe"
-    },
-    {
-      "name": "StopMakingHoesMan",
-      "type": "achievement",
-      "sortid": 80,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "stop_making_hoes_man"
     },
     {
       "name": "DarkendHoeItemIsCraftedsmelted",
@@ -826,15 +817,6 @@
       "registry_name": "we_need_fuel_for_this_thing"
     },
     {
-      "name": "FailureToUpgrade",
-      "type": "achievement",
-      "sortid": 100,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "failure_to_upgrade"
-    },
-    {
       "name": "IThoughtThisWasUnbreakable",
       "type": "achievement",
       "sortid": 101,
@@ -1034,7 +1016,7 @@
       }
     },
     {
-      "name": "Endarkend",
+      "name": "EndarkendPotionItem",
       "type": "potion",
       "sortid": 116,
       "compiles": true,
@@ -1165,7 +1147,7 @@
       }
     },
     {
-      "name": "Enlightend",
+      "name": "EnlightendPotionItem",
       "type": "potion",
       "sortid": 123,
       "compiles": true,
@@ -1670,7 +1652,7 @@
     },
     {
       "name": "DarkendBossEntity",
-      "type": "mob",
+      "type": "livingentity",
       "sortid": 46,
       "compiles": true,
       "locked_code": false,
@@ -2270,7 +2252,7 @@
       }
     },
     {
-      "name": "DarkendFiltering",
+      "name": "DarkendFilteringPotionItem",
       "type": "potion",
       "sortid": 182,
       "compiles": true,
@@ -2296,7 +2278,7 @@
       }
     },
     {
-      "name": "EnlightendFiltering",
+      "name": "EnlightendFilteringPotionItem",
       "type": "potion",
       "sortid": 184,
       "compiles": true,
@@ -2625,15 +2607,6 @@
       "registry_name": "enlightend_blinding"
     },
     {
-      "name": "EnlightendBlindness",
-      "type": "potion",
-      "sortid": 224,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "enlightend_blindness"
-    },
-    {
       "name": "EnlightendBlindingDisplayOverlayIngame",
       "type": "procedure",
       "sortid": 225,
@@ -2702,7 +2675,7 @@
       }
     },
     {
-      "name": "Sinking",
+      "name": "SinkingPotionItem",
       "type": "potion",
       "sortid": 230,
       "compiles": true,
@@ -2723,10 +2696,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       }
@@ -2948,7 +2917,7 @@
     },
     {
       "name": "DarkendHorn",
-      "type": "mob",
+      "type": "livingentity",
       "sortid": 246,
       "compiles": true,
       "locked_code": false,
@@ -3888,7 +3857,7 @@
     },
     {
       "name": "DarkendShooter",
-      "type": "mob",
+      "type": "livingentity",
       "sortid": 353,
       "compiles": true,
       "locked_code": false,
@@ -3897,7 +3866,7 @@
     },
     {
       "name": "DarkendDestroyer",
-      "type": "mob",
+      "type": "livingentity",
       "sortid": 354,
       "compiles": true,
       "locked_code": false,
@@ -3924,7 +3893,7 @@
     },
     {
       "name": "DarkendTeleporter",
-      "type": "mob",
+      "type": "livingentity",
       "sortid": 357,
       "compiles": true,
       "locked_code": false,
@@ -3942,7 +3911,7 @@
     },
     {
       "name": "DarkendWolf",
-      "type": "mob",
+      "type": "livingentity",
       "sortid": 359,
       "compiles": true,
       "locked_code": false,
@@ -4094,7 +4063,7 @@
     },
     {
       "name": "TamedDarkendWolf",
-      "type": "mob",
+      "type": "livingentity",
       "sortid": 368,
       "compiles": true,
       "locked_code": false,
@@ -4147,6 +4116,22 @@
       "registry_name": "darkend_boss_entity_entity_dies",
       "metadata": {
         "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
           {
             "name": "world",
             "type": "world"
@@ -4384,7 +4369,7 @@
     },
     {
       "name": "UrenShooter",
-      "type": "gun",
+      "type": "rangeditem",
       "sortid": 413,
       "compiles": true,
       "locked_code": false,
@@ -4575,7 +4560,7 @@
     },
     {
       "name": "DarkendSurviver",
-      "type": "mob",
+      "type": "livingentity",
       "sortid": 427,
       "compiles": true,
       "locked_code": false,
@@ -4604,6 +4589,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       }
@@ -4685,7 +4686,7 @@
     },
     {
       "name": "TamedSurvivor",
-      "type": "mob",
+      "type": "livingentity",
       "sortid": 433,
       "compiles": true,
       "locked_code": false,
@@ -4854,15 +4855,6 @@
           }
         ]
       }
-    },
-    {
-      "name": "SurvivorTrade",
-      "type": "potion",
-      "sortid": 443,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "survivor_trade"
     },
     {
       "name": "DarkendSurviverOnEntityTickUpdate2",
@@ -5760,7 +5752,7 @@
       "registry_name": "blazing"
     },
     {
-      "name": "GlowBerryRevival",
+      "name": "GlowBerryRevivalPotionItem",
       "type": "potion",
       "sortid": 490,
       "compiles": true,
@@ -6075,6 +6067,18 @@
             "type": "entity"
           },
           {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
             "name": "world",
             "type": "world"
           }
@@ -6082,7 +6086,7 @@
       }
     },
     {
-      "name": "Rusting",
+      "name": "RustingPotionItem",
       "type": "potion",
       "sortid": 511,
       "compiles": true,
@@ -6092,7 +6096,7 @@
     },
     {
       "name": "DarkendBossEntity2",
-      "type": "mob",
+      "type": "livingentity",
       "sortid": 512,
       "compiles": true,
       "locked_code": false,
@@ -6516,7 +6520,7 @@
     },
     {
       "name": "HealDrone",
-      "type": "mob",
+      "type": "livingentity",
       "sortid": 548,
       "compiles": true,
       "locked_code": false,
@@ -6734,7 +6738,7 @@
     },
     {
       "name": "DarkendDrone",
-      "type": "mob",
+      "type": "livingentity",
       "sortid": 564,
       "compiles": true,
       "locked_code": false,
@@ -6898,15 +6902,6 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "fire_blocks"
-    },
-    {
-      "name": "PurpleFlame",
-      "type": "potion",
-      "sortid": 576,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "purple_flame"
     },
     {
       "name": "PurpleFlameOnPotionActiveTick",
@@ -7133,7 +7128,7 @@
     },
     {
       "name": "EnlightendSpider",
-      "type": "mob",
+      "type": "livingentity",
       "sortid": 599,
       "compiles": true,
       "locked_code": false,
@@ -7834,7 +7829,7 @@
     },
     {
       "name": "EnlightendTallend",
-      "type": "mob",
+      "type": "livingentity",
       "sortid": 653,
       "compiles": true,
       "locked_code": false,
@@ -7944,7 +7939,7 @@
     },
     {
       "name": "DarkendHornTamed",
-      "type": "mob",
+      "type": "livingentity",
       "sortid": 663,
       "compiles": true,
       "locked_code": false,
@@ -8030,6 +8025,933 @@
       "ids": {},
       "registry_name": "clarnite_smelt",
       "path": "~/DarkendOres"
+    },
+    {
+      "name": "DeepDarkBoss",
+      "type": "livingentity",
+      "sortid": 669,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "deep_dark_boss"
+    },
+    {
+      "name": "DarkendDomeLoot",
+      "type": "loottable",
+      "sortid": 670,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "darkend_dome_loot"
+    },
+    {
+      "name": "DarkendPortalStruct",
+      "type": "structure",
+      "sortid": 671,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "darkend_portal_struct"
+    },
+    {
+      "name": "DarkendPortalDarkDime",
+      "type": "structure",
+      "sortid": 672,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "darkend_portal_dark_dime"
+    },
+    {
+      "name": "DeepDark",
+      "type": "biome",
+      "sortid": 673,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "deep_dark"
+    },
+    {
+      "name": "PurpleFireNeighbourBlockChanges",
+      "type": "procedure",
+      "sortid": 674,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "purple_fire_neighbour_block_changes",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DestroyedPyrimid",
+      "type": "loottable",
+      "sortid": 675,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "destroyed_pyrimid"
+    },
+    {
+      "name": "PigTestingZone",
+      "type": "structure",
+      "sortid": 676,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pig_testing_zone"
+    },
+    {
+      "name": "ShatteredTestingZone",
+      "type": "structure",
+      "sortid": 677,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "shattered_testing_zone"
+    },
+    {
+      "name": "SpiderTestingZone",
+      "type": "structure",
+      "sortid": 678,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spider_testing_zone"
+    },
+    {
+      "name": "FailedWaterTestingZone",
+      "type": "structure",
+      "sortid": 679,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "failed_water_testing_zone"
+    },
+    {
+      "name": "LightZone",
+      "type": "structure",
+      "sortid": 680,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "light_zone"
+    },
+    {
+      "name": "LightZoneSurface",
+      "type": "structure",
+      "sortid": 681,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "light_zone_surface"
+    },
+    {
+      "name": "LightZoneDarkness",
+      "type": "structure",
+      "sortid": 682,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "light_zone_darkness"
+    },
+    {
+      "name": "CarbonLightZone",
+      "type": "structure",
+      "sortid": 683,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "carbon_light_zone"
+    },
+    {
+      "name": "DamagedPyramid",
+      "type": "structure",
+      "sortid": 684,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "damaged_pyramid"
+    },
+    {
+      "name": "DarkendHotStruct",
+      "type": "structure",
+      "sortid": 685,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "darkend_hot_struct"
+    },
+    {
+      "name": "DeadFruitBush",
+      "type": "block",
+      "sortid": 686,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dead_fruit_bush"
+    },
+    {
+      "name": "DeadFruitBushLoot",
+      "type": "loottable",
+      "sortid": 687,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dead_fruit_bush_loot"
+    },
+    {
+      "name": "GlowingFruitOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 688,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "glowing_fruit_on_block_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DeeperDark",
+      "type": "biome",
+      "sortid": 689,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "deeper_dark"
+    },
+    {
+      "name": "NoBerryBush",
+      "type": "block",
+      "sortid": 690,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "no_berry_bush"
+    },
+    {
+      "name": "BossAI",
+      "type": "gamerule",
+      "sortid": 691,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bossAI",
+      "metadata": {
+        "type": "number"
+      }
+    },
+    {
+      "name": "DarkendSurviverEntityDies",
+      "type": "procedure",
+      "sortid": 692,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "darkend_surviver_entity_dies",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SmaqurRightClickedOnBlock",
+      "type": "procedure",
+      "sortid": 693,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "smaqur_right_clicked_on_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SmaqurRightClickedInAir",
+      "type": "procedure",
+      "sortid": 693,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "smaqur_right_clicked_in_air",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Smaqur",
+      "type": "tool",
+      "sortid": 693,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "smaqur"
+    },
+    {
+      "name": "DeepDarkBossOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 694,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "deep_dark_boss_on_entity_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "UpgradeBlockGUIRework",
+      "type": "gui",
+      "sortid": 695,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "upgrade_block_gui_rework",
+      "path": "~/Upgrade Block Rework"
+    },
+    {
+      "name": "UpgradeBlockFill",
+      "type": "procedure",
+      "sortid": 696,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "upgrade_block_fill",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Upgrade Block Rework"
+    },
+    {
+      "name": "Tier1Upgrade",
+      "type": "procedure",
+      "sortid": 697,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tier_1_upgrade",
+      "metadata": {
+        "return_type": "itemstack",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Upgrade Block Rework"
+    },
+    {
+      "name": "UpgradeResult",
+      "type": "procedure",
+      "sortid": 698,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "upgrade_result",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Upgrade Block Rework"
+    },
+    {
+      "name": "UpgradeBlockParticleSpawningCondition",
+      "type": "procedure",
+      "sortid": 699,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "upgrade_block_particle_spawning_condition",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Tier2Upgrade",
+      "type": "procedure",
+      "sortid": 700,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tier_2_upgrade",
+      "metadata": {
+        "return_type": "itemstack",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Upgrade Block Rework"
+    },
+    {
+      "name": "UpgradeBlockGUIReworkWhileThisGUIIsOpenTick",
+      "type": "procedure",
+      "sortid": 701,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "upgrade_block_gui_rework_while_this_gui_is_open_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Tier3Upgrade",
+      "type": "procedure",
+      "sortid": 702,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tier_3_upgrade",
+      "metadata": {
+        "return_type": "itemstack",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Upgrade Block Rework"
+    },
+    {
+      "name": "UpgradeBlockUpdateTick",
+      "type": "procedure",
+      "sortid": 703,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "upgrade_block_update_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "UpgradeBlockOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 704,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "upgrade_block_on_block_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TamedSurvivorEntityIsHurt",
+      "type": "procedure",
+      "sortid": 705,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tamed_survivor_entity_is_hurt",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Tier4Upgrade",
+      "type": "procedure",
+      "sortid": 706,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tier_4_upgrade",
+      "metadata": {
+        "return_type": "itemstack",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Upgrade Block Rework"
+    },
+    {
+      "name": "Tier4BucketValues",
+      "type": "procedure",
+      "sortid": 707,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tier_4_bucket_values",
+      "metadata": {
+        "return_type": "number",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Upgrade Block Rework"
+    },
+    {
+      "name": "UrenUpgradeTier4",
+      "type": "tag",
+      "sortid": 708,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "uren_upgrade_tier_4",
+      "path": "~/Upgrade Block Rework"
+    },
+    {
+      "name": "BurnGemUpgradeTier4",
+      "type": "tag",
+      "sortid": 709,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "burn_gem_upgrade_tier_4",
+      "path": "~/Upgrade Block Rework"
+    },
+    {
+      "name": "UpgradeCalculate",
+      "type": "procedure",
+      "sortid": 710,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "upgrade_calculate",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Upgrade Block Rework"
+    },
+    {
+      "name": "BurnDiamondUpgradeTier4",
+      "type": "tag",
+      "sortid": 711,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "burn_diamond_upgrade_tier_4",
+      "path": "~/Upgrade Block Rework"
+    },
+    {
+      "name": "DeepDarkAttack1",
+      "type": "procedure",
+      "sortid": 712,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "deep_dark_attack_1",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/DeepDarkBossProcess"
+    },
+    {
+      "name": "Endarkend",
+      "type": "potioneffect",
+      "sortid": 713,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "endarkend"
+    },
+    {
+      "name": "Enlightend",
+      "type": "potioneffect",
+      "sortid": 714,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "enlightend"
+    },
+    {
+      "name": "DarkendFiltering",
+      "type": "potioneffect",
+      "sortid": 715,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "darkend_filtering"
+    },
+    {
+      "name": "EnlightendFiltering",
+      "type": "potioneffect",
+      "sortid": 716,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "enlightend_filtering"
+    },
+    {
+      "name": "EnlightendBlindness",
+      "type": "potioneffect",
+      "sortid": 717,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "enlightend_blindness"
+    },
+    {
+      "name": "Sinking",
+      "type": "potioneffect",
+      "sortid": 718,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sinking"
+    },
+    {
+      "name": "SurvivorTrade",
+      "type": "potioneffect",
+      "sortid": 719,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "survivor_trade"
+    },
+    {
+      "name": "GlowBerryRevival",
+      "type": "potioneffect",
+      "sortid": 720,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "glow_berry_revival"
+    },
+    {
+      "name": "Rusting",
+      "type": "potioneffect",
+      "sortid": 721,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rusting"
+    },
+    {
+      "name": "PurpleFlame",
+      "type": "potioneffect",
+      "sortid": 722,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "purple_flame"
+    },
+    {
+      "name": "Anger",
+      "type": "potioneffect",
+      "sortid": 723,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "anger"
+    },
+    {
+      "name": "DarkendWolfOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 724,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "darkend_wolf_on_entity_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DarkendWolfLoot",
+      "type": "loottable",
+      "sortid": 725,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "darkend_wolf_loot"
+    },
+    {
+      "name": "SurvivorDeath",
+      "type": "procedure",
+      "sortid": 726,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "survivor_death",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -8143,6 +9065,24 @@
     },
     {
       "name": "Boss1Defeated",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "BossWorldTick3",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "BossAttackType3",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "Boss2RunAttack",
       "type": "logic",
       "scope": "map",
       "value": "false"
@@ -8564,24 +9504,94 @@
       ],
       "category": "block",
       "subtitle": ""
+    },
+    {
+      "name": "upgradestart",
+      "files": [
+        "upgradestart"
+      ],
+      "category": "block",
+      "subtitle": ""
+    },
+    {
+      "name": "upgradeloop",
+      "files": [
+        "upgradeloop"
+      ],
+      "category": "block",
+      "subtitle": ""
+    },
+    {
+      "name": "upgradeend",
+      "files": [
+        "upgradeend"
+      ],
+      "category": "master",
+      "subtitle": ""
+    },
+    {
+      "name": "deepdark",
+      "files": [
+        "deepdark"
+      ],
+      "category": "music",
+      "subtitle": ""
+    },
+    {
+      "name": "disintegrating",
+      "files": [
+        "myuu-disintegrating-music-box-version"
+      ],
+      "category": "music",
+      "subtitle": ""
+    },
+    {
+      "name": "dessert",
+      "files": [
+        "darkdessert"
+      ],
+      "category": "music",
+      "subtitle": ""
+    },
+    {
+      "name": "randomdark",
+      "files": [
+        "darkrandom"
+      ],
+      "category": "music",
+      "subtitle": ""
+    },
+    {
+      "name": "dgrassbreak",
+      "files": [
+        "darkgrassbreaking1",
+        "darkgrassbreaking2",
+        "darkgrassbreaking3",
+        "darkgrassbreaking4"
+      ],
+      "category": "block",
+      "subtitle": "Dark Grass Destroyed"
     }
   ],
   "language_map": {
     "en_us": {
       "item.dark_vs_light.burn_diamond_tool_axe": "Burn Diamond Axe",
       "item.dark_vs_light.darkend_boss_entity_spawn_egg": "Darkend Defender Spawn Egg",
+      "biome.dark_vs_light.deeper_dark": "Deeper Dark",
       "advancements.nooooooooooooo.descr": "Defeat The First Darkend Boss",
       "block.dark_vs_light.burn_ore": "Burn Ore",
       "block.dark_vs_light.dark_stone_brick": "Dark Stone Brick",
       "item.dark_vs_light.urin_sword": "Uren Sword",
       "block.dark_v_light.real_dark_stone_wall": "Dark Stone Wall",
       "item.dark_vs_light.dark_fruit": "Dark Fruit",
+      "entity.dark_vs_light.deep_dark_boss": "Deep Dark Boss",
       "entity.dark_v_light_dark.darkend_tallend": "Darkend Tallend",
       "advancements.diamonds_from_here.descr": "Get diamonds from a darkend diamond block",
       "advancements.turret.descr": "Place A Darkend Shooter in a minecart",
       "subtitles.trackerdrop": "",
       "entity.dark_vs_light.darkend_surviver": "Darkend Surviver",
       "block.dark_vs_light.garbage_disposal": "Garbage Disposal",
+      "subtitles.upgradeloop": "",
       "item.dark_vs_light.darkend_shooter_spawn_egg": "Darkend Shooter Spawn Egg",
       "item.dark_v_light.darkend_hoe": "Darkend Hoe",
       "item.dark_vs_light.urin_hoe": "Uren Hoe",
@@ -8595,9 +9605,10 @@
       "item.dark_vs_light.burn_armor_chestplate": "Burn Chestplate",
       "advancements.smells_like_lava.title": "Smells Like Lava",
       "subtitles.dfloaterdeath": "",
-      "block.dark_vs_light.darkend_basalt": "Basalt",
+      "block.dark_vs_light.darkend_basalt": "Darkend Basalt",
       "biome.dark_vs_light.darkend_glow_forest": "Darkend Glow Forest",
       "entity.dark_vs_light_dark.darkend_boss_entity": "Darkend Boss",
+      "subtitles.deepdark": "",
       "item.minecraft.potion.effect.rusting": "Potion of Rusting",
       "block.dark_v_light_dark.upgrade_block": "Upgrade Block",
       "block.dark_v_light_dark.burn_gaze_wooden_plank": "Burn Gaze Wooden Plank",
@@ -8607,19 +9618,19 @@
       "item.dark_v_light_dark.burn_armor_helmet": "Burn Helmet",
       "advancements.the_start_of_something_dark.descr": "Find Dark Stone",
       "block.dark_vs_light_dark.burn_ore_surface": "Burn Ore",
+      "subtitles.disintegrating": "",
+      "death.attack.light": "%1$s got pierced by light",
       "item.dark_vs_light.burn_diamond_armor_armor_chestplate": "Burn Diamond Chestplate",
       "biome.dark_v_light_dark.darkend_glow_forest": "Darkend Glow Forest",
       "block.dark_vs_light.basalt_stone_wall": "Basalt Dark Stone Wall",
-      "item.minecraft.splash_potion.effect.enlightend_filtering": "Splash Darkend Filtering",
+      "item.minecraft.splash_potion.effect.enlightend_filtering": "Splash Potion of Enlightend Filtering",
       "advancements.is_this_blindness.descr": "Get Enlightend Blindness",
-      "item.minecraft.potion.effect.purple_flame": "Oof",
       "biome.dark_v_light_dark.darkend_glow_forest_mountains": "Darkend Glow Forest Mountains",
       "item.dark_vs_light.uren_ball": "Uren Ball",
       "advancements.sky_lights.title": "Sky Lights",
       "item.dark_vs_light.urin_armor_boots": "Uren Boots",
       "block.dark_vs_light.smooth_dark_stone_wall": "Smooth Dark Stone Wall",
       "item.dark_vs_light.burn_diamond_tool_pickaxe": "Burn Diamond Pickaxe",
-      "advancements.failure_to_upgrade.title": "Failure To Upgrade...",
       "item.dark_vs_light.tamed_darkend_wolf_spawn_egg": "Darkend Wolf Spawn Egg",
       "subtitles.breakdarkgrass": "",
       "entity.dark_v_light_dark.darkend_loner": "Darkend Loner",
@@ -8638,7 +9649,6 @@
       "advancements.biomes_glow_in_this_dimension_too.descr": "Visit the Glow Forest",
       "item.dark_vs_light_dark.burn_armor_boots": "Burn Boots",
       "item.dark_v_light.darkend_dimension": "Darkend Dimension Portal Reactor",
-      "advancements.stop_making_hoes_man.descr": "Make A Darkend Hoe",
       "item.dark_v_light_dark.darkend_loner_spawn_egg": "Darkend Loner Spawn Egg",
       "block.dark_vs_light_dark.darkend_diorite": "Darkend Diorite",
       "block.dark_v_light_dark.dark_stone_stairs": "Dark Stone Stairs",
@@ -8646,26 +9656,26 @@
       "item.dark_vs_light.enlightend_tallend_spawn_egg": "Enlightend Tallend Spawn Egg",
       "item.dark_vs_light.dark_stone_dust": "Blind Stone Dust",
       "block.dark_v_light_dark.burn_gaze_wooden_door": "Burn Gaze Wooden Door",
+      "gameMode.hardcore": "Survivor Mode!",
       "block.dark_vs_light.pickles_dark_stone": "Smooth Dark Stone",
       "item.dark_v_light_dark.darkend_hoe": "Darkend Hoe",
       "biome.dark_vs_light_dark.darkend_glow_forest": "Darkend Glow Forest",
       "advancements.blaze_power.title": "Blaze Power",
       "biome.dark_vs_light.mountain_of_caves_biome": "Mountain Of Caves",
-      "item.dark_vs_light.burn_diamond_armor_armor_leggings": "Burn Diamond Leggings",
-      "block.dark_vs_light.real_dark_stone_wall": "Dark Stone Wall",
       "advancements.dark_stone_and_riches.title": "Dark Stone And Riches!!!",
-      "item.minecraft.potion.effect.enlightend_blindness": "Enlightend Blindness",
+      "block.dark_vs_light.real_dark_stone_wall": "Dark Stone Wall",
+      "item.dark_vs_light.burn_diamond_armor_armor_leggings": "Burn Diamond Leggings",
       "block.dark_vs_light.charged_flower": "Charged Flower",
       "biome.dark_v_light_dark.burned_gaze_forest": "Burned Gaze Forest",
       "block.dark_v_light_dark.glowing_fruit": "Glowing Fruit Vine",
       "advancements.unsinkable.title": "Unsinkable!!!",
       "advancements.the_start_of_your_journey.title": "The Start Of Your Journey",
       "item.dark_vs_light.dark_stone_sword": "Dark Stone Sword",
-      "advancements.perfectly_balanced_as_it_should_be.title": "Perfectly Balanced As It Should Be.",
       "block.dark_vs_light.blind_ore": "Blind Ore",
+      "advancements.perfectly_balanced_as_it_should_be.title": "Perfectly Balanced As It Should Be.",
       "subtitles.burngazeforest": "",
       "biome.dark_v_light.darkend_dessert": "Darkend Dessert",
-      "item.minecraft.lingering_potion.effect.glow_berry_revival": "Lingering Glow Berry Revival",
+      "item.minecraft.lingering_potion.effect.glow_berry_revival": "Lingering Potion of Revival",
       "block.dark_vs_light.blind_leaves": "Blind Leaves",
       "item.dark_v_light_dark.burn_armor_chestplate": "Burn Chestplate",
       "item.dark_v_light.burn_armor_boots": "Burn Boots",
@@ -8693,9 +9703,7 @@
       "subtitles.bossidle": "",
       "advancements.trusted_leader.title": "Trusted Leader",
       "subtitles.theswamp": "",
-      "item.minecraft.splash_potion.effect.enlightend_blindness": "Splash Enlightend Blindness",
       "advancements.that_is_way_too_high.title": "That Is Way Too High!!!",
-      "item.minecraft.potion.effect.survivor_trade": "Survivor Trade",
       "item.dark_vs_light.darkend_boss_entity_2_spawn_egg": "Gliph Spawn Egg",
       "biome.dark_vs_light.glow_forest": "Glow Forest",
       "block.dark_v_light_dark.darkend_diorite": "Darkend Diorite",
@@ -8703,7 +9711,7 @@
       "item.dark_v_light.burn_armor_chestplate": "Burn Chestplate",
       "subtitles.trader": "",
       "biome.dark_vs_light.burned_gaze_forest": "Burned Gaze Forest",
-      "item.minecraft.tipped_arrow.effect.purple_flame": "Arrow of Oof",
+      "death.attack.rust": "%1$s\u0027s tools pricked %1$s to death",
       "biome.dark_vs_light_dark.mountain_of_caves_biome": "Mountain Of Caves",
       "block.dark_v_light.dark_stone_pane": "Dark Stone Pane",
       "item.dark_vs_light_dark.glowing_fruit_food": "Glowing Fruit",
@@ -8743,6 +9751,7 @@
       "advancements.perfectly_balanced_as_it_should_be.descr": "Have Darkend Stress And Lightend Blindness both at 5",
       "item.dark_vs_light.darkend_shovel": "Darkend Shovel",
       "block.dark_v_light_dark.darkend_diamonds": "Darkend Diamonds",
+      "death.attack.darkness": "%1$s took in too much darkness",
       "subtitles.darkendtallendhurt": "",
       "effect.enlightend_filtering": "Lightend Filtering",
       "effect.purple_flame": "Purple Flame",
@@ -8784,12 +9793,14 @@
       "item.dark_v_light.darkend_loner": "Darkend Loner Spawn Egg",
       "item.dark_vs_light.blind_shard_hoe": "Blind Shard Hoe",
       "block.dark_vs_light.darkend_lava_leaves": "Darkend Lava Leaves",
+      "effect.anger": "Anger",
       "enchantment.dark_vs_light.darkend_protection": "Darkend Protection",
       "advancements.colorless.title": "Colorless!!!",
       "block.dark_vs_light_dark.darkend_basalt": "Darkend Basalt",
       "item.dark_vs_light.blind_shard_armor_chestplate": "Blind Shard Chestplate",
       "entity.dark_vs_light.darkend_wolf": "Darkend Wolf",
-      "item.minecraft.tipped_arrow.effect.enlightend": "Arrow of Potion of Enlightend",
+      "generator.flat": "Flat But Balanced World",
+      "item.minecraft.tipped_arrow.effect.enlightend": "Arrow of Light",
       "item.dark_vs_light.darkend_loner_spawn_egg": "Darkend Loner Spawn Egg",
       "advancements.this_diamond_is_on_fire.descr": "Get A Burn Diamond",
       "item.dark_vs_light.darkend_drone_spawn_egg": "Drone Spawn Egg",
@@ -8798,6 +9809,7 @@
       "block.dark_v_light_dark.dark_stone": "Dark Stone",
       "subtitles.hornstomp": "",
       "block.dark_vs_light.xp_grinder": "XP Grinder",
+      "biome.dark_vs_light.deep_dark": "Deep Dark",
       "block.dark_vs_light_dark.upgrade_block": "Upgrade Block",
       "entity.dark_vs_light.darkend_loner": "Darkend Loner",
       "item.minecraft.tipped_arrow.effect.sinking": "Arrow of Potion Of Sinking",
@@ -8820,12 +9832,14 @@
       "block.dark_vs_light.lava_wood_sapling": "Lava Wood Sapling",
       "advancements.trusted_leader.descr": "Tame A Survivor",
       "item.dark_vs_light.lightend_stone_shovel": "Lightend Stone Shovel",
+      "subtitles.dessert": "",
       "subtitles.dfloaterhurt": "",
       "advancements.i_thought_this_was_unbreakable.descr": "Carry the unbreakable",
       "item.dark_v_light_dark.waypoint_detector": "Waypoint Detector",
       "enchantment.dark_v_light_dark.fire": "Fire",
       "item.dark_vs_light.lightend_stone_hoe": "Lightend Stone Hoe",
       "block.dark_vs_light_dark.smooth_dark_stone_wall": "Smooth Dark Stone Wall",
+      "item.dark_vs_light.deep_dark_boss_spawn_egg": "Deep Dark Boss Spawn Egg",
       "block.dark_vs_light.darkend_andesite": "Darkend Andesite",
       "entity.dark_v_light.darkend_loner": "Darkend Loner",
       "advancements.wheres_the_leaves.descr": "Find A Burn Gaze Forest",
@@ -8835,11 +9849,12 @@
       "subtitles.lovehim": "",
       "item.dark_v_light.waypoint_detector": "Waypoint Detector",
       "block.dark_vs_light_dark.darkend_diamonds": "Darkend Diamonds",
+      "subtitles.upgradestart": "",
       "item.dark_v_light.burn_crystal": "Burn Crystal",
+      "item.dark_vs_light.smaqur": "Smaqur",
       "advancements.ahhh_this_burns_less.descr": "Wear A Piece Of Burn Diamond Armor",
-      "item.minecraft.tipped_arrow.effect.survivor_trade": "Arrow of Survivor Trade",
       "entity.dark_vs_light.darkend_horn_tamed": "Darkend Horn",
-      "item.minecraft.splash_potion.effect.darkend_filtering": "Splash Darkend Filtering",
+      "item.minecraft.splash_potion.effect.darkend_filtering": "Splash Potion of Darkend Filtering",
       "item.dark_vs_light.xp_fragment": "XP Fragment",
       "biome.dark_vs_light.lava_forest": "Lava Forest",
       "item.dark_vs_light.blind_shard_pickaxe": "Blind Shard Pickaxe",
@@ -8855,19 +9870,19 @@
       "block.dark_v_light.upgrade_block": "Upgrade Block",
       "entity.dark_vs_light.tamed_darkend_wolf": "Darkend Wolf",
       "block.dark_v_light_dark.dark_dirt": "Darkend Grass",
-      "advancements.stop_making_hoes_man.title": "Stop Making Hoes Man",
       "block.dark_v_light_dark.darkend_glowing_leaves": "Darkend Glowing Leaves",
       "subtitles.darkenddessertambient": "",
       "block.dark_vs_light.gliph_block": "Gliph Block",
       "item.dark_vs_light_dark.darkend_hoe": "Darkend Hoe",
+      "subtitles.upgradeend": "",
       "entity.dark_v_light.darkend_tallend": "Darkend Tallend",
       "subtitles.tracker": "",
       "biome.dark_v_light_dark.mountain_of_caves_biome": "Mountain Of Caves",
+      "selectWorld.gameMode.hardcore": "Devilish Survivor",
       "item.dark_vs_light.dark_horn_song.desc": "BoogaEye - Dark Horn Song",
       "block.dark_vs_light.hot_darkend_fluid": "Hot Darkend Fluid",
-      "item.minecraft.potion.effect.enlightend": "Potion of Enlightend",
+      "item.minecraft.potion.effect.enlightend": "Potion of Light",
       "advancements.one_click_away.descr": "Have The Enlightend Dimension Teleporter",
-      "item.minecraft.splash_potion.effect.purple_flame": "Splash Oof",
       "advancements.home_run.descr": "Break a Stone Plated Dark Stone",
       "block.dark_vs_light.glow_sapling": "Glow Berry Sapling",
       "advancements.isnt_it_wonderful.descr": "Find A Glowing Forest",
@@ -8881,7 +9896,7 @@
       "entity.dark_vs_light.darkend_teleporter": "Darkend Teleporter",
       "enchantment.dark_v_light.fire": "Fire",
       "block.dark_vs_light_dark.darkend_andesite": "Darkend Andesite",
-      "item.minecraft.tipped_arrow.effect.glow_berry_revival": "Arrow of Glow Berry Revival",
+      "item.minecraft.tipped_arrow.effect.glow_berry_revival": "Arrow of Revival",
       "advancements.we_need_fuel_for_this_thing.descr": "Fuel the upgrade block",
       "entity.dark_vs_light_dark.darkend_floater": "Darkend Floater",
       "block.dark_vs_light.smooth_dark_stone_stairs": "Smooth Dark Stone Stairs",
@@ -8892,6 +9907,7 @@
       "block.dark_vs_light.holo_log": "Holo Log",
       "advancements.sky_lights.descr": "Visit Glowing Forest Mountains",
       "advancements.i_thought_this_was_unbreakable.title": "I Thought This Was Unbreakable",
+      "block.dark_vs_light.dead_fruit_bush": "Dead Fruit Vine",
       "biome.dark_vs_light.deep_dark_valley": "Deep Dark Valley",
       "item.minecraft.splash_potion.effect.rusting": "Splash Potion of Rusting",
       "advancements.home_sweet_home.descr": "Eat A Dried Glow Berry in its home",
@@ -8902,15 +9918,16 @@
       "gamerule.darkendDebug.description": "Allow the darkend debug screen",
       "item.minecraft.tipped_arrow.effect.rusting": "Arrow of Potion of Rusting",
       "entity.dark_v_light.darkend_boss_entity": "Darkend Boss",
-      "item.minecraft.tipped_arrow.effect.enlightend_blindness": "Arrow of Enlightend Blindness",
       "entity.dark_vs_light.darkend_tallend": "Darkend Tallend",
       "subtitles.darkendwolfam": "",
       "entity.dark_vs_light.darkend_boss_entity": "Darkend Defender",
+      "gamerule.bossAI": "Boss AI",
       "item.dark_vs_light.dark_horn_song": "Dark Disk 1",
       "subtitles.dstonebreak": "",
-      "item.minecraft.tipped_arrow.effect.endarkend": "Arrow of Potion of Endarkend",
+      "item.minecraft.tipped_arrow.effect.endarkend": "Arrow of Darkness",
       "block.dark_vs_light.holo_door": "Holo Door",
       "advancements.biomes_glow_in_this_dimension_too.title": "Biomes Glow In This Dimension Too?",
+      "gameMode.survival": "Multilife Survivor Mode",
       "item.dark_vs_light.darkend_boss_temple_detector": "Darkend Boss Temple Detector",
       "advancements.dark_stone_and_riches.descr": "Find A Mountain of Caves biome",
       "effect.endarkend": "Endarkend",
@@ -8918,24 +9935,23 @@
       "item.dark_v_light_dark.darkend_dimension": "Darkend Dimension Portal Reactor",
       "advancements.nooooooooooooo.title": "Nooooooooooooo",
       "item.dark_vs_light.darkend_destroyer_spawn_egg": "Darkend Destroyer Spawn Egg",
-      "item.minecraft.splash_potion.effect.endarkend": "Splash Potion of Endarkend",
+      "item.minecraft.splash_potion.effect.endarkend": "Splash Potion of Darkness",
       "block.dark_v_light_dark.burn_ore": "Burn Ore",
       "block.dark_vs_light.jelk_ore": "Jelk Ore",
-      "item.minecraft.potion.effect.endarkend": "Potion of Endarkend",
-      "item.minecraft.lingering_potion.effect.enlightend_blindness": "Lingering Enlightend Blindness",
+      "item.minecraft.potion.effect.endarkend": "Potion of Darkness",
       "block.dark_vs_light.darkend_enchanter": "Darkend Enchanter",
       "entity.dark_vs_light.darkend_boss_entity_2": "Gliph",
       "block.dark_v_light.darkend_glowing_leaves": "Darkend Glowing Leaves",
       "subtitles.burngazeadditions": "",
       "subtitles.oceanending": "",
       "item.dark_vs_light.glowing_fruit_food": "Glowing Fruit",
+      "subtitles.randomdark": "",
       "block.dark_v_light_dark.darkend_basalt": "Darkend Basalt",
       "block.dark_vs_light.urin_ore": "Uren Ore",
       "item.dark_vs_light.uren_shooter": "Uren Shooter",
       "block.dark_vs_light.burn_gaze_wood": "Burn Gaze Wood",
-      "block.dark_vs_light.dark_dirt": "Darkend Grass",
+      "block.dark_vs_light.dark_dirt": "Darkend Dirt",
       "block.dark_vs_light.smooth_dark_stone_slab": "Smooth Dark Stone Slab",
-      "advancements.failure_to_upgrade.descr": "I Cant Believe You Tried That",
       "fluid.dark_vs_light.hot_darkend_fluid": "Hot Darkend Fluid",
       "item.dark_vs_light.hot_darkend_fluid_bucket": "Hot Darkend Fluid Bucket",
       "block.dark_vs_light.burn_pane": "Burn Pane",
@@ -8951,7 +9967,7 @@
       "block.dark_vs_light.blind_trap_door": "Blind Trap Door",
       "biome.dark_vs_light_dark.darkend_glow_forest_mountains": "Darkend Glow Forest Mountains",
       "entity.dark_v_light.darkend_floater": "Darkend Floater",
-      "item.minecraft.lingering_potion.effect.enlightend": "Lingering Potion of Enlightend",
+      "item.minecraft.lingering_potion.effect.enlightend": "Lingering Potion of Light",
       "item.dark_vs_light_dark.burn_crystal": "Burn Crystal",
       "item.dark_vs_light_dark.burn_armor_leggings": "Burn Leggings",
       "fluid.hot_darkend_fluid": "HotDarkendFluid",
@@ -8966,12 +9982,13 @@
       "block.dark_vs_light.basalt_stone_slab": "Basalt Dark Stone Slab",
       "block.dark_v_light.dark_stone_slab": "Dark Stone Slab",
       "enchantment.dark_vs_light.nonsinking": "Nonsinking",
-      "item.minecraft.lingering_potion.effect.darkend_filtering": "Lingering Darkend Filtering",
+      "item.minecraft.lingering_potion.effect.darkend_filtering": "Lingering Potion of Darkend Filtering",
       "block.dark_vs_light.dark_stone_pane": "Dark Stone Pane",
       "advancements.deep_dark_enchantments.title": "Deep Dark Enchantments",
       "subtitles.trackerfound": "",
-      "advancements.is_this_blindness.title": "Is This Blindness?!",
+      "advancements.is_this_blindness.title": "Light Mode Activated!",
       "subtitles.trackercrafted": "",
+      "gameMode.creative": "Unbalanced Being Mode",
       "block.dark_vs_light.darkend_flower": "Darkend Flower",
       "subtitles.bosswalk": "",
       "item.dark_v_light_dark.dried_glow_berry": "Dried Glow Berry",
@@ -8985,6 +10002,7 @@
       "entity.dark_vs_light.darkend_horn": "Darkend Horn",
       "subtitles.bdiamond": "",
       "item.dark_vs_light.lightend_stone_axe": "Lightend Stone Axe",
+      "generator.default": "Normal Balanced World",
       "biome.dark_v_light.darkend_glow_forest": "Darkend Glow Forest",
       "item.dark_vs_light.burn_diamond_armor_armor_boots": "Burn Diamond Boots",
       "block.dark_vs_light.lava_door": "Lava Door",
@@ -9032,7 +10050,7 @@
       "entity.dark_vs_light.darkend_shooter": "Darkend Shooter",
       "item.dark_vs_light.darkend_horn_tamed_spawn_egg": "Darkend Horn Spawn Egg",
       "biome.dark_vs_light.darkend_glow_forest_mountains": "Darkend Glow Forest Mountains",
-      "item.minecraft.potion.effect.darkend_filtering": "Darkend Filtering",
+      "item.minecraft.potion.effect.darkend_filtering": "Potion of Darkend Filtering",
       "entity.dark_vs_light.darkend_drone": "Drone",
       "item.dark_vs_light.burn_axe": "Burn Axe",
       "block.dark_vs_light.lava_trap_door": "Lava Trap Door",
@@ -9043,7 +10061,7 @@
       "item.dark_v_light_dark.darkend_boss_entity_spawn_egg": "Darkend Boss Spawn Egg",
       "enchantment.dark_vs_light.blazing": "Blazing",
       "subtitles.enchantedloop": "",
-      "item.minecraft.potion.effect.enlightend_filtering": "Darkend Filtering",
+      "item.minecraft.potion.effect.enlightend_filtering": "Potion of Enlightend Filtering",
       "advancements.i_dont_trust_this_guys.descr": "Get A Darkend Enchanter",
       "item.dark_v_light.dried_glow_berry": "Dried Glow Berry",
       "block.dark_vs_light.darkend_diamonds": "Darkend Diamonds",
@@ -9051,11 +10069,12 @@
       "block.dark_vs_light_dark.smooth_dark_stone_slab": "Smooth Dark Stone Slab",
       "item.dark_vs_light.darkend_teleporter_spawn_egg": "Darkend Teleporter Spawn Egg",
       "entity.dark_vs_light.enlightend_tallend": "Enlightend Tallend",
-      "item.minecraft.lingering_potion.effect.endarkend": "Lingering Potion of Endarkend",
+      "item.minecraft.lingering_potion.effect.endarkend": "Lingering Potion of Darkness",
       "item.dark_vs_light_dark.burn_armor_chestplate": "Burn Chestplate",
       "block.dark_vs_light.enlightend_grass": "Enlightend Grass",
       "block.dark_v_light.darkend_diamonds": "Darkend Diamonds",
       "item.dark_vs_light.burn_diamond": "Burn Diamond",
+      "gamerule.bossAI.description": "controls what bosses can and cant do",
       "block.dark_vs_light.glow_log_door": "Glow Log Door",
       "effect.sinking": "Sinking",
       "block.dark_vs_light.darkend_sugar_cane": "Darkend Sugar Cane",
@@ -9068,6 +10087,7 @@
       "block.dark_vs_light.blind_log": "Blind Log",
       "block.dark_vs_light.enchanted_log": "Enchanted Log",
       "block.dark_vs_light_dark.smooth_dark_stone_stairs": "Smooth Dark Stone Stairs",
+      "block.dark_vs_light.no_berry_bush": "No Berry Bush",
       "block.dark_vs_light.burn_gaze_wooden_plank": "Burn Gaze Wooden Plank",
       "item.minecraft.splash_potion.effect.sinking": "Splash Potion Of Sinking",
       "advancements.the_start_of_something_dark.title": "The Start Of Something Dark",
@@ -9078,7 +10098,8 @@
       "item.dark_vs_light.blind_shard_sword": "Blind Shard Sword",
       "advancements.oh_enlightend_ore.descr": "Find Blind Stone And Break It",
       "subtitles.hololoop": "",
-      "item.minecraft.splash_potion.effect.enlightend": "Splash Potion of Enlightend",
+      "selectWorld.gameMode.survival": "Multilife Survivor",
+      "item.minecraft.splash_potion.effect.enlightend": "Splash Potion of Light",
       "key.categories.dvl": "",
       "block.dark_vs_light.purple_fire": "Purple Fire",
       "block.dark_vs_light_dark.pickles_dark_stone": "Smooth Dark Stone",
@@ -9093,12 +10114,11 @@
       "advancements.that_is_way_too_high.descr": "Visit The Lava Forest",
       "item.dark_vs_light.burn_armor_boots": "Burn Boots",
       "item.dark_vs_light.blind_shard_armor_boots": "Blind Shard Boots",
-      "item.minecraft.splash_potion.effect.survivor_trade": "Splash Survivor Trade",
       "item.dark_vs_light_dark.dark_stone_axe": "Dark Stone Axe",
       "itemGroup.tabdvl_food": "DVL Food",
       "item.dark_vs_light.dark_stone_axe": "Dark Stone Axe",
       "item.dark_vs_light.urin_armor_leggings": "Uren Leggings",
-      "item.minecraft.splash_potion.effect.glow_berry_revival": "Splash Glow Berry Revival",
+      "item.minecraft.splash_potion.effect.glow_berry_revival": "Splash Potion of Revival",
       "key.categories.DVL": "",
       "item.dark_v_light.darkend_loner_spawn_egg": "Darkend Loner Spawn Egg",
       "item.dark_vs_light.sweet_glow_berry": "Sweet Glowing Fruit",
@@ -9106,7 +10126,6 @@
       "item.dark_vs_light.startile": "Startile Gem",
       "block.dark_vs_light_dark.stone_plated_dark_stone": "Stone Plated Dark Stone",
       "advancements.we_can_make_armor_out_of_this_stuff.descr": "Make Armor Out Of Blind Shards and wear it",
-      "item.minecraft.lingering_potion.effect.survivor_trade": "Lingering Survivor Trade",
       "block.dark_v_light_dark.dark_stone_pane": "Dark Stone Pane",
       "entity.dark_vs_light.darkend_destroyer": "Darkend Destroyer",
       "item.dark_vs_light.tamed_survivor_spawn_egg": "Darkend Surviver Spawn Egg",
@@ -9116,8 +10135,9 @@
       "item.dark_vs_light.gliphs_sword": "Gliphs Sword",
       "block.dark_vs_light.enlightend_dirt": "Enlightend Dirt",
       "block.dark_vs_light.blind_planks": "Blind Planks",
-      "item.minecraft.potion.effect.glow_berry_revival": "Glow Berry Revival",
+      "item.minecraft.potion.effect.glow_berry_revival": "Potion of Revival",
       "biome.dark_vs_light_dark.burned_gaze_forest": "Burned Gaze Forest",
+      "subtitles.dgrassbreak": "Dark Grass Destroyed",
       "block.dark_v_light_dark.smooth_dark_stone_slab": "Smooth Dark Stone Slab",
       "advancements.no_longer_garbage.title": "No Longer Garbage",
       "subtitles.darkforest": "",
@@ -9131,21 +10151,21 @@
       "item.dark_vs_light.endarkend_fluid_bucket": "Endarkend Fluid Bucket",
       "subtitles.blindforest": "",
       "subtitles.enlightendspider": "",
-      "item.minecraft.tipped_arrow.effect.enlightend_filtering": "Arrow of Darkend Filtering",
+      "item.minecraft.tipped_arrow.effect.enlightend_filtering": "Arrow of Enlightend Filtering",
       "block.dark_vs_light.blind_stone": "Blind Stone",
       "block.dark_vs_light_dark.dark_stone_pane": "Dark Stone Pane",
       "item.dark_vs_light.darkend_floater_spawn_egg": "Darkend Floater Spawn Egg",
       "block.dark_vs_light.darkend_wooden_planks": "Darkend Wooden Planks",
       "block.dark_vs_light.endarkend_fluid": "Endarkend Fluid",
-      "item.minecraft.lingering_potion.effect.enlightend_filtering": "Lingering Darkend Filtering",
+      "item.minecraft.lingering_potion.effect.enlightend_filtering": "Lingering Potion of Enlightend Filtering",
       "advancements.smells_like_lava.descr": "Visit The Lava Springs",
+      "selectServer.select": "Join Darkend Realm",
       "item.dark_vs_light_dark.dark_stone_pickaxe": "Dark Stone Pickaxe",
       "item.dark_v_light_dark.burn_armor_leggings": "Burn Leggings",
       "block.dark_vs_light.startile_ore": "Startile Ore",
       "item.dark_vs_light.startiles_pickaxe": "Startile Pickaxe",
       "block.dark_vs_light.basalt_stone_fence": "Basalt Dark Stone Fence",
       "block.dark_v_light.darkend_enchanter": "Darkend Enchanter",
-      "item.minecraft.lingering_potion.effect.purple_flame": "Lingering Oof",
       "block.dark_vs_light.burn_diamond_incased_obsidian_block": "Burn Diamond Incased Obsidian Block",
       "subtitles.enlightendspiderhurt": "",
       "subtitles.drag": "",
@@ -9160,13 +10180,21 @@
       {
         "name": "DarkendOres",
         "children": []
+      },
+      {
+        "name": "Upgrade Block Rework",
+        "children": []
+      },
+      {
+        "name": "DeepDarkBossProcess",
+        "children": []
       }
     ]
   },
   "workspaceSettings": {
     "modid": "dark_vs_light",
     "modName": "Dark Vs Light",
-    "version": "0.3.6",
+    "version": "0.4.0",
     "description": "Darkness has taken over. watch out......",
     "author": "BoogaEye",
     "websiteURL": "https://www.curseforge.com/minecraft/mc-mods/dark-vs-light",
@@ -9179,9 +10207,9 @@
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "forge-1.16.5",
-    "credits": "Credits to Gaurdian for being my tester Thanks to myuu for the music  https://www.youtube.com/channel/UCiSKnkKCKAQVxMUWpZQobuQ",
+    "credits": "Credits to Gaurdian for being my tester Thanks to myuu for the music  https://www.youtube.com/channel/UCiSKnkKCKAQVxMUWpZQobuQ and https://www.FesliyanStudios.com",
     "modElementsPackage": "net.boogaeye.darkvlight",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202100226215
+  "mcreatorVersion": 202100230411
 }

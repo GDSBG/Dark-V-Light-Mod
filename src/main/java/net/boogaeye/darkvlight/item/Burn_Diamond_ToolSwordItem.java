@@ -44,7 +44,7 @@ public class Burn_Diamond_ToolSwordItem extends DarkVsLightModElements.ModElemen
 			}
 
 			public Ingredient getRepairMaterial() {
-				return Ingredient.fromStacks(new ItemStack(BurnDiamondItem.block, (int) (1)));
+				return Ingredient.fromStacks(new ItemStack(BurnDiamondItem.block));
 			}
 		}, 3, -3.4f, new Item.Properties().group(DVLtabItemGroup.tab)) {
 		}.setRegistryName("burn_diamond_tool_sword"));

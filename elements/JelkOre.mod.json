@@ -1,5 +1,5 @@
 {
-  "_fv": 17,
+  "_fv": 23,
   "_type": "block",
   "definition": {
     "texture": "jelk",
@@ -49,14 +49,18 @@
     "useLootTableForDrops": false,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
-    "canProvidePower": true,
-    "lightOpacity": 255,
+    "canRedstoneConnect": false,
+    "lightOpacity": 15,
     "material": {
       "value": "ROCK"
     },
     "tickRate": 10,
     "tickRandomly": false,
     "isReplaceable": false,
+    "canProvidePower": true,
+    "emittedRedstonePower": {
+      "fixedValue": 15.0
+    },
     "colorOnMap": "DEFAULT",
     "creativePickItem": {
       "value": ""
@@ -71,8 +75,24 @@
     "jumpFactor": 1.0,
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
+    "isCustomSoundType": false,
     "soundOnStep": {
       "value": "SLIME"
+    },
+    "breakSound": {
+      "value": ""
+    },
+    "stepSound": {
+      "value": ""
+    },
+    "placeSound": {
+      "value": ""
+    },
+    "hitSound": {
+      "value": ""
+    },
+    "fallSound": {
+      "value": ""
     },
     "luminance": 0,
     "unbreakable": false,

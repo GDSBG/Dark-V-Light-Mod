@@ -52,7 +52,7 @@ public class TamedDarkendWolfRenderer {
 		public void render(MatrixStack matrixStackIn, IRenderTypeBuffer bufferIn, int packedLightIn, T entitylivingbaseIn, float limbSwing,
 				float limbSwingAmount, float partialTicks, float ageInTicks, float netHeadYaw, float headPitch) {
 			IVertexBuilder ivertexbuilder = bufferIn
-					.getBuffer(RenderType.getEyes(new ResourceLocation("dark_vs_light:textures/darkendwolfglow.png")));
+					.getBuffer(RenderType.getEyes(new ResourceLocation("dark_vs_light:textures/darkendwolfglowtamed.png")));
 			this.getEntityModel().render(matrixStackIn, ivertexbuilder, 15728640, OverlayTexture.NO_OVERLAY, 1, 1, 1, 1);
 		}
 	}

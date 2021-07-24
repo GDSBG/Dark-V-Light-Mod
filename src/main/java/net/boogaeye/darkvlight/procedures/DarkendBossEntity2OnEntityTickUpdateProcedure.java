@@ -16,6 +16,7 @@ import net.minecraft.potion.EffectInstance;
 import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.item.Items;
 import net.minecraft.item.ItemStack;
+import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.entity.projectile.ArrowEntity;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.entity.effect.LightningBoltEntity;
@@ -25,13 +26,15 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.ILivingEntityData;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.Entity;
+import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.block.Blocks;
 
-import net.boogaeye.darkvlight.potion.RustingPotion;
+import net.boogaeye.darkvlight.potion.RustingPotionEffect;
 import net.boogaeye.darkvlight.item.GliphsSwordItem;
 import net.boogaeye.darkvlight.item.DarkShardItem;
 import net.boogaeye.darkvlight.entity.HealDroneEntity;
 import net.boogaeye.darkvlight.entity.DarkendBossEntity2Entity;
+import net.boogaeye.darkvlight.enchantment.NonsinkingEnchantment;
 import net.boogaeye.darkvlight.DarkVsLightModVariables;
 import net.boogaeye.darkvlight.DarkVsLightMod;
 
@@ -134,7 +137,13 @@ public class DarkendBossEntity2OnEntityTickUpdateProcedure {
 							} else {
 								forcez = (double) (-0.01);
 							}
-							entityiterator.setMotion(forcex, forcey, forcez);
+							if ((!((EnchantmentHelper.getEnchantmentLevel(NonsinkingEnchantment.enchantment,
+									((entityiterator instanceof LivingEntity)
+											? ((LivingEntity) entityiterator).getItemStackFromSlot(
+													EquipmentSlotType.fromSlotTypeAndIndex(EquipmentSlotType.Group.ARMOR, (int) 0))
+											: ItemStack.EMPTY)) != 0)))) {
+								entityiterator.setMotion(forcex, forcey, forcez);
+							}
 						}
 					}
 				}
@@ -153,7 +162,7 @@ public class DarkendBossEntity2OnEntityTickUpdateProcedure {
 				for (Entity entityiterator : _entfound) {
 					if ((!(entityiterator instanceof DarkendBossEntity2Entity.CustomEntity))) {
 						if (entityiterator instanceof LivingEntity)
-							((LivingEntity) entityiterator).addPotionEffect(new EffectInstance(RustingPotion.potion, (int) 600, (int) 3));
+							((LivingEntity) entityiterator).addPotionEffect(new EffectInstance(RustingPotionEffect.potion, (int) 600, (int) 3));
 					}
 				}
 			}
@@ -172,14 +181,14 @@ public class DarkendBossEntity2OnEntityTickUpdateProcedure {
 			DarkVsLightModVariables.MapVariables.get(world).syncData(world);
 		} else if ((DarkVsLightModVariables.MapVariables.get(world).BossAttackType2 == 1)) {
 			if (entity instanceof LivingEntity) {
-				ItemStack _setstack = new ItemStack(GliphsSwordItem.block, (int) (1));
+				ItemStack _setstack = new ItemStack(GliphsSwordItem.block);
 				_setstack.setCount((int) 1);
 				((LivingEntity) entity).setHeldItem(Hand.MAIN_HAND, _setstack);
 				if (entity instanceof ServerPlayerEntity)
 					((ServerPlayerEntity) entity).inventory.markDirty();
 			}
 			if (entity instanceof LivingEntity) {
-				ItemStack _setstack = new ItemStack(Blocks.AIR, (int) (1));
+				ItemStack _setstack = new ItemStack(Blocks.AIR);
 				_setstack.setCount((int) 1);
 				((LivingEntity) entity).setHeldItem(Hand.OFF_HAND, _setstack);
 				if (entity instanceof ServerPlayerEntity)
@@ -222,7 +231,13 @@ public class DarkendBossEntity2OnEntityTickUpdateProcedure {
 						} else {
 							forcez = (double) 0.01;
 						}
-						entityiterator.setMotion(forcex, forcey, forcez);
+						if ((!((EnchantmentHelper.getEnchantmentLevel(NonsinkingEnchantment.enchantment,
+								((entityiterator instanceof LivingEntity)
+										? ((LivingEntity) entityiterator)
+												.getItemStackFromSlot(EquipmentSlotType.fromSlotTypeAndIndex(EquipmentSlotType.Group.ARMOR, (int) 0))
+										: ItemStack.EMPTY)) != 0)))) {
+							entityiterator.setMotion(forcex, forcey, forcez);
+						}
 					}
 				}
 			}
@@ -243,14 +258,14 @@ public class DarkendBossEntity2OnEntityTickUpdateProcedure {
 			}
 		} else if ((DarkVsLightModVariables.MapVariables.get(world).BossAttackType2 == 2)) {
 			if (entity instanceof LivingEntity) {
-				ItemStack _setstack = new ItemStack(GliphsSwordItem.block, (int) (1));
+				ItemStack _setstack = new ItemStack(GliphsSwordItem.block);
 				_setstack.setCount((int) 1);
 				((LivingEntity) entity).setHeldItem(Hand.MAIN_HAND, _setstack);
 				if (entity instanceof ServerPlayerEntity)
 					((ServerPlayerEntity) entity).inventory.markDirty();
 			}
 			if (entity instanceof LivingEntity) {
-				ItemStack _setstack = new ItemStack(Items.ENDER_PEARL, (int) (1));
+				ItemStack _setstack = new ItemStack(Items.ENDER_PEARL);
 				_setstack.setCount((int) 1);
 				((LivingEntity) entity).setHeldItem(Hand.OFF_HAND, _setstack);
 				if (entity instanceof ServerPlayerEntity)
@@ -279,12 +294,12 @@ public class DarkendBossEntity2OnEntityTickUpdateProcedure {
 							if (world instanceof World && !world.isRemote()) {
 								((World) world).playSound(null, new BlockPos((int) x, (int) y, (int) z),
 										(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS
-												.getValue(new ResourceLocation("dark_vs_light:upgrade")),
+												.getValue(new ResourceLocation("entity.enderman.teleport")),
 										SoundCategory.NEUTRAL, (float) 1, (float) 1);
 							} else {
 								((World) world).playSound(x, y, z,
 										(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS
-												.getValue(new ResourceLocation("dark_vs_light:upgrade")),
+												.getValue(new ResourceLocation("entity.enderman.teleport")),
 										SoundCategory.NEUTRAL, (float) 1, (float) 1, false);
 							}
 						}
@@ -299,14 +314,14 @@ public class DarkendBossEntity2OnEntityTickUpdateProcedure {
 			}
 		} else if ((DarkVsLightModVariables.MapVariables.get(world).BossAttackType2 == 3)) {
 			if (entity instanceof LivingEntity) {
-				ItemStack _setstack = new ItemStack(DarkShardItem.block, (int) (1));
+				ItemStack _setstack = new ItemStack(DarkShardItem.block);
 				_setstack.setCount((int) 1);
 				((LivingEntity) entity).setHeldItem(Hand.MAIN_HAND, _setstack);
 				if (entity instanceof ServerPlayerEntity)
 					((ServerPlayerEntity) entity).inventory.markDirty();
 			}
 			if (entity instanceof LivingEntity) {
-				ItemStack _setstack = new ItemStack(Blocks.AIR, (int) (1));
+				ItemStack _setstack = new ItemStack(Blocks.AIR);
 				_setstack.setCount((int) 1);
 				((LivingEntity) entity).setHeldItem(Hand.OFF_HAND, _setstack);
 				if (entity instanceof ServerPlayerEntity)
@@ -331,14 +346,14 @@ public class DarkendBossEntity2OnEntityTickUpdateProcedure {
 			}
 		} else if ((DarkVsLightModVariables.MapVariables.get(world).BossAttackType2 == 4)) {
 			if (entity instanceof LivingEntity) {
-				ItemStack _setstack = new ItemStack(Items.CROSSBOW, (int) (1));
+				ItemStack _setstack = new ItemStack(Items.CROSSBOW);
 				_setstack.setCount((int) 1);
 				((LivingEntity) entity).setHeldItem(Hand.MAIN_HAND, _setstack);
 				if (entity instanceof ServerPlayerEntity)
 					((ServerPlayerEntity) entity).inventory.markDirty();
 			}
 			if (entity instanceof LivingEntity) {
-				ItemStack _setstack = new ItemStack(Blocks.AIR, (int) (1));
+				ItemStack _setstack = new ItemStack(Blocks.AIR);
 				_setstack.setCount((int) 1);
 				((LivingEntity) entity).setHeldItem(Hand.OFF_HAND, _setstack);
 				if (entity instanceof ServerPlayerEntity)
@@ -361,14 +376,14 @@ public class DarkendBossEntity2OnEntityTickUpdateProcedure {
 			}
 		} else if ((DarkVsLightModVariables.MapVariables.get(world).BossAttackType2 == 5)) {
 			if (entity instanceof LivingEntity) {
-				ItemStack _setstack = new ItemStack(GliphsSwordItem.block, (int) (1));
+				ItemStack _setstack = new ItemStack(GliphsSwordItem.block);
 				_setstack.setCount((int) 1);
 				((LivingEntity) entity).setHeldItem(Hand.MAIN_HAND, _setstack);
 				if (entity instanceof ServerPlayerEntity)
 					((ServerPlayerEntity) entity).inventory.markDirty();
 			}
 			if (entity instanceof LivingEntity) {
-				ItemStack _setstack = new ItemStack(Blocks.AIR, (int) (1));
+				ItemStack _setstack = new ItemStack(Blocks.AIR);
 				_setstack.setCount((int) 1);
 				((LivingEntity) entity).setHeldItem(Hand.OFF_HAND, _setstack);
 				if (entity instanceof ServerPlayerEntity)

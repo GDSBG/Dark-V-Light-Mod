@@ -82,7 +82,7 @@ public class DarkendDessertBiome extends DarkVsLightModElements.ModElement {
 						.setAdditionsSound(new SoundAdditionsAmbience((net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS
 								.getValue(new ResourceLocation("dark_vs_light:darkenddessertambient")), 0.0111D))
 						.setMusic(new BackgroundMusicSelector(
-								(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("dark_vs_light:lovehim")),
+								(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("dark_vs_light:dessert")),
 								12000, 24000, true))
 						.setParticle(new ParticleEffectAmbience(DarkendDessertParticleParticle.particle, 0.05f)).build();
 				BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder()

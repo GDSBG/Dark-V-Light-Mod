@@ -53,7 +53,7 @@ public class GarbageToXpProcedure {
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
 		ItemStack XPFrag = ItemStack.EMPTY;
-		XPFrag = new ItemStack(XPFragmentItem.block, (int) (1));
+		XPFrag = new ItemStack(XPFragmentItem.block);
 		(XPFrag).getOrCreateTag().putDouble("XP", (((((new Object() {
 			public ItemStack getItemStack(int sltid) {
 				Entity _ent = entity;

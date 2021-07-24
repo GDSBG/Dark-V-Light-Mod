@@ -10,7 +10,9 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.biome.BiomeColors;
+import net.minecraft.world.IBlockReader;
 import net.minecraft.world.GrassColors;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.loot.LootContext;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
@@ -70,11 +72,16 @@ public class EnlightendGrassBlock extends DarkVsLightModElements.ModElement {
 		}
 
 		@Override
+		public int getOpacity(BlockState state, IBlockReader worldIn, BlockPos pos) {
+			return 15;
+		}
+
+		@Override
 		public List<ItemStack> getDrops(BlockState state, LootContext.Builder builder) {
 			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
-			return Collections.singletonList(new ItemStack(EnlightendDirtBlock.block, (int) (1)));
+			return Collections.singletonList(new ItemStack(EnlightendDirtBlock.block));
 		}
 	}
 }

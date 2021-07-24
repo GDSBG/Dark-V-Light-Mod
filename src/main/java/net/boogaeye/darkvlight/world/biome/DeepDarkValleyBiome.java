@@ -42,7 +42,7 @@ public class DeepDarkValleyBiome extends DarkVsLightModElements.ModElement {
 						.setAdditionsSound(new SoundAdditionsAmbience(
 								(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ambient.cave")), 0.0111D))
 						.setMusic(new BackgroundMusicSelector(
-								(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("dark_vs_light:lovehim")),
+								(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("dark_vs_light:deepdark")),
 								12000, 24000, true))
 						.build();
 				BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder()

@@ -31,7 +31,6 @@ import net.minecraft.network.IPacket;
 import net.minecraft.nbt.INBT;
 import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.item.SpawnEggItem;
-import net.minecraft.item.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.inventory.container.INamedContainerProvider;
@@ -62,11 +61,8 @@ import net.minecraft.enchantment.EnchantmentHelper;
 
 import net.boogaeye.darkvlight.procedures.TamedSurvivorThisEntityKillsAnotherOneProcedure;
 import net.boogaeye.darkvlight.procedures.TamedSurvivorRightClickedOnEntityProcedure;
+import net.boogaeye.darkvlight.procedures.TamedSurvivorEntityIsHurtProcedure;
 import net.boogaeye.darkvlight.procedures.DarkendSurviverOnEntityTickUpdateProcedure;
-import net.boogaeye.darkvlight.procedures.DarkendSurviverEntityIsHurtProcedure;
-import net.boogaeye.darkvlight.item.SweetGlowBerryItem;
-import net.boogaeye.darkvlight.item.GlowingFruitFoodItem;
-import net.boogaeye.darkvlight.item.DriedGlowBerryItem;
 import net.boogaeye.darkvlight.gui.FakePlayerGui;
 import net.boogaeye.darkvlight.entity.renderer.TamedSurvivorRenderer;
 import net.boogaeye.darkvlight.DarkVsLightModElements;
@@ -166,7 +162,8 @@ public class TamedSurvivorEntity extends DarkVsLightModElements.ModElement {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
-				DarkendSurviverEntityIsHurtProcedure.executeProcedure($_dependencies);
+				$_dependencies.put("world", world);
+				TamedSurvivorEntityIsHurtProcedure.executeProcedure($_dependencies);
 			}
 			return super.attackEntityFrom(source, amount);
 		}
@@ -330,26 +327,6 @@ public class TamedSurvivorEntity extends DarkVsLightModElements.ModElement {
 		public boolean isBreedingItem(ItemStack stack) {
 			if (stack == null)
 				return false;
-			if (new ItemStack(GlowingFruitFoodItem.block, (int) (1)).getItem() == stack.getItem())
-				return true;
-			if (new ItemStack(DriedGlowBerryItem.block, (int) (1)).getItem() == stack.getItem())
-				return true;
-			if (new ItemStack(SweetGlowBerryItem.block, (int) (1)).getItem() == stack.getItem())
-				return true;
-			if (new ItemStack(Items.COOKED_COD, (int) (1)).getItem() == stack.getItem())
-				return true;
-			if (new ItemStack(Items.COOKED_SALMON, (int) (1)).getItem() == stack.getItem())
-				return true;
-			if (new ItemStack(Items.COOKED_PORKCHOP, (int) (1)).getItem() == stack.getItem())
-				return true;
-			if (new ItemStack(Items.COOKED_BEEF, (int) (1)).getItem() == stack.getItem())
-				return true;
-			if (new ItemStack(Items.COOKED_CHICKEN, (int) (1)).getItem() == stack.getItem())
-				return true;
-			if (new ItemStack(Items.COOKED_RABBIT, (int) (1)).getItem() == stack.getItem())
-				return true;
-			if (new ItemStack(Items.COOKED_MUTTON, (int) (1)).getItem() == stack.getItem())
-				return true;
 			return false;
 		}
 	}

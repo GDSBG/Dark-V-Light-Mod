@@ -62,8 +62,13 @@ public class DarkendBasaltBlock extends DarkVsLightModElements.ModElement {
 	public static class CustomBlock extends FallingBlock {
 		public CustomBlock() {
 			super(Block.Properties.create(Material.ROCK).sound(SoundType.SAND).hardnessAndResistance(3f, 10f).setLightLevel(s -> 0).harvestLevel(1)
-					.harvestTool(ToolType.PICKAXE).setRequiresTool().slipperiness(0.8f));
+					.harvestTool(ToolType.PICKAXE).setRequiresTool().speedFactor(0.5f).jumpFactor(0.8f));
 			setRegistryName("darkend_basalt");
+		}
+
+		@Override
+		public int getOpacity(BlockState state, IBlockReader worldIn, BlockPos pos) {
+			return 15;
 		}
 
 		@Override
@@ -87,9 +92,9 @@ public class DarkendBasaltBlock extends DarkVsLightModElements.ModElement {
 		static final com.mojang.serialization.Codec<CustomRuleTest> codec = com.mojang.serialization.Codec.unit(() -> INSTANCE);
 		public boolean test(BlockState blockAt, Random random) {
 			boolean blockCriteria = false;
-			if (blockAt.getBlock() == DarkStoneBlock.block.getDefaultState().getBlock())
+			if (blockAt.getBlock() == DarkStoneBlock.block)
 				blockCriteria = true;
-			if (blockAt.getBlock() == Blocks.STONE.getDefaultState().getBlock())
+			if (blockAt.getBlock() == Blocks.STONE)
 				blockCriteria = true;
 			return blockCriteria;
 		}

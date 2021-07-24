@@ -4,7 +4,7 @@ import net.minecraft.potion.EffectInstance;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 
-import net.boogaeye.darkvlight.potion.EnlightendFilteringPotion;
+import net.boogaeye.darkvlight.potion.EndarkendPotionEffect;
 import net.boogaeye.darkvlight.DarkVsLightMod;
 
 import java.util.Map;
@@ -18,17 +18,17 @@ public class DarkeningOverlayDisplayOverlayIngameProcedure {
 			return false;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
-		return (new Object() {
-			boolean check(Entity _entity) {
+		return ((new Object() {
+			int check(Entity _entity) {
 				if (_entity instanceof LivingEntity) {
 					Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
 					for (EffectInstance effect : effects) {
-						if (effect.getPotion() == EnlightendFilteringPotion.potion)
-							return true;
+						if (effect.getPotion() == EndarkendPotionEffect.potion)
+							return effect.getDuration();
 					}
 				}
-				return false;
+				return 0;
 			}
-		}.check(entity));
+		}.check(entity)) != 0);
 	}
 }

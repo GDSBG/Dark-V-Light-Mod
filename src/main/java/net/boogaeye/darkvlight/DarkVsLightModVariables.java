@@ -114,7 +114,9 @@ public class DarkVsLightModVariables {
 		public double BossAttackType2 = 1.0;
 		public double BossWorldTick2 = 0;
 		public boolean AllowDebug = false;
-		public boolean Boss1Defeated = false;
+		public double BossWorldTick3 = 0;
+		public double BossAttackType3 = 0;
+		public boolean Boss2RunAttack = false;
 		public MapVariables() {
 			super(DATA_NAME);
 		}
@@ -135,7 +137,9 @@ public class DarkVsLightModVariables {
 			BossAttackType2 = nbt.getDouble("BossAttackType2");
 			BossWorldTick2 = nbt.getDouble("BossWorldTick2");
 			AllowDebug = nbt.getBoolean("AllowDebug");
-			Boss1Defeated = nbt.getBoolean("Boss1Defeated");
+			BossWorldTick3 = nbt.getDouble("BossWorldTick3");
+			BossAttackType3 = nbt.getDouble("BossAttackType3");
+			Boss2RunAttack = nbt.getBoolean("Boss2RunAttack");
 		}
 
 		@Override
@@ -150,7 +154,9 @@ public class DarkVsLightModVariables {
 			nbt.putDouble("BossAttackType2", BossAttackType2);
 			nbt.putDouble("BossWorldTick2", BossWorldTick2);
 			nbt.putBoolean("AllowDebug", AllowDebug);
-			nbt.putBoolean("Boss1Defeated", Boss1Defeated);
+			nbt.putDouble("BossWorldTick3", BossWorldTick3);
+			nbt.putDouble("BossAttackType3", BossAttackType3);
+			nbt.putBoolean("Boss2RunAttack", Boss2RunAttack);
 			return nbt;
 		}
 
@@ -241,6 +247,7 @@ public class DarkVsLightModVariables {
 			nbt.putDouble("EnlightendMultiplier", instance.EnlightendMultiplier);
 			nbt.putDouble("darkendmusicplay", instance.darkendmusicplay);
 			nbt.putBoolean("Debug", instance.Debug);
+			nbt.putBoolean("Boss1Defeated", instance.Boss1Defeated);
 			return nbt;
 		}
 
@@ -255,6 +262,7 @@ public class DarkVsLightModVariables {
 			instance.EnlightendMultiplier = nbt.getDouble("EnlightendMultiplier");
 			instance.darkendmusicplay = nbt.getDouble("darkendmusicplay");
 			instance.Debug = nbt.getBoolean("Debug");
+			instance.Boss1Defeated = nbt.getBoolean("Boss1Defeated");
 		}
 	}
 
@@ -267,6 +275,7 @@ public class DarkVsLightModVariables {
 		public double EnlightendMultiplier = 1.0;
 		public double darkendmusicplay = 0;
 		public boolean Debug = false;
+		public boolean Boss1Defeated = false;
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayerEntity)
 				DarkVsLightMod.PACKET_HANDLER.send(PacketDistributor.PLAYER.with(() -> (ServerPlayerEntity) entity),
@@ -301,6 +310,7 @@ public class DarkVsLightModVariables {
 		PlayerVariables clone = ((PlayerVariables) event.getEntity().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
 		clone.darkendmusicplay = original.darkendmusicplay;
 		clone.Debug = original.Debug;
+		clone.Boss1Defeated = original.Boss1Defeated;
 		if (!event.isWasDeath()) {
 			clone.DarkendTick = original.DarkendTick;
 			clone.Darkend = original.Darkend;
@@ -339,6 +349,7 @@ public class DarkVsLightModVariables {
 					variables.EnlightendMultiplier = message.data.EnlightendMultiplier;
 					variables.darkendmusicplay = message.data.darkendmusicplay;
 					variables.Debug = message.data.Debug;
+					variables.Boss1Defeated = message.data.Boss1Defeated;
 				}
 			});
 			context.setPacketHandled(true);

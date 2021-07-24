@@ -22,7 +22,7 @@ public class DVLtabItemGroup extends DarkVsLightModElements.ModElement {
 			@OnlyIn(Dist.CLIENT)
 			@Override
 			public ItemStack createIcon() {
-				return new ItemStack(DarkStoneBlock.block, (int) (1));
+				return new ItemStack(DarkStoneBlock.block);
 			}
 
 			@OnlyIn(Dist.CLIENT)

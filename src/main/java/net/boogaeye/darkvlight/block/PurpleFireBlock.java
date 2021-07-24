@@ -14,6 +14,7 @@ import net.minecraft.util.math.shapes.VoxelShape;
 import net.minecraft.util.math.shapes.ISelectionContext;
 import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.Direction;
 import net.minecraft.pathfinding.PathNodeType;
 import net.minecraft.loot.LootContext;
 import net.minecraft.item.ItemStack;
@@ -32,6 +33,7 @@ import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
+import net.boogaeye.darkvlight.procedures.PurpleFireNeighbourBlockChangesProcedure;
 import net.boogaeye.darkvlight.procedures.PurpleFireEntityCollidesInTheBlockProcedure;
 import net.boogaeye.darkvlight.procedures.BurnedGazeWoodParticleSpawningConditionProcedure;
 import net.boogaeye.darkvlight.particle.DarkFireParticle;
@@ -78,14 +80,29 @@ public class PurpleFireBlock extends DarkVsLightModElements.ModElement {
 		}
 
 		@Override
+		public int getOpacity(BlockState state, IBlockReader worldIn, BlockPos pos) {
+			return 0;
+		}
+
+		@Override
 		public VoxelShape getShape(BlockState state, IBlockReader world, BlockPos pos, ISelectionContext context) {
 			Vector3d offset = state.getOffset(world, pos);
 			return VoxelShapes.or(makeCuboidShape(0, 0, 0, 16, 1.6, 16)).withOffset(offset.x, offset.y, offset.z);
 		}
 
 		@Override
+		public boolean canProvidePower(BlockState state) {
+			return true;
+		}
+
+		@Override
+		public int getWeakPower(BlockState blockstate, IBlockReader blockAccess, BlockPos pos, Direction side) {
+			return 4;
+		}
+
+		@Override
 		public ItemStack getPickBlock(BlockState state, RayTraceResult target, IBlockReader world, BlockPos pos, PlayerEntity player) {
-			return new ItemStack(Blocks.AIR, (int) (1));
+			return new ItemStack(Blocks.AIR);
 		}
 
 		@Override
@@ -103,13 +120,32 @@ public class PurpleFireBlock extends DarkVsLightModElements.ModElement {
 			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
-			return Collections.singletonList(new ItemStack(Blocks.AIR, (int) (1)));
+			return Collections.singletonList(new ItemStack(Blocks.AIR));
+		}
+
+		@Override
+		public void neighborChanged(BlockState blockstate, World world, BlockPos pos, Block neighborBlock, BlockPos fromPos, boolean moving) {
+			super.neighborChanged(blockstate, world, pos, neighborBlock, fromPos, moving);
+			int x = pos.getX();
+			int y = pos.getY();
+			int z = pos.getZ();
+			if (world.getRedstonePowerFromNeighbors(new BlockPos(x, y, z)) > 0) {
+			} else {
+			}
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				PurpleFireNeighbourBlockChangesProcedure.executeProcedure($_dependencies);
+			}
 		}
 
 		@OnlyIn(Dist.CLIENT)
 		@Override
-		public void animateTick(BlockState state, World world, BlockPos pos, Random random) {
-			super.animateTick(state, world, pos, random);
+		public void animateTick(BlockState blockstate, World world, BlockPos pos, Random random) {
+			super.animateTick(blockstate, world, pos, random);
 			PlayerEntity entity = Minecraft.getInstance().player;
 			int x = pos.getX();
 			int y = pos.getY();
@@ -124,8 +160,8 @@ public class PurpleFireBlock extends DarkVsLightModElements.ModElement {
 		}
 
 		@Override
-		public void onEntityCollision(BlockState state, World world, BlockPos pos, Entity entity) {
-			super.onEntityCollision(state, world, pos, entity);
+		public void onEntityCollision(BlockState blockstate, World world, BlockPos pos, Entity entity) {
+			super.onEntityCollision(blockstate, world, pos, entity);
 			int x = pos.getX();
 			int y = pos.getY();
 			int z = pos.getZ();

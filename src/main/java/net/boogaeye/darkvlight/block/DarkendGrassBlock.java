@@ -53,10 +53,10 @@ public class DarkendGrassBlock extends DarkVsLightModElements.ModElement {
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
 			super(Block.Properties.create(Material.ORGANIC)
-					.sound(new ForgeSoundType(1.0f, 1.0f, () -> new SoundEvent(new ResourceLocation("dark_vs_light:breakdarkgrass")),
-							() -> new SoundEvent(new ResourceLocation("dark_vs_light:drag")),
-							() -> new SoundEvent(new ResourceLocation("dark_vs_light:bossspell")),
-							() -> new SoundEvent(new ResourceLocation("dark_vs_light:drag")),
+					.sound(new ForgeSoundType(1.0f, 1.0f, () -> new SoundEvent(new ResourceLocation("block.grass.break")),
+							() -> new SoundEvent(new ResourceLocation("block.glass.step")),
+							() -> new SoundEvent(new ResourceLocation("block.grass.place")),
+							() -> new SoundEvent(new ResourceLocation("dark_vs_light:dgrassbreak")),
 							() -> new SoundEvent(new ResourceLocation("ambient.cave"))))
 					.hardnessAndResistance(1f, 20f).setLightLevel(s -> 0).harvestLevel(0).harvestTool(ToolType.SHOVEL).setRequiresTool()
 					.tickRandomly());
@@ -68,6 +68,11 @@ public class DarkendGrassBlock extends DarkVsLightModElements.ModElement {
 		public void addInformation(ItemStack itemstack, IBlockReader world, List<ITextComponent> list, ITooltipFlag flag) {
 			super.addInformation(itemstack, world, list, flag);
 			list.add(new StringTextComponent("Grass but harder?"));
+		}
+
+		@Override
+		public int getOpacity(BlockState state, IBlockReader worldIn, BlockPos pos) {
+			return 15;
 		}
 
 		@Override
@@ -90,12 +95,12 @@ public class DarkendGrassBlock extends DarkVsLightModElements.ModElement {
 			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
-			return Collections.singletonList(new ItemStack(DarkDirtBlock.block, (int) (1)));
+			return Collections.singletonList(new ItemStack(DarkDirtBlock.block));
 		}
 
 		@Override
-		public void tick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
-			super.tick(state, world, pos, random);
+		public void tick(BlockState blockstate, ServerWorld world, BlockPos pos, Random random) {
+			super.tick(blockstate, world, pos, random);
 			int x = pos.getX();
 			int y = pos.getY();
 			int z = pos.getZ();

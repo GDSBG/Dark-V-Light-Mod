@@ -1,5 +1,5 @@
 {
-  "_fv": 21,
+  "_fv": 23,
   "_type": "biome",
   "definition": {
     "name": "Darkend Dessert",
@@ -36,7 +36,7 @@
       "value": "CUSTOM:darkenddessertambient"
     },
     "music": {
-      "value": "CUSTOM:lovehim"
+      "value": "CUSTOM:dessert"
     },
     "moodSound": {
       "value": ""

@@ -45,6 +45,11 @@ public class DarkStoneBlock extends DarkVsLightModElements.ModElement {
 		}
 
 		@Override
+		public int getOpacity(BlockState state, IBlockReader worldIn, BlockPos pos) {
+			return 15;
+		}
+
+		@Override
 		public MaterialColor getMaterialColor() {
 			return MaterialColor.AIR;
 		}

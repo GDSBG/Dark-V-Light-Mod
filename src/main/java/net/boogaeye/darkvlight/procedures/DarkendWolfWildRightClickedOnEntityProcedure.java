@@ -5,6 +5,7 @@ import net.minecraft.world.World;
 import net.minecraft.world.IWorld;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.nbt.CompoundNBT;
+import net.minecraft.item.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.passive.TameableEntity;
@@ -64,41 +65,43 @@ public class DarkendWolfWildRightClickedOnEntityProcedure {
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
-		((itemstack)).shrink((int) 1);
-		if (!entity.world.isRemote())
-			entity.remove();
-		if (world instanceof ServerWorld) {
-			Entity entityToSpawn = new TamedDarkendWolfEntity.CustomEntity(TamedDarkendWolfEntity.entity, (World) world);
-			entityToSpawn.setLocationAndAngles(x, y, z, world.getRandom().nextFloat() * 360F, 0);
-			if (entityToSpawn instanceof MobEntity)
-				((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world, world.getDifficultyForLocation(entityToSpawn.getPosition()),
-						SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
-			world.addEntity(entityToSpawn);
-		}
-		if ((((Entity) world
-				.getEntitiesWithinAABB(TamedDarkendWolfEntity.CustomEntity.class,
-						new AxisAlignedBB(x - (4 / 2d), y - (4 / 2d), z - (4 / 2d), x + (4 / 2d), y + (4 / 2d), z + (4 / 2d)), null)
-				.stream().sorted(new Object() {
-					Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-						return Comparator.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
-					}
-				}.compareDistOf(x, y, z)).findFirst().orElse(null)) instanceof TameableEntity) && (sourceentity instanceof PlayerEntity)) {
-			((TameableEntity) ((Entity) world
+		if (((itemstack).getItem() == Items.BONE)) {
+			((itemstack)).shrink((int) 1);
+			if (!entity.world.isRemote())
+				entity.remove();
+			if (world instanceof ServerWorld) {
+				Entity entityToSpawn = new TamedDarkendWolfEntity.CustomEntity(TamedDarkendWolfEntity.entity, (World) world);
+				entityToSpawn.setLocationAndAngles(x, y, z, world.getRandom().nextFloat() * 360F, 0);
+				if (entityToSpawn instanceof MobEntity)
+					((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world, world.getDifficultyForLocation(entityToSpawn.getPosition()),
+							SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
+				world.addEntity(entityToSpawn);
+			}
+			if ((((Entity) world
 					.getEntitiesWithinAABB(TamedDarkendWolfEntity.CustomEntity.class,
 							new AxisAlignedBB(x - (4 / 2d), y - (4 / 2d), z - (4 / 2d), x + (4 / 2d), y + (4 / 2d), z + (4 / 2d)), null)
 					.stream().sorted(new Object() {
 						Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 							return Comparator.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
 						}
-					}.compareDistOf(x, y, z)).findFirst().orElse(null))).setTamed(true);
-			((TameableEntity) ((Entity) world
-					.getEntitiesWithinAABB(TamedDarkendWolfEntity.CustomEntity.class,
-							new AxisAlignedBB(x - (4 / 2d), y - (4 / 2d), z - (4 / 2d), x + (4 / 2d), y + (4 / 2d), z + (4 / 2d)), null)
-					.stream().sorted(new Object() {
-						Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-							return Comparator.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
-						}
-					}.compareDistOf(x, y, z)).findFirst().orElse(null))).setTamedBy((PlayerEntity) sourceentity);
+					}.compareDistOf(x, y, z)).findFirst().orElse(null)) instanceof TameableEntity) && (sourceentity instanceof PlayerEntity)) {
+				((TameableEntity) ((Entity) world
+						.getEntitiesWithinAABB(TamedDarkendWolfEntity.CustomEntity.class,
+								new AxisAlignedBB(x - (4 / 2d), y - (4 / 2d), z - (4 / 2d), x + (4 / 2d), y + (4 / 2d), z + (4 / 2d)), null)
+						.stream().sorted(new Object() {
+							Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+								return Comparator.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
+							}
+						}.compareDistOf(x, y, z)).findFirst().orElse(null))).setTamed(true);
+				((TameableEntity) ((Entity) world
+						.getEntitiesWithinAABB(TamedDarkendWolfEntity.CustomEntity.class,
+								new AxisAlignedBB(x - (4 / 2d), y - (4 / 2d), z - (4 / 2d), x + (4 / 2d), y + (4 / 2d), z + (4 / 2d)), null)
+						.stream().sorted(new Object() {
+							Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+								return Comparator.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
+							}
+						}.compareDistOf(x, y, z)).findFirst().orElse(null))).setTamedBy((PlayerEntity) sourceentity);
+			}
 		}
 	}
 }

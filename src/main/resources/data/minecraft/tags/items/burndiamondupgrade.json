@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "dark_vs_light:burn_diamond",
+    "dark_vs_light:burn_diamond_armor_armor_helmet",
+    "dark_vs_light:burn_diamond_armor_armor_chestplate",
+    "dark_vs_light:burn_diamond_armor_armor_leggings",
+    "dark_vs_light:burn_diamond_armor_armor_boots",
+    "dark_vs_light:burn_diamond_tool_pickaxe",
+    "dark_vs_light:burn_diamond_tool_axe",
+    "dark_vs_light:burn_diamond_tool_sword",
+    "dark_vs_light:burn_diamond_tool_shovel",
+    "dark_vs_light:burn_diamond_tool_hoe"
+  ]
+}
